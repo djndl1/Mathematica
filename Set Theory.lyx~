@@ -126,5 +126,133 @@ literal "false"
 
 \end_layout
 
+\begin_layout Definition*
+Duck test
+\end_layout
+
+\begin_layout Standard
+All the basic principles of set theory, except only the axio of extension.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset CommandInset href
+LatexCommand href
+name "Axiom of specification"
+target "https://en.wikipedia.org/wiki/Axiom_schema_of_specification"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+To every set 
+\begin_inset Formula $A$
+\end_inset
+
+ and to every condtion 
+\begin_inset Formula $S(x)$
+\end_inset
+
+ there corresponds a set 
+\begin_inset Formula $B$
+\end_inset
+
+ whose elements are exactly those elements 
+\begin_inset Formula $x$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ for which 
+\begin_inset Formula $S(x)$
+\end_inset
+
+ holds.
+ denoted by
+\begin_inset Formula 
+\[
+B=\{x\in A:S(x)\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+The 
+\begin_inset Formula $:$
+\end_inset
+
+ in the above notation can be interpreted as 
+\begin_inset Quotes eld
+\end_inset
+
+and
+\begin_inset Quotes erd
+\end_inset
+
+.The axiom of specification forbids the universe set, a set containing all
+ the objects that enter into the discussion, which leads to 
+\begin_inset CommandInset href
+LatexCommand href
+name "Russell's paradox"
+target "https://en.wikipedia.org/wiki/Russell%27s_paradox"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose there is a set 
+\begin_inset Formula $A$
+\end_inset
+
+ that contains every object.
+ From the axiom of specification, we can have a set
+\begin_inset Formula 
+\[
+B=\{x\in A:x\notin x\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+It must be that 
+\begin_inset Formula $B\in A$
+\end_inset
+
+, however, if 
+\begin_inset Formula $B\in B$
+\end_inset
+
+, then by definition of 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $B\notin B$
+\end_inset
+
+, the other way around, if 
+\begin_inset Formula $B\notin B$
+\end_inset
+
+, then 
+\begin_inset Formula $B\in B$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
