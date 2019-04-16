@@ -252,6 +252,215 @@ It must be that
 \end_inset
 
 .
+ Hence such a set as 
+\begin_inset Formula $A$
+\end_inset
+
+ does not exist.
+\end_layout
+
+\begin_layout Standard
+From the axiom of specification, 
+\begin_inset Formula 
+\[
+\varnothing=\{x\in A:x\neq x\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is obtained and from the axiom of extension, this set is unique (
+\begin_inset CommandInset href
+LatexCommand href
+name "vacuously true"
+target "https://en.wikipedia.org/wiki/Vacuous_truth"
+literal "false"
+
+\end_inset
+
+).
+ In addition, empty set is a subset of every set including itself (vacuously
+ true or proof by contradiction).
+\end_layout
+
+\begin_layout Proposition
+\begin_inset CommandInset href
+LatexCommand href
+name "Axiom of pairing"
+target "https://en.wikipedia.org/wiki/Axiom_of_pairing"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+For any two sets there exists a set that they both belong to.
+\end_layout
+
+\begin_layout Remark*
+If there are sets 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, the set
+\begin_inset Formula 
+\[
+B=\{x\in A:x=a\;or\;x=b\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+also denoted by 
+\begin_inset Formula $\{a,b\}$
+\end_inset
+
+ is a 
+\emph on
+unordered pair.
+ 
+\emph default
+The pair 
+\begin_inset Formula $\{a,a\}$
+\end_inset
+
+ or 
+\begin_inset Formula $\{a\}$
+\end_inset
+
+ is a 
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+name "singleton"
+target "https://en.wikipedia.org/wiki/Singleton_(mathematics)"
+literal "false"
+
+\end_inset
+
+.
+ 
+\emph default
+The axiom of pairing ensures that every set is an element of some set (singleton
+) and that any two sets are simultaneously elements of some one and the
+ same set.
+\end_layout
+
+\begin_layout Proposition
+Axiom of unions
+\end_layout
+
+\begin_layout Proposition
+For every collection of sets there exists a set that contains all the elements
+ that belong to at lease one set of the given collection.
+\begin_inset Formula 
+\[
+\{x\in U:x\in X;\;for\;some\;X\;in\;\mathscr{{C}}\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+or 
+\begin_inset Formula 
+\[
+\bigcup\mathscr{C}\;or\;\bigcup\{X:X\in\mathscr{C}\}\;or\;\bigcup_{X\in\mathscr{C}}X
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+The axiom of unions introduces the existence of 
+\emph on
+unordered triple, quarduples, 
+\emph default
+etc.
+\end_layout
+
+\begin_layout Standard
+The intersection of sets relies rather on the axiom of specification, i.e.
+\begin_inset Formula 
+\[
+A\bigcap B=\{x\in A:x\in B\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A more generalized formation
+\begin_inset Formula 
+\[
+V=\{x\in X_{0}:x\in X\;for\;every\;X\;in\;\mathscr{{C}\}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $X_{0}$
+\end_inset
+
+ is a particular set in 
+\begin_inset Formula $\mathscr{C}$
+\end_inset
+
+, a non-empty collection of sets.
+ The axiom of extension guarantees the uniqueness of such a set.
+ Note that this set may be an empty set.
+\end_layout
+
+\begin_layout Remark*
+if 
+\begin_inset Formula $A\bigcap B=\varnothing$
+\end_inset
+
+, the sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are called 
+\emph on
+disjoint
+\emph default
+.
+ The intersection and the union operations has the properties of 
+\emph on
+communitativity, associativity, idempotence 
+\emph default
+and 
+\emph on
+distributivity
+\emph default
+.
 \end_layout
 
 \end_body
