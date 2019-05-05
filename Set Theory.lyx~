@@ -131,7 +131,7 @@ Duck test
 \end_layout
 
 \begin_layout Standard
-All the basic principles of set theory, except only the axio of extension.
+All the basic principles of set theory, except only the axiom of extension.
 \end_layout
 
 \begin_layout Proposition
@@ -185,7 +185,15 @@ B=\{x\in A:S(x)\}
 
 \begin_layout Remark*
 The 
+\begin_inset Quotes eld
+\end_inset
+
+
 \begin_inset Formula $:$
+\end_inset
+
+
+\begin_inset Quotes erd
 \end_inset
 
  in the above notation can be interpreted as 
@@ -430,7 +438,8 @@ where
 \end_inset
 
 , a non-empty collection of sets.
- The axiom of extension guarantees the uniqueness of such a set.
+ The axiom of extension guarantees the uniqueness of such a set, independent
+ of a certain set in the given collection.
  Note that this set may be an empty set.
 \end_layout
 
@@ -460,6 +469,105 @@ and
 \emph on
 distributivity
 \emph default
+.
+\end_layout
+
+\begin_layout Definition*
+
+\emph on
+difference/relative difference
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+A-B=\{x\in A:x\notin B\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Define set 
+\begin_inset Formula $E$
+\end_inset
+
+ as the union of all sets involved, denote the complement of set 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $E$
+\end_inset
+
+ as 
+\begin_inset Formula $A'$
+\end_inset
+
+, we have 
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+name "De Morgan laws"
+target "https://en.wikipedia.org/wiki/De_Morgan_Laws"
+literal "false"
+
+\end_inset
+
+.
+ 
+\emph default
+The complement form of a set theorem usually leads to 
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+name "the principle of duality"
+target "https://en.wikipedia.org/wiki/Duality_(mathematics)#Complement_of_a_subset"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+
+\emph on
+\begin_inset CommandInset href
+LatexCommand href
+name "symmetic difference/boolean sum/disjunctive union"
+target "https://en.wikipedia.org/wiki/Symmetric_difference"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+A+B=(A-B)\bigcup(B-A)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+This operation is commutative and associative and is such that 
+\begin_inset Formula $A+\varnothing=A$
+\end_inset
+
+ and 
+\begin_inset Formula $A+A=A$
+\end_inset
+
 .
 \end_layout
 
