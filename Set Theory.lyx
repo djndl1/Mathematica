@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass amsbook
+\textclass amsart
 \use_default_options true
 \begin_modules
 theorems-ams
@@ -84,6 +84,10 @@ figs-within-sections
 
 \begin_layout Part*
 Set Theory
+\end_layout
+
+\begin_layout Section
+Basics
 \end_layout
 
 \begin_layout Proposition
@@ -585,6 +589,282 @@ This operation is commutative and associative and is such that
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset CommandInset href
+LatexCommand href
+name "Axiom of power set"
+target "https://en.wikipedia.org/wiki/Axiom_of_power_set"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+For each set there exists a collection of sets that contains among its elements
+ all the subsets of the given set and them only.
+\begin_inset Formula 
+\[
+\forall x\exists y\forall z\left[z\in y\iff\forall\omega\left(\omega\in z\implies\omega\in x\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+In other words, if 
+\begin_inset Formula $E$
+\end_inset
+
+ is a set, there exists a collection of set 
+\begin_inset Formula $\mathscr{P}$
+\end_inset
+
+ such that if 
+\begin_inset Formula $X\subset E,$
+\end_inset
+
+ then 
+\begin_inset Formula $X\in\mathscr{P}$
+\end_inset
+
+.
+ The set 
+\begin_inset Formula $\mathscr{P}$
+\end_inset
+
+ is called a power set, denoted by 
+\begin_inset Formula $\mathscr{P}\left(E\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+
+\emph on
+ordered pair
+\end_layout
+
+\begin_layout Definition*
+
+\emph on
+The ordered pair of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, with first coordinate 
+\begin_inset Formula $a$
+\end_inset
+
+ and second coordinate 
+\begin_inset Formula $b$
+\end_inset
+
+, is the set defined by
+\end_layout
+
+\begin_layout Definition*
+
+\emph on
+\begin_inset Formula 
+\[
+\left(a,b\right)=\left\{ \left\{ a\right\} ,\left\{ a,b\right\} \right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It it easy to prove that 
+\begin_inset Formula $\left(a,b\right)=\left(x,y\right)\iff\left[a=x\text{ and }b=y\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Given two sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, it is proved that there exists a set of ordered paired with one coordinated
+ from 
+\begin_inset Formula $A$
+\end_inset
+
+ and the other from 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, then 
+\begin_inset Formula $\left\{ a\right\} \in P\left\{ A\bigcup B\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ a,b\right\} \in P\left\{ A\bigcup B\right\} $
+\end_inset
+
+
+\begin_inset Formula $\implies\left\{ \left\{ a\right\} ,\left\{ a,b\right\} \right\} \subset P\left\{ A\bigcup B\right\} $
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula 
+\[
+\forall a\in A,\forall b\in B\left[\left(a,b\right)\in P\left\{ P\left\{ A\bigcup B\right\} \right\} \right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From the axiom of union and the axiom of power set, the power set of the
+ union of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, therefore 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ must exist.
+\end_layout
+
+\begin_layout Proof
+Apply the axiom of specification, we have defined the 
+\emph on
+Cartesian product
+\emph default
+
+\begin_inset Formula 
+\[
+A\times B=\left\{ x=\left(a,b\right)\in P\left\{ P\left\{ A\bigcup B\right\} \right\} :a\in A\;and\;b\in B\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+and from the axiom of extension, the Cartesian product is unique.
+\end_layout
+
+\begin_layout Standard
+Tips: use union to remove braces.
+\end_layout
+
+\begin_layout Standard
+It is possible to obtain the two sets from the Cartesian product, which
+ sets are called the 
+\emph on
+projections 
+\emph default
+of the Cartesian product 
+\begin_inset Formula $R$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ is an ordered pair in a Cartesian product 
+\begin_inset Formula $R$
+\end_inset
+
+, rewritten as 
+\begin_inset Formula $\left\{ \left\{ a\right\} ,\left\{ a,b\right\} \right\} $
+\end_inset
+
+, the union of all such ordered pairs exists and
+\begin_inset Formula 
+\[
+\left\{ a\right\} \in\bigcup_{p\in R}p\;and\;\left\{ a,b\right\} \in\bigcup_{p\in R}p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+continue the union of the obtained set we have 
+\begin_inset Formula $a\in\bigcup\bigcup R$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\bigcup\bigcup R$
+\end_inset
+
+.
+ The axiom of specification further produces the sets
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+A=\left\{ a:\text{for some \ensuremath{b} }\left(a,b\right)\in R\right\} 
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+B=\left\{ b:\text{for some \ensuremath{a} }\left(a,b\right)\in R\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The definition of ordered pair and the relevant should be here and never
+ elsewhere: they are weird but only because they are defined such.
+ It can be done axiomatically with the same properties in other theories.
 \end_layout
 
 \end_body
