@@ -867,5 +867,415 @@ The definition of ordered pair and the relevant should be here and never
  It can be done axiomatically with the same properties in other theories.
 \end_layout
 
+\begin_layout Standard
+Using ordered pairs, we can formulate the mathematical theory of relations
+ in set-theoretic language.
+\end_layout
+
+\begin_layout Definition*
+
+\emph on
+relation
+\end_layout
+
+\begin_layout Definition*
+a set 
+\begin_inset Formula $R$
+\end_inset
+
+ is a relation if each element of 
+\begin_inset Formula $R$
+\end_inset
+
+ is an ordered pair, denoted by
+\begin_inset Formula 
+\[
+x\,R\,y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+the two projections of 
+\begin_inset Formula $R$
+\end_inset
+
+ are called 
+\emph on
+domain
+\emph default
+ and 
+\emph on
+range 
+\emph default
+respectively
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+dom\,R=\left\{ x:\text{for some }y,\left(x\,R\,y\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+ran\,R=\left\{ y:\text{for some }x,\left(x\,R\,y\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+The empty set the the Cartesian product of any two sets are two examples.
+ Another example can be the relation of 
+\emph on
+equality
+\emph default
+ that is the set of all those pairs 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $X\times X$
+\end_inset
+
+ for which 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+A relation in 
+\begin_inset Formula $R$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\emph on
+reflexive
+\emph default
+ if 
+\begin_inset Formula $\forall x\in X,x\,R\,x$
+\end_inset
+
+; 
+\emph on
+symmetric 
+\emph default
+if 
+\begin_inset Formula $x\,R\,y$
+\end_inset
+
+ implies that 
+\begin_inset Formula $y\,R\,x$
+\end_inset
+
+; 
+\emph on
+transitive 
+\emph default
+if 
+\begin_inset Formula $x\,R\,y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\,R\,z$
+\end_inset
+
+ imply that 
+\begin_inset Formula $x\,R\,z$
+\end_inset
+
+.
+ It is 
+\emph on
+equivalent
+\emph default
+ if it is reflexive, symmetric and transitive.
+ The smallest equivalence relation in a set 
+\begin_inset Formula $X$
+\end_inset
+
+ is the relation of equality in 
+\begin_inset Formula $X$
+\end_inset
+
+ and the largest equivalence relation in 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula $X\times X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ is an equivalence relation in 
+\begin_inset Formula $X$
+\end_inset
+
+, and if 
+\begin_inset Formula $x$
+\end_inset
+
+ is in 
+\begin_inset Formula $X,$
+\end_inset
+
+the 
+\emph on
+equivalence class 
+\emph default
+of 
+\begin_inset Formula $x$
+\end_inset
+
+ with respect 
+\begin_inset Formula $R$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $x/R$
+\end_inset
+
+ (read 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+ modulo 
+\begin_inset Formula $R$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+), is the set of all those elements 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ for which 
+\begin_inset Formula $x\,R\,y$
+\end_inset
+
+, and 
+\begin_inset Formula $X/R$
+\end_inset
+
+ denotes the set of all equivalence classes.
+ each equivalence class of 
+\begin_inset Formula $x$
+\end_inset
+
+ w.r.t 
+\begin_inset Formula $R$
+\end_inset
+
+ is a singleton; if 
+\begin_inset Formula $R=X\times X$
+\end_inset
+
+, then the set 
+\begin_inset Formula $X$
+\end_inset
+
+ itself is the only equivalence class.
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $\mathscr{C}$
+\end_inset
+
+ is a partition of 
+\begin_inset Formula $X$
+\end_inset
+
+, that is, a disjoint collection of non-empty subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+ whose union is 
+\begin_inset Formula $X$
+\end_inset
+
+, a relation 
+\begin_inset Formula $X/\mathscr{C}$
+\end_inset
+
+ is defined in 
+\begin_inset Formula $X$
+\end_inset
+
+ induced by 
+\begin_inset Formula $\mathscr{C}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\,X/\mathscr{C}\,y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in case 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ belong to the same set of the collection 
+\begin_inset Formula $\mathscr{C}$
+\end_inset
+
+.
+ It is easy to see this relation is a equivalence relation.
+\end_layout
+
+\begin_layout Standard
+This gives arise to a proposition
+\end_layout
+
+\begin_layout Proposition*
+if 
+\begin_inset Formula $R$
+\end_inset
+
+ is an equivalence relation in 
+\begin_inset Formula $X$
+\end_inset
+
+, then the set of equivalence classes is a partition of 
+\begin_inset Formula $X$
+\end_inset
+
+ that induces the relation 
+\begin_inset Formula $R$
+\end_inset
+
+, and if 
+\begin_inset Formula $\mathscr{C}$
+\end_inset
+
+is a partition of 
+\begin_inset Formula $X$
+\end_inset
+
+, then the induced relation is an equivalence relation whose set of equivalence
+ classes is exactly 
+\begin_inset Formula $\mathscr{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+It is fairly easy to see the second half simply by the definition.
+ We mainly focus on the first half.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $R$
+\end_inset
+
+ is an equivalence relation in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ From reflexitivity, 
+\begin_inset Formula $x\,R\,x$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $x\in x/R$
+\end_inset
+
+, thus the union of all equivalence classes is all 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\forall x\in X,\forall y\in X$
+\end_inset
+
+, if 
+\begin_inset Formula $z\in x/R$
+\end_inset
+
+ and 
+\begin_inset Formula $z\in y/R$
+\end_inset
+
+, from transitivity, 
+\begin_inset Formula $x\,R\,y$
+\end_inset
+
+, i.e.
+ for every element 
+\begin_inset Formula $a$
+\end_inset
+
+ in the equivalence class of 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\in x/R\iff x\,R\,a\iff a\,R\,x\iff a\,R\,y\iff y\,R\,a\iff a\in y/R
+\]
+
+\end_inset
+
+ which implies that if two equivalence classes have an element in common,
+ they are identical, otherwise they are disjoint, thus all these equivalence
+ classes form a partition of 
+\begin_inset Formula $X$
+\end_inset
+
+......
+\end_layout
+
 \end_body
 \end_document
