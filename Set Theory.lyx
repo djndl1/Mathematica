@@ -138,6 +138,20 @@ Duck test
 All the basic principles of set theory, except only the axiom of extension.
 \end_layout
 
+\begin_layout Standard
+Equality for sets is reflexive, symmetric and transitive; inclusion for
+ sets is reflexive, 
+\begin_inset CommandInset href
+LatexCommand href
+name "antisymmetric"
+target "https://en.wikipedia.org/wiki/Antisymmetric_relation"
+literal "false"
+
+\end_inset
+
+ and transitive.
+\end_layout
+
 \begin_layout Proposition
 \begin_inset CommandInset href
 LatexCommand href
