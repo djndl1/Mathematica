@@ -4,7 +4,7 @@
 
 It's _knowledge based_.
 
-######Practicalities of Using the Wolfram Language
+###### Practicalities of Using the Wolfram Language
 
 `shfit + return`  to finish the input.
 
@@ -15,7 +15,7 @@ Min[]
 Max[]
 ```
 
-$\quad\quad$ Lists can contain anything, including graphics.
+Lists can contain anything, including graphics.
 
 ```mathematica
 ListPlot[]

@@ -426,7 +426,7 @@ etc.
 The intersection of sets relies rather on the axiom of specification, i.e.
 \begin_inset Formula 
 \[
-A\bigcap B=\{x\in A:x\in B\}
+A\cap B=\{x\in A:x\in B\}
 \]
 
 \end_inset
@@ -569,7 +569,7 @@ literal "false"
 \begin_layout Definition*
 \begin_inset Formula 
 \[
-A+B=(A-B)\bigcup(B-A)
+A+B=(A-B)\cup(B-A)
 \]
 
 \end_inset
@@ -657,6 +657,10 @@ In other words, if
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Ordered Pair
 \end_layout
 
 \begin_layout Definition*
@@ -747,14 +751,14 @@ Suppose
 \end_inset
 
 
-\begin_inset Formula $\implies\left\{ \left\{ a\right\} ,\left\{ a,b\right\} \right\} \subset P\left\{ A\bigcup B\right\} $
+\begin_inset Formula $\implies\left\{ \left\{ a\right\} ,\left\{ a,b\right\} \right\} \subset P\left\{ A\cup B\right\} $
 \end_inset
 
 , i.e.
  
 \begin_inset Formula 
 \[
-\forall a\in A,\forall b\in B\left[\left(a,b\right)\in P\left\{ P\left\{ A\bigcup B\right\} \right\} \right]
+\forall a\in A,\forall b\in B\left[\left(a,b\right)\in P\left\{ P\left\{ A\cup B\right\} \right\} \right]
 \]
 
 \end_inset
@@ -787,7 +791,7 @@ Cartesian product
 
 \begin_inset Formula 
 \[
-A\times B=\left\{ x=\left(a,b\right)\in P\left\{ P\left\{ A\bigcup B\right\} \right\} :a\in A\;and\;b\in B\right\} 
+A\times B=\left\{ x=\left(a,b\right)\in P\left\{ P\left\{ A\cup B\right\} \right\} :a\in A\;and\;b\in B\right\} 
 \]
 
 \end_inset
@@ -855,20 +859,10 @@ continue the union of the obtained set we have
 
 \begin_layout Proof
 \begin_inset Formula 
-\begin{multline*}
-A=\left\{ a:\text{for some \ensuremath{b} }\left(a,b\right)\in R\right\} 
-\end{multline*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula 
-\[
-B=\left\{ b:\text{for some \ensuremath{a} }\left(a,b\right)\in R\right\} 
-\]
+\begin{align*}
+A & =\left\{ a:\text{for some \ensuremath{b} }\left(a,b\right)\in R\right\} \\
+B & =\left\{ b:\text{for some \ensuremath{a} }\left(a,b\right)\in R\right\} 
+\end{align*}
 
 \end_inset
 
@@ -884,6 +878,10 @@ The definition of ordered pair and the relevant should be here and never
 \begin_layout Standard
 Using ordered pairs, we can formulate the mathematical theory of relations
  in set-theoretic language.
+\end_layout
+
+\begin_layout Section
+Relation
 \end_layout
 
 \begin_layout Definition*
@@ -930,20 +928,10 @@ respectively
 
 \begin_layout Definition*
 \begin_inset Formula 
-\[
-dom\,R=\left\{ x:\text{for some }y,\left(x\,R\,y\right)\right\} 
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition*
-\begin_inset Formula 
-\[
-ran\,R=\left\{ y:\text{for some }x,\left(x\,R\,y\right)\right\} 
-\]
+\begin{align*}
+dom\,R & =\left\{ x:\text{for some }y,\left(x\,R\,y\right)\right\} \\
+ran\,R & =\left\{ y:\text{for some }x,\left(x\,R\,y\right)\right\} 
+\end{align*}
 
 \end_inset
 
