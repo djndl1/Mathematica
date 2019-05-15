@@ -4,12 +4,18 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass amsart
+\textclass amsbook
 \use_default_options true
-\begin_modules
+\begin_removed_modules
 theorems-ams
+\end_removed_modules
+\begin_modules
 eqs-within-sections
 figs-within-sections
+theorems-named
+theorems-ams-bytype
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -82,8 +88,12 @@ figs-within-sections
 
 \begin_body
 
-\begin_layout Part*
+\begin_layout Chapter
 Vector Spaces
+\end_layout
+
+\begin_layout Section
+Basic concepts
 \end_layout
 
 \begin_layout Standard
@@ -108,11 +118,11 @@ The motivation for the definition of a vector space comes form properties
 .
 \end_layout
 
-\begin_layout Definition*
+\begin_layout Definition
 addition, scalar multiplication
 \end_layout
 
-\begin_layout Definition*
+\begin_layout Definition
 An 
 \emph on
 addition
@@ -132,7 +142,7 @@ addition
 
 \end_layout
 
-\begin_layout Definition*
+\begin_layout Definition
 A 
 \emph on
 scalar multiplication 
@@ -156,11 +166,156 @@ on a set
 
 \end_layout
 
+\begin_layout Definition
+vector space
+\end_layout
+
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
 
 \end_layout
 
-\begin_layout Part*
+\begin_layout Definition
+A 
+\emph on
+vector space
+\emph default
+ is a set 
+\begin_inset Formula $V$
+\end_inset
+
+ along with an addition on 
+\begin_inset Formula $V$
+\end_inset
+
+ and a scalar multiplication on 
+\begin_inset Formula $V$
+\end_inset
+
+ s.t.
+ the following properties hold.
+\end_layout
+
+\begin_layout Definition
+commutavitiy, associativity, additive identity, additive inverse, multiplicative
+ identitiy, distributive properties
+\end_layout
+
+\begin_layout Definition
+Elements of a vector space are called 
+\emph on
+vectors
+\emph default
+ or 
+\emph on
+points.
+ 
+\emph default
+Note that a vector space depends on a filed 
+\begin_inset Formula $F$
+\end_inset
+
+ because of scalar multiplication defined on itself.
+ A vector space over 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is called a 
+\emph on
+real vector space, 
+\emph default
+likewise there is a 
+\emph on
+complex vector space
+\emph default
+.
+\end_layout
+
+\begin_layout Proposition
+Unique addtive identity
+\end_layout
+
+\begin_layout Proposition
+
+\emph on
+A vector space has a unique identity
+\end_layout
+
+\begin_layout Proof
+Omitted
+\end_layout
+
+\begin_layout Proposition
+Unique addtive inverse
+\end_layout
+
+\begin_layout Proposition
+
+\emph on
+Every element in a vector space has a unique additive inverse.
+\end_layout
+
+\begin_layout Proof
+Omitted
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula $-v$
+\end_inset
+
+ denotes the additive inverse of 
+\begin_inset Formula $v$
+\end_inset
+
+; 
+\begin_inset Formula $w-v$
+\end_inset
+
+ is defined to be 
+\begin_inset Formula $w+\left(-v\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $0v=0$
+\end_inset
+
+ for every 
+\begin_inset Formula $v\in V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a0=0$
+\end_inset
+
+ for every 
+\begin_inset Formula $a\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Omitted
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\left(-1\right)v=-v$
+\end_inset
+
+ for every 
+\begin_inset Formula $v\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
 f
 \end_layout
 
