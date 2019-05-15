@@ -16,7 +16,7 @@ figs-within-sections
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
+\font_roman "tgpagella" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
@@ -721,7 +721,7 @@ Given two sets
 \begin_inset Formula $B$
 \end_inset
 
-, it is proved that there exists a set of ordered paired with one coordinated
+, it is proved that there exists a set of ordered paired with one coordinate
  from 
 \begin_inset Formula $A$
 \end_inset
@@ -743,11 +743,11 @@ Suppose
 \end_inset
 
 , then 
-\begin_inset Formula $\left\{ a\right\} \in P\left\{ A\bigcup B\right\} $
+\begin_inset Formula $\left\{ a\right\} \in P\left\{ A\cup B\right\} $
 \end_inset
 
  and 
-\begin_inset Formula $\left\{ a,b\right\} \in P\left\{ A\bigcup B\right\} $
+\begin_inset Formula $\left\{ a,b\right\} \in P\left\{ A\cup B\right\} $
 \end_inset
 
 
