@@ -66,10 +66,22 @@ $$
 {\displaystyle p_{X}(k)=\Pr(X=k)={\frac {{\binom {K}{k}}{\binom {N-K}{n-k}}}{\binom {N}{n}}},}
 $$
 
-#### [Poisson distribution])(https://en.wikipedia.org/wiki/Poisson_distribution)
+#### [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)
 
 The probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant rate and independently of the time since the last event.
 
 $$
 f\left(k;\lambda\right)=\Pr\left(X=k\right)=\frac{\lambda^{k}e^{-\lambda}}{k!}
 $$
+
+Remark: $\lambda$ is the average number of occurrences in a given interval.
+
+### Continuous distribution
+
+#### Uniform distribution $U\left(a,b\right)$
+
+$U\left(0,1 \right)$ is called __standard uniform distribution__.
+
+#### Log-Logistic distribution
+
+
