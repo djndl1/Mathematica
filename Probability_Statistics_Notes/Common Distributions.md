@@ -84,4 +84,67 @@ $U\left(0,1 \right)$ is called __standard uniform distribution__.
 
 #### Log-Logistic distribution
 
+The CDF is in the form of a log-logistic function
 
+$$
+F\left(x;\alpha,\beta\right)=\frac{1}{1+\left(x/\alpha\right)^{-\beta}}
+$$
+
+where $\alpha>0$ is a scale parameter and the median of the distribution and $\beta>0$ is a shape parameter and the distribution is unimodal when $\beta > 1$. 
+
+#### Normal distribution
+
+Often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Its importance derives mainly from central limit theorem. 
+
+$$
+f\left(x|\mu,\sigma^{2}\right)=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\left(x-\mu\right)^{2}}{2\sigma^{2}}}
+$$
+
+- $\mu$ is the mean
+
+- $\sigma$ the standard deviation
+
+- $\sigma^2$ the variance.
+
+A random vector is said to be $k$-variate normally distributed if every linear combination of its $k$ components has a univariate normal distribution. A real random vector is called a standard normal random vector if all of its components are independent and each is a zero-mean unit-variance normally distributed random variable, i.e. if $X_n ~ \mathcal{N}\left(0,1\right)$ for all $n$.
+
+$$
+\mathrm{X}\sim\mathcal{N}\left(\mu,\Sigma\right)\iff\text{there exist }\mu\in\mathbb{R}^{k},\mathrm{A}\in\mathbb{R}^{k\times l}s.t.\ \mathrm{X=AZ}+\mu\ \text{for\ }Z_{n}\sim\mathcal{N}\left(0,1\right),\text{i.i.d}
+$$
+
+The covariance matrix $\Sigma = \mathcal{A}\mathcal{A}^T$.
+
+The degenerate case is when the covariance matrix is singular, giving no density.
+
+PDF
+
+Non-degenerate case: the symmetric covariance matrix $\Sigma$ is positive definite.
+$$
+f_{\mathrm{X}}\left(x_{1},\dots,x_{k}\right)=\frac{\exp\left(-\frac{1}{2}\left(\mathrm{x-\mu}\right)^{T}\Sigma^{-1}\left(\mathrm{x-\mu}\right)\right)}{\sqrt{\left(2\pi\right)^{k}\left|\Sigma\right|}}
+$$
+
+The likelihood function is given by 
+
+$$
+\ln L=-\frac{1}{2}\left[\ln\left(\left|\Sigma\right|\right)+\left(\mathrm{x-\mu}\right)^{T}\Sigma^{-1}\left(\mathrm{x-\mu}\right)+k\ln\left(2\pi\right)\right]
+$$
+
+If a random vector has a multivariate normal distribution then any two or more of its components that are uncorrelated are independent.
+
+#### Exponential distribution
+
+Describes the time between events in a Poisson point process and is the continuous analog of the geometric distribution.
+
+$$
+f\left(x;\lambda\right)=\lambda e^{-\lambda x}H\left(x\right)
+$$
+
+where $H(x)$ is the Heaviside step function, $\lambda$ called the _rate parameter_.
+
+The exponential distribution has an important property: memorylessness
+
+$$
+\Pr\left(T>s+t|T>s\right)=\Pr\left(T>t\right)\quad \forall s,t\geq 0
+$$
+
+For example, if an event has not occurred after 30 seconds, the conditional probability that occurrence will take at least 10 more seconds is equal to the unconditional probability of observing the event more than 10 seconds after the initial time.

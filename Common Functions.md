@@ -68,3 +68,25 @@ $$
 $$
 
 for $Re\ x > 0, Re\ y > 0$.
+
+or written in terms of gamma function
+
+$$
+\mathrm{B}\left(x,y\right)=\frac{\Gamma\left(x\right)\Gamma\left(y\right)}{\Gamma\left(x+y\right)}
+$$
+## Gamma function
+
+In mathematics, the gamma function (represented by Γ, the capital Greek alphabet letter gamma) is one commonly used extension of the factorial function to complex numbers.
+
+For any positive integer $n$ 
+
+$$
+\Gamma\left(n\right)=\left(n-1\right)!
+$$
+
+For complex numbers with a positive real part:
+
+$$
+\Gamma\left(z\right)=\int_{0}^{\infty}x^{z-1}e^{-x}dx,\quad\text{Re}z>0
+$$
+
