@@ -902,7 +902,7 @@ a set
  is an ordered pair, denoted by
 \begin_inset Formula 
 \[
-x\,R\,y
+x\,R\,y\subset X\times Y
 \]
 
 \end_inset
@@ -939,7 +939,7 @@ ran\,R & =\left\{ y:\text{for some }x,\left(x\,R\,y\right)\right\}
 \end_layout
 
 \begin_layout Remark*
-The empty set the the Cartesian product of any two sets are two examples.
+The empty set and the Cartesian product of any two sets are two examples.
  Another example can be the relation of 
 \emph on
 equality
@@ -959,7 +959,14 @@ equality
 .
 \end_layout
 
-\begin_layout Remark*
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 A relation in 
 \begin_inset Formula $R$
 \end_inset
@@ -1029,7 +1036,7 @@ equivalent
 .
 \end_layout
 
-\begin_layout Remark*
+\begin_layout Standard
 If 
 \begin_inset Formula $R$
 \end_inset
@@ -1043,10 +1050,10 @@ If
 \end_inset
 
  is in 
-\begin_inset Formula $X,$
+\begin_inset Formula $X$
 \end_inset
 
-the 
+, the 
 \emph on
 equivalence class 
 \emph default
@@ -1099,7 +1106,7 @@ of
 \begin_inset Formula $x$
 \end_inset
 
- w.r.t 
+ w.r.t equality 
 \begin_inset Formula $R$
 \end_inset
 
@@ -1276,7 +1283,7 @@ a\in x/R\iff x\,R\,a\iff a\,R\,x\iff a\,R\,y\iff y\,R\,a\iff a\in y/R
 \begin_inset Formula $X$
 \end_inset
 
-......
+.
 \end_layout
 
 \end_body
