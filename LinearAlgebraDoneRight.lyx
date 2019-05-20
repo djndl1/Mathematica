@@ -22,7 +22,7 @@ theorems-ams-extended-chap-bytype
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
+\font_roman "tgschola" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
@@ -131,7 +131,7 @@ addition
 \begin_inset Formula $V$
 \end_inset
 
- is a funciton that assigns an element 
+ is a function that assigns an element 
 \begin_inset Formula $u+v\in V$
 \end_inset
 
@@ -199,8 +199,8 @@ vector space
 \end_layout
 
 \begin_layout Definition
-commutavitiy, associativity, additive identity, additive inverse, multiplicative
- identitiy, distributive properties
+commutativity, associativity, additive identity, additive inverse, multiplicativ
+e identity, distributive properties
 \end_layout
 
 \begin_layout Definition
@@ -234,7 +234,7 @@ complex vector space
 \end_layout
 
 \begin_layout Proposition
-Unique addtive identity
+Unique additive identity
 \end_layout
 
 \begin_layout Proposition
@@ -248,7 +248,7 @@ Omitted
 \end_layout
 
 \begin_layout Proposition
-Unique addtive inverse
+Unique additive inverse
 \end_layout
 
 \begin_layout Proposition
@@ -315,8 +315,75 @@ Omitted
 .
 \end_layout
 
-\begin_layout Part
-f
+\begin_layout Section
+Subspaces
+\end_layout
+
+\begin_layout Definition
+subspace
+\end_layout
+
+\begin_layout Definition
+A subset 
+\begin_inset Formula $U$
+\end_inset
+
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+ if 
+\begin_inset Formula $U$
+\end_inset
+
+is also a vector space (using the same addition and scalar multiplication
+ as on 
+\begin_inset Formula $V$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Theorem
+Conditions for a subspace
+\end_layout
+
+\begin_layout Theorem
+A subset 
+\begin_inset Formula $U$
+\end_inset
+
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+ iff 
+\begin_inset Formula $U$
+\end_inset
+
+ satisfies the following conditions:
+\end_layout
+
+\begin_layout Theorem
+1.
+ additive identity
+\end_layout
+
+\begin_layout Theorem
+2.
+ closed unser addition and scalar multiplication
+\end_layout
+
+\begin_layout Proof
+Omitted
 \end_layout
 
 \end_body
