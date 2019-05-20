@@ -45,3 +45,15 @@ See [Variance for Matrix/scalar random variables](https://en.wikipedia.org/wiki/
 ### Normalized moments
 
 The normalized $n$-th central moment or standardized moment is the $n$-th central moment divided by $simga^n$
+
+### Covariance
+
+Covariance is a measure of the joint [variability](https://en.wikipedia.org/wiki/Statistical_dispersion) of two random variables.
+
+The sign of the covariance therefore shows the tendency in the linear relationship between the variables. The magnitude of the covariance is not easy to interpret because it is not normalized and hence depends on the magnitudes of the variables. The normalized version of the covariance, the correlation coefficient, however, shows by its magnitude the strength of the linear relation.
+
+For real random vectors ${\displaystyle \mathbf {X} \in \mathbb {R} ^{m}}$ and ${\displaystyle \mathbf {Y} \in \mathbb {R} ^{n}}$, the ${\displaystyle m\times n}$ cross-covariance matrix is equal to
+
+$$
+{\displaystyle {\begin{aligned}\operatorname {K} _{\mathbf {X} \mathbf {Y} }=\operatorname {cov} (\mathbf {X} ,\mathbf {Y} )&=\operatorname {E} \left[(\mathbf {X} -\operatorname {E} [\mathbf {X} ])(\mathbf {Y} -\operatorname {E} [\mathbf {Y} ])^{\mathrm {T} }\right]\\&=\operatorname {E} \left[\mathbf {X} \mathbf {Y} ^{\mathrm {T} }\right]-\operatorname {E} [\mathbf {X} ]\operatorname {E} [\mathbf {Y} ]^{\mathrm {T} }\end{aligned}}}	
+$$

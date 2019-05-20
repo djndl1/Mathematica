@@ -45,3 +45,16 @@ W.r.t a continuous and strictly monotonic distribution function. Suppose a CDF $
 The terms "probability distribution function" and "probability function" have sometimes been used to denote the probability density function. Not every probability distribution has a density function: the distributions of discrete random variables do not; nor does the Cantor distribution, even though it has no discrete component, i.e., does not assign positive probability to any individual point.
 
 The probability density function of the sum of two independent random variables U and V, each of which has a probability density function, is the convolution of their separate density functions.
+
+##### joint probability distribution
+
+The joint probabilit distribution for $X,Y,\dots$ is a probability distribution that gives the probability that each $X,Y,\dots$ falls in any particular range or discrete set of values specified for that variable.
+
+For $N$ random variables $X_1, \dots, X_n$, the joint CDF is given by
+
+$$
+F_{X_{1},\dots,X_{N}}\left(x_{1},\dots,x_{n}\right)=P\left(X_{1}\leq x_{1},\dots,X_{n}\leq x_{n}\right)
+$$
+
+The joint probability density function ${\displaystyle f_{X,Y}(x,y)} f_{{X,Y}}(x,y)$ for two continuous random variables is defined as the derivative of the joint cumulative distribution function.
+
