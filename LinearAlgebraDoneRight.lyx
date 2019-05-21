@@ -386,5 +386,240 @@ A subset
 Omitted
 \end_layout
 
+\begin_layout Definition
+sum of subsets
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+ are subsets of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ The sum of 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+U_{1}+\cdots U_{m}=\left\{ u_{1}+\cdots+u_{m}\colon u_{1}\in U_{1},\dots,u_{m}\in U_{m}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+is the set of all possible sums of elements of 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Sum of subspaces is the smallest containing subspace
+\end_layout
+
+\begin_layout Theorem
+Suppose 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+ are subspaces of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $U_{1}+\cdots+U_{m}$
+\end_inset
+
+ is the smallest subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+ containing 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+It is easy to prove that the sum of subspaces is the subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+ and every subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+ containing 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+ contains 
+\begin_inset Formula $U_{1}+\dots+U_{m}$
+\end_inset
+
+, because subspaces must contain all finite sums of their elements.
+\end_layout
+
+\begin_layout Standard
+Sums of subspaces in the theory of vector spaces are analogous to unions
+ of subsets in set theory.
+ given two subsets of a set, the smallest subset containing them is their
+ union.
+ Direct sums of subspaces are analogous to disjoint unions of subsets.
+\end_layout
+
+\begin_layout Standard
+The case where each vector in 
+\begin_inset Formula $U_{1}+\cdots+U_{m}$
+\end_inset
+
+ can be represented in the form above in only one way is important.
+\end_layout
+
+\begin_layout Definition
+direct sum
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+ are subspaces of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ The sum 
+\begin_inset Formula $U_{1}+\cdots+U_{m}$
+\end_inset
+
+ is called a 
+\emph on
+direct sum
+\emph default
+ if each element of 
+\begin_inset Formula $U_{1}+\cdots+U_{m}$
+\end_inset
+
+ can be written in only one way as a sum 
+\begin_inset Formula $u_{1}+\cdots+u_{m}$
+\end_inset
+
+ for 
+\begin_inset Formula $u_{j}\in U_{j}$
+\end_inset
+
+ and denoted by 
+\begin_inset Formula $U_{1}\oplus\cdots\oplus U_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Condition for a direct sum
+\end_layout
+
+\begin_layout Theorem
+Suppose 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+ are subspaces of 
+\begin_inset Formula $V$
+\end_inset
+
+, Then 
+\begin_inset Formula $U_{1}+\cdots+U_{m}$
+\end_inset
+
+ is a direct sum iff the only way to write 
+\begin_inset Formula $0$
+\end_inset
+
+ as a sum 
+\begin_inset Formula $u_{1}+\cdots+u_{m}$
+\end_inset
+
+ for 
+\begin_inset Formula $u_{j}\in U_{j}$
+\end_inset
+
+, is by taking each 
+\begin_inset Formula $u_{j}$
+\end_inset
+
+ equal to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Omitted.
+\end_layout
+
+\begin_layout Standard
+For the direct sum of two subspaces
+\end_layout
+
+\begin_layout Theorem
+Direct sum of two subspaces
+\end_layout
+
+\begin_layout Theorem
+Suppose 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are subspaces of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $U+W$
+\end_inset
+
+ is a direct sum iff 
+\begin_inset Formula $U\cap W=\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Omitted
+\end_layout
+
+\begin_layout Chapter
+Finite-Dimensional Vector Space
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
