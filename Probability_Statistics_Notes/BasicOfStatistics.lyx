@@ -1,0 +1,208 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsbook
+\use_default_options true
+\begin_removed_modules
+theorems-ams
+\end_removed_modules
+\begin_modules
+eqs-within-sections
+figs-within-sections
+theorems-ams-bytype
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+theorems-named
+tabs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "tgtermes" "Tinos"
+\font_sans "default" "Arimo"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+The Nature of Statistics
+\end_layout
+
+\begin_layout Standard
+In general one can say that statistics is the methodology for collecting,
+ analyzing, interpreting and drawing conclusions from information/collected
+ data.
+ Statistics provides methods for design (planning and carrying out research
+ studies), description (summarizing and exploring data) and inference (making
+ predictions and generalizing about phenomena represented by the data).
+\end_layout
+
+\begin_layout Section
+Population and Sample
+\end_layout
+
+\begin_layout Standard
+Population and sample are two basic concepts in statistics.
+\end_layout
+
+\begin_layout Definition
+Population
+\end_layout
+
+\begin_layout Definition
+Population is the collection of all individuals or items under consideration
+ in a statistical study.
+ Population is the set of measurements corresponding to the entire collection
+ of units for which inferences are to be made.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Sample
+\end_layout
+
+\begin_layout Definition
+Sample is the part of the population from which information is collected.
+ Sample form statistical population is the set of measurements that are
+ actually collected in the course of an investigation.
+\end_layout
+
+\begin_layout Standard
+Population can be 
+\emph on
+finite
+\emph default
+, easily enumerated or 
+\emph on
+hypothetical, 
+\emph default
+e.g.
+ all products a factory manufactures.x
+\end_layout
+
+\begin_layout Section
+Descriptive and Inferential Statistics
+\end_layout
+
+\begin_layout Standard
+Descriptive statistics is distinguished from inferential statistics (or
+ inductive statistics), in that descriptive statistics aims to summarize
+ a sample, rather than use the data to learn about the population that the
+ sample of data is thought to represent.
+\end_layout
+
+\begin_layout Section
+Parameters and Statistics
+\end_layout
+
+\begin_layout Definition
+Parameters and Statistics
+\end_layout
+
+\begin_layout Definition
+A parameter is an unknonw numerical summary of the population.
+ A statistic is a known numerical summary of the sample which can be used
+ to make inference about parameters.
+\end_layout
+
+\begin_layout Section
+Statistical data analysis
+\end_layout
+
+\begin_layout Standard
+Formulate the research problem 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Define population and sample 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ collect the data 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ do descriptive data analysis 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Use appropriate statistical methods to solve the research problem
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
