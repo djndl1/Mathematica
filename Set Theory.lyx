@@ -1286,5 +1286,377 @@ a\in x/R\iff x\,R\,a\iff a\,R\,x\iff a\,R\,y\iff y\,R\,a\iff a\in y/R
 .
 \end_layout
 
+\begin_layout Section
+Function
+\end_layout
+
+\begin_layout Definition
+function
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+function
+\emph default
+ from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Y$
+\end_inset
+
+ is a relation 
+\begin_inset Formula $f$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\text{dom}f=X$
+\end_inset
+
+ and s.t for each 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ there is a unique element 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $Y$
+\end_inset
+
+ with 
+\begin_inset Formula $\left(x,y\right)\in f$
+\end_inset
+
+.
+ The element 
+\begin_inset Formula $y$
+\end_inset
+
+ is called the 
+\emph on
+value
+\emph default
+ thath the function 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\emph on
+assumes
+\emph default
+ (or 
+\emph on
+takes on
+\emph default
+) at the 
+\emph on
+argument
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+; or we may say 
+\begin_inset Formula $f$
+\end_inset
+
+ sends or maps or transforms 
+\begin_inset Formula $x$
+\end_inset
+
+ into 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+The words 
+\emph on
+map
+\emph default
+ or 
+\emph on
+mapping, transformation, correspondence, 
+\emph default
+and 
+\emph on
+operator
+\emph default
+ are among some of the many that are sometimes used as synonyms for 
+\emph on
+function
+\emph default
+.
+ The set of all funcitons form 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Y$
+\end_inset
+
+ is a subset of the power set 
+\begin_inset Formula $P\left(X\times Y\right)$
+\end_inset
+
+, and denoted by 
+\begin_inset Formula $Y^{X}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\text{dom}f=Y$
+\end_inset
+
+, we say 
+\begin_inset Formula $f$
+\end_inset
+
+ maps 
+\begin_inset Formula $X$
+\end_inset
+
+ onto 
+\begin_inset Formula $Y$
+\end_inset
+
+ (surjective), denoted by 
+\begin_inset Formula $f\left(X\right)=Y$
+\end_inset
+
+.
+ The subset of all values to which from a subset 
+\begin_inset Formula $A$
+\end_inset
+
+ of 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ maps is called the 
+\emph on
+image, 
+\emph default
+denoted by 
+\begin_inset Formula $f\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+If 
+\begin_inset Formula $X$
+\end_inset
+
+ is a subset of a set 
+\begin_inset Formula $Y$
+\end_inset
+
+, the function 
+\begin_inset Formula $f$
+\end_inset
+
+ defined by 
+\begin_inset Formula $f\left(x\right)=x$
+\end_inset
+
+ for each 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ is called the 
+\emph on
+inclusion map
+\emph default
+ (the 
+\emph on
+embedding
+\emph default
+, or the 
+\emph on
+injection
+\emph default
+) of 
+\begin_inset Formula $X$
+\end_inset
+
+ into 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ The inclusion map of 
+\begin_inset Formula $X$
+\end_inset
+
+ into 
+\begin_inset Formula $X$
+\end_inset
+
+ is called the 
+\emph on
+the identity map
+\emph default
+ on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+Let 
+\begin_inset Formula $X\subset Y$
+\end_inset
+
+, and 
+\begin_inset Formula $f\colon Y\mapsto Z$
+\end_inset
+
+, define 
+\begin_inset Formula $g\colon X\mapsto Z$
+\end_inset
+
+ to be equal to 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ for each 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $g$
+\end_inset
+
+ is called a 
+\emph on
+restriction 
+\emph default
+of 
+\begin_inset Formula $f$
+\end_inset
+
+ to 
+\begin_inset Formula $X$
+\end_inset
+
+, and 
+\begin_inset Formula $f$
+\end_inset
+
+ is called an
+\emph on
+ extension 
+\emph default
+of 
+\emph on
+
+\begin_inset Formula $g$
+\end_inset
+
+ 
+\emph default
+to
+\emph on
+ 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\emph default
+This makes small functions out of larger ones.
+\end_layout
+
+\begin_layout Remark*
+The function 
+\begin_inset Formula $f\colon X\times Y\mapsto X$
+\end_inset
+
+ is called a 
+\emph on
+projection
+\emph default
+ onto the first coordinate, similarly for 
+\begin_inset Formula $f\colon X\times Y\mapsto Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+Suppose 
+\begin_inset Formula $R$
+\end_inset
+
+ is is an equivalence relation in 
+\begin_inset Formula $X$
+\end_inset
+
+, and let 
+\begin_inset Formula $f$
+\end_inset
+
+ be the funciton form 
+\begin_inset Formula $X$
+\end_inset
+
+ onto 
+\begin_inset Formula $X/R$
+\end_inset
+
+ defined by 
+\begin_inset Formula $f\left(x\right)=x/R$
+\end_inset
+
+.
+ This function is sometimes called the 
+\emph on
+canonical map
+\emph default
+ from X to 
+\begin_inset Formula $X/R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+A function that always maps distinct elements onto distinct elements is
+ called 
+\emph on
+one-to-one
+\emph default
+ (
+\emph on
+injective)
+\end_layout
+
 \end_body
 \end_document
