@@ -34,9 +34,27 @@ In Bayesian inference, probabilities can be assgined to model parameters. Parame
 
 Read the [formal description](https://en.wikipedia.org/wiki/Bayesian_inference#Formal_description_of_Bayesian_inference).
 
+> In Bayesian statistics, a hyperparameter is a parameter of a prior distribution; the term is used to distinguish them from parameters of the model for the underlying system under analysis.
 
+$$
+{\displaystyle p(\theta \mid \mathbf {X} ,\alpha )={\frac {p(\theta ,\mathbf {X} ,\alpha )}{p(\mathbf {X} ,\alpha )}}={\frac {p(\mathbf {X} \mid \theta ,\alpha )p(\theta ,\alpha )}{p(\mathbf {X} \mid \alpha )p(\alpha )}}={\frac {p(\mathbf {X} \mid \theta ,\alpha )p(\theta \mid \alpha )}{p(\mathbf {X} \mid \alpha )}}\propto p(\mathbf {X} \mid \theta ,\alpha )p(\theta \mid \alpha )}
+$$
 
+### Bayesian prediciton
 
+The posterior predictive distribution
+
+$$
+{\displaystyle p({\tilde {x}}\mid \mathbf {X} ,\alpha )=\int p({\tilde {x}}\mid \theta )p(\theta \mid \mathbf {X} ,\alpha )\operatorname {d} \!\theta }
+$$
+
+The prior predictive distribution
+
+$$
+{\displaystyle p({\tilde {x}}\mid \alpha )=\int p({\tilde {x}}\mid \theta )p(\theta \mid \alpha )\operatorname {d} \!\theta }
+$$
+
+Bayesian theory calls for the use of the posterior predictive distribution to do predictive inference, i.e., to predict the distribution of a new, unobserved data point. instead of a fixed point as a prediction, a distribution over possible points is returned.
 
 
 ## Bayesian modeling
