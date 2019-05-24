@@ -1398,7 +1398,7 @@ operator
 function
 \emph default
 .
- The set of all funcitons form 
+ The set of all functions from 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1623,7 +1623,7 @@ Suppose
 \begin_inset Formula $f$
 \end_inset
 
- be the funciton form 
+ be the function form 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1656,6 +1656,499 @@ one-to-one
  (
 \emph on
 injective)
+\end_layout
+
+\begin_layout Remark*
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a subset of a set 
+\begin_inset Formula $X$
+\end_inset
+
+, the 
+\emph on
+characteristic function 
+\emph default
+of 
+\begin_inset Formula $A$
+\end_inset
+
+ is the function 
+\begin_inset Formula $\chi$
+\end_inset
+
+ from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 2 such that 
+\begin_inset Formula $\chi\left(x\right)=1$
+\end_inset
+
+ or 
+\begin_inset Formula $0$
+\end_inset
+
+ according to 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ or 
+\begin_inset Formula $x\in X-A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset href
+LatexCommand href
+name "Families"
+target "https://en.wikipedia.org/wiki/Indexed_family"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are occasions when the range of a funciton is deemed to be more important
+ than the function itself.
+ When this is the case, both terminology and the notation undergo radical
+ alterations.
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $x$
+\end_inset
+
+ from the 
+\emph on
+index set 
+\emph default
+
+\begin_inset Formula $I$
+\end_inset
+
+ to 
+\begin_inset Formula $X$
+\end_inset
+
+, with the range called 
+\emph on
+indexed set
+\emph default
+, and the function itself is called 
+\emph on
+family, 
+\emph default
+and each value of the family is called a 
+\emph on
+term
+\emph default
+.
+\begin_inset CommandInset href
+LatexCommand href
+name " Every collection of sets"
+target "https://en.wikipedia.org/wiki/Family_of_sets"
+literal "false"
+
+\end_inset
+
+ is the range of some family, considering the identity mapping on the collection
+ in the role of the family.
+ The family of
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $\left\{ I_{j}\right\} $
+\end_inset
+
+ is a family of sets with domain 
+\begin_inset Formula $J$
+\end_inset
+
+; write 
+\begin_inset Formula $K=\bigcup_{j}I_{j}$
+\end_inset
+
+, and let 
+\begin_inset Formula $\left\{ A_{k}\right\} $
+\end_inset
+
+ be a family of sets with domain 
+\begin_inset Formula $K$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\bigcup_{k\in K}A_{k} & =\bigcup_{j\in J}\left(\bigcup_{i\in I_{j}}A_{i}\right)\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which are the 
+\begin_inset CommandInset href
+LatexCommand href
+name "generalized associative law"
+target "https://proofwiki.org/wiki/Union_is_Associative"
+literal "false"
+
+\end_inset
+
+ for unions and the generalized version of the commutative law (TODO).
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\left\{ A_{i}\right\} $
+\end_inset
+
+ is a family of subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $B\subset X$
+\end_inset
+
+,then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left(\bigcap_{j}B_{j}\right)\cap\left(\bigcup_{i}A_{i}\right) & =\bigcup_{i,j}\left(B_{j}\cap A_{i}\right)\\
+\left(\bigcap_{j}B_{j}\right)\cup\left(\bigcap_{i}A_{i}\right) & =\bigcap_{i,j}\left(B_{j}\cup A_{i}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note 
+\begin_inset Formula $\bigcap_{i,j}$
+\end_inset
+
+ is an abbreviation for 
+\begin_inset Formula $\bigcap_{\left(i,j\right)\in I\times J}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The notation of families is normally used in generalizing the concept of
+ Cartesian product.
+ There is a natural one-to-one correspondence between Cartesian products
+ and a certain set of families, thus renders the difference between them
+ a mere matter of notation.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset CommandInset href
+LatexCommand href
+name "Cartesian product of a family of sets"
+target "https://en.wikipedia.org/wiki/Cartesian_product#Infinite_Cartesian_products"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+If 
+\begin_inset Formula $\left\{ X_{i}\right\} $
+\end_inset
+
+ is a family of sets 
+\begin_inset Formula $\left(i\in I\right)$
+\end_inset
+
+, the Cartesian product of the family is the set of all families 
+\begin_inset Formula $\left\{ x_{i}\right\} $
+\end_inset
+
+ with 
+\begin_inset Formula $x_{i}\in X_{i}$
+\end_inset
+
+ for each 
+\begin_inset Formula $i$
+\end_inset
+
+ in 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ denoted by
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+\mathsf{X}_{i\in I}X_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ordered triples, ordered quadruples, etc.
+ may be defined as families whose index sets are unordered triples, quardruples.
+\end_layout
+
+\begin_layout Section
+Inverse and Composites
+\end_layout
+
+\begin_layout Lemma*
+If 
+\begin_inset Formula $\left\{ A_{i}\right\} $
+\end_inset
+
+ is a family of subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+, the domain of a function 
+\begin_inset Formula $f$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Lemma*
+\begin_inset Formula 
+\[
+f\left(\bigcup_{i}A_{i}\right)=\bigcup_{i}f\left(A_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The corresponding equation for intersections is false in general.
+\end_layout
+
+\begin_layout Definition*
+inverse function
+\end_layout
+
+\begin_layout Definition*
+Given a function 
+\begin_inset Formula $f$
+\end_inset
+
+ from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Y$
+\end_inset
+
+, let 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+, the 
+\emph on
+inverse
+\emph default
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+, be the function from 
+\begin_inset Formula $P\left(Y\right)$
+\end_inset
+
+ to 
+\begin_inset Formula $P\left(X\right)$
+\end_inset
+
+ s.t.
+ if 
+\begin_inset Formula $B\subset Y$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+f^{-1}\left(B\right)=\left\{ x\in X\colon f\left(x\right)\in B\right\} \quad\text{(inverse image)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula $f$
+\end_inset
+
+ maps 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\series bold
+onto
+\series default
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+ iff the inverse image under 
+\begin_inset Formula $f$
+\end_inset
+
+ of each non-empty subset of 
+\begin_inset Formula $Y$
+\end_inset
+
+ is ae non-empty subset of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula $f$
+\end_inset
+
+ is one-to-one iff the inverse image under 
+\begin_inset Formula $f$
+\end_inset
+
+of each singleton in the range of 
+\begin_inset Formula $f$
+\end_inset
+
+ is a singleton in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The symbol 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is frequently assigned a second interpretation, namely as the function
+ whose domain is the range of 
+\begin_inset Formula $f$
+\end_inset
+
+, and whose value for each 
+\begin_inset Formula $y$
+\end_inset
+
+ is the range of 
+\begin_inset Formula $f$
+\end_inset
+
+ is the unique 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ for which 
+\begin_inset Formula $f\left(x\right)=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are some straight forward propositions about inverse.
+\end_layout
+
+\begin_layout Proposition*
+If 
+\begin_inset Formula $B\subset Y$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(f^{-1}\left(B\right)\right)\subset B$
+\end_inset
+
+.
+ Moreover, if 
+\begin_inset Formula $f$
+\end_inset
+
+ is surjective, then 
+\begin_inset Formula $f\left(f^{-1}\left(B\right)\right)=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+If 
+\begin_inset Formula $A\subset X$
+\end_inset
+
+, then 
+\begin_inset Formula $A\subset f^{-1}\left(f\left(A\right)\right)$
+\end_inset
+
+.
+ Moreover, if 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective, then 
+\begin_inset Formula $A=f^{-1}\left(f\left(A\right)\right)$
+\end_inset
+
+.
 \end_layout
 
 \end_body
