@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass amsbook
+\textclass amsart
 \use_default_options true
 \begin_removed_modules
 theorems-ams
@@ -12,11 +12,10 @@ theorems-ams
 \begin_modules
 eqs-within-sections
 figs-within-sections
-theorems-ams-bytype
-theorems-ams-chap-bytype
-theorems-ams-extended-chap-bytype
 theorems-named
 tabs-within-sections
+theorems-bytype
+theorems-sec-bytype
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -89,7 +88,7 @@ tabs-within-sections
 
 \begin_body
 
-\begin_layout Chapter
+\begin_layout Section
 The Nature of Statistics
 \end_layout
 
@@ -102,7 +101,7 @@ In general one can say that statistics is the methodology for collecting,
  predictions and generalizing about phenomena represented by the data).
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Population and Sample
 \end_layout
 
@@ -151,7 +150,7 @@ e.g.
  all products a factory manufactures.x
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Descriptive and Inferential Statistics
 \end_layout
 
@@ -162,7 +161,7 @@ Descriptive statistics is distinguished from inferential statistics (or
  sample of data is thought to represent.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Parameters and Statistics
 \end_layout
 
@@ -176,7 +175,7 @@ A parameter is an unknonw numerical summary of the population.
  to make inference about parameters.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Statistical data analysis
 \end_layout
 
@@ -200,8 +199,237 @@ Formulate the research problem
  Use appropriate statistical methods to solve the research problem
 \end_layout
 
+\begin_layout Section
+Variables and organizatin of the data
+\end_layout
+
+\begin_layout Standard
+Quantitive (numerical) variables <—> qualitative (categorical) variables
+\end_layout
+
+\begin_layout Standard
+discrete <—> continuous
+\end_layout
+
+\begin_layout Subsection
+Scales
+\end_layout
+
+\begin_layout Standard
+For qualitative variables:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Nominal scale
+\emph default
+: merely names, no order
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+ordinal scale
+\emph default
+: can be put in order
+\end_layout
+
+\begin_layout Standard
+For quantitative varibles:
+\end_layout
+
+\begin_layout Enumerate
+interval scale: one can compare the differences between measurements of
+ the variable meaningfully
+\end_layout
+
+\begin_layout Enumerate
+ratio scale: one can compare both the differences between measurements of
+ the variable and the ratio of the measurements meaningfully.
+\end_layout
+
+\begin_layout Subsection
+organization of the data
+\end_layout
+
 \begin_layout Standard
 
+\emph on
+Observation
+\emph default
+: each individual piece of data
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Data set/data matrix
+\emph default
+: the collection fo all observations for particular variables
+\end_layout
+
+\begin_layout Standard
+For ease in manipulating the values of the qualitative variable, they are
+ 
+\series bold
+\emph on
+coded
+\emph default
+ 
+\series default
+by assigning numbers to the different categories and thus converting the
+ categorical data to numerical data in a trivial sense.
+\end_layout
+
+\begin_layout Standard
+Data is presented in a mtrix form.
+\end_layout
+
+\begin_layout Section
+Describing data by tables and graphs
+\end_layout
+
+\begin_layout Subsection
+Qualitative
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Frequency
+\series default
+: the number of observations that fall into particular class or category
+ of the qualitative variable, also called 
+\emph on
+count
+\emph default
+.
+ A table listing all classes and their frequencies is called a 
+\series bold
+frequency distribution
+\series default
+.
+ The percentage of the class is referred to as the 
+\series bold
+relative frequency
+\emph on
+ 
+\series default
+\emph default
+of the class.
+ A 
+\series bold
+cumulative frequency
+\series default
+ is obtained by summing the frequencies (relative frequencies) of all classes
+ up to the specific class.
+\end_layout
+
+\begin_layout Standard
+Graphically, the qualitative data are presented graphically either as a
+ 
+\series bold
+pie chart
+\series default
+ or as a 
+\series bold
+bar graph
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Quantitive
+\end_layout
+
+\begin_layout Standard
+Discrete variables can obtain only few different values, then the datqa
+ of the discrete variable can be summarized in a same way as qualitative
+ variables in a frequency table.
+ If there are too many different values, then the data must be grouped into
+ classes (categories) before the table of frequencies can be formed.
+\end_layout
+
+\begin_layout Standard
+Grouping: 
+\series bold
+class intervals
+\series default
+, 
+\series bold
+class limits
+\series default
+,
+\series bold
+ class mark
+\series default
+, 
+\series bold
+real class limit
+\end_layout
+
+\begin_layout Standard
+The quantitative data are presented graphically either as a histogram or
+ a bar graph.
+\end_layout
+
+\begin_layout Section
+Measure of center and variabtion
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sample mode
+\series default
+ of a variable is that value of the varialbe which occurs with the greatest
+ frequency in a data set.
+ the 
+\series bold
+mode class
+\series default
+ is the class interval with highest frequency.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Median, mean
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sample range
+\series default
+: the differnce between its maximum and minimum values in a data set
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Interquartile range
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Five-number summary:
+\series default
+ minimum, maximum, quartiles written in increasing order.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Boxplot
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sample Standard deviation
 \end_layout
 
 \end_body

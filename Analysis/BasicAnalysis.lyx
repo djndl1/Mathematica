@@ -1,0 +1,1007 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsbook
+\use_default_options true
+\begin_removed_modules
+theorems-ams
+\end_removed_modules
+\begin_modules
+eqs-within-sections
+figs-within-sections
+theorems-ams-bytype
+theorems-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "tgtermes" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Naive Set Theory
+\end_layout
+
+\begin_layout Standard
+Modern analysis uses the language of sets, in a rather informal way, the
+ so-called 
+\begin_inset Quotes eld
+\end_inset
+
+naive set theory
+\begin_inset Quotes erd
+\end_inset
+
+, which is used by the majority of mathematicians.
+\end_layout
+
+\begin_layout Subsection
+Some prerequisite
+\end_layout
+
+\begin_layout Standard
+If there exists an 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\forall y\in S$
+\end_inset
+
+ we have 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+, then we say 
+\begin_inset Formula $S\subset N$
+\end_inset
+
+ has a 
+\series bold
+least element
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+The set of natural numbers is 
+\series bold
+well ordered
+\series default
+, meaning that 
+\emph on
+every nonempty subset of 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ has a least (smallest) element.
+\end_layout
+
+\begin_layout Theorem
+Principle of induction
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ be a statement depending on a natural number 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Suppose that
+\end_layout
+
+\begin_layout Theorem
+i.
+ (basis statement) 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is true
+\end_layout
+
+\begin_layout Theorem
+ii.
+ (induction step) if 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true, then 
+\begin_inset Formula $P\left(n+1\right)$
+\end_inset
+
+ is true
+\end_layout
+
+\begin_layout Theorem
+Then 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Hint: Using well-ordering property of natural numbers.
+\end_layout
+
+\begin_layout Standard
+There is an equivalent introduction called 
+\series bold
+strong induction:
+\end_layout
+
+\begin_layout Theorem
+Principle of strong induction
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ be a statement depending on a natural number 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Suppose that
+\end_layout
+
+\begin_layout Theorem
+i.
+ (basis statement) 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is true
+\end_layout
+
+\begin_layout Theorem
+ii.
+ (induction step) if 
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+ is true for all 
+\begin_inset Formula $k=1,2,\dots,n$
+\end_inset
+
+, then 
+\begin_inset Formula $P\left(n+1\right)$
+\end_inset
+
+ is true
+\end_layout
+
+\begin_layout Theorem
+Then 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Functions
+\end_layout
+
+\begin_layout Standard
+You should really think of a function as just a very big table of values.
+ The subtle issue here is that a single function can have several formulas,
+ all giving the same function.
+ Also, for many functions, there is no formula that expresses its values.
+\end_layout
+
+\begin_layout Standard
+some peculiar examples: the Laplace transform takes functions to functions.
+ The derivative is a function mapping the set of differentialble functiosn
+ to the set of all functions.
+\end_layout
+
+\begin_layout Proposition*
+Let 
+\begin_inset Formula $f:A\mapsto B$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $C$
+\end_inset
+
+,
+\begin_inset Formula $D$
+\end_inset
+
+ be subsets of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula 
+\begin{align*}
+f^{-1}\left(C\cup D\right) & =f^{-1}\left(C\right)\cup f^{-1}\left(D\right)\\
+f^{-1}\left(C\cap D\right) & =f^{-1}\left(C\right)\cap f^{-1}\left(D\right)\\
+f^{-1}\left(C^{C}\right) & =\left(f^{-1}\left(C\right)\right)^{C}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+Let 
+\begin_inset Formula $f\colon A\mapsto B$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $C,D$
+\end_inset
+
+ be subsets of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula 
+\begin{align*}
+f\left(C\cup D\right) & =f\left(C\right)\cup f\left(D\right)\\
+f\left(C\cap D\right) & \subset f\left(C\right)\cap f\left(D\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Injective/surjective/bijective functions are called injections/surjections/bijec
+tions.
+\end_layout
+
+\begin_layout Subsubsection
+Relations and equivalence classes
+\end_layout
+
+\begin_layout Definition*
+Given a set 
+\begin_inset Formula $A$
+\end_inset
+
+, a 
+\emph on
+binary relation
+\emph default
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ is subset 
+\begin_inset Formula $R\subset A\times A$
+\end_inset
+
+, which are those pairs where the relation is said to hold.
+\end_layout
+
+\begin_layout Standard
+e.g.
+ 
+\begin_inset Formula $=$
+\end_inset
+
+ on the set 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+ is 
+\begin_inset Formula $\left\{ \left\{ 1,1\right\} ,\left\{ 2,2\right\} ,\left\{ 3,3\right\} \right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ 1,2\right\} $
+\end_inset
+
+ is not in the set, thus 
+\begin_inset Formula $1=2$
+\end_inset
+
+ does not hold.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=$
+\end_inset
+
+ is an equivalence class while 
+\begin_inset Formula $\leq$
+\end_inset
+
+ and 
+\begin_inset Formula $\geq$
+\end_inset
+
+ are not.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset CommandInset href
+LatexCommand href
+name "Cardinality(势)"
+target "https://en.wikipedia.org/wiki/Cardinality"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The concpet of cardinality is important in modern mathematics in general
+ and in analysis in particular.
+\end_layout
+
+\begin_layout Definition*
+Cardinality
+\end_layout
+
+\begin_layout Definition*
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be sets.
+ We say 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ have the same 
+\emph on
+cardinality
+\emph default
+ when there exists a bijection 
+\begin_inset Formula $f\colon A\mapsto B$
+\end_inset
+
+.
+ We denote by 
+\begin_inset Formula $\left|A\right|$
+\end_inset
+
+ the equivalence class of all sets with the same cardinality as 
+\begin_inset Formula $A$
+\end_inset
+
+ and we simply call 
+\begin_inset Formula $\left|A\right|$
+\end_inset
+
+ the cardinality of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+A set 
+\begin_inset Formula $A$
+\end_inset
+
+ has the same cardinality as the empty set iff 
+\begin_inset Formula $A$
+\end_inset
+
+ itself is the empty set, written as 
+\begin_inset Formula $\left|A\right|\coloneqq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ has the same cardinality as 
+\begin_inset Formula $\left\{ 1,2,3,\dots,n\right\} $
+\end_inset
+
+ for some 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We then write 
+\begin_inset Formula $A\coloneqq n.$
+\end_inset
+
+ In this case we say that 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\emph on
+finite, 
+\emph default
+otherwise 
+\begin_inset Formula $A$
+\end_inset
+
+ is of infinite cardinality.
+\end_layout
+
+\begin_layout Definition*
+We write 
+\begin_inset Formula 
+\[
+\left|A\right|\leq\left|B\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+if there exists an injection from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Similarly, we can write 
+\begin_inset Formula $\left|A\right|<\left|B\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|A\right|=\left|B\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+Cantor-Bernstein-Schröder theorem
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula $\left|A\right|=\left|B\right|$
+\end_inset
+
+ iff 
+\begin_inset Formula $\left|A\right|\leq\left|B\right|$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|A\right|\geq\left|B\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+If 
+\begin_inset Formula $\left|A\right|=\left|\mathbb{N}\right|$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is said to be 
+\emph on
+countably infinite
+\emph default
+, If 
+\begin_inset Formula $A$
+\end_inset
+
+ is finite or countably infinite, we say 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\emph on
+countable, 
+\emph default
+otherwise 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\emph on
+uncountable
+\emph default
+.
+ The cardinality of 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ is denotd by 
+\begin_inset Formula $\aleph_{0}$
+\end_inset
+
+ (aleph-naught).
+\end_layout
+
+\begin_layout Proposition*
+A set is infinite iff it is in one-to-one correspondence with a proper subset
+ of itself.
+\end_layout
+
+\begin_layout Standard
+e.g.
+ 
+\begin_inset Formula $\mathbb{N}\times\mathbb{N}$
+\end_inset
+
+ is a countably infinite set, the set of rational numbers is countable.
+\end_layout
+
+\begin_layout Proposition*
+If 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ is countable/finite, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is countable/finite.
+\end_layout
+
+\begin_layout Corollary*
+If 
+\begin_inset Formula $\left|A\right|<\left|\mathbb{N}\right|$
+\end_inset
+
+ then 
+\begin_inset Formula $A$
+\end_inset
+
+ is finite.
+\end_layout
+
+\begin_layout Theorem*
+Cantor
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula 
+\[
+\left|A\right|<\left|\mathscr{P}\left(A\right)\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+In particular, there exists no surjection from 
+\begin_inset Formula $A$
+\end_inset
+
+ onto 
+\begin_inset Formula $\mathscr{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Real Numbers
+\end_layout
+
+\begin_layout Standard
+We take an approach that assumes a set with the correct properties exists.
+ We need to start with the definitions of those properties.
+\end_layout
+
+\begin_layout Section
+Basic properties
+\end_layout
+
+\begin_layout Definition
+An ordered set is a set 
+\begin_inset Formula $S$
+\end_inset
+
+, together with a relation 
+\begin_inset Formula $<$
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Definition
+i.
+ For any 
+\begin_inset Formula $x,y\in S$
+\end_inset
+
+, exactly one of 
+\begin_inset Formula $x<y$
+\end_inset
+
+ , 
+\begin_inset Formula $x=y$
+\end_inset
+
+, 
+\begin_inset Formula $y<x$
+\end_inset
+
+ holds.
+\end_layout
+
+\begin_layout Definition
+ii.
+ If 
+\begin_inset Formula $x<y$
+\end_inset
+
+ and 
+\begin_inset Formula $y<z$
+\end_inset
+
+ then 
+\begin_inset Formula $x<z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+e.g.
+ the set of rational numbers 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is an ordered set by letting 
+\begin_inset Formula $x<y$
+\end_inset
+
+ iff 
+\begin_inset Formula $y-x$
+\end_inset
+
+ is a positve rational number.
+ Similarly 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ are ordered sets.
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $E\subset S$
+\end_inset
+
+, where 
+\begin_inset Formula $S$
+\end_inset
+
+ is an ordered set.
+\end_layout
+
+\begin_layout Definition
+i.
+ If there exists a 
+\begin_inset Formula $b\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x\leq b\,\forall x\in E$
+\end_inset
+
+, then we say 
+\begin_inset Formula $E$
+\end_inset
+
+ is bounded above and 
+\begin_inset Formula $b$
+\end_inset
+
+ is an upper bound of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+ii.
+ if there exists a 
+\begin_inset Formula $b\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x\geq b\,\forall x\in E$
+\end_inset
+
+, then we say 
+\begin_inset Formula $E$
+\end_inset
+
+ is bounded below and 
+\begin_inset Formula $b$
+\end_inset
+
+ is a lower bound of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+iii.
+ If there exists an upper bound of 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ of 
+\begin_inset Formula $E$
+\end_inset
+
+ s.t.
+ whenever 
+\begin_inset Formula $b$
+\end_inset
+
+ is any upper bound for 
+\begin_inset Formula $E$
+\end_inset
+
+ we have 
+\begin_inset Formula $b_{0}\leq b$
+\end_inset
+
+, then 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ is called the least upper bound or the 
+\emph on
+supremum 
+\emph default
+of 
+\begin_inset Formula $E$
+\end_inset
+
+, denoted by
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\sup E\coloneqq b_{o}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+iiii.
+ Similarly, if there exists an lower bound 
+\begin_inset Formula $b_{o}$
+\end_inset
+
+ of 
+\begin_inset Formula $E$
+\end_inset
+
+ s.t.
+ whenver 
+\begin_inset Formula $b$
+\end_inset
+
+ is any lower bound for 
+\begin_inset Formula $E$
+\end_inset
+
+ we have 
+\begin_inset Formula $b_{0}\geq b$
+\end_inset
+
+, then 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ is called the greatest lower bound or the infimum of 
+\begin_inset Formula $E$
+\end_inset
+
+, denoted by
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\inf E\coloneqq b_{o}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+When a set is both bounded above and bounded below, we simply say it is
+ 
+\emph on
+bounded
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Supremum (or infimum) is automatically unique if it exists.
+\end_layout
+
+\begin_layout Definition
+An ordered set has the 
+\emph on
+completeness property
+\emph default
+ if every nonempty subset 
+\begin_inset Formula $E\subset S$
+\end_inset
+
+ that is bounded above has a supremum, i.e.
+ 
+\begin_inset Formula $\sup E\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+e.g.
+ The set 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ of rational numbers does not have this completeness property.
+ That 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ does not have the completeness property is one of the most important reasons
+ why we work with 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ in analysis.
+\end_layout
+
+\begin_layout Standard
+We require real numbers to have many algebraic properties.
+ In particular, we require that they are a field.
+\end_layout
+
+\end_body
+\end_document
