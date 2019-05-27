@@ -30,6 +30,7 @@ theorems-chap-bytype
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\font_cjk Noto
 \use_microtype false
 \use_dash_ligatures true
 \graphics default
@@ -423,7 +424,7 @@ e.g.
 \begin_layout Subsubsection
 \begin_inset CommandInset href
 LatexCommand href
-name "Cardinality(势)"
+name "Cardinality"
 target "https://en.wikipedia.org/wiki/Cardinality"
 literal "false"
 
@@ -433,7 +434,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The concpet of cardinality is important in modern mathematics in general
+The concept of cardinality is important in modern mathematics in general
  and in analysis in particular.
 \end_layout
 
@@ -577,7 +578,11 @@ Cantor-Bernstein-Schröder theorem
 \begin_inset Formula $\left|A\right|=\left|B\right|$
 \end_inset
 
- iff 
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+
 \begin_inset Formula $\left|A\right|\leq\left|B\right|$
 \end_inset
 
@@ -967,7 +972,11 @@ An ordered set has the
 \emph on
 completeness property
 \emph default
- if every nonempty subset 
+ 
+\emph on
+(least-upper-bound property) 
+\emph default
+if every nonempty subset 
 \begin_inset Formula $E\subset S$
 \end_inset
 
@@ -1001,6 +1010,512 @@ e.g.
 \begin_layout Standard
 We require real numbers to have many algebraic properties.
  In particular, we require that they are a field.
+\end_layout
+
+\begin_layout Definition
+A set 
+\begin_inset Formula $F$
+\end_inset
+
+ is a 
+\emph on
+field
+\emph default
+ if it has two operations defined on it, addition 
+\begin_inset Formula $x+y$
+\end_inset
+
+ and multiplication 
+\begin_inset Formula $xy$
+\end_inset
+
+ , and if it satisfies the following axioms: closed under addition and multiplic
+ation, commutativity, associativity, identity, inverse, distributivity
+\end_layout
+
+\begin_layout Definition
+(A1) If 
+\begin_inset Formula $x\in F,y\in F$
+\end_inset
+
+, then 
+\begin_inset Formula $x+y\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(A2) (commutativity of addition) 
+\begin_inset Formula $x+y=y+x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+(A3) (associativity of addtion) 
+\begin_inset Formula $\left(x+y\right)+z=x+\left(y+z\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y,z\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(A4) There exists an element 
+\begin_inset Formula $0\in F$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $0+x=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(A5) For every element 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ there exists an element 
+\begin_inset Formula $-x\in F$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x+\left(-x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(M1) If 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in F$
+\end_inset
+
+, then 
+\begin_inset Formula $xy\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+(M2) (commutativity of multiplication) 
+\begin_inset Formula $xy=yx$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(M3) (associativity of multiplication) 
+\begin_inset Formula $\left(xy\right)z=x\left(yz\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y,z\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(M4) There exists an element 
+\begin_inset Formula $1\in F$
+\end_inset
+
+ and 
+\begin_inset Formula $1\neq0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $1x=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(M5) For every 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ s.t.
+ that 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ there exists an element 
+\begin_inset Formula $1/x\in F$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x\left(1/x\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(D) (distributive law) 
+\begin_inset Formula $x\left(y+z\right)=xy+xz$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y,z\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e.g.
+ The set 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ of rational numbers is a field.
+ 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ is not a field.
+\end_layout
+
+\begin_layout Definition
+A field 
+\begin_inset Formula $F$
+\end_inset
+
+ is said to be an ordered field if 
+\begin_inset Formula $F$
+\end_inset
+
+ is also an ordered set s.t.
+\end_layout
+
+\begin_layout Definition
+(i) For 
+\begin_inset Formula $x,y,z\in F,x<y$
+\end_inset
+
+ implies 
+\begin_inset Formula $x+z<y+z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+(ii) For 
+\begin_inset Formula $x,y\in F,x>0$
+\end_inset
+
+ and 
+\begin_inset Formula $y>0$
+\end_inset
+
+ implies 
+\begin_inset Formula $xy>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e.g.
+ The rational numbers with the standard ordering is an ordered field.
+ The set 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ of complex numbers is not a n ordered field.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $F$
+\end_inset
+
+ be an ordered field and 
+\begin_inset Formula $x,y,z,w\in F$
+\end_inset
+
+.
+ Then:
+\end_layout
+
+\begin_layout Proposition
+(i) If 
+\begin_inset Formula $x>0$
+\end_inset
+
+, then 
+\begin_inset Formula $-x<0$
+\end_inset
+
+ and vice versa
+\end_layout
+
+\begin_layout Proposition
+(ii) If 
+\begin_inset Formula $x>0$
+\end_inset
+
+ and 
+\begin_inset Formula $y<z$
+\end_inset
+
+ then 
+\begin_inset Formula $xy<xz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+(iii) If 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $y<z$
+\end_inset
+
+ then 
+\begin_inset Formula $xy>xz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+(iv) If 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+(v) If 
+\begin_inset Formula $0<x<y$
+\end_inset
+
+, then 
+\begin_inset Formula $0<1/y<1/x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+(vi) If 
+\begin_inset Formula $0<x<y$
+\end_inset
+
+, then 
+\begin_inset Formula $x^{2}<y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+(vii) If 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ and 
+\begin_inset Formula $z\leq w$
+\end_inset
+
+, then 
+\begin_inset Formula $x+z\leq y+w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Omitted
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+ where 
+\begin_inset Formula $F$
+\end_inset
+
+ is an ordered filed.
+ Suppose 
+\begin_inset Formula $xy>0$
+\end_inset
+
+.
+ Then either both 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are positive, or both are negative.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An ordered field that has the least-upper-bound property has the corresponding
+ property for greatest lower bound.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $F$
+\end_inset
+
+ be an ordered field with the least-upper-bound property.
+ Let 
+\begin_inset Formula $A\subset F$
+\end_inset
+
+ be a nonempty set that is bounded below.
+ Then 
+\begin_inset Formula $\inf A$
+\end_inset
+
+ exists.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $B=\left\{ -x\colon x\in A\right\} $
+\end_inset
+
+ and since 
+\begin_inset Formula $F$
+\end_inset
+
+ is a field, 
+\begin_inset Formula $B\subset F$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $c$
+\end_inset
+
+ be any lower bound of 
+\begin_inset Formula $A$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $c\leq x$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $-c\geq-x$
+\end_inset
+
+, hence an upper bound of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Let the least upper bound of 
+\begin_inset Formula $B$
+\end_inset
+
+ be 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ and thus 
+\begin_inset Formula $b_{0}\leq-c$
+\end_inset
+
+, then 
+\begin_inset Formula $-b_{0}\leq x$
+\end_inset
+
+, hence a lower bound of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $-b_{0}\geq c$
+\end_inset
+
+.
+ 
+\begin_inset Formula $-b_{0}$
+\end_inset
+
+ is the infimum of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
