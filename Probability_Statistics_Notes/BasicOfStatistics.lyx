@@ -432,5 +432,87 @@ Boxplot
 Sample Standard deviation
 \end_layout
 
+\begin_layout Section
+Probability Distribution
+\end_layout
+
+\begin_layout Standard
+Inferential statistical methods use sample data to make predictions about
+ the values of useful summary descriptions, alled parameters of the population
+ of interest.
+ Statistical inference draws conclusions about population on the basis of
+ data.
+ The data are summarized by 
+\series bold
+statistics
+\series default
+ such as the sample mean and the sample standard deviation.
+ The link between probability and data is formed by the sampling distributions
+ of statistics.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset href
+LatexCommand href
+name "Sampling distribution"
+target "https://en.wikipedia.org/wiki/Sampling_distribution"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The sampling distribution of a statistic is the distribution of that statistic,
+ considered as a random variable, when derived from a random sample of size
+ 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It may be considered as the distribution of the statistic for all possible
+ samples from the same population of a given sample size.
+ Sampling distribution reflects the sampling variability of occurs in collecting
+ data and using sample statistics to estimate parameters.
+\end_layout
+
+\begin_layout Standard
+Do note that an observation implies a random variable, a measurement on
+ one individual selected at random from the population and it is a random
+ variable with probability distribution equalling the population distribution
+ of variable 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ The sample mean is actually the average value of 
+\begin_inset Formula $n$
+\end_inset
+
+ random variables.
+\end_layout
+
+\begin_layout Standard
+The expectation of the sample mean is the same as the population mean of
+ the variable 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ and its standard deviation (called the standard error) is 
+\begin_inset Formula 
+\[
+\sigma_{\bar{X}}=\frac{\sigma}{\sqrt{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
