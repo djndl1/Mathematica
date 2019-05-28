@@ -1436,6 +1436,8 @@ Let
 \end_inset
 
  exists.
+ (greatest-lower-bound property of an ordered field with least-upper-bound
+ property)
 \end_layout
 
 \begin_layout Proof
@@ -1514,8 +1516,343 @@ Let
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+The set of real numbers
+\end_layout
 
+\begin_layout Standard
+Instead of constructing thge real number set from the rational numbers,
+ we simply state their existence as a theorem without proof.
+ Assume that 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is an ordered field.
+\end_layout
+
+\begin_layout Theorem
+There exists a unique ordered field 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the least-upper-bound-property s.t.
+ 
+\begin_inset Formula $\mathbb{Q}\subset\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+See the appendix of the 1st chapter of Baby Rudin
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ is such that 
+\begin_inset Formula $x\leq\varepsilon$
+\end_inset
+
+ for all 
+\begin_inset Formula $\varepsilon\in\mathbb{R}$
+\end_inset
+
+ where 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, then 
+\begin_inset Formula $x\leq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $x>0$
+\end_inset
+
+, then 
+\begin_inset Formula $0<\frac{x}{2}<x$
+\end_inset
+
+.
+ Taking 
+\begin_inset Formula $\varepsilon=\frac{x}{2}$
+\end_inset
+
+ obtains a contradiction.
+\end_layout
+
+\begin_layout Standard
+Taking a specific value to prove an equality is what an analyst would do.
+ They show 
+\begin_inset Formula $a=b$
+\end_inset
+
+ by showing 
+\begin_inset Formula $a\geq b$
+\end_inset
+
+ and 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+For each 
+\begin_inset Formula $x>0$
+\end_inset
+
+, there exists a unique positive real number 
+\begin_inset Formula $r$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $r^{n}=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Theorem
+(Archimedean property) i.
+ If 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $x>0$
+\end_inset
+
+, then there exists an 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $nx>y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+ii.
+ (
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+) If 
+\begin_inset Formula $x,y\in R$
+\end_inset
+
+ and 
+\begin_inset Formula $x<y$
+\end_inset
+
+, then there exists an 
+\begin_inset Formula $r\in\mathbb{Q}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x<r<y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+i.
+ 
+\begin_inset Formula $nx>y\implies n>x/y$
+\end_inset
+
+, let 
+\begin_inset Formula $t=x/y$
+\end_inset
+
+, the question becomes we can find natural number 
+\begin_inset Formula $n$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $n>t$
+\end_inset
+
+ for any real number 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ is bounded above and 
+\begin_inset Formula $b=\sup\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $b-1$
+\end_inset
+
+ cannot be an upper bound and there must be 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $m>b-1$
+\end_inset
+
+, otherwise 
+\begin_inset Formula $b-1$
+\end_inset
+
+ would be an upper bound, but then 
+\begin_inset Formula $m+1>b$
+\end_inset
+
+ and 
+\begin_inset Formula $m+1\in\mathbb{N}$
+\end_inset
+
+, contradition!
+\end_layout
+
+\begin_layout Proof
+ii.
+ It's easy to see that there exists 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $n\left(x-y\right)>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+, there exists a set 
+\begin_inset Formula $A=\left\{ k\in\mathbb{N}\colon k>nx\right\} $
+\end_inset
+
+ and from the well-ordering property of 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+, there exists a least element 
+\begin_inset Formula $m$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\series bold
+
+\begin_inset Formula $\boldsymbol{m>nx}$
+\end_inset
+
+
+\series default
+.
+ and since 
+\begin_inset Formula $m$
+\end_inset
+
+ is the least element of 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $m-1\leq nx$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+ny>nx+1\geq m>nx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Take 
+\begin_inset Formula $r=m/n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $x<y\leq0$
+\end_inset
+
+, then 
+\begin_inset Formula $-x>-y\geq0$
+\end_inset
+
+, prove as above.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $y>0$
+\end_inset
+
+, then take 
+\begin_inset Formula $r=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There comes a simple but useful corollary of the Archimedean property
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula $\inf\left\{ \frac{1}{n}\colon n\in\mathbb{N}\right\} =0$
+\end_inset
+
+.
 \end_layout
 
 \end_body
