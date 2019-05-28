@@ -2032,7 +2032,7 @@ onto
 \begin_inset Formula $Y$
 \end_inset
 
- is ae non-empty subset of 
+ is a non-empty subset of 
 \begin_inset Formula $X$
 \end_inset
 
@@ -2149,6 +2149,284 @@ If
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+If 
+\begin_inset Formula $\left\{ B_{i}\right\} $
+\end_inset
+
+ is a family of subsets of 
+\begin_inset Formula $Y$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ is any subset of 
+\begin_inset Formula $Y$
+\end_inset
+
+, then
+\begin_inset Formula 
+\begin{align*}
+f^{-1}\left(\bigcup_{i}B_{i}\right) & =\bigcup_{i}f^{-1}\left(B_{i}\right)\\
+f^{-1}\left(\bigcap_{i}B_{i}\right) & =\bigcap_{i}f^{-1}\left(B_{i}\right)\\
+f^{-1}\left(Y-B\right) & =X-f^{-1}\left(B\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The last euqation is kind of commutative law
+\end_layout
+
+\begin_layout Standard
+The discussion of inverses shows that what a function does can in a certain
+ sense undone.
+ Two functions do can sometimes be done in one step.
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $f$
+\end_inset
+
+ is a function from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ is a function from 
+\begin_inset Formula $Y$
+\end_inset
+
+ to 
+\begin_inset Formula $Z$
+\end_inset
+
+, then every element in the range of 
+\begin_inset Formula $f$
+\end_inset
+
+ belongs to the domain of 
+\begin_inset Formula $g$
+\end_inset
+
+, then 
+\begin_inset Formula $g\left(f\left(x\right)\right)$
+\end_inset
+
+ makes sense for each 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $h=g\left(f\left(x\right)\right)$
+\end_inset
+
+ from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Z$
+\end_inset
+
+ is called the 
+\emph on
+composite 
+\emph default
+of the functions 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+, denoted by 
+\begin_inset Formula 
+\[
+g\circ f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Functional composition is not commutative, but always associative.
+\end_layout
+
+\begin_layout Proposition*
+Let 
+\begin_inset Formula $f\colon X\mapsto Y$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon Y\mapsto Z$
+\end_inset
+
+, then 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{-1}\circ g^{-1}$
+\end_inset
+
+ are formable and the latter is the inverse of the former.
+\end_layout
+
+\begin_layout Standard
+Inversion and composition for functions a re cases of similar operations
+ for relations.
+ Associated with every relation 
+\begin_inset Formula $R$
+\end_inset
+
+ from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Y$
+\end_inset
+
+ is the 
+\emph on
+inverse 
+\emph default
+(or 
+\emph on
+converse
+\emph default
+) relation 
+\begin_inset Formula $R^{-1}$
+\end_inset
+
+ from 
+\begin_inset Formula $Y$
+\end_inset
+
+ to 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ The composite of the relations 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ is defined in case 
+\begin_inset Formula $R$
+\end_inset
+
+ is a relation from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ is a relation from 
+\begin_inset Formula $Y$
+\end_inset
+
+ to 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ The composite relation 
+\begin_inset Formula $T$
+\end_inset
+
+ from 
+\begin_inset Formula $X$
+\end_inset
+
+ to 
+\begin_inset Formula $Z$
+\end_inset
+
+, is defined so that 
+\begin_inset Formula $x~T~z$
+\end_inset
+
+ iff there exists an element 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $Y$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x~R~y$
+\end_inset
+
+ and 
+\begin_inset Formula $y~S~z$
+\end_inset
+
+.
+ The algebraic properties of inversion and composition are the same for
+ relations as for functions.
+\end_layout
+
+\begin_layout Standard
+The three defining properties of an equivalence relation can be formulated
+ in algebraic terms as: reflexitivity means 
+\begin_inset Formula $I\subset R$
+\end_inset
+
+, symmetry means 
+\begin_inset Formula $R\subset R^{-1}$
+\end_inset
+
+, and transitivity means 
+\begin_inset Formula $RR\subset R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+numbers
 \end_layout
 
 \end_body
