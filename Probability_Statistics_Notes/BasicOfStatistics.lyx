@@ -514,5 +514,57 @@ The expectation of the sample mean is the same as the population mean of
 
 \end_layout
 
+\begin_layout Standard
+The central limit theorem states that when the sample size 
+\begin_inset Formula $n$
+\end_inset
+
+ is large, the probability distribution of the sample mean 
+\begin_inset Formula $\bar{X}$
+\end_inset
+
+ is approximately normal, regardless of the shape of the population distribution.
+\end_layout
+
+\begin_layout Section
+Estimation
+\end_layout
+
+\begin_layout Subsection
+Point estimation
+\end_layout
+
+\begin_layout Standard
+To use sample data to estimate unknown population parameters.
+ Point estimate consists of a single number ,calculated from the data.
+ Interval estimate consists of a range of numbers around the point estimate,
+ within which the parameter is believed to fall.
+\end_layout
+
+\begin_layout Standard
+A point estimator of a unknown population parameter is a statistic that
+ estimates the value of that parameter.
+ A point estimate of a parameter is the value of a statistic that is used
+ to estimate the parameter.
+ A point estimator is called 
+\series bold
+\emph on
+unbiased 
+\series default
+\emph default
+if its sampling distribution centers around the parameter in the sense that
+ the parameter is the mean of the distribution.
+ An estimator whose standard error is smaller than those of other potential
+ estimators is said to be 
+\series bold
+\emph on
+efficient
+\series default
+\emph default
+.
+ An efficient estimator is desirable because, on the average, it falls closer
+ than other estimators to the parameter.
+\end_layout
+
 \end_body
 \end_document
