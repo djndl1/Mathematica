@@ -1855,5 +1855,347 @@ There comes a simple but useful corollary of the Archimedean property
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+For a set 
+\begin_inset Formula $A\subset R$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ define
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+x+A & =\left\{ x+y\in R\colon y\in A\right\} \\
+xA & =\left\{ xy\in R\colon y\in A\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Some uninteresting results
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $A\subset R$
+\end_inset
+
+ be nonempty
+\end_layout
+
+\begin_layout Proposition
+i.
+ If 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ and A is bounded above, then 
+\begin_inset Formula $\sup\left(x+A\right)=x+\sup A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+ii.
+ If 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ and A is bounded below, then 
+\begin_inset Formula $\inf\left(x+A\right)=x+\inf A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iii.
+ If 
+\begin_inset Formula $x>0$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded above, then 
+\begin_inset Formula $\sup\left(xA\right)=x\sup A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iv.
+ If 
+\begin_inset Formula $x>0$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded below, then 
+\begin_inset Formula $\inf\left(xA\right)=x\inf A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+v.
+ If 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded above, then 
+\begin_inset Formula $\inf\left(xA\right)=x\inf A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+vi.
+ If 
+\begin_inset Formula $x<0$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded below, then 
+\begin_inset Formula $\sup\left(xA\right)=x\inf A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $A,B\subset R$
+\end_inset
+
+ be nonempty sets s.t.
+ 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in B$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded above, 
+\begin_inset Formula $B$
+\end_inset
+
+ is bounded below and 
+\begin_inset Formula $\sup A\leq\inf B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+It's easy to see that 
+\begin_inset Formula $x\leq\inf B$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $\inf B$
+\end_inset
+
+ is an upper bound of 
+\begin_inset Formula $A$
+\end_inset
+
+, thus 
+\begin_inset Formula $\sup A\leq\inf B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $S\subset R$
+\end_inset
+
+ is a nonempty set, bounded above, then for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ there exists 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left(\sup S\right)-\varepsilon<x\leq\sup S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+A similar statement holds for infima.
+\end_layout
+
+\begin_layout Standard
+To write 
+\begin_inset Formula $\sup A$
+\end_inset
+
+ and 
+\begin_inset Formula $\inf A$
+\end_inset
+
+ without worrying about 
+\begin_inset Formula $A$
+\end_inset
+
+ being bounded and nonempty, we make the following natural definition.
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $A\subset R$
+\end_inset
+
+ be a set.
+\end_layout
+
+\begin_layout Definition
+i.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is empty, then 
+\begin_inset Formula $\sup A=-\infty$
+\end_inset
+
+, 
+\begin_inset Formula $\inf A=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+ii.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is not bounded above, then 
+\begin_inset Formula $\sup A=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+iii.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is not bounded below, then 
+\begin_inset Formula $\inf A=-\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For convenience, 
+\begin_inset Formula $\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ are somtiems treated as if they were numbers, except we do not allow arbitrary
+ arithmetic with them.
+\end_layout
+
+\begin_layout Definition
+extended real numbers
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\mathbb{R}^{*}\coloneqq\mathbb{R}\cup\left\{ -\infty,\infty\right\} $
+\end_inset
+
+ and lett
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+-\infty<\infty\,\text{and \,}-\infty<x\,\text{and\,}x<\infty\quad\text{for all}\,x\in\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The terms 
+\series bold
+maximum 
+\series default
+and 
+\series bold
+minimum
+\series default
+ are supremum and infimum in the set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
