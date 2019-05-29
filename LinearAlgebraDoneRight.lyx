@@ -14,15 +14,14 @@ eqs-within-sections
 figs-within-sections
 theorems-named
 theorems-ams-bytype
-theorems-ams-chap-bytype
-theorems-ams-extended-chap-bytype
+theorems-chap-bytype
 \end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "tgschola" "default"
+\font_roman "tgtermes" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
@@ -110,7 +109,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The motivation for the definition of a vector space comes form properties
+The motivation for the definition of a vector space comes from properties
  of addition and scalar multiplication in 
 \begin_inset Formula $F^{n}$
 \end_inset
@@ -166,15 +165,15 @@ on a set
 
 \end_layout
 
-\begin_layout Definition
-vector space
-\end_layout
-
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
 
+\end_layout
+
+\begin_layout Definition
+vector space
 \end_layout
 
 \begin_layout Definition
@@ -199,8 +198,9 @@ vector space
 \end_layout
 
 \begin_layout Definition
-commutativity, associativity, additive identity, additive inverse, multiplicativ
-e identity, distributive properties
+closure under addition and multiplication, commutativity, associativity,
+ compatibility of scalar multiplication with field multiplication, additive
+ identity, additive inverse, multiplicative identity, distributive properties
 \end_layout
 
 \begin_layout Definition
@@ -617,8 +617,543 @@ Omitted
 Finite-Dimensional Vector Space
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
+Linear combination
+\end_layout
 
+\begin_layout Definition
+A 
+\emph on
+linear combination
+\emph default
+ of a list 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ of vectors in 
+\begin_inset Formula $V$
+\end_inset
+
+ is a vector of the form 
+\begin_inset Formula 
+\[
+a_{1}v_{1}+\cdots+a_{m}v_{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+where 
+\begin_inset Formula $a_{1},\dots,a_{m}\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+span
+\end_layout
+
+\begin_layout Definition
+The set of all linear combinations of a list of vectors 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ in 
+\begin_inset Formula $V$
+\end_inset
+
+ is called the 
+\emph on
+span 
+\emph default
+of 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ denoted 
+\begin_inset Formula $span\left(v_{1},\dots,v_{m}\right).$
+\end_inset
+
+ In other words,
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+span\left(v_{1},\dots,v_{m}\right)=\left\{ a_{1}v_{1}+\cdots+a_{m}v_{m}\colon a_{1},\dots,a_{m}\in F\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The span of the empty list is defined to be 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $span\left(v_{1},\dots,v_{m}\right)$
+\end_inset
+
+ equals 
+\begin_inset Formula $V$
+\end_inset
+
+, we say that 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ spans 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The span of a list of vectors in 
+\begin_inset Formula $V$
+\end_inset
+
+ is the smallest subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+ containing all the vectors in the list.
+\end_layout
+
+\begin_layout Definition
+finite-dimensional vector space
+\end_layout
+
+\begin_layout Definition
+A vector space is called 
+\emph on
+finite-dimensional
+\emph default
+ if some list of vectors in it spans the space, otherwise 
+\emph on
+infinite-dimensional
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+polynomial, 
+\begin_inset Formula $\mathcal{P}\left(F\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $p\colon F\mapsto F$
+\end_inset
+
+ is called a polynomial with coefficients in 
+\begin_inset Formula $F$
+\end_inset
+
+ if there exists 
+\begin_inset Formula $a_{0},\dots,a_{m}\in F$
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+p\left(z\right)=a_{0}+a_{1}z+a_{2}z^{2}+\cdots+a_{m}z^{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+for all 
+\begin_inset Formula $z\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\mathcal{P}\left(F\right)$
+\end_inset
+
+ is the set of all polynomials with coefficients in 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The coefficients of a polynomial are uniquely determined by the polynomial.
+\end_layout
+
+\begin_layout Definition
+degree of polynomial, 
+\begin_inset Formula $\deg p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A polynomial 
+\begin_inset Formula $p\in\mathcal{P}\left(F\right)$
+\end_inset
+
+ is said to have 
+\emph on
+degree
+\emph default
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ if there exists scalars 
+\begin_inset Formula $a_{0},\dots,a_{m}\in F$
+\end_inset
+
+ with 
+\begin_inset Formula $a_{m}\neq0$
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+p\left(z\right)=a_{0}+a_{1}z+\cdots+a_{m}z^{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+for all 
+\begin_inset Formula $z\in F$
+\end_inset
+
+.
+ If p has degree 
+\begin_inset Formula $m$
+\end_inset
+
+, we write 
+\begin_inset Formula $\deg p=m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+The polynomial that is identically 
+\begin_inset Formula $0$
+\end_inset
+
+ is said to have degree 
+\begin_inset Formula $-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+For a nonnegative integer 
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{P}_{m}\left(F\right)$
+\end_inset
+
+ denotes the set of all polynomials with coefficients in 
+\begin_inset Formula $F$
+\end_inset
+
+ and degree at most 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+linearly independent
+\end_layout
+
+\begin_layout Definition
+A list 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ of vectors in 
+\begin_inset Formula $V$
+\end_inset
+
+ is called 
+\emph on
+linearly independent 
+\emph default
+if the only choice of 
+\begin_inset Formula $a_{1},\dots,a_{m}\in F$
+\end_inset
+
+ that makes 
+\begin_inset Formula $a_{1}v_{1}+\cdots+a_{m}v_{m}$
+\end_inset
+
+ equal 
+\begin_inset Formula $0$
+\end_inset
+
+ is 
+\begin_inset Formula $a_{1}=\cdots=a_{m}=0$
+\end_inset
+
+, otherwise linearly dependent.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ is linearly independent iff each vector in 
+\begin_inset Formula $span\left(v_{1},\dots,v_{m}\right)$
+\end_inset
+
+ has only one representation as a linear combination of 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+The empty list is also declared to be linearly independent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+If some vector in a list of vector s in 
+\begin_inset Formula $V$
+\end_inset
+
+ is a linear combination of the other vectors, then list is linearly independent.
+\end_layout
+
+\begin_layout Lemma
+Linear Dependence Lemma
+\end_layout
+
+\begin_layout Lemma
+Suppose 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ is a linearly dependent list in 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then there 
+\series bold
+exists
+\series default
+ 
+\begin_inset Formula $j\in\left\{ 1,2,\dots,m\right\} $
+\end_inset
+
+ s.t.
+ the following hold:
+\end_layout
+
+\begin_layout Lemma
+(a) 
+\begin_inset Formula $v_{j}\in span\left(v_{1},\dots,v_{j-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+(b) if the 
+\begin_inset Formula $j$
+\end_inset
+
+-th term is removed from 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ the span of the remaining list equals 
+\begin_inset Formula $span\left(v_{1},\dots,v_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Length of linearly independent list 
+\begin_inset Formula $\leq$
+\end_inset
+
+ length of spanning list
+\end_layout
+
+\begin_layout Proposition
+In a finite-dimensional vector space, the length of every linearly independent
+ list of vectors is less than or equal to the length of every spanning list
+ of vectors.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $u_{1},\dots,u_{m}$
+\end_inset
+
+ is linearly independent in 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $w_{1},\dots,w_{n}$
+\end_inset
+
+ spans 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Step 1.
+ add 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ to the beginning of the spanning list, producing a linearly dependent list
+ (proposition 2.2) and from Lemma 2.1, one of 
+\begin_inset Formula $w$
+\end_inset
+
+ can be removed and still remains a spanning list.
+\end_layout
+
+\begin_layout Proof
+Step j.
+ repeat the step above, the only vector removed from the list is one of
+ 
+\begin_inset Formula $w$
+\end_inset
+
+, since none of 
+\begin_inset Formula $v$
+\end_inset
+
+ can be represented by the vectors before it because of linear independence
+ of 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $m>n$
+\end_inset
+
+, then after 
+\begin_inset Formula $n$
+\end_inset
+
+ step, all 
+\begin_inset Formula $w$
+\end_inset
+
+ are removed, and the remaining list 
+\begin_inset Formula $u_{1},\dots,u_{n}$
+\end_inset
+
+ spans 
+\begin_inset Formula $V$
+\end_inset
+
+, which contradicts the hypothesis that 
+\begin_inset Formula $u_{1},\dots,u_{m}$
+\end_inset
+
+ is linearly independent (proposition 2.2).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Finite-dimensional subspaces
+\end_layout
+
+\begin_layout Proposition
+Every subspace of a finite-dimensional vector space is finite-dimensional.
 \end_layout
 
 \end_body
