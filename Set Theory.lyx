@@ -1345,7 +1345,7 @@ function
 \emph on
 value
 \emph default
- thath the function 
+ that the function 
 \begin_inset Formula $f$
 \end_inset
 
@@ -1917,6 +1917,25 @@ Ordered triples, ordered quadruples, etc.
  may be defined as families whose index sets are unordered triples, quardruples.
 \end_layout
 
+\begin_layout Standard
+The coordinates and partial Cartesian product can be obtained by restricting
+ the index set.
+ Let 
+\begin_inset Formula $J\subset I$
+\end_inset
+
+, then to each element of 
+\begin_inset Formula $X$
+\end_inset
+
+ there corresponds in a natural way an element of the partial Cartesian
+ product 
+\begin_inset Formula $\mathsf{X}_{i\in J}X_{i}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Inverse and Composites
 \end_layout
@@ -2427,6 +2446,130 @@ The three defining properties of an equivalence relation can be formulated
 
 \begin_layout Section
 numbers
+\end_layout
+
+\begin_layout Standard
+To construct numbers, for every set 
+\begin_inset Formula $x$
+\end_inset
+
+ we define the successor 
+\begin_inset Formula $x^{+}$
+\end_inset
+
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ to be the set obtained by adjoining 
+\begin_inset Formula $x$
+\end_inset
+
+ to the elements of 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{+}=x\cup\left\{ x\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In defining 
+\begin_inset Formula $0$
+\end_inset
+
+ to be a set with zero elements, we have no choice
+\begin_inset Formula 
+\[
+0=\varnothing
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then 
+\begin_inset Formula 
+\begin{align*}
+1 & =0^{+}=\left\{ 0\right\} \\
+2 & =1^{+}=\left\{ 0,1\right\} \\
+3 & =2^{+}=\left\{ 0,1,2\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To allow the construction to be carried out ad infinitum, note we haven't
+ defined infinity yet.
+\end_layout
+
+\begin_layout Proposition*
+Axiom of infinity
+\end_layout
+
+\begin_layout Proposition*
+There exists a set containing 
+\begin_inset Formula $0$
+\end_inset
+
+ and containing the successor of each of its elements (a successor set).
+\end_layout
+
+\begin_layout Definition*
+A set 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\emph on
+successor set
+\emph default
+ if 
+\begin_inset Formula $0\in A$
+\end_inset
+
+ and if 
+\begin_inset Formula $x^{+}\in A$
+\end_inset
+
+ whenenver 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+natural number 
+\emph default
+is, by definition, an element of the minimal successor set.
+\end_layout
+
+\begin_layout Definition*
+sequence
+\end_layout
+
+\begin_layout Definition*
+A family 
+\begin_inset Formula $\left\{ x_{i}\right\} $
+\end_inset
+
+ whose index set is either a natural number (finite) or else the set of
+ all natural numbers (infinite) by called a sequence
 \end_layout
 
 \end_body
