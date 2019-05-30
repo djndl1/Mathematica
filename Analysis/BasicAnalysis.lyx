@@ -2197,5 +2197,502 @@ minimum
 .
 \end_layout
 
+\begin_layout Section
+Absolute value and bounded functions
+\end_layout
+
+\begin_layout Definition
+Absolute value
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left|x\right|=\begin{cases}
+x & \text{if }x\geq0\\
+-x & \text{if }x<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Triangle Inequality
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\left|x+y\right|\leq\left|x\right|+\left|y\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+for 
+\begin_inset Formula $x,y\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $x,y\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+i.
+ (reverse triangle inequality) 
+\begin_inset Formula $\left|\left(\left|x\right|-\left|y\right|\right)\right|\leq\left|x-y\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+ii.
+ 
+\begin_inset Formula $\left|x-y\right|\leq\left|x\right|+\left|y\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $x_{1},x_{2},\dots,x_{n}\in R$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula 
+\[
+\left|x_{1}+x_{2}+x_{3}+\cdots+x_{n}\right|\leq\left|x_{1}\right|+\left|x_{2}\right|+\cdots+\left|x_{n}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The real reason why we talk about absolute value is to introduce bounded
+ function
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $f\colon D\mapsto R$
+\end_inset
+
+ is a function.
+ We say 
+\begin_inset Formula $f$
+\end_inset
+
+ is bounded if there exists a number 
+\begin_inset Formula $M$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|f\left(x\right)\right|\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $f\colon D\mapsto R$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon D\mapsto R$
+\end_inset
+
+ (D nonempty) are bounded functions and
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+f\left(x\right)\leq g\left(x\right)\quad\text{for all }x\in D
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+then -
+\begin_inset Formula 
+\[
+\sup_{x\in D}f\left(x\right)\leq\sup_{x\in D}g\left(x\right)\quad\text{and}\quad\inf_{x\in D}f\left(x\right)\leq\inf_{x\in D}g\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Intervals and the size of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An unexpected fact is that from a set-theoretic perspective, all intervals
+ have the same cardinality.
+ The function 
+\begin_inset Formula $f\left(x\right)=\tan\left(x\right)$
+\end_inset
+
+ is a bijective map from 
+\begin_inset Formula $\left(-\pi/2,\pi/2\right)$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(Cantor) 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is uncountable.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $X\subset\mathbb{R}$
+\end_inset
+
+ be a countably infinite subset s.t.
+ for any two real numbers 
+\begin_inset Formula $a<b$
+\end_inset
+
+, there is an 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $a<x<b$
+\end_inset
+
+(?).
+ As 
+\begin_inset Formula $X$
+\end_inset
+
+ is countably infinite, we can write 
+\begin_inset Formula $X$
+\end_inset
+
+ as a sequence of real numbers 
+\begin_inset Formula $x_{1},x_{2},\dots,$
+\end_inset
+
+ s.t.
+ each number in 
+\begin_inset Formula $X$
+\end_inset
+
+ is given by 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ for some 
+\begin_inset Formula $j\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We inductively define two sequences 
+\begin_inset Formula $a_{1},a_{2},a_{3},\dots$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{1},b_{2},b_{3},\dots$
+\end_inset
+
+s.t.
+\end_layout
+
+\begin_layout Proof
+i.
+ 
+\begin_inset Formula 
+\[
+a_{1}\coloneqq x_{1}\quad b_{1}\coloneqq x_{1}+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ii.
+ For 
+\begin_inset Formula $k>1$
+\end_inset
+
+, suppose 
+\begin_inset Formula $a_{j-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{k-1}$
+\end_inset
+
+ have been defined and 
+\begin_inset Formula $\left(a_{k-1},b_{k-1}\right)$
+\end_inset
+
+ does not contain any 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ for 
+\begin_inset Formula $j=1,\dots,k-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $a_{k}\coloneqq x_{j}$
+\end_inset
+
+, where 
+\begin_inset Formula $j$
+\end_inset
+
+ is the smallest 
+\begin_inset Formula $j\in N$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{j}\in\left(a_{k-1},b_{k-1}\right)$
+\end_inset
+
+.
+ Such an 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ exists by the assumption on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $b_{k}\coloneqq x_{j}$
+\end_inset
+
+ where 
+\begin_inset Formula $j$
+\end_inset
+
+ is the smallests 
+\begin_inset Formula $j\in N$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{j}\in\left(a_{k},b_{k-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Note that 
+\begin_inset Formula $a_{k-1}<a_{k}<b_{k}<b_{k-1}$
+\end_inset
+
+ and also 
+\begin_inset Formula $\left(a_{k},b_{k}\right)$
+\end_inset
+
+ does not contain 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+(?) and hence does not contain any 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ for 
+\begin_inset Formula $j=1,\dots,k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Notice that 
+\begin_inset Formula $a_{j}<b_{k}$
+\end_inset
+
+ for all 
+\begin_inset Formula $j$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ (?).
+ Then 
+\begin_inset Formula 
+\[
+\sup A\leq\inf B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $y\coloneqq\sup A$
+\end_inset
+
+ and 
+\begin_inset Formula $y\notin A$
+\end_inset
+
+ (why?) and 
+\begin_inset Formula $y\notin B$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $a_{j}<y$
+\end_inset
+
+ for all 
+\begin_inset Formula $j\in N$
+\end_inset
+
+ and 
+\begin_inset Formula $y<b_{j}$
+\end_inset
+
+ for all 
+\begin_inset Formula $j\in N$
+\end_inset
+
+, in other words 
+\begin_inset Formula $y\in\left(a_{j},b_{j}\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $j\in N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Take any 
+\begin_inset Formula $x_{k}\in X$
+\end_inset
+
+, since 
+\begin_inset Formula $x_{k}\notin\left(a_{k},b_{k}\right)$
+\end_inset
+
+, so 
+\begin_inset Formula $x_{k}\neq y$
+\end_inset
+
+ as 
+\begin_inset Formula $y\in\left(a_{k},b_{k}\right)$
+\end_inset
+
+, that is, there is a real number 
+\begin_inset Formula $y$
+\end_inset
+
+ not in 
+\begin_inset Formula $X$
+\end_inset
+
+, which means 
+\begin_inset Formula $X$
+\end_inset
+
+ is a proper subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is countable, then we could take 
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $X$
+\end_inset
+
+ cannot be 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
