@@ -1156,5 +1156,439 @@ Finite-dimensional subspaces
 Every subspace of a finite-dimensional vector space is finite-dimensional.
 \end_layout
 
+\begin_layout Section
+Bases
+\end_layout
+
+\begin_layout Definition
+basis
+\end_layout
+
+\begin_layout Definition
+A basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ is a list of vectors in 
+\begin_inset Formula $V$
+\end_inset
+
+ that is linearly independent and spans 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Criterion for basis
+\end_layout
+
+\begin_layout Proposition
+A list 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ of vectors in 
+\begin_inset Formula $V$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ iff every 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ can be written uniquely in the form
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+v=a_{1}v_{1}+\cdots+a_{n}v_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+where 
+\begin_inset Formula $a_{1},\dots,a_{n}\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Spanning list contains a basis
+\end_layout
+
+\begin_layout Proposition
+Every spanning list in a vector space can be reduced to a basis of the vector
+ space.
+\end_layout
+
+\begin_layout Proof
+Reduce the spanning list using Linear Dependence Lemma.
+ As the spanning list remains to be a spanning list during the reduction,
+ the spanning list cannot be reduced to an empty list, and it must be longer
+ than or at least of the same length as any linearly independent list.
+ After the reduction stops, were the spanning list linearly dependent, the
+ reduction must go on, hence it must be linearly independent.
+\end_layout
+
+\begin_layout Corollary
+Every finite-dimensional vector space has basis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Linearly independent list extends to a basis
+\end_layout
+
+\begin_layout Proposition
+Every linearly independent list of vectorsd in a finite-dimensional vector
+ space can be extended to a basis of the vectors space.
+\end_layout
+
+\begin_layout Proof
+Append a spanning list to the end of linearly independent list and reduce
+ it using Linear Dependence Lemma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Every subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+ is part of a direct sum equal to 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional and 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then there is a subspace 
+\begin_inset Formula $W$
+\end_inset
+
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+s.t 
+\begin_inset Formula $V=U\oplus W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We have been talking about finite-
+\emph on
+dimensional
+\emph default
+ space for quite a while and still haven't defined dimension.
+ It turns out all bases of a vector space has the same length.
+\end_layout
+
+\begin_layout Proposition
+Basis length does not depend on basis
+\end_layout
+
+\begin_layout Proposition
+Any two bases of a finite-dimensional vector space have the same length.
+\end_layout
+
+\begin_layout Definition
+dimension, 
+\begin_inset Formula $\dim V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The 
+\series bold
+\emph on
+dimension
+\series default
+\emph default
+ of a finite-dimensional vector space is the length of any basis of the
+ vector space, denoted by 
+\begin_inset Formula $\dim V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Dimension of a subspace
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional and 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+, then 
+\begin_inset Formula $\dim U\leq\dim V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Linearly independent list of the right length is a basis
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional.
+ Then every linearly independent list of vectors in 
+\begin_inset Formula $V$
+\end_inset
+
+ with length 
+\begin_inset Formula $\dim V$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Spanning list of the right length is a basis
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional.
+ Then every spanning list of vectors in 
+\begin_inset Formula $V$
+\end_inset
+
+ with length 
+\begin_inset Formula $\dim V$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The following formula is analogous to a familiar counting formula: the number
+ of elements in the union of two finite sets equals the number of elements
+ in the first set plus the number of elements in the second set, minus the
+ number of elements in the intersection of the two sets.
+\end_layout
+
+\begin_layout Proposition
+Dimension of a sum
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $U_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $U_{2}$
+\end_inset
+
+ are subspaces of a finite-dimensional vector space, then 
+\begin_inset Formula 
+\[
+\dim\left(U_{1}+U_{2}\right)=\dim U_{1}+\dim U_{2}-\dim\left(U_{1}\cap U_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Linear Maps
+\end_layout
+
+\begin_layout Definition
+linear map/transformation
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+linear map
+\emph default
+ from 
+\begin_inset Formula $V$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+ is a function 
+\begin_inset Formula $T\colon T\mapsto W$
+\end_inset
+
+ with additivity and homogeneity:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\begin{align*}
+T\left(u+v\right) & =Tu+Tv\\
+T\left(\lambda v\right) & =\lambda\left(Tv\right)\quad\forall\lambda\in F,\forall v\in V
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The set of all linear maps from 
+\begin_inset Formula $V$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+ is denoted 
+\begin_inset Formula $\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Some examples: zero map, identity map, differentiation, integration.
+\end_layout
+
+\begin_layout Standard
+The existence part of the next result means that we can find a linear map
+ that takes on whatever values we wish on the vectors in a basis.
+ The uniqueness part of the next result means that a linear map is completely
+ determined by its values on a basis.
+\end_layout
+
+\begin_layout Proposition
+Linear map and bases.
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{1},\dots,w_{n}\in W$
+\end_inset
+
+.
+ Then there exists a unique linear map 
+\begin_inset Formula $T\colon V\mapsto W$
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+Tv_{j}=w_{j}\quad j=1,\dots,n.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
