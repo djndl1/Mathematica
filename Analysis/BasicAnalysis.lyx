@@ -2694,5 +2694,280 @@ Take any
 .
 \end_layout
 
+\begin_layout Chapter
+Sequences and Series
+\end_layout
+
+\begin_layout Standard
+Analysis is essentially about taking limits.
+ The most basic type of a limit is a limit of a sequence of real numbers.
+\end_layout
+
+\begin_layout Definition
+sequence
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+sequence
+\emph default
+ is function 
+\begin_inset Formula $x\colon\mathbb{N}\mapsto\mathbb{R}$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ or more precisely 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is said to 
+\emph on
+converge
+\emph default
+ to a number 
+\begin_inset Formula $x\in R$
+\end_inset
+
+, if for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $M\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|x_{n}-x\right|<\varepsilon\quad\forall n\geq M$
+\end_inset
+
+.
+ The number 
+\begin_inset Formula $x$
+\end_inset
+
+ is said to be the limit of 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+, denoted by
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A sequence that converges is said to be convergent, otherwise, it diverges
+ or is divengent.
+\end_layout
+
+\begin_layout Standard
+When we write 
+\begin_inset Formula $\lim x_{n}=x$
+\end_inset
+
+ for some real number 
+\begin_inset Formula $x$
+\end_inset
+
+, we are saying two things.
+ First, that 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is convergent, and second that the limit is 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+A 
+\series bold
+convergent sequence 
+\series default
+has a unique limit.
+\end_layout
+
+\begin_layout Standard
+We want to show a certain quantity is zero.
+ We write the quantity using the triangle inequality as two quantities and
+ we estimate each one by arbitrarily small numbers.
+\end_layout
+
+\begin_layout Proposition
+A convergent sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is bounded.
+\end_layout
+
+\begin_layout Definition
+monotone sequence
+\end_layout
+
+\begin_layout Proposition
+A monotone sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is bounded iff it is convergent.
+ Furthermore, if 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is monotone increasing and bounded, then 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=\sup\left\{ x_{n}\colon n\in\mathbb{N}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+if 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is monotone decreasing and bounded, then 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=\inf\left\{ x_{n}\colon n\in\mathbb{N}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is monotone and bounded.
+ As 
+\begin_inset Formula $\left\{ x_{n}\right\} \subset\mathbb{R}$
+\end_inset
+
+, it must have a supremum.
+ Let 
+\begin_inset Formula 
+\[
+x=\sup_{n\in N}\left\{ x_{n}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, there must exists 
+\begin_inset Formula $x_{M}\in\left\{ x_{n}\right\} $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{M}>x-\varepsilon$
+\end_inset
+
+, otherwise 
+\begin_inset Formula $x-\varepsilon$
+\end_inset
+
+ would be the supremum, not 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ And since 
+\begin_inset Formula $x_{n}>x_{M}\forall n>M$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+ for 
+\begin_inset Formula $n\geq M$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x_{n}-x\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ be a nonempty bounded set.
+ Then there exist monotone sequences 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ y_{n}\right\} $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{n},y_{n}\in S$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\sup S=\lim_{n\to\infty}x_{n}\quad\text{and}\quad\inf S=\lim_{n\to\infty}y_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
 \end_body
 \end_document
