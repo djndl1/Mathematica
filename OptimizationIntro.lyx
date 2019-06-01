@@ -40,8 +40,8 @@ theorems-ams-extended-chap-bytype
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
-\use_geometry false
+\papersize a4paper
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -66,6 +66,10 @@ theorems-ams-extended-chap-bytype
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -343,6 +347,411 @@ Strictly speaking, an optimization problem is solved only when a global
  However, global minimizers are, in general, difficult to find.
  Therefore, in practice, we often have to be satisfied with finding local
  minimizers.
+\end_layout
+
+\begin_layout Section
+Conditions for local minimizers
+\end_layout
+
+\begin_layout Standard
+Read 
+\begin_inset CommandInset href
+LatexCommand href
+name "Gradient"
+target "https://en.wikipedia.org/wiki/Gradient"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Hessian Matrix"
+target "https://en.wikipedia.org/wiki/Hessian_matrix"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Notation for differentiation"
+target "https://en.wikipedia.org/wiki/Notation_for_differentiation"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://en.wikipedia.org/wiki/Differential_operator"
+target "Differential operator"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Directional derivative"
+target "https://en.wikipedia.org/wiki/Directional_derivative"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To study the case where a minimizer lies on the boundary, we need the notion
+ of 
+\emph on
+feasible directions.
+\end_layout
+
+\begin_layout Definition
+A vector 
+\begin_inset Formula $d\in\mathbb{R}^{n},d\neq0$
+\end_inset
+
+, is a 
+\emph on
+feasible direction
+\emph default
+ at 
+\begin_inset Formula $x\in\Omega$
+\end_inset
+
+ if there exists 
+\begin_inset Formula $\alpha_{0}>0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\boldsymbol{x}+\alpha\boldsymbol{d}\in\Omega$
+\end_inset
+
+ for all 
+\begin_inset Formula $\alpha\in\left[0,\alpha_{0}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Feasible direction in its tuitive sense, is the vector that points to the
+ interior of 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Directional derivative defined, the inner product 
+\begin_inset Formula $\left\langle \triangledown f\left(x\right),d\right\rangle $
+\end_inset
+
+ is the rate of increase of 
+\begin_inset Formula $f$
+\end_inset
+
+ at the point 
+\begin_inset Formula $x$
+\end_inset
+
+ in the direction of a unit vector 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+First-Order Necessary Condtion (FONC)
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ be subset of 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $f\in\mathcal{C}$
+\end_inset
+
+ a real-valued function on 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a local minimizer of 
+\begin_inset Formula $f$
+\end_inset
+
+ over 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, then for any feasible direction 
+\begin_inset Formula $\boldsymbol{d}$
+\end_inset
+
+ at 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\boldsymbol{d}^{T}\triangledown f\left(x^{*}\right)\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a local minimzer
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+f\left(x^{*}+\alpha d\right)-f\left(x^{*}\right)\geq0
+\]
+
+\end_inset
+
+By Taylor's theorem
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+f\left(x^{*}+\alpha d\right)-f\left(x^{*}\right)=\alpha d^{T}\triangledown f\left(x\left(0\right)\right)+o\left(\alpha\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+for sufficiently small values of 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ (
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a local minimizer), the we have(???) 
+\begin_inset Formula 
+\[
+d^{T}\triangledown f\left(x^{*}\right)\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In other words, if 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a local minimizer, then the rate of increase of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ in any feasible direction 
+\begin_inset Formula $d$
+\end_inset
+
+ in 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ is nonnegative.
+\end_layout
+
+\begin_layout Proof
+The alternative proof
+\end_layout
+
+\begin_layout Proof
+For any feasible direction 
+\begin_inset Formula $\boldsymbol{d}$
+\end_inset
+
+, there exists 
+\begin_inset Formula $\bar{\alpha}>0$
+\end_inset
+
+ s.t for all 
+\begin_inset Formula $\alpha\in\left(0,\bar{\alpha}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x^{*}\right)\leq f\left(x^{*}+\alpha d\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+hence for all 
+\begin_inset Formula $\alpha\in\left(0,\bar{\alpha}\right)$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+\frac{f\left(x^{*}+\alpha d\right)-f\left(x^{*}\right)}{\alpha}\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Taking the limit as 
+\begin_inset Formula $\alpha\to0$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial d}\left(x^{*}\right)\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Interior Case
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ be a subset of 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $f\in C^{1}$
+\end_inset
+
+ a real-valued function 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a local minimizer of 
+\begin_inset Formula $f$
+\end_inset
+
+ over 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+is an interior point of 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\triangledown f\left(x^{*}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+For any 
+\begin_inset Formula $d\in R^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $d^{T}\triangledown f\left(x^{*}\right)\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $-d^{T}\triangledown f\left(x^{*}\right)\geq0$
+\end_inset
+
+, hence 
+\begin_inset Formula $d^{T}\triangledown f\left(x^{*}\right)=0$
+\end_inset
+
+.
 \end_layout
 
 \end_body
