@@ -2698,6 +2698,10 @@ Take any
 Sequences and Series
 \end_layout
 
+\begin_layout Section
+Sequence and limit
+\end_layout
+
 \begin_layout Standard
 Analysis is essentially about taking limits.
  The most basic type of a limit is a limit of a sequence of real numbers.
@@ -2967,6 +2971,671 @@ Let
 
 \begin_layout Proof
 TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+For a sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+, the 
+\begin_inset Formula $K$
+\end_inset
+
+-tail (where 
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+) or just the tail of the sequence is the sequence starting at 
+\begin_inset Formula $K+1$
+\end_inset
+
+, usually written as
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left\{ x_{n+K}\right\} _{n=1}^{\infty}\quad\text{or}\quad\left\{ x_{n}\right\} _{n=K+1}^{\infty}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ be a sequence.
+ Then the following statements are equivalent
+\end_layout
+
+\begin_layout Proposition
+i.
+ The sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ converges
+\end_layout
+
+\begin_layout Proposition
+ii.
+ The 
+\begin_inset Formula $K$
+\end_inset
+
+-tail 
+\begin_inset Formula $\left\{ x_{n+K}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ converges for all 
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iii.
+ The 
+\begin_inset Formula $K$
+\end_inset
+
+-tail 
+\begin_inset Formula $\left\{ x_{n+K}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ converges for some 
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Furthermore, if any (and hence all) of the limits exist, then for any 
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=\lim_{n\to\infty}x_{n+K}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Essentially, the limit does not care about how the sequence begins, it only
+ cares about the tail of the sequence.
+ That is, the beginning of the sequence may be arbitrary.
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a sequence.
+ Let 
+\begin_inset Formula $\left\{ n_{i}\right\} $
+\end_inset
+
+ be a strictly increasing sequence of natural numbers, that is 
+\begin_inset Formula $n_{i}<n_{i+1}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i$
+\end_inset
+
+ (in other words 
+\begin_inset Formula $n_{1}<n_{2}<n_{3}<\cdots$
+\end_inset
+
+).
+ The sequence
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left\{ x_{n_{i}}\right\} _{i=1}^{\infty}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+is called a 
+\emph on
+subsequence 
+\emph default
+of 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A tail of a sequence is one special type of subsequence.
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is a convergent sequence, then any subsequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is also convergent and
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=\lim_{i\to\infty}x_{n_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Facts about limits of sequences
+\end_layout
+
+\begin_layout Lemma
+Squeeze lemma
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be sequences s.t.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+a_{n}\leq x_{n}\leq b_{n}\quad\forall n\in\mathbb{N}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Suppose 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ converge and 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}a_{n}=\lim_{n\to\infty}b_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Then 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ converges and
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=\lim_{n\to\infty}a_{n}=\lim_{n\to\infty}b_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ y_{n}\right\} $
+\end_inset
+
+ be convergent sequences and 
+\begin_inset Formula 
+\[
+x_{n}\leq y_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}\leq\lim_{n\to\infty}y_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a convergent sequence s.t.
+ 
+\begin_inset Formula $x_{n}\geq0$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ and let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a convergent sequence s.t.
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula 
+\[
+a\leq x_{n}\leq b\quad\forall n\in\mathbb{N}
+\]
+
+\end_inset
+
+ then 
+\begin_inset Formula 
+\[
+a\leq\lim_{n\to\infty}x_{n}\leq b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Continuity of algebraic operators
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ y_{n}\right\} $
+\end_inset
+
+ be convergent sequences
+\end_layout
+
+\begin_layout Proposition
+i.
+ The sequence 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ where 
+\begin_inset Formula $z_{n}=x_{n}+y_{n}$
+\end_inset
+
+ converges and
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(x_{n}+y_{n}\right)=\lim_{n\to\infty}x_{n}+\lim_{n\to\infty}y_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+ii.
+ The sequence 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ where 
+\begin_inset Formula $z_{n}=x_{n}-y_{n}$
+\end_inset
+
+ converges and
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(x_{n}-y_{n}\right)=\lim_{n\to\infty}x_{n}-\lim_{n\to\infty}y_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iii.
+ The sequence 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ where 
+\begin_inset Formula $z_{n}=x_{n}y_{n}$
+\end_inset
+
+ converges and
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(x_{n}y_{n}\right)=\left(\lim_{n\to\infty}x_{n}\right)\left(\lim_{n\to\infty}y_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iv.
+ If 
+\begin_inset Formula $\lim_{n\to\infty}y_{n}\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{n}\neq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, then the sequence 
+\begin_inset Formula $\left\{ z_{n}\right\} $
+\end_inset
+
+ where 
+\begin_inset Formula $z_{n}=\frac{x_{n}}{y_{n}}$
+\end_inset
+
+ converges and
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}}{y_{n}}=\frac{\lim_{n\to\infty}x_{n}}{\lim_{n\to\infty}y_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a convergent sequence s.t.
+ 
+\begin_inset Formula $x_{n}\geq0$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\sqrt{x_{n}}=\sqrt{\lim_{n\to\infty}x_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is a convergent sequence, then 
+\begin_inset Formula $\left\{ \left|x_{n}\right|\right\} $
+\end_inset
+
+ is convergent and
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left|x_{n}\right|=\left|\lim_{n\to\infty}x_{n}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Some convergence tests
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a sequence.
+ Suppose there is an 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ and a convergent sequence 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}a_{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+and 
+\begin_inset Formula 
+\[
+\left|x_{n}-x\right|\leq a_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+for all 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ converges and 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=x$
+\end_inset
+
+.
 \end_layout
 
 \end_body
