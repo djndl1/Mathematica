@@ -2572,5 +2572,487 @@ A family
  all natural numbers (infinite) by called a sequence
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Peano Axioms
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula $0\in\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+if 
+\begin_inset Formula $n\in\omega$
+\end_inset
+
+, then 
+\begin_inset Formula $n^{+}\in\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition*
+where 
+\begin_inset Formula $n^{+}=n\cup\left\{ n\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The minimality property of 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is saying that
+\end_layout
+
+\begin_layout Proposition*
+principle of mathematical induction
+\end_layout
+
+\begin_layout Proposition*
+if 
+\begin_inset Formula $S\subset\omega$
+\end_inset
+
+, if 
+\begin_inset Formula $0\in S$
+\end_inset
+
+ and if 
+\begin_inset Formula $n^{+}\in S$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\in S$
+\end_inset
+
+, then 
+\begin_inset Formula $S=\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula $n^{+}\neq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ in 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $n^{+}$
+\end_inset
+
+ must contain 
+\begin_inset Formula $n$
+\end_inset
+
+, but 
+\begin_inset Formula $0$
+\end_inset
+
+ is empty.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+if 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ are in 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and if 
+\begin_inset Formula $n^{+}=m^{+}$
+\end_inset
+
+, then 
+\begin_inset Formula $n=m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+To prove this proposition, we need to prove
+\end_layout
+
+\begin_layout Proof
+i.
+ no natural number is a subset of any of its elements
+\end_layout
+
+\begin_layout Proof
+By mathematical induction, let 
+\begin_inset Formula $S$
+\end_inset
+
+ be the set of all those natural numbers 
+\begin_inset Formula $n$
+\end_inset
+
+ that are not included in any of their elements.
+ Obviously, 
+\begin_inset Formula $0\in S$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $n\in S$
+\end_inset
+
+, and 
+\begin_inset Formula $n^{+}=n\cup\left\{ n\right\} $
+\end_inset
+
+, suppose 
+\begin_inset Formula $n^{+}\subset x$
+\end_inset
+
+, then 
+\begin_inset Formula $n\subset x$
+\end_inset
+
+, hence 
+\begin_inset Formula $x\notin n$
+\end_inset
+
+, otherwise 
+\begin_inset Formula $n\notin S$
+\end_inset
+
+, then 
+\begin_inset Formula $n^{+}$
+\end_inset
+
+ cannot be a subset of any element of 
+\begin_inset Formula $n$
+\end_inset
+
+, and if 
+\begin_inset Formula $n^{+}\subset n$
+\end_inset
+
+, then 
+\begin_inset Formula $n\in n$
+\end_inset
+
+, but 
+\begin_inset Formula $n\notin n$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $n^{+}\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ii.
+ every element of a natural number is a subset of it.
+ Or every natural number is transitive (includes everything that it contains,
+ 
+\begin_inset Formula $x\in y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in E$
+\end_inset
+
+, then 
+\begin_inset Formula $x\in E$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be the set of all transitive natural numbers.
+ 
+\begin_inset Formula $0\in S$
+\end_inset
+
+ is vacuously true.
+ Suppose 
+\begin_inset Formula $n\in S$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x\in n^{+}$
+\end_inset
+
+, then 
+\begin_inset Formula $x=n$
+\end_inset
+
+ or 
+\begin_inset Formula $x\in n$
+\end_inset
+
+, in either case 
+\begin_inset Formula $x\subset n^{+}$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $n^{+}\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let prove the original proposition now.
+ Since 
+\begin_inset Formula $n\in n^{+}$
+\end_inset
+
+, then 
+\begin_inset Formula $n\in m^{+},$
+\end_inset
+
+ and then 
+\begin_inset Formula $n=m$
+\end_inset
+
+ or 
+\begin_inset Formula $n\in m$
+\end_inset
+
+.
+ Similarly 
+\begin_inset Formula $m=n$
+\end_inset
+
+ or 
+\begin_inset Formula $m\in n$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $m\neq n$
+\end_inset
+
+, then we must have 
+\begin_inset Formula $n\in m$
+\end_inset
+
+ and 
+\begin_inset Formula $m\in n$
+\end_inset
+
+, from the second auxilliary proposition 
+\begin_inset Formula $n\subset n$
+\end_inset
+
+, which contradicts the first auxilliary proposition.
+\end_layout
+
+\begin_layout Standard
+The above five propositions are known as the peano axioms.
+ From them it is possible to define intergers, rational numbers, real numbers
+ and complex numbers and to derive their usual arithmetic and analytic propertie
+s.
+\end_layout
+
+\begin_layout Standard
+Induction is often used not only to prove things but also define things.
+ The principle of mathematical induction does indeed prove that there can
+ be at most one function satisfyin g all the stated conditions, but it does
+ not establish the existence of such a function.
+ To prove the existence,
+\end_layout
+
+\begin_layout Theorem*
+Recursion theorem
+\end_layout
+
+\begin_layout Theorem*
+if 
+\begin_inset Formula $a$
+\end_inset
+
+ is an element of a set 
+\begin_inset Formula $X$
+\end_inset
+
+, and if 
+\begin_inset Formula $f$
+\end_inset
+
+ is a function from 
+\begin_inset Formula $X$
+\end_inset
+
+ into 
+\begin_inset Formula $X$
+\end_inset
+
+, then there exists a function 
+\begin_inset Formula $u$
+\end_inset
+
+ from 
+\begin_inset Formula $\omega$
+\end_inset
+
+ into 
+\begin_inset Formula $X$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $u\left(0\right)=0$
+\end_inset
+
+ and s.t.
+ 
+\begin_inset Formula $u\left(n^{+}\right)=f\left(u\left(n\right)\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ in 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Arithmetic
+\end_layout
+
+\begin_layout Standard
+The introduction of addtion for natural number is a typical example of definitio
+n by induction.
+\end_layout
+
+\begin_layout Definition*
+Addition
+\end_layout
+
+\begin_layout Definition*
+For each natural number 
+\begin_inset Formula $m$
+\end_inset
+
+ there exists a function 
+\begin_inset Formula $s_{m}$
+\end_inset
+
+ form 
+\begin_inset Formula $\omega$
+\end_inset
+
+ to 
+\begin_inset Formula $\omega$
+\end_inset
+
+ s.t 
+\begin_inset Formula $s_{m}\left(0\right)=m$
+\end_inset
+
+ and s.t.
+ 
+\begin_inset Formula $s_{m}\left(n^{+}\right)=\left(s_{m}\left(n\right)\right)^{+}$
+\end_inset
+
+ for every natural number 
+\begin_inset Formula $n$
+\end_inset
+
+; the value 
+\begin_inset Formula $s_{m}\left(n\right)$
+\end_inset
+
+ is the sum 
+\begin_inset Formula $m+n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The general arithmetic properties of addition are proved by repeated application
+s of the principle of mathematical induction.
+\end_layout
+
 \end_body
 \end_document
