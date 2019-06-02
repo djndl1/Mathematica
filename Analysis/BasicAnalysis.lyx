@@ -3638,5 +3638,132 @@ for all
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $c>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+i.
+ If 
+\begin_inset Formula $c<1$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}c^{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+ii.
+ If 
+\begin_inset Formula $c>1$
+\end_inset
+
+,then 
+\begin_inset Formula $\left\{ c^{n}\right\} $
+\end_inset
+
+ is unbounded
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Ratio test for sequences
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a sequence s.t.
+ 
+\begin_inset Formula $x_{n}\neq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ and s.t.
+ the limit
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+L=\lim_{n\to\infty}\frac{\left|x_{n+1}\right|}{x_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+exists.
+\end_layout
+
+\begin_layout Lemma
+i.
+ If 
+\begin_inset Formula $L<1$
+\end_inset
+
+, then 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ converges and 
+\begin_inset Formula $\lim_{x\to\infty}x_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+ii.
+ If 
+\begin_inset Formula $L>1$
+\end_inset
+
+, then 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is unbounded (hence diverges).
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
