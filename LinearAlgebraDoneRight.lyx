@@ -1491,6 +1491,10 @@ If
 Linear Maps
 \end_layout
 
+\begin_layout Section
+Definition
+\end_layout
+
 \begin_layout Definition
 linear map/transformation
 \end_layout
@@ -1588,6 +1592,743 @@ Tv_{j}=w_{j}\quad j=1,\dots,n.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+It is easy to show that the relation given forms a function and is a linear
+ map.
+\end_layout
+
+\begin_layout Proof
+Suppose there is another linear map 
+\begin_inset Formula $Z$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $Zv_{j}=w_{j}\quad j=1,\dots,n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+then for every 
+\begin_inset Formula $v\in V$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+v=c_{1}v_{1}+\cdots+c_{n}v_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+Tv & =c_{1}w_{1}+\cdots+c_{n}w_{n}\\
+Zv & =c_{1}w_{1}+\cdots+c_{n}w_{n}
+\end{align*}
+
+\end_inset
+
+ that is 
+\begin_inset Formula $Tv=Zv$
+\end_inset
+
+, uniquely determined on 
+\begin_inset Formula $span\left(v_{1},\dots,v_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Algebraic Operations on 
+\begin_inset Formula $\mathcal{L}\left(V,W\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+addition and scalar multiplication on 
+\begin_inset Formula $\mathcal{L}\left(V,W\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $S,T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda\in F$
+\end_inset
+
+, the sum 
+\begin_inset Formula $S+T$
+\end_inset
+
+ and the product 
+\begin_inset Formula $\lambda T$
+\end_inset
+
+ are the linear maps from 
+\begin_inset Formula $V$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+ defined by 
+\begin_inset Formula 
+\[
+\left(S+T\right)\left(v\right)=Sv+Tv\quad\text{and\ensuremath{\quad}\left(\lambda T\right)\left(v\right)=}\lambda\left(Tv\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+for all 
+\begin_inset Formula $v\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ is a vector space
+\end_layout
+
+\begin_layout Proposition
+With the operations of addition and scalar multiplication as defined above,
+ 
+\begin_inset Formula $\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ is a vector space.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Product of linear maps
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $T\in\mathcal{L}\left(U,V\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $S\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+, then the product of 
+\begin_inset Formula $ST\in\mathcal{L}\left(U,W\right)$
+\end_inset
+
+ is defined by
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left(ST\right)\left(u\right)=S\left(Tu\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+for 
+\begin_inset Formula $u\in U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Algebraic properties of products of linear maps
+\end_layout
+
+\begin_layout Proposition
+i.
+ associativity
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\left(T_{1}T_{2}\right)T_{3}=T_{1}\left(T_{2}T_{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+whenever 
+\begin_inset Formula $T_{1},T_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ are linear maps s.t.
+ the product make sense
+\end_layout
+
+\begin_layout Proposition
+ii.
+ identity
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+TI=IT=T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+whenver 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iii.
+ distributive properties
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\left(S_{1}+S_{2}\right)T=S_{1}T+S_{2}T\quad\text{and}\quad S\left(T_{1}+T_{2}\right)=ST_{1}+ST_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+whenenver 
+\begin_inset Formula $T,T_{1},T_{2}\in\mathcal{L}\left(U,V\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $S,S_{1},S_{2}\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Linear maps take 
+\begin_inset Formula $0$
+\end_inset
+
+ to 
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $T$
+\end_inset
+
+ is a linea map from 
+\begin_inset Formula $V$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $T\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Null Spaces and Ranges
+\end_layout
+
+\begin_layout Definition
+null space, 
+\begin_inset Formula $\text{null}\,T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+For 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+, the 
+\emph on
+null space
+\emph default
+ of 
+\begin_inset Formula $T$
+\end_inset
+
+, denoted 
+\begin_inset Formula $\text{null }T$
+\end_inset
+
+, is the subset of 
+\begin_inset Formula $V$
+\end_inset
+
+ consisting of those vectors that 
+\begin_inset Formula $T$
+\end_inset
+
+ maps to 
+\begin_inset Formula $0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\text{null }T=\left\{ v\in V\colon Tv=0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Some mathematicians use the term 
+\series bold
+kernel
+\emph on
+ 
+\series default
+\emph default
+instead of null space.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The null space is a subspace
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\text{null }T$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+injective
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $T\colon V\mapsto W$
+\end_inset
+
+ is called 
+\emph on
+injective 
+\emph default
+if 
+\begin_inset Formula $Tu=Tv$
+\end_inset
+
+ implies 
+\begin_inset Formula $u=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Injectivity is equivalent to null space equals 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $T$
+\end_inset
+
+ is injective iff 
+\begin_inset Formula $\text{null }T=\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+range 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Some mathematicians use the word 
+\emph on
+image
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The range is a subspace
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\text{range }T$
+\end_inset
+
+ is subspace of 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+surjective
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Fundamental Theorem of Linear Maps
+\end_layout
+
+\begin_layout Theorem
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional and 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\text{range }T$
+\end_inset
+
+ is finite-dimensional and
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\dim V=\dim\text{null }T+\dim\text{range }T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Extend the basis of 
+\begin_inset Formula $\text{null }T$
+\end_inset
+
+ to a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ and prove the image of the extra vectors is the basis of 
+\begin_inset Formula $\text{range }T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+A map to a smaller dimensional space is not injective
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are finite-dimensional vector spaces s.t.
+ 
+\begin_inset Formula $\dim V>\dim W$
+\end_inset
+
+.
+ Then no linear map from 
+\begin_inset Formula $V$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+ is injective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+A map to a larger dimensional space is not surjective.
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are finite-dimensional vector spaces s.t.
+ 
+\begin_inset Formula $\dim V<\dim W$
+\end_inset
+
+.
+ Then no linear map from 
+\begin_inset Formula $V$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+ is surjective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above two have important cosnequences in the theory of linear equtions.
+ The idea is to express questions about systems of linea equations in terms
+ of linear maps.
+\end_layout
+
+\begin_layout Standard
+Define 
+\begin_inset Formula $T\colon F^{n}\mapsto F^{m}$
+\end_inset
+
+ by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(x_{1},\dots,x_{n}\right)=\left(\sum_{k=1}^{n}A_{1,k}x_{k},\dots,\sum_{k=1}^{n}A_{m,k}x_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Homogeneous system of linear equations
+\end_layout
+
+\begin_layout Proposition
+A homogeneous system of linear equations with more variables than equations
+ has nonzero solutions.
+\end_layout
+
+\begin_layout Proof
+Proposition 3.8
+\end_layout
+
+\begin_layout Proposition
+Inhomogeneous system of linear equations
+\end_layout
+
+\begin_layout Proposition
+An inhomogeneous system of linear equations with more equations than variables
+ has no solutions for some choice of the constant terms.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\dim\text{range }T\leq\dim V<\dim W$
+\end_inset
+
+, thus not surjective.
 \end_layout
 
 \end_body
