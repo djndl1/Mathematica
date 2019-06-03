@@ -3762,6 +3762,405 @@ TODO
 \end_layout
 
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Limit Superior, limit inferior, and Bolzano-Weierstrass
+\end_layout
+
+\begin_layout Standard
+There are ways of creating monotone sequences out of any sequence, and in
+ this fashion we get the so-called 
+\emph on
+limit superior
+\emph default
+ and 
+\emph on
+limit inferior, 
+\emph default
+these limits always exist for bounded sequences.
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be bounded sequence.
+ Define the sequences 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ by 
+\begin_inset Formula $a_{n}\coloneqq\sup\left\{ x_{k}\colon k\geq n\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}\coloneqq\inf\left\{ x_{k}\colon k\geq n\right\} $
+\end_inset
+
+.
+ Define if the limits exist,
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\sup x_{n} & =\lim_{n\to\infty}a_{n}\\
+\lim_{n\to\infty}\inf x_{n} & =\lim_{n\to\infty}b_{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a bounded sequence.
+ Let 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ be as in the definition above
+\end_layout
+
+\begin_layout Proposition
+i.
+ The sequence 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ is bounded monotone decreasing and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ is bounded monotone increasing.
+ In particular, 
+\begin_inset Formula $\lim_{n\to\infty}\inf x_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{n\to\infty}\sup x_{n}$
+\end_inset
+
+ exist.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\sup x_{n}=\inf\left\{ a_{n}\colon n\in\mathbb{N}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{n\to\infty}\inf x_{n}=\sup\left\{ b_{n}\colon n\in\mathbb{N}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iii.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\inf x_{n}\leq\lim_{n\to\infty}\sup x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+i.
+ 
+\begin_inset Formula $a_{n}=\sup\left\{ x_{k}\colon k\geq n\right\} $
+\end_inset
+
+ is an upper bound of 
+\begin_inset Formula $a_{n+1}=\sup\left\{ x_{k}\colon k\geq n+1\right\} $
+\end_inset
+
+, thus 
+\begin_inset Formula $a_{n}\geq a_{n+1}$
+\end_inset
+
+.
+ Similarly 
+\begin_inset Formula $b_{n}\leq b_{n+1}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ are bounded, the limit superior and limit inferior exist.
+\end_layout
+
+\begin_layout Proof
+ii.
+ Proposition 2.3
+\end_layout
+
+\begin_layout Proof
+iii.
+ Lemma 2.2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is important to notice that 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ are not necessarily subsequences of 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+, nor do they have to even consist of the same numbers.
+\end_layout
+
+\begin_layout Theorem
+If 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is bounded sequence, then there exists a subsequence 
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\lim_{k\to\infty}x_{n_{k}}=\lim_{n\to\infty}\sup x_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Similarly, there exists a (perhaps different) subsequences 
+\begin_inset Formula $\left\{ x_{m_{k}}\right\} $
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\lim_{k\to\infty}x_{m_{k}}=\lim_{n\to\infty}\inf x_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Define 
+\begin_inset Formula $a_{n}=\sup\left\{ x_{k}\colon k\geq n\right\} $
+\end_inset
+
+.
+ Write 
+\begin_inset Formula $x\coloneqq\lim\sup x_{n}=\lim a_{n}$
+\end_inset
+
+.
+ Define the subsequences inductively as follows:
+\end_layout
+
+\begin_layout Proof
+i.
+ 
+\begin_inset Formula $n_{1}\coloneqq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ii.
+ Suppose we have defined 
+\begin_inset Formula $n_{k}$
+\end_inset
+
+, pick 
+\begin_inset Formula $n_{k+1}>n_{k}$
+\end_inset
+
+ (
+\begin_inset Formula $n_{k+1}\geq n_{k}+1)$
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+a_{\left(n_{k}+1\right)}-x_{n_{k+1}}<\frac{1}{k+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+For every 
+\begin_inset Formula $k\geq2$
+\end_inset
+
+ (
+\begin_inset Formula $K$
+\end_inset
+
+-tail limit)
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+\left|a_{n_{k}}-x_{n_{k}}\right| & =a_{n_{k}}-x_{n_{k}}\\
+ & \leq a_{\left(n_{k-1}+1\right)}-x_{n_{k}}\\
+ & <\frac{1}{k}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ is convergent, then the subsequence 
+\begin_inset Formula $\left\{ a_{n_{k}}\right\} $
+\end_inset
+
+ has a limit.
+ Thus 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists M_{1}\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\[
+\left|a_{n_{k}}-x\right|<\frac{\varepsilon}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+for 
+\begin_inset Formula $n_{k}\geq M_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Find an 
+\begin_inset Formula $M_{2}\in\mathbb{N}$
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\frac{1}{M_{2}}\leq\frac{\varepsilon}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Take 
+\begin_inset Formula $M\coloneqq\max\left\{ M_{1},M_{2},2\right\} $
+\end_inset
+
+.
+ For all 
+\begin_inset Formula $k\geq M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{align*}
+\left|x-x_{n_{k}}\right| & =\left|a_{n_{k}}-x_{n_{k}}+x-a_{n_{k}}\right|\\
+ & \leq\left|a_{n_{k}}-x_{n_{k}}\right|+\left|x-a_{n_{k}}\right|\\
+ & <\frac{1}{k}+\frac{\varepsilon}{2}\\
+ & \leq\frac{1}{M_{2}}+\frac{\varepsilon}{2}\leq\varepsilon
+\end{align*}
+
+\end_inset
+
 
 \end_layout
 
