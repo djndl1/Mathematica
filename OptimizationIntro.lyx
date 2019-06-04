@@ -949,5 +949,74 @@ and
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Second-Order Sufficient Conditon (SOSC), Interior Case
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+ be defined on a region in which 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is an interior point.
+ Suppose that
+\end_layout
+
+\begin_layout Theorem
+1.
+ 
+\begin_inset Formula $\triangledown f\left(\boldsymbol{x^{*}}\right)=\boldsymbol{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+2.
+ 
+\begin_inset Formula $\boldsymbol{F}\left(\boldsymbol{x^{*}}\right)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Then 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a strict local minimizer of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Gradient Methods
+\end_layout
+
 \end_body
 \end_document
