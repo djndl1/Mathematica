@@ -3054,5 +3054,382 @@ The general arithmetic properties of addition are proved by repeated application
 s of the principle of mathematical induction.
 \end_layout
 
+\begin_layout Definition*
+Multiplication
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $p_{m}\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $p_{m}\left(n^{+}\right)=p_{m}\left(n\right)+m$
+\end_inset
+
+ for every natural number 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+then the value 
+\begin_inset Formula $p_{m}\left(n\right)$
+\end_inset
+
+ is by definition the product 
+\begin_inset Formula $m\cdot n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Exponential
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $e_{m}\left(0\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $e_{m}\left(n^{+}\right)=e_{m}\left(n\right)\cdot m$
+\end_inset
+
+ for every natural number 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+the value 
+\begin_inset Formula $e_{m}\left(n\right)$
+\end_inset
+
+ is the power 
+\begin_inset Formula $m^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+We say that two natural numbers 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are comparable if 
+\begin_inset Formula $m\in n$
+\end_inset
+
+ or 
+\begin_inset Formula $m=n$
+\end_inset
+
+ or 
+\begin_inset Formula $n\in m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+Two natural numbers are always comparable
+\end_layout
+
+\begin_layout Proof
+Define 
+\begin_inset Formula $S\left(n\right)$
+\end_inset
+
+ for the set of all 
+\begin_inset Formula $m$
+\end_inset
+
+ in 
+\begin_inset Formula $\omega$
+\end_inset
+
+ that are comparable with 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+1.
+ 
+\begin_inset Formula $S\left(0\right)=\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+a.
+ Since 
+\begin_inset Formula $0=0$
+\end_inset
+
+, 
+\begin_inset Formula $0\in S\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+b.
+ If 
+\begin_inset Formula $m\in S\left(0\right)$
+\end_inset
+
+, that is, either 
+\begin_inset Formula $0\in m$
+\end_inset
+
+ (implies 
+\begin_inset Formula $0\in m^{+})$
+\end_inset
+
+ or 
+\begin_inset Formula $0=m$
+\end_inset
+
+ (implies 
+\begin_inset Formula $0\in m^{+}$
+\end_inset
+
+), thus 
+\begin_inset Formula $m^{+}\in S\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+2.
+ If 
+\begin_inset Formula $S\left(n\right)=\omega$
+\end_inset
+
+, then 
+\begin_inset Formula $S\left(n^{+}\right)=\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+a.
+ Since 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are comparable, that is, either 
+\begin_inset Formula $0\in n$
+\end_inset
+
+ (implies 
+\begin_inset Formula $0\in n^{+}$
+\end_inset
+
+) or 
+\begin_inset Formula $0=n$
+\end_inset
+
+ (implies 
+\begin_inset Formula $0\in n^{+}$
+\end_inset
+
+), thus 
+\begin_inset Formula $0\in S\left(n^{+}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+b.
+ If 
+\begin_inset Formula $m\in S\left(n^{+}\right)$
+\end_inset
+
+, when 
+\begin_inset Formula $m=n^{+}$
+\end_inset
+
+ or 
+\begin_inset Formula $n^{+}\in m$
+\end_inset
+
+, 
+\begin_inset Formula $n^{+}\in m^{+}$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $m\in n^{+}$
+\end_inset
+
+, either 
+\begin_inset Formula $m=n$
+\end_inset
+
+ (implies 
+\begin_inset Formula $n^{+}=m^{+})$
+\end_inset
+
+ or 
+\begin_inset Formula $m\in n$
+\end_inset
+
+.
+ In the latter case, since 
+\begin_inset Formula $m^{+}\in S\left(n\right)$
+\end_inset
+
+, either 
+\begin_inset Formula $n\in m^{+}$
+\end_inset
+
+, or 
+\begin_inset Formula $n=m^{+}$
+\end_inset
+
+ (implies 
+\begin_inset Formula $m^{+}\in n^{+}$
+\end_inset
+
+) or 
+\begin_inset Formula $m^{+}\in n$
+\end_inset
+
+ (implies 
+\begin_inset Formula $m^{+}\in n^{+}$
+\end_inset
+
+).
+ The first case implies that either 
+\begin_inset Formula $n\in m$
+\end_inset
+
+ or 
+\begin_inset Formula $n=m$
+\end_inset
+
+, which contradicts the fact that 
+\begin_inset Formula $m\in n$
+\end_inset
+
+ since this leads to 
+\begin_inset Formula $n\in n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In fact, always exactly one of the three possibilities holds.
+ If any two of them hold, it would conclude that some natural number belong
+ to itself, which is not true.
+\end_layout
+
+\begin_layout Standard
+The three relations are rewritten as 
+\begin_inset Formula $m<n$
+\end_inset
+
+, 
+\begin_inset Formula $m=n$
+\end_inset
+
+, 
+\begin_inset Formula $m>n$
+\end_inset
+
+.
+ From the transitivity of 
+\begin_inset Formula $n$
+\end_inset
+
+, if 
+\begin_inset Formula $a\in n$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in a$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $a<n$
+\end_inset
+
+ and 
+\begin_inset Formula $b<a$
+\end_inset
+
+, then 
+\begin_inset Formula $a\subset n$
+\end_inset
+
+, which implies 
+\begin_inset Formula $b\in a$
+\end_inset
+
+ (
+\begin_inset Formula $b<a$
+\end_inset
+
+).
+\end_layout
+
 \end_body
 \end_document
