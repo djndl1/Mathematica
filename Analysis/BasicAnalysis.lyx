@@ -40,7 +40,16 @@ theorems-chap-bytype
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -2840,6 +2849,12 @@ monotone sequence
 \end_layout
 
 \begin_layout Proposition
+\begin_inset CommandInset label
+LatexCommand label
+name "Proposition 2.3"
+
+\end_inset
+
 A monotone sequence 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -3149,6 +3164,12 @@ A tail of a sequence is one special type of subsequence.
 \end_layout
 
 \begin_layout Proposition
+\begin_inset CommandInset label
+LatexCommand label
+name "Proposition 2.6"
+
+\end_inset
+
 If 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -3183,7 +3204,13 @@ Facts about limits of sequences
 \end_layout
 
 \begin_layout Lemma
-Squeeze lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "Squeeze-lemma"
+
+\end_inset
+
+Squeeze Lemma
 \end_layout
 
 \begin_layout Lemma
@@ -3260,6 +3287,12 @@ Then
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "Lemma 2.2"
+
+\end_inset
+
 Let 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -3924,12 +3957,32 @@ i.
 
 \begin_layout Proof
 ii.
- Proposition 2.3
+ Proposition 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "Proposition 2.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
 iii.
- Lemma 2.2
+ Lemma 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "Lemma 2.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3956,6 +4009,12 @@ It is important to notice that
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "Theorem 2.1"
+
+\end_inset
+
 If 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -4060,11 +4119,7 @@ For every
 \begin_inset Formula $k\geq2$
 \end_inset
 
- (
-\begin_inset Formula $K$
-\end_inset
 
--tail limit)
 \end_layout
 
 \begin_layout Proof
@@ -4112,7 +4167,7 @@ Since
 
 \begin_layout Proof
 for 
-\begin_inset Formula $n_{k}\geq M_{1}$
+\begin_inset Formula $k\geq M_{1}$
 \end_inset
 
 .
@@ -4161,6 +4216,197 @@ Take
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+The advantage of 
+\begin_inset Formula $\lim\inf$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim\sup$
+\end_inset
+
+ is that we can always write them down for any (bounded) sequence.
+ If we can somehow compute them, we could also compute the limit of the
+ sequence if it exists, or show that the sequence diverges.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a bounded sequence.
+ Then 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ converges iff 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\inf x_{n}=\lim_{n\to\infty}\sup x_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Furthermore, if 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ converges, then
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=\lim_{n\to\infty}\inf x_{n}=\lim_{n\to\infty}\sup x_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Lemma 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "Squeeze-lemma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and Theorem 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "Theorem 2.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+is a bounded sequence and 
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+ is a subsequence.
+ Then
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\underset{n\to\infty}{\lim\inf}\,x_{n}\leq\underset{n\to\infty}{\lim\inf}\,x_{n_{k}}\leq\underset{k\to\infty}{\lim\sup}\,x_{n_{k}}\leq\underset{n\to\infty}{\lim\sup}\,x_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+A bounded sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is convergent and converges to 
+\begin_inset Formula $x$
+\end_inset
+
+ iff every convergent subsequence 
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While it is not true that a bounded sequence is convergent, the Bolzano-Weierstr
+ass theorem tells us that we can at least find a convergent subsequence.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "Bolzano-Weierstrass-for-sequence"
+
+\end_inset
+
+Bolzano-Weierstrass for sequences
+\end_layout
+
+\begin_layout Theorem
+Suppose a sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ of real numbers is bounded.
+ Then there exists a convergent subsequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Every subsequence has a monotone subsequence.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
