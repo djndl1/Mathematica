@@ -66,10 +66,10 @@ theorems-ams-extended-chap-bytype
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 3cm
-\rightmargin 2cm
-\bottommargin 3cm
+\leftmargin 3cm
+\topmargin 4cm
+\rightmargin 3cm
+\bottommargin 4cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -384,8 +384,8 @@ literal "false"
 , 
 \begin_inset CommandInset href
 LatexCommand href
-name "https://en.wikipedia.org/wiki/Differential_operator"
-target "Differential operator"
+name "Differential operator"
+target "https://en.wikipedia.org/wiki/Differential_operator"
 literal "false"
 
 \end_inset
@@ -752,6 +752,201 @@ For any
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Second-Order Necessary Condition (SONC)
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $\Omega\subset\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+ a function on 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ a local minimizer of 
+\begin_inset Formula $f$
+\end_inset
+
+ over 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, and 
+\begin_inset Formula $d$
+\end_inset
+
+ a feasible direction at 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+.
+ if 
+\begin_inset Formula $d^{T}\triangledown f\left(x^{*}\right)=0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\boldsymbol{d}^{T}\boldsymbol{F}\left(\boldsymbol{x}^{\boldsymbol{*}}\right)\boldsymbol{d}\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+where 
+\begin_inset Formula $F$
+\end_inset
+
+ is the Hessian of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+By contradiction:
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $d^{T}F\left(x^{*}\right)d<0$
+\end_inset
+
+.
+ By Taylor's theorem with respect to 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+f\left(x^{*}+\alpha d\right)=f\left(x^{*}\right)+d^{T}F\left(x^{*}\right)d\cdot\frac{\alpha^{2}}{2}+o\left(\alpha^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+that is, 
+\begin_inset Formula 
+\[
+f\left(x^{*}+\alpha d\right)<f\left(x^{*}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+for sufficiently small 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, which contradicts the assumption that 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a local minimizer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Interior Case
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ be an interior point of 
+\begin_inset Formula $\Omega\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is a local minimizer of 
+\begin_inset Formula $f\colon\Omega\mapsto\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+\triangledown f\left(x^{*}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+and 
+\begin_inset Formula $F\left(x^{*}\right)$
+\end_inset
+
+ is positive semidefinite 
+\begin_inset Formula $F\left(x^{*}\right)\geq0$
+\end_inset
+
+; that is, for all 
+\begin_inset Formula $d\in\mathbb{R}^{n}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula 
+\[
+\boldsymbol{d^{T}F\left(x^{*}\right)d}\geq0
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
