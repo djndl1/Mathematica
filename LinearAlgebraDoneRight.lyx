@@ -2331,5 +2331,339 @@ An inhomogeneous system of linear equations with more equations than variables
 , thus not surjective.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Matrix
+\end_layout
+
+\begin_layout Definition
+Matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+matrix of a linear map 
+\begin_inset Formula $M\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{1},\dots,w_{m}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ The matrix of 
+\begin_inset Formula $T$
+\end_inset
+
+ w.r.t.
+ these bases is the 
+\begin_inset Formula $m$
+\end_inset
+
+-by-
+\begin_inset Formula $n$
+\end_inset
+
+ matrix 
+\begin_inset Formula $M\left(T\right)$
+\end_inset
+
+ whsoe entries 
+\begin_inset Formula $A_{j,k}$
+\end_inset
+
+ are defined by
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+Tv_{k}=A_{1,k}w_{1}+\cdots+A_{m,k}w_{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+If the bases are not clear from the context, then the notation 
+\begin_inset Formula $M\left(T,\left(v_{1},\dots,v_{n}\right),\left(w_{1},\dots,w_{m}\right)\right)$
+\end_inset
+
+ is used.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The bases should be clear from the context, and thus they are often not
+ included in notation.
+\end_layout
+
+\begin_layout Definition
+matrix addition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The matrix of the sum of linear maps
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $S,T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $M\left(S+T\right)=M\left(S\right)+M\left(T\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+scalar multiplication of a matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The matrix of a scalar times a linear map
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $\lambda\in F$
+\end_inset
+
+ and 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $M\left(\lambda T\right)=\lambda M\left(T\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The set of all 
+\begin_inset Formula $m$
+\end_inset
+
+-by-
+\begin_inset Formula $n$
+\end_inset
+
+ matrices with entries in 
+\begin_inset Formula $F$
+\end_inset
+
+ is denoted by 
+\begin_inset Formula $F^{m,n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\dim F^{m,n}=mn$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Define zero matrix and identity matrix as convention is.
+ It is easy to show that 
+\begin_inset Formula $F^{m,n}$
+\end_inset
+
+ is a vector space.
+ Find the standard basis for 
+\begin_inset Formula $F^{m,n}$
+\end_inset
+
+ and show that it is the basis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+matrix multiplication
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The matrix of the product of linear maps
+\end_layout
+
+\begin_layout Proposition
+if 
+\begin_inset Formula $T\in\mathcal{L}\left(U,V\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $S\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $M\left(ST\right)=M\left(S\right)M\left(T\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Linear combination of columns
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ is an 
+\begin_inset Formula $m$
+\end_inset
+
+-by-
+\begin_inset Formula $n$
+\end_inset
+
+ matrix and 
+\begin_inset Formula $c=\begin{pmatrix}c_{1}\\
+\vdots\\
+c_{n}
+\end{pmatrix}$
+\end_inset
+
+ is an 
+\begin_inset Formula $n$
+\end_inset
+
+-by-1 matrix.
+ Then 
+\begin_inset Formula 
+\[
+Ac=c_{1}A_{\cdot,1}+\cdots+c_{n}A_{\cdot,n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+In other words, 
+\begin_inset Formula $Ac$
+\end_inset
+
+ is a linear combination of the columns of 
+\begin_inset Formula $A$
+\end_inset
+
+, with the scalars that multiply the columns coming from 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Products and Quotients of Vector Spaces
+\end_layout
+
 \end_body
 \end_document
