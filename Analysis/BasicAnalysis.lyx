@@ -4381,6 +4381,24 @@ Suppose a sequence
 \end_layout
 
 \begin_layout Proof
+Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Theorem 2.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Alternative proof
+\end_layout
+
+\begin_layout Proof
 TODO
 \end_layout
 
@@ -4406,8 +4424,446 @@ TODO
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
+We say 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
 
+ diverges to infinity if for every 
+\begin_inset Formula $K\in\mathbb{R}$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $M\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ for all 
+\begin_inset Formula $n\geq M$
+\end_inset
+
+ we have 
+\begin_inset Formula $x_{n}>K$
+\end_inset
+
+.
+ In this case we write
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Similarly, if for every 
+\begin_inset Formula $K\in\mathbb{R}$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $M\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ for all 
+\begin_inset Formula $n\geq M$
+\end_inset
+
+ we have 
+\begin_inset Formula $x_{n}<K$
+\end_inset
+
+, we say 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ diverges to minus infinity and we write 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}x_{n}=-\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is a monotone unbounded sequence.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}x_{n} & =\begin{cases}
+\infty & \text{if }\left\{ x_{n}\right\} \text{ is increasing}\\
+-\infty & \text{if }\left\{ x_{n}\right\} \text{ if decreasing}
+\end{cases}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be an unbounded sequence of real numbers.
+ Define sequences of extended real numbers by 
+\begin_inset Formula $a_{n}=\sup\left\{ x_{k}\colon k\geq n\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}=\inf\left\{ x_{k}\colon k\geq n\right\} $
+\end_inset
+
+.
+ Define
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\underset{n\to\infty}{\lim\sup}\,x_{n}=\inf\left\{ a_{n}\colon n\in\mathbb{N}\right\} \quad\text{and\ensuremath{\quad}}\underset{n\to\infty}{\lim\inf}x_{n}=\sup\left\{ b_{n}\colon n\in\mathbb{N}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This definition agrees with the definition for bounded sequences whenver
+ 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $\lim_{n\to\infty}b_{n}$
+\end_inset
+
+ makes sense including possibly 
+\begin_inset Formula $\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be an unbounded sequence.
+ Define 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+as above.
+ Then 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ is decreasing, and 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ is increasing.
+ If 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ is a real number for every 
+\begin_inset Formula $n$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim\sup x_{n}=\lim a_{n}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ is a real nubmer for every 
+\begin_inset Formula $n$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim\inf x_{n}=\lim b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Continuous Functions
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $S\in\mathbb{R}$
+\end_inset
+
+ be a set.
+ A number 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ is called a 
+\emph on
+cluster point
+\emph default
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ if for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, the set 
+\begin_inset Formula $\left(x-\varepsilon,x+\varepsilon\right)\cap S\backslash\left\{ x\right\} $
+\end_inset
+
+ is not empty.
+\end_layout
+
+\begin_layout Standard
+That is, 
+\begin_inset Formula $x$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+ if there are points of 
+\begin_inset Formula $S$
+\end_inset
+
+ arbitrarily close to 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ An alternative definition would be
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $x$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+ if for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $y\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $y\neq x$
+\end_inset
+
+ that 
+\begin_inset Formula $\left|x-y\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e.g.
+ The set 
+\begin_inset Formula $\left\{ 1/n\colon n\in\mathbb{N}\right\} $
+\end_inset
+
+ has a unique cluster point zero.
+ The set 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ has no cluster points in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $S\subset R$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+ iff there exists a convergent sequence of numbers 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+s.t.
+ 
+\begin_inset Formula $x_{n}\neq x$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{n}\in S$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim x_{n}=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $x$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $n\in N$
+\end_inset
+
+, we pick 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ to be an arbitrary point of 
+\begin_inset Formula $\left(x-1/n,x+1/n\right)\cap S\backslash\left\{ x\right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ is with 
+\begin_inset Formula $1/n$
+\end_inset
+
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+, that is
+\begin_inset Formula 
+\[
+\left|x-x_{n}\right|<1/n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+by squeeze lemma, 
+\begin_inset Formula $x$
+\end_inset
+
+ is the limit of 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Conversely, 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, there exists 
+\begin_inset Formula $n$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\[
+\left|x_{n}-x\right|<\varepsilon\quad\text{and}\quad x_{n}\neq x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+hence 
+\begin_inset Formula $x_{n}\in\left(x-\varepsilon,x+\varepsilon\right)\cap S\backslash\left\{ x\right\} $
+\end_inset
+
+.
 \end_layout
 
 \end_body
