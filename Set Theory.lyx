@@ -3431,5 +3431,372 @@ The three relations are rewritten as
 ).
 \end_layout
 
+\begin_layout Definition*
+Two sets 
+\begin_inset Formula $E$
+\end_inset
+
+ and 
+\begin_inset Formula $F$
+\end_inset
+
+ are called equivalent, in symbols 
+\begin_inset Formula $E\sim F$
+\end_inset
+
+, if there exists a one-to-one correspondence (bijection) between them.
+\end_layout
+
+\begin_layout Proposition*
+Every proper subset of a natural number 
+\begin_inset Formula $n$
+\end_inset
+
+ is equivalent to some smaller natural number.
+\end_layout
+
+\begin_layout Proof
+By induction.
+ If it holds for 
+\begin_inset Formula $n$
+\end_inset
+
+, and if 
+\begin_inset Formula $E$
+\end_inset
+
+ is a proper subset of 
+\begin_inset Formula $n^{+}$
+\end_inset
+
+, then either 
+\begin_inset Formula $E\subsetneq n$
+\end_inset
+
+ or 
+\begin_inset Formula $E=n$
+\end_inset
+
+ or 
+\begin_inset Formula $n\in E$
+\end_inset
+
+.
+ In the latter case, find a number 
+\begin_inset Formula $k$
+\end_inset
+
+ in 
+\begin_inset Formula $n$
+\end_inset
+
+ but not in 
+\begin_inset Formula $E$
+\end_inset
+
+ (there must be one, otherwise 
+\begin_inset Formula $E=n^{+}$
+\end_inset
+
+) and define a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $E$
+\end_inset
+
+ by writing 
+\begin_inset Formula $f\left(i\right)=i$
+\end_inset
+
+ when 
+\begin_inset Formula $i\neq n$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(n\right)=k$
+\end_inset
+
+.
+ Clearly 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective and 
+\begin_inset Formula $f$
+\end_inset
+
+ maps 
+\begin_inset Formula $E$
+\end_inset
+
+ into 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\text{range }f\subset n$
+\end_inset
+
+, which is equivalent to some smaller natural number in 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ By composite, 
+\begin_inset Formula $E$
+\end_inset
+
+ is equivalent to some smaller natural number than 
+\begin_inset Formula $n$
+\end_inset
+
+ or 
+\begin_inset Formula $n$
+\end_inset
+
+ itself.
+ In all the cases, 
+\begin_inset Formula $E$
+\end_inset
+
+ is equivalent to some element of 
+\begin_inset Formula $n^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+If 
+\begin_inset Formula $n\in\omega$
+\end_inset
+
+, then 
+\begin_inset Formula $n$
+\end_inset
+
+ is not equivalent to a proper subset of 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Definition*
+A set 
+\begin_inset Formula $E$
+\end_inset
+
+ is called 
+\emph on
+finite
+\emph default
+ if it is equivalent to some natural number; otherwise it is 
+\emph on
+infinite
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A set can be equivalent to at most one natural number.
+ A finite set is never equivalent to a proper subset.
+ As long as we stick to finite sets, the whole is always greater than any
+ of its parts.
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula $\omega$
+\end_inset
+
+ is infinite.
+\end_layout
+
+\begin_layout Proof
+1.
+ Suppose 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is finite, define a function 
+\begin_inset Formula $f\left(n\right)=n^{+}$
+\end_inset
+
+, it is easy to show that 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is equivalent to a proper subset 
+\begin_inset Formula $\omega\backslash\left\{ 0\right\} $
+\end_inset
+
+, which is impossible for a finite set.
+\end_layout
+
+\begin_layout Proof
+2.
+ Use definition of infinity.
+ TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+The 
+\emph on
+number of elements
+\emph default
+ in a finite set 
+\begin_inset Formula $E$
+\end_inset
+
+ is the unique natural number equivalent to 
+\begin_inset Formula $E$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $\#E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ and 
+\begin_inset Formula $F$
+\end_inset
+
+ are finite sets, then 
+\begin_inset Formula $E\cup F$
+\end_inset
+
+ is finite and moreover if 
+\begin_inset Formula $E$
+\end_inset
+
+ and 
+\begin_inset Formula $F$
+\end_inset
+
+ are disjoint, then
+\begin_inset Formula 
+\[
+\#\left(E\cup F\right)=\#E+\#F.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+The union of a finite set of finite sets is finite.
+ If 
+\begin_inset Formula $E$
+\end_inset
+
+ is finite, then 
+\begin_inset Formula $P\left(E\right)$
+\end_inset
+
+ is finite and moreover 
+\begin_inset Formula $\#\left(P\left(E\right)\right)=2^{\#\left(E\right)}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Proposition*
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is a non-empty finite set of natural numbers, then there exists an element
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ in 
+\begin_inset Formula $E$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $m\leq k$
+\end_inset
+
+ for all 
+\begin_inset Formula $m$
+\end_inset
+
+ in 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
 \end_body
 \end_document
