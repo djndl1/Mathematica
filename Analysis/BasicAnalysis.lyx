@@ -4866,5 +4866,253 @@ hence
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ be a function and 
+\begin_inset Formula $c$
+\end_inset
+
+ a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Suppose there exists an 
+\begin_inset Formula $L\in\mathbb{R}$
+\end_inset
+
+ and for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ whenver 
+\begin_inset Formula $x\in S\backslash\left\{ c\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|x-c\right|<\delta$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-L\right|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+In this case, we say 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ 
+\emph on
+converges
+\emph default
+ to 
+\begin_inset Formula $L$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ We say 
+\begin_inset Formula $L$
+\end_inset
+
+ is the limit of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+, written 
+\begin_inset Formula 
+\[
+\lim_{x\to c}f\left(x\right)=L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+or 
+\begin_inset Formula 
+\[
+f\left(x\right)\to L\quad\text{as}\quad x\to c.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+If no such 
+\begin_inset Formula $L$
+\end_inset
+
+ exists, then we say that the limit does not exist or that 
+\begin_inset Formula $f$
+\end_inset
+
+ diverges at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a cluster point of 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $f\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ be a function s.t.
+ 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ converges as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Then the limit of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+ is unique.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ be a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $f\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ be a function.
+\end_layout
+
+\begin_layout Lemma
+Then 
+\begin_inset Formula $f\left(x\right)\to L$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+ iff for every sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ of numbers s.t.
+ 
+\begin_inset Formula $S\backslash\left\{ c\right\} $
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+, and s.t.
+ 
+\begin_inset Formula $\lim x_{n}=c$
+\end_inset
+
+ we have that the sequence 
+\begin_inset Formula $\left\{ f\left(x_{n}\right)\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
