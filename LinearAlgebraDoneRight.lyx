@@ -2662,6 +2662,436 @@ In other words,
 \end_layout
 
 \begin_layout Section
+Invertibility and Isomorphic Vector Spaces
+\end_layout
+
+\begin_layout Definition
+invertible, inverse
+\end_layout
+
+\begin_layout Definition
+A linear map 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ is called invertible if there exists a linear map 
+\begin_inset Formula $S\in\mathcal{L}\left(W,V\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $ST$
+\end_inset
+
+ equals the identity map on 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $TS$
+\end_inset
+
+ equals the identity map on 
+\begin_inset Formula $W$
+\end_inset
+
+ and this 
+\begin_inset Formula $S$
+\end_inset
+
+ is called an inverse of 
+\begin_inset Formula $T$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Inverse is unique
+\end_layout
+
+\begin_layout Proposition
+An invertible linear map has a unique inverse.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Invertibility is equivalent to injectivity and surjectivity.
+\end_layout
+
+\begin_layout Proposition
+A linear map is invertible iff and it is injective and surjective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+isomorphism, isomorphic
+\end_layout
+
+\begin_layout Definition
+An 
+\emph on
+isomorphism
+\emph default
+ is an invertible linear map.
+\end_layout
+
+\begin_layout Definition
+Two vector spaces are called 
+\emph on
+isomorphic 
+\emph default
+if there is an isomorphism from one vector space onto the other one.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Dimension shows whether vector spaces are isomorphic.
+\end_layout
+
+\begin_layout Proposition
+Two finite-dimensional vector spaces over 
+\begin_inset Formula $F$
+\end_inset
+
+ are isomorphic iff they have the same dimension.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The real reason why we introduce isomorphism is not about singular matrices,
+ it's about thinking linear maps as matrices.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $F^{m,n}$
+\end_inset
+
+ are isomorphic
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{1},\dots,w_{m}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $M\left(\cdot\right)$
+\end_inset
+
+ is an isomorphism between 
+\begin_inset Formula $\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $F^{m,n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We already prove that 
+\begin_inset Formula $M\left(\cdot\right)$
+\end_inset
+
+ is linear.
+\end_layout
+
+\begin_layout Proof
+Injectivity: Let 
+\begin_inset Formula $M\left(T\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+Tv_{k}=0\quad\forall k=1,2,\dots,n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Hence, for all 
+\begin_inset Formula $v\in V$
+\end_inset
+
+, 
+\begin_inset Formula $Tv=0$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $T=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Surjectivity: Suppose 
+\begin_inset Formula $A\in F^{m,n}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $T$
+\end_inset
+
+ be the linear map s.t.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+Tv_{k}=\sum_{j=1}^{m}A_{j,k}w_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+for 
+\begin_inset Formula $k=1,\dots,n$
+\end_inset
+
+.
+ By definition 
+\begin_inset Formula $M\left(T\right)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\dim\mathcal{L}\left(V,W\right)=\left(\dim V\right)\left(\dim W\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+matrix of a vector 
+\begin_inset Formula $M\left(v\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Linear maps act like matrix multiplication
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v\in V$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{1},\dots,w_{m}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+M\left(Tv\right)=M\left(T\right)M\left(v\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+operator, 
+\begin_inset Formula $\mathcal{L}\left(V\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A linear map from a vector space to itself is called an 
+\series bold
+\emph on
+operator
+\series default
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\mathcal{L}\left(V\right)=\mathcal{L}\left(V,V\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Injectivity is equivalent to surjectivity in finite dimensions.
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional and 
+\begin_inset Formula $T\in\mathcal{L}\left(V\right)$
+\end_inset
+
+.
+ Then the following are equivalent:
+\end_layout
+
+\begin_layout Proposition
+a.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ is invertible
+\end_layout
+
+\begin_layout Proposition
+b.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ is injective
+\end_layout
+
+\begin_layout Proposition
+c.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ is surjective
+\end_layout
+
+\begin_layout Section
 Products and Quotients of Vector Spaces
 \end_layout
 
