@@ -3600,7 +3600,10 @@ If
 \end_layout
 
 \begin_layout Proof
-TODO
+\begin_inset Formula $\left|a-b\right|\geq\left|\left|a\right|-\left|b\right|\right|$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5111,6 +5114,778 @@ Then
 \begin_inset Formula $L$
 \end_inset
 
+.
+\end_layout
+
+\begin_layout Proof
+L
+\begin_inset Formula $\to$
+\end_inset
+
+R:
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|f\left(x\right)-L\right|<\varepsilon$
+\end_inset
+
+ for 
+\begin_inset Formula $x$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|x-c\right|<\delta$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ in 
+\begin_inset Formula $S\backslash\left\{ c\right\} $
+\end_inset
+
+ be a sequence that converges to 
+\begin_inset Formula $c$
+\end_inset
+
+, then find a 
+\begin_inset Formula $M\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|x_{n}-c\right|<\delta$
+\end_inset
+
+ for all 
+\begin_inset Formula $n>M$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|f\left(x_{n}\right)-L\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+R
+\begin_inset Formula $\to$
+\end_inset
+
+L:
+\end_layout
+
+\begin_layout Proof
+Suppose it is not true that 
+\begin_inset Formula $f\left(x\right)\to L$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+.
+ Then there exists an 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ s.t.
+ for every 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $x\in S\backslash\left\{ c\right\} $
+\end_inset
+
+ where 
+\begin_inset Formula $\left|x-c\right|<\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|f\left(x\right)-L\right|\geq\varepsilon$
+\end_inset
+
+.
+ Construct a sequence using 
+\begin_inset Formula $1/n$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|x_{n}-c\right|<1/n$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{n}\in S\backslash\left\{ c\right\} $
+\end_inset
+
+.
+ Then exists an 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ s.t.
+ for every 
+\begin_inset Formula $n$
+\end_inset
+
+, there exists a point 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|f\left(x_{n}\right)-L\right|\geq\varepsilon$
+\end_inset
+
+, which contradicts the fact that 
+\begin_inset Formula $\left\{ f\left(x_{n}\right)\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $L$
+\end_inset
+
+ if 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the above lemma, we can start applying everything we know about sequential
+ limits to limits of functions.
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ be a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon S\to\mathbb{R}$
+\end_inset
+
+ be functions.
+ Suppose the limits of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+ both exist and that
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula 
+\[
+f\left(x\right)\leq g\left(x\right)\quad\text{for all }x\in S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+then 
+\begin_inset Formula 
+\[
+\lim_{x\to c}f\left(x\right)\leq\lim_{x\to c}g\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ be a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function.
+ And suppose the limit of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+ exists.
+ Suppose there are two real numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+a\leq f\left(x\right)\leq b\quad\text{for all }x\in S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+then
+\begin_inset Formula 
+\[
+a\leq\lim_{x\to c}f\left(x\right)\leq b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ be a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $f\colon S\mapsto\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $g\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $h\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ be functions.
+ Suppose 
+\begin_inset Formula 
+\[
+f\left(x\right)\leq g\left(x\right)\leq h\left(x\right)\quad\text{for all }x\in S
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+and the limtis of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+ both exist, and 
+\begin_inset Formula 
+\[
+\lim_{x\to c}f\left(x\right)=\lim_{x\to c}h\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+then the limit of 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+ exists and
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula 
+\[
+\lim_{x\to c}g\left(x\right)=\lim_{x\to c}f\left(x\right)=\lim_{x\to c}h\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Some algebraic properties on addition, subtraction, multiplication and division.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ be a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $f\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ be a function and suppose the limit of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $c$
+\end_inset
+
+ exists.
+ Then 
+\begin_inset Formula 
+\[
+\lim_{x\to c}\left|f\left(x\right)\right|=\left|\lim_{x\to c}f\left(x\right)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Proposition 2.9
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+the restriction of 
+\begin_inset Formula $f$
+\end_inset
+
+ to 
+\begin_inset Formula $A$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $f|_{A}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ and let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function.
+ Suppose 
+\begin_inset Formula $A\subset S$
+\end_inset
+
+ is s.t.
+ there is some 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left(A\backslash\left\{ c\right\} \right)\cap\left(c-\alpha,c+\alpha\right)=\left(S\backslash\left\{ c\right\} \right)\cap\left(c-\alpha,c+\alpha\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+i.
+ The point 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $A$
+\end_inset
+
+ iff 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ Supposing 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(x\right)\to L$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+ iff 
+\begin_inset Formula $f|_{A}\left(x\right)\to L$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ be function and let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a cluster point of 
+\begin_inset Formula $S\cap\left(c,\infty\right)$
+\end_inset
+
+.
+ Then if the limit of the restriction of 
+\begin_inset Formula $f$
+\end_inset
+
+ to 
+\begin_inset Formula $S\cap\left(c,\infty\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+ exists, define
+\begin_inset Formula 
+\[
+\lim_{x\to c^{+}}f\left(x\right)=\lim_{x\to c}f|_{S\cap\left(c,\infty\right)}\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Similarly, if 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S\cap\left(-\infty,c\right)$
+\end_inset
+
+ and the limit of the restriction as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+ exists, define
+\begin_inset Formula 
+\[
+\lim_{x\to c^{-}}f\left(x\right)=\lim_{x\to c}f|_{S\cap\left(-\infty,c\right)}\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ be a set s.t.
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of both 
+\begin_inset Formula $S\cap\left(-\infty,c\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $S\cap\left(c,\infty\right)$
+\end_inset
+
+ and let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function.
+ Then 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\lim_{x\to c}f\left(x\right)=L\quad\text{iff}\quad\lim_{x\to c^{+}}f\left(x\right)=\lim_{x\to c^{-}}f\left(x\right)=L.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Continuous function
+\end_layout
+
+\begin_layout Subsection
+Definition and basic properties
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $S\subset\mathbb{R},c\in S$
+\end_inset
+
+ and let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function.
+ We say that 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\emph on
+continuous
+\emph default
+ at 
+\begin_inset Formula $c$
+\end_inset
+
+ if for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ there is a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ whenver 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|x-c\right|<\delta$
+\end_inset
+
+ then 
+\begin_inset Formula $\left|f\left(x\right)-f\left(c\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+When 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ is continuous at all 
+\begin_inset Formula $c\in S$
+\end_inset
+
+ then we simply say 
+\begin_inset Formula $f$
+\end_inset
+
+ is a 
+\emph on
+continuous function
+\emph default
 .
 \end_layout
 
