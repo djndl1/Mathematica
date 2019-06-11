@@ -4641,6 +4641,10 @@ as above.
 Continuous Functions
 \end_layout
 
+\begin_layout Section
+Function limit
+\end_layout
+
 \begin_layout Definition
 Let 
 \begin_inset Formula $S\in\mathbb{R}$
@@ -5886,6 +5890,474 @@ When
 \emph on
 continuous function
 \emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that this defintion is not the same as of the limit of a function,
+ which requires 
+\begin_inset Formula $x\in S\backslash\left\{ c\right\} $
+\end_inset
+
+.
+ The main feature of continuos funcitons is that these are precisely the
+ functions that behave nicely with limits.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+, let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function and let 
+\begin_inset Formula $c\in S$
+\end_inset
+
+ be a point.
+ Then
+\end_layout
+
+\begin_layout Proposition
+i.
+ If 
+\begin_inset Formula $c$
+\end_inset
+
+ is not a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ If 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ iff the limit of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+ exists and 
+\begin_inset Formula 
+\[
+\lim_{x\to c}f\left(x\right)=f\left(c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iii.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ iff for every sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ where 
+\begin_inset Formula $x_{n}\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim x_{n}=c$
+\end_inset
+
+, the sequence 
+\begin_inset Formula $\left\{ f\left(x_{n}\right)\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $f\left(c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+i.
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $S\cap\left(c-\delta,c+\delta\right)=\left\{ c\right\} $
+\end_inset
+
+.
+ Therefore, for any 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, simply take the given data.
+ The only 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|x-c\right|<\delta$
+\end_inset
+
+ is 
+\begin_inset Formula $x=c$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left|f\left(x\right)-f\left(c\right)\right|=\left|f\left(c\right)-f\left(c\right)\right|=0<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ii.
+ From the definition
+\end_layout
+
+\begin_layout Proof
+iii.
+ Similar to Lemma 3.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon S\to\mathbb{R}$
+\end_inset
+
+ be functions continuous at 
+\begin_inset Formula $c\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+i.
+ ii.
+ iii.
+ the function 
+\begin_inset Formula $h\colon S\to\mathbb{R}$
+\end_inset
+
+ defined by 
+\begin_inset Formula $h\left(x\right)\coloneqq f\left(x\right)+/-/*g\left(x\right)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iv.
+ If 
+\begin_inset Formula $g\left(x\right)\neq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in S$
+\end_inset
+
+, the function 
+\begin_inset Formula $h\colon S\to\mathbb{R}$
+\end_inset
+
+ defined by 
+\begin_inset Formula $h\left(x\right)\coloneqq\frac{h\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $A,B\subset\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $f\colon B\to\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon A\to B$
+\end_inset
+
+ be functions.
+ If 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $g\left(c\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $f\circ g\colon A\to\mathbb{R}$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ be a sequence in 
+\begin_inset Formula $A$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\lim x_{n}=c$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+, then 
+\begin_inset Formula $\left\{ g\left(x_{n}\right)\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $g\left(c\right)$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $g\left(c\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\left\{ f\left(g\left(x_{n}\right)\right)\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $f\left(g\left(c\right)\right)$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Discontinuous functions
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function and 
+\begin_inset Formula $c\in S$
+\end_inset
+
+.
+ Suppose there exists a sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim x_{n}=c$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left\{ f\left(x_{n}\right)\right\} $
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $f\left(c\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ is discontinuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+The Dirichlet function 
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\begin{cases}
+1 & \text{if x is rational}\\
+0 & \text{if x is irrational}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+is discontinuous.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $c$
+\end_inset
+
+ is rational/irrational.
+ Take a sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ of irrational/rational numbers s.t.
+ 
+\begin_inset Formula $\lim x_{n}=c$
+\end_inset
+
 .
 \end_layout
 
