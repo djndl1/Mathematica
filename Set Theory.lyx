@@ -3798,5 +3798,433 @@ If
 TODO
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+order
+\end_layout
+
+\begin_layout Standard
+The only thing to remember is that the primary motivation comes from the
+ familiar properties of 
+\begin_inset Quotes eld
+\end_inset
+
+less than or equal to
+\begin_inset Quotes erd
+\end_inset
+
+ and not 
+\begin_inset Quotes eld
+\end_inset
+
+less than
+\begin_inset Quotes erd
+\end_inset
+
+.
+ There is no profound reason for this; it just happens that the generalizaation
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+less than or equal to
+\begin_inset Quotes erd
+\end_inset
+
+ occurs more frequently and is more amenable to algebraic treatment.
+\end_layout
+
+\begin_layout Definition
+antisymmetric
+\end_layout
+
+\begin_layout Definition
+A relation 
+\begin_inset Formula $R$
+\end_inset
+
+ in a set 
+\begin_inset Formula $X$
+\end_inset
+
+ is called 
+\emph on
+antisymmetric
+\emph default
+ if for every 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+, the simultaneous validity of 
+\begin_inset Formula $x~R~y$
+\end_inset
+
+ and 
+\begin_inset Formula $y~R~x$
+\end_inset
+
+ implies that 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partial order in a set 
+\begin_inset Formula $X$
+\end_inset
+
+ is a reflexive, antisymmetric and transitive relation in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+A partial order in 
+\begin_inset Formula $X$
+\end_inset
+
+ may be defined as a relation 
+\begin_inset Formula $\leqq$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ s.t.
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Definition
+i.
+ 
+\begin_inset Formula $x\leqq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+ii.
+ if 
+\begin_inset Formula $x\leqq y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\leqq x$
+\end_inset
+
+, then 
+\begin_inset Formula $x=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+iii.
+ if 
+\begin_inset Formula $x\leqq y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\leqq z$
+\end_inset
+
+, then 
+\begin_inset Formula $x\leqq z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The reason for the qualifying 
+\begin_inset Quotes eld
+\end_inset
+
+partial
+\begin_inset Quotes erd
+\end_inset
+
+ is that some questions abotu order may be left unanswered.
+\end_layout
+
+\begin_layout Definition
+if for every 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ either 
+\begin_inset Formula $x\leqq y$
+\end_inset
+
+ or 
+\begin_inset Formula $y\leqq x$
+\end_inset
+
+, then 
+\begin_inset Formula $\leqq$
+\end_inset
+
+ is called a 
+\emph on
+total
+\emph default
+ order.
+ A totally ordered set is frequently called a 
+\emph on
+chain.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e.g.
+ inclusion in a power set is a partial order; 
+\begin_inset Quotes eld
+\end_inset
+
+less than or equal to
+\begin_inset Quotes erd
+\end_inset
+
+ in the set of natural number is a total order; the relation of extension
+ for functions is a partial order.
+\end_layout
+
+\begin_layout Definition
+a partially ordered set is an ordered pair 
+\begin_inset Formula $\left(X,\leqq\right)$
+\end_inset
+
+ , where 
+\begin_inset Formula $X$
+\end_inset
+
+ is a set and 
+\begin_inset Formula $\leqq$
+\end_inset
+
+ is a partial order in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This kind of definition is very common in mathematics; a mathematics structure
+ is almost always a set together with soem specified other sets, functions,
+ and relations.
+ The accepted way of making such definitions precise is by reference to
+ ordered pairs, triples or whatever is appropriate.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $x\leqq y$
+\end_inset
+
+ and 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ is a 
+\emph on
+predecessor
+\emph default
+ of 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Similarly we can define 
+\emph on
+successor
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+The connection between 
+\begin_inset Formula $\leqq$
+\end_inset
+
+ and 
+\begin_inset Formula $<$
+\end_inset
+
+ can be generalized to arbitrary relations.
+ Given any relation 
+\begin_inset Formula $R$
+\end_inset
+
+ in a set 
+\begin_inset Formula $X$
+\end_inset
+
+, we can define a relation 
+\begin_inset Formula $S$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ by writing 
+\begin_inset Formula $x~S~y$
+\end_inset
+
+ in case 
+\begin_inset Formula $x~R~y$
+\end_inset
+
+ but 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ is a strict relation while 
+\begin_inset Formula $R$
+\end_inset
+
+ is the weak relation corresponding to 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $X$
+\end_inset
+
+ is a partially ordered set, then it could happen that 
+\begin_inset Formula $X$
+\end_inset
+
+ has an element 
+\begin_inset Formula $a$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $a\leqq x$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ The antisymmetry of an order implies that if 
+\begin_inset Formula $X$
+\end_inset
+
+ has a least element, then it has only one.
+ Similar for the greatest element.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a$
+\end_inset
+
+ is minimal if 
+\begin_inset Formula $x\leqq a$
+\end_inset
+
+ implies 
+\begin_inset Formula $x=a$
+\end_inset
+
+, similar for maximal, which are different from least/greatest elements.
+\end_layout
+
+\begin_layout Definition
+Upper bound, lower bound, infimum, supremum
+\end_layout
+
 \end_body
 \end_document
