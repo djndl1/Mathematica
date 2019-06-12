@@ -6361,5 +6361,337 @@ Suppose
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Min-max and intermediate value theorems
+\end_layout
+
+\begin_layout Standard
+Continuous functions on closed and bounded intervals are quite well behaved
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be a continuous function.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ is bounded.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $f$
+\end_inset
+
+ is not bounded.
+ Then for each 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, there is an 
+\begin_inset Formula $x_{n}\in\left[a,b\right]$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+\left|f\left(x_{n}\right)\right|\geq n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+the sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ is bounded.
+ By the Bolzano-Weierstrass theorem, there is a convergent subsequences
+ 
+\begin_inset Formula $\left\{ x_{n_{i}}\right\} $
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x=\lim x_{n_{i}}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $x\leq x_{n_{i}}\leq b$
+\end_inset
+
+ for all 
+\begin_inset Formula $i$
+\end_inset
+
+, then 
+\begin_inset Formula $a\leq x\leq b$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(x_{n_{i}}\right)$
+\end_inset
+
+ is not bounded as 
+\begin_inset Formula $\left|f\left(x_{n_{i}}\right)\right|\geq n_{i}\geq i$
+\end_inset
+
+, which contradicts the continuity of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Minimum-maximum theorem
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be a continuous function.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ achieves both an absolute minimum and an absolute maximum on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+The supremum/infimum of 
+\begin_inset Formula $\left\{ f\left(x\right)\colon a\leq x\leq b\right\} $
+\end_inset
+
+ is a cluster point (otherwise it wouldn't be the supremum/infinum), which,
+ by Proposition 3.1, is approached by some sequence 
+\begin_inset Formula $\left\{ f\left(x_{n}\right)\right\} $
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ must be bounded, then there must be a convergent subsequence 
+\begin_inset Formula $\left\{ x_{n_{i}}\right\} $
+\end_inset
+
+ converging to 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+ From continuity, 
+\begin_inset Formula $\left\{ f\left(x_{n_{i}}\right)\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, thus 
+\begin_inset Formula $f\left(x_{n}\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, that is, the supremum/infimum is 
+\begin_inset Formula $f\left(x\right)\in\left\{ f\left(x\right)\colon a\leq x\leq b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be a continuous function.
+ Suppose 
+\begin_inset Formula $f\left(a\right)<0$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(b\right)>0$
+\end_inset
+
+.
+ Then there exists a number 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f\left(c\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bolzano's intermediate theorem is one of the cornerstone of analysis.
+\end_layout
+
+\begin_layout Theorem
+Bolzano's intermediate value theorem
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be a continuous function.
+ Suppose 
+\begin_inset Formula $y\in\mathbb{R}$
+\end_inset
+
+ is such that 
+\begin_inset Formula $f\left(a\right)<y<f\left(b\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $f\left(a\right)>y>f\left(b\right)$
+\end_inset
+
+.
+ Then there exists a 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f\left(c\right)=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This theorem says that a continuous function on a closed interval achieves
+ all the values between the values at the endpoints.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $f\left(a\right)<y<f\left(b\right)$
+\end_inset
+
+, then define 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)-y$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $g\left(a\right)<0$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(b\right)>0$
+\end_inset
+
+, from Lemma 3.3, 
+\begin_inset Formula $g\left(c\right)=0,c\in\left(a,b\right)$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $f\left(c\right)=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+If 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ is continuous, then the direct image 
+\begin_inset Formula $f\left(\left[a,b\right]\right)$
+\end_inset
+
+ is a closed and bounded interval or a single number.
+\end_layout
+
 \end_body
 \end_document
