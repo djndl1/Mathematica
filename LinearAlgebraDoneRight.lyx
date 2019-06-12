@@ -3095,5 +3095,630 @@ c.
 Products and Quotients of Vector Spaces
 \end_layout
 
+\begin_layout Definition
+product of vectors spaces
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $V_{1}\times\cdots\times V_{m}$
+\end_inset
+
+ is defined by 
+\begin_inset Formula 
+\[
+V_{1}\times\cdots\times V_{m}=\left\{ \left(v_{1},\dots,v_{m}\right)\colon v_{1}\in V_{1},\dots,v_{m}\in V_{m}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Addition and scalar multiplication are defined to operator on ordered tuples.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Product of vector spaces is a vector space
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V_{1},\dots,V_{m}$
+\end_inset
+
+ are vector spaces over 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $V_{1}\times\cdots\times V_{m}$
+\end_inset
+
+ is a vector space over 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Dimension of a product is the sum of dimensions
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V_{1},\dots,V_{m}$
+\end_inset
+
+ are finite-dimensional vector spaces.
+ Then 
+\begin_inset Formula $V_{1}\times\cdots\times V_{m}$
+\end_inset
+
+ is finite–dimensional and 
+\begin_inset Formula 
+\[
+\dim\left(V_{1}\times\cdots\times V_{m}\right)=\dim V_{1}+\cdots+\dim V_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Products and direct sums
+\end_layout
+
+\begin_layout Proposition
+Suppose that 
+\begin_inset Formula $U_{1},\dots,U_{m}$
+\end_inset
+
+ are subspaces of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Define a linear map 
+\begin_inset Formula $\Gamma\colon U_{1}\times\cdots\times U_{m}\to U_{1}+\cdots+U_{m}$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+\Gamma\left(u_{1},\dots,u_{m}\right)=u_{1}+\cdots+u_{m}.
+\]
+
+\end_inset
+
+ Then 
+\begin_inset Formula $U_{1}+\cdots+U_{m}$
+\end_inset
+
+ is a direct sum iff 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ is injective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+A sum is a direct sum iff dimensions add up
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional and 
+\begin_inset Formula $U_{1},\cdots,U_{m}$
+\end_inset
+
+ are subspaces 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $U_{1}+\cdots+U_{m}$
+\end_inset
+
+ is a direct sum iff 
+\begin_inset Formula 
+\[
+\dim\left(U_{1}+\cdots+U_{m}\right)=\dim U_{1}+\cdots+\dim U_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $v+U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $v+V$
+\end_inset
+
+ is the subset of 
+\begin_inset Formula $V$
+\end_inset
+
+ defined by 
+\begin_inset Formula $v+U=\left\{ v+u\colon u\in U\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+affine subset, parallel
+\end_layout
+
+\begin_layout Definition
+An affine subset of 
+\begin_inset Formula $V$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $V$
+\end_inset
+
+ of the form 
+\begin_inset Formula $v+U$
+\end_inset
+
+ for some 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ and some subspace 
+\begin_inset Formula $U$
+\end_inset
+
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+For 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ a subspace of 
+\begin_inset Formula $U$
+\end_inset
+
+, the affine subset 
+\begin_inset Formula $v+U$
+\end_inset
+
+ is said to be parallel to 
+\begin_inset Formula $U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then the 
+\emph on
+quotient space
+\emph default
+ 
+\begin_inset Formula $V/U$
+\end_inset
+
+ is the set of all affine subsets of 
+\begin_inset Formula $V$
+\end_inset
+
+ parallel to 
+\begin_inset Formula $U$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V/U=\left\{ v+U\colon v\in V\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To make 
+\begin_inset Formula $V/U$
+\end_inset
+
+ into a vector space
+\end_layout
+
+\begin_layout Proposition
+Two affine subsets parallel to 
+\begin_inset Formula $U$
+\end_inset
+
+ are equal or disjoint
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+and 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+.
+ Then the following are equivalent:
+\end_layout
+
+\begin_layout Proposition
+a.
+ 
+\begin_inset Formula $v-w\in U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+b.
+ 
+\begin_inset Formula $v+U=w+U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+c.
+ 
+\begin_inset Formula $\left(v+U\right)\cap\left(w+U\right)\neq\varnothing$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+addtion and scalar multiplication on 
+\begin_inset Formula $V/U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then addition and scalar multiplication are defined on 
+\begin_inset Formula $V/U$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\begin{align*}
+\left(v+U\right)+\left(w+U\right) & =\left(v+w\right)+U\\
+\lambda\left(v+U\right) & =\left(\lambda v\right)+U
+\end{align*}
+
+\end_inset
+
+ for 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Quotien space is a vector space
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $V/U$
+\end_inset
+
+ with the operator of addition and scalar multiplication defined above,
+ is a vector space.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+The potential problem with the defintions above of addtion and scalar multiplica
+tion on 
+\begin_inset Formula $V/U$
+\end_inset
+
+ is that the representation of an affine subset parallel to 
+\begin_inset Formula $U$
+\end_inset
+
+ is not unique.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $v,w\in V$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{v},\hat{w}\in V$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $v+U=\hat{v}+U$
+\end_inset
+
+ and 
+\begin_inset Formula $w+U=\hat{w}+U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+By Proposition 3.28 
+\begin_inset Formula $\left(v+w\right)+U=\left(\hat{v}+\hat{w}\right)+U$
+\end_inset
+
+.
+ Similarly, multiplication is well defined.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+quotient map, 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ The quotient map 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is the linear map 
+\begin_inset Formula $\pi\colon V\to V/U$
+\end_inset
+
+ defined by
+\begin_inset Formula 
+\[
+\pi\left(v\right)=v+U
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+for 
+\begin_inset Formula $v\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Dimension of a quotient space
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional and 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\dim V/U=\dim V-\dim U.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+By definition 
+\begin_inset Formula $\pi\left(v\right)$
+\end_inset
+
+ is surjective.
+ By Proposition 3.28, 
+\begin_inset Formula $\text{null }\pi=U$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
