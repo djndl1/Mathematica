@@ -1,3 +1,5 @@
 *.lyx~
 *.*~
 *.*#
+.ipynb_checkpoints
+draft.sage
