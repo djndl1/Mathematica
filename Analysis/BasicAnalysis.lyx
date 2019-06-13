@@ -6693,5 +6693,363 @@ If
  is a closed and bounded interval or a single number.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Uniform Continuity
+\end_layout
+
+\begin_layout Standard
+There are situations when it is advantageous to have a 
+\begin_inset Formula $\delta$
+\end_inset
+
+ independent of any point.
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function.
+ Suppose for any 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ whenever 
+\begin_inset Formula $x,c\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|x-c\right|<\delta$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|f\left(x\right)-f\left(c\right)\right|<\varepsilon$
+\end_inset
+
+.
+ Then we say 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\emph on
+uniformly continuous.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is not hard to see that a uniformly continuous function must be continuous.
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ no longer depend on 
+\begin_inset Formula $c$
+\end_inset
+
+, it only depends on 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ A function that is not uniformly continuous on a larger set may be uniformly
+ continuous when restricted to a smaller set.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is defined on an interval that is either not closed or not bounded, then
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ can be continuous, but not uniformly continuous.
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be a continuous function.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+By contrapositive
+\end_layout
+
+\begin_layout Proof
+Let us negate the definition of uniformly continuous.
+ There exists an 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ s.t.
+ for every 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ there exist points 
+\begin_inset Formula $x,y$
+\end_inset
+
+ in 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ with 
+\begin_inset Formula $\left|x-y\right|<\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|f\left(x\right)-f\left(y\right)\right|\geq\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+For such 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta=1/n$
+\end_inset
+
+, find sequences 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ y_{n}\right\} $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|x_{n}-y_{n}\right|<1/n$
+\end_inset
+
+ and s.t.
+ 
+\begin_inset Formula $\left|f\left(x_{n}\right)-f\left(y_{n}\right)\right|\geq0$
+\end_inset
+
+ (how?).
+ By Bolzano-Weierstrass, there exists a convergent subsequence 
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+ converging to 
+\begin_inset Formula $c$
+\end_inset
+
+ (obviously 
+\begin_inset Formula $a\leq c\leq b$
+\end_inset
+
+).
+\begin_inset Formula 
+\[
+\left|y_{n_{k}}-c\right|=\left|y_{n_{k}}-x_{n_{k}}+x_{n_{k}}-c\right|\leq\left|y_{n_{k}}-x_{n_{k}}\right|+\left|x_{n_{k}}-c\right|<1/n_{k}+\left|x_{n_{k}}-c\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Thus 
+\begin_inset Formula $\left\{ y_{n_{k}}\right\} $
+\end_inset
+
+ converges to 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\left|f\left(x_{n_{k}}\right)-f\left(c\right)\right| & =\left|f\left(x_{n_{k}}\right)-f\left(y_{n_{k}}\right)+f\left(y_{n_{k}}\right)-f\left(c\right)\right|\\
+ & \geq\left|f\left(x_{n_{k}}\right)-f\left(y_{n_{k}}\right)\right|-\left|f\left(y_{n_{k}}\right)-f\left(c\right)\right|\\
+ & \geq\varepsilon-\left|f\left(y_{n_{k}}\right)-f\left(c\right)\right|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+that is, it is always the case that 
+\begin_inset Formula 
+\[
+\left|f\left(x_{n_{k}}\right)-f\left(c\right)\right|+\left|f\left(y_{n_{k}}\right)-f\left(c\right)\right|\geq\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is continuous over 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\varepsilon_{1}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon_{2}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon_{1}+\varepsilon_{2}=\varepsilon$
+\end_inset
+
+, we can always have
+\begin_inset Formula 
+\[
+\left|f\left(x_{n_{k}}\right)-f\left(c\right)\right|+\left|f\left(y_{n_{k}}\right)-f\left(c\right)\right|<\varepsilon_{1}+\varepsilon_{2}=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+by find a suitable 
+\begin_inset Formula $M\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $n_{k}\geq M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ is 
+\emph on
+Lipschitz continuous, 
+\emph default
+if there exists a 
+\begin_inset Formula $K\in\mathbb{R}$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-f\left(y\right)\right|\leq K\left|x-y\right|\quad\text{for all \ensuremath{x} and \ensuremath{y} in \ensuremath{S}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+A Lipschitz continuous function is uniformly continuous.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e.g.
+ 
+\begin_inset Formula $\sin x$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos x$
+\end_inset
+
+ are Lipschitz continuous.
+\end_layout
+
 \end_body
 \end_document
