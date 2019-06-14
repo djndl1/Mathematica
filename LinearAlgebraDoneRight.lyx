@@ -3720,5 +3720,384 @@ By definition
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Eigenvalues, Eigenvectors, and Invariant Subspaces
+\end_layout
+
+\begin_layout Standard
+In this chapter, we begin the investigation of linear maps from a finite-dimensi
+onal vector space to itself.
+\end_layout
+
+\begin_layout Definition
+invariant subspace
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $T\in\mathcal{L}$
+\end_inset
+
+
+\begin_inset Formula $\left(V\right)$
+\end_inset
+
+.
+ A subspace 
+\begin_inset Formula $U$
+\end_inset
+
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+ is called 
+\emph on
+invariant 
+\emph default
+under 
+\begin_inset Formula $T$
+\end_inset
+
+ if 
+\begin_inset Formula $u\in$
+\end_inset
+
+ imlies 
+\begin_inset Formula $Tv\in U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a linear operator 
+\begin_inset Formula $T\in\mathcal{L}\left(V\right)$
+\end_inset
+
+ have invariant subspaces such as 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $\text{null }T$
+\end_inset
+
+, and 
+\begin_inset Formula $\text{range }T$
+\end_inset
+
+.
+ There are other invariant subspaces other than the ones mentioned above.
+\end_layout
+
+\begin_layout Definition
+eigenvalue
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $T\in\mathcal{L}\left(V\right)$
+\end_inset
+
+.
+ A number 
+\begin_inset Formula $\lambda\in F$
+\end_inset
+
+ is called eigenvalue of 
+\begin_inset Formula $T$
+\end_inset
+
+ if there exists 
+\begin_inset Formula $v\in V$
+\end_inset
+
+, called an eigenvector of 
+\begin_inset Formula $T$
+\end_inset
+
+ corrsponding to 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $v\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $Tv=\lambda v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $T$
+\end_inset
+
+ has a 
+\begin_inset Formula $1$
+\end_inset
+
+-dimensional invariant subspace iff 
+\begin_inset Formula $T$
+\end_inset
+
+ has an eigenvalue.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Equivalent condition to be an eigenvalue
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional, 
+\begin_inset Formula $T\in\mathcal{L}\left(V\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda\in F$
+\end_inset
+
+.
+ Then the following are equivalent:
+\end_layout
+
+\begin_layout Proposition
+a.
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $T$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Proposition
+b.
+ 
+\begin_inset Formula $T-\lambda I$
+\end_inset
+
+ is not injective
+\end_layout
+
+\begin_layout Proposition
+c.
+ 
+\begin_inset Formula $T-\lambda I$
+\end_inset
+
+ is not surjective
+\end_layout
+
+\begin_layout Proposition
+d.
+ 
+\begin_inset Formula $T-\lambda I$
+\end_inset
+
+ is not invertible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Linearly independent eigenvectors
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $T\in\mathcal{L}\left(V\right)$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $\lambda_{1},\dots,\lambda_{m}$
+\end_inset
+
+ are distinct eigenvalues of 
+\begin_inset Formula $T$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ are corresponding eigenvectors.
+ Then 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ is linearly independent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $v_{1},\dots,v_{m}$
+\end_inset
+
+ is linearly dependent.
+ By the Linear Dependence Lemma, we can find a smallest 
+\begin_inset Formula $k$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $v_{k}\in\text{\text{span}}\left\{ v_{1},\dots,v_{k-1}\right\} $
+\end_inset
+
+, i.e.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{k}=a_{1}v_{1}+\cdots+a_{k-1}v_{k-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+apply 
+\begin_inset Formula $T$
+\end_inset
+
+ to both sides
+\begin_inset Formula 
+\[
+\lambda_{k}v_{k}=a_{1}\lambda_{1}v_{1}+\cdots+a_{k-1}\lambda_{k-1}v_{k-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+multiply 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ to both sides
+\begin_inset Formula 
+\[
+\lambda_{k}v_{k}=a_{1}\lambda_{k}v_{1}+\cdots+a_{k-1}\lambda_{k-1}v_{k-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+then
+\begin_inset Formula 
+\[
+a_{1}\left(\lambda_{1}-\lambda_{m}\right)v_{1}+\cdots+a_{k-1}\left(\lambda_{1}-\lambda_{m}\right)v_{k-1}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since all eigenvalues are different and 
+\begin_inset Formula $k$
+\end_inset
+
+ being the smallest possible value means 
+\begin_inset Formula $v_{1},\dots,v_{k-1}$
+\end_inset
+
+ is linearly independent, hence 
+\begin_inset Formula $v_{k}=0$
+\end_inset
+
+, contradicts the fact that 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ is an eigenvector.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Number of eigenvalues
+\end_layout
+
+\begin_layout Corollary
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is a finite-dimensional.
+ Then each operator on 
+\begin_inset Formula $V$
+\end_inset
+
+ has at most 
+\begin_inset Formula $\dim V$
+\end_inset
+
+ distinct eigenvalues.
+\end_layout
+
 \end_body
 \end_document
