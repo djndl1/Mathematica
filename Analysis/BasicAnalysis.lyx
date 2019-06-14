@@ -555,10 +555,6 @@ We write
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Definition*
 if there exists an injection from 
 \begin_inset Formula $A$
 \end_inset
@@ -701,10 +697,6 @@ Cantor
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Theorem*
 In particular, there exists no surjection from 
 \begin_inset Formula $A$
 \end_inset
@@ -2240,10 +2232,6 @@ Triangle Inequality
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proposition
 for 
 \begin_inset Formula $x,y\in R$
 \end_inset
@@ -2355,11 +2343,7 @@ f\left(x\right)\leq g\left(x\right)\quad\text{for all }x\in D
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proposition
-then -
+then 
 \begin_inset Formula 
 \[
 \sup_{x\in D}f\left(x\right)\leq\sup_{x\in D}g\left(x\right)\quad\text{and}\quad\inf_{x\in D}f\left(x\right)\leq\inf_{x\in D}g\left(x\right)
@@ -2872,10 +2856,6 @@ A monotone sequence
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proposition
 if 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -3137,10 +3117,6 @@ Let
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Definition
 is called a 
 \emph on
 subsequence 
@@ -3237,10 +3213,6 @@ a_{n}\leq x_{n}\leq b_{n}\quad\forall n\in\mathbb{N}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Lemma
 Suppose 
 \begin_inset Formula $\left\{ a_{n}\right\} $
 \end_inset
@@ -3257,10 +3229,6 @@ Suppose
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Lemma
 Then 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -3309,10 +3277,6 @@ x_{n}\leq y_{n}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Lemma
 for all 
 \begin_inset Formula $n\in\mathbb{N}$
 \end_inset
@@ -3642,10 +3606,6 @@ Let
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proposition
 and 
 \begin_inset Formula 
 \[
@@ -3756,10 +3716,6 @@ L=\lim_{n\to\infty}\frac{\left|x_{n+1}\right|}{x_{n}}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Lemma
 exists.
 \end_layout
 
@@ -4037,10 +3993,6 @@ If
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Theorem
 Similarly, there exists a (perhaps different) subsequences 
 \begin_inset Formula $\left\{ x_{m_{k}}\right\} $
 \end_inset
@@ -4114,10 +4066,6 @@ a_{\left(n_{k}+1\right)}-x_{n_{k+1}}<\frac{1}{k+1}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 For every 
 \begin_inset Formula $k\geq2$
 \end_inset
@@ -4135,10 +4083,6 @@ For every
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Since 
 \begin_inset Formula $\left\{ a_{n}\right\} $
 \end_inset
@@ -4165,10 +4109,6 @@ Since
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 for 
 \begin_inset Formula $k\geq M_{1}$
 \end_inset
@@ -4192,10 +4132,6 @@ Find an
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Take 
 \begin_inset Formula $M\coloneqq\max\left\{ M_{1},M_{2},2\right\} $
 \end_inset
@@ -4254,10 +4190,6 @@ Let
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proposition
 Furthermore, if 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -4829,10 +4761,6 @@ Suppose
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 by squeeze lemma, 
 \begin_inset Formula $x$
 \end_inset
@@ -4975,10 +4903,6 @@ converges
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Definition
 or 
 \begin_inset Formula 
 \[
@@ -4987,10 +4911,6 @@ f\left(x\right)\to L\quad\text{as}\quad x\to c.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Definition
 If no such 
 \begin_inset Formula $L$
 \end_inset
@@ -5338,10 +5258,6 @@ f\left(x\right)\leq g\left(x\right)\quad\text{for all }x\in S
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Corollary
 then 
 \begin_inset Formula 
 \[
@@ -5408,10 +5324,6 @@ a\leq f\left(x\right)\leq b\quad\text{for all }x\in S
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Corollary
 then
 \begin_inset Formula 
 \[
@@ -5465,10 +5377,6 @@ f\left(x\right)\leq g\left(x\right)\leq h\left(x\right)\quad\text{for all }x\in 
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Corollary
 and the limtis of 
 \begin_inset Formula $f\left(x\right)$
 \end_inset
@@ -5493,10 +5401,6 @@ and the limtis of
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Corollary
 then the limit of 
 \begin_inset Formula $g\left(x\right)$
 \end_inset
@@ -5743,10 +5647,6 @@ Let
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Definition
 Similarly, if 
 \begin_inset Formula $c$
 \end_inset
@@ -6329,10 +6229,6 @@ f\left(x\right) & =\begin{cases}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Example
 is discontinuous.
 \end_layout
 
@@ -6418,10 +6314,6 @@ Suppose
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 the sequence 
 \begin_inset Formula $\left\{ x_{n}\right\} $
 \end_inset
@@ -6905,10 +6797,6 @@ For such
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Thus 
 \begin_inset Formula $\left\{ y_{n_{k}}\right\} $
 \end_inset
@@ -6927,10 +6815,6 @@ Thus
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 that is, it is always the case that 
 \begin_inset Formula 
 \[
@@ -6939,10 +6823,6 @@ that is, it is always the case that
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 Since 
 \begin_inset Formula $f\left(x\right)$
 \end_inset
@@ -6972,10 +6852,6 @@ Since
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Proof
 by find a suitable 
 \begin_inset Formula $M\in\mathbb{N}$
 \end_inset
@@ -7049,6 +6925,576 @@ e.g.
 \end_inset
 
  are Lipschitz continuous.
+\end_layout
+
+\begin_layout Section
+Limits at infinity
+\end_layout
+
+\begin_layout Definition
+infinity as a cluster point
+\end_layout
+
+\begin_layout Definition
+We say 
+\begin_inset Formula $\infty$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+, if for every 
+\begin_inset Formula $M\in\mathbb{R}$
+\end_inset
+
+¸ there exists an 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x\geq M$
+\end_inset
+
+.
+ Similarly, 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+, if for every 
+\begin_inset Formula $M\in\mathbb{R}$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x\leq M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+limits at infinity
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function, where 
+\begin_inset Formula $\infty$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ If there exists an 
+\begin_inset Formula $L\in\mathbb{R}$
+\end_inset
+
+ s.t.
+ for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, there is an 
+\begin_inset Formula $M\in\mathbb{R}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-L\right|<\varepsilon
+\]
+
+\end_inset
+
+whenver 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $x\geq M$
+\end_inset
+
+, then we say 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $L$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $\infty$
+\end_inset
+
+, denoted by 
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}f\left(x\right)=L.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Similarly, we can define 
+\begin_inset Formula 
+\[
+\lim_{x\to-\infty}f\left(x\right)=L.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The limit at 
+\begin_inset Formula $\infty$
+\end_inset
+
+ or 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ as defined above is unique if it exists.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Suppose 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ is a function, 
+\begin_inset Formula $\infty$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+, and 
+\begin_inset Formula $L\in\mathbb{R}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}f\left(x\right)=L
+\]
+
+\end_inset
+
+iff
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}f\left(x_{n}\right)=L
+\]
+
+\end_inset
+
+for all sequences 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The lemma holds for the limit as 
+\begin_inset Formula $x\to-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $\infty$
+\end_inset
+
+ at infinity.
+ Then for all 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $M\in\mathbb{R}$
+\end_inset
+
+ s.t.
+ for all 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $x\geq M$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-L\right|<\varepsilon.
+\]
+
+\end_inset
+
+Suppose a sequence 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+ diverges to 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $M\in\mathbb{R}$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ for all 
+\begin_inset Formula $n\geq M$
+\end_inset
+
+, we have 
+\begin_inset Formula $x_{n}>M$
+\end_inset
+
+, then it must be that 
+\begin_inset Formula 
+\[
+\left|f\left(x_{n}\right)-L\right|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+The converse: Suppose 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $L$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+.
+ Then there exists 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $M>0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $x\geq M$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\left|f\left(x\right)-L\right|\geq\varepsilon.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=\infty$
+\end_inset
+
+, for all 
+\begin_inset Formula $M>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{n}\geq M$
+\end_inset
+
+, then for the 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ above
+\begin_inset Formula 
+\[
+\left|f\left(x_{n}\right)-L\right|\geq\varepsilon
+\]
+
+\end_inset
+
+which contradicts that 
+\begin_inset Formula $\lim_{n\to\infty}f\left(x_{n}\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Infinite limit
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be a function and suppose 
+\begin_inset Formula $S$
+\end_inset
+
+ has 
+\begin_inset Formula $\infty$
+\end_inset
+
+ as a cluster point.
+ We say 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ diverges to infinity as 
+\begin_inset Formula $x$
+\end_inset
+
+ goes to 
+\begin_inset Formula $\infty$
+\end_inset
+
+, if for every 
+\begin_inset Formula $N\in\mathbb{R}$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $M\in\mathbb{R}$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+f\left(x\right)>N
+\]
+
+\end_inset
+
+whenver 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ and 
+\begin_inset Formula $x\geq M$
+\end_inset
+
+, denoted by 
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}f\left(x\right)=\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A similar definition can be made for limits as 
+\begin_inset Formula $x\to-\infty$
+\end_inset
+
+ or as 
+\begin_inset Formula $x\to c$
+\end_inset
+
+ for a finite 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Also similar defintions can be made for limits being 
+\begin_inset Formula $-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $f\colon A\to B$
+\end_inset
+
+, 
+\begin_inset Formula $g\colon B\to\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $A,B\subset\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $a\in\mathbb{R}\cup\left\{ -\infty,\infty\right\} $
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{R}\cup\left\{ -\infty,\infty\right\} $
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula 
+\[
+\lim_{x\to a}f\left(x\right)=b\quad\text{and}\quad\lim_{y\to b}g\left(y\right)=c
+\]
+
+\end_inset
+
+for some 
+\begin_inset Formula $c\in\mathbb{R}\cup\left\{ -\infty,\infty\right\} $
+\end_inset
+
+.
+ If 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, then suppose 
+\begin_inset Formula $g\left(b\right)=c$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\lim_{x\to a}g\left(f\left(x\right)\right)=c.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Use sequential limits, which have been generalized to extended real line,
+ to avoid different definitions of limits.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
