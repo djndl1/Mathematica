@@ -10,6 +10,7 @@
 theorems-ams
 eqs-within-sections
 figs-within-sections
+theorems-ams-extended
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -90,7 +91,7 @@ Set Theory
 Basics
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 \begin_inset CommandInset href
 LatexCommand href
 name "The axiom of extension/extensionality"
@@ -102,12 +103,12 @@ literal "false"
 
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 Two sets are equal if and only if they have the same elements: a set is
  determined by its extension.
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 \begin_inset Formula 
 \[
 \forall A\forall B(\forall X(X\in A\iff X\in B)\iff A=B
@@ -152,7 +153,7 @@ literal "false"
  and transitive.
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 \begin_inset CommandInset href
 LatexCommand href
 name "Axiom of specification"
@@ -164,7 +165,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 To every set 
 \begin_inset Formula $A$
 \end_inset
@@ -312,7 +313,7 @@ literal "false"
  true or proof by contradiction).
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 \begin_inset CommandInset href
 LatexCommand href
 name "Axiom of pairing"
@@ -324,11 +325,11 @@ literal "false"
 
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 For any two sets there exists a set that they both belong to.
 \end_layout
 
-\begin_layout Remark*
+\begin_layout Axiom*
 If there are sets 
 \begin_inset Formula $a$
 \end_inset
@@ -385,11 +386,11 @@ The axiom of pairing ensures that every set is an element of some set (singleton
  same set.
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 Axiom of unions
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 For every collection of sets there exists a set that contains all the elements
  that belong to at lease one set of the given collection.
 \begin_inset Formula 
@@ -402,7 +403,7 @@ For every collection of sets there exists a set that contains all the elements
 
 \end_layout
 
-\begin_layout Proposition
+\begin_layout Axiom*
 or 
 \begin_inset Formula 
 \[
@@ -605,7 +606,7 @@ This operation is commutative and associative and is such that
 .
 \end_layout
 
-\begin_layout Proposition*
+\begin_layout Axiom*
 \begin_inset CommandInset href
 LatexCommand href
 name "Axiom of power set"
@@ -617,7 +618,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Proposition*
+\begin_layout Axiom*
 For each set there exists a collection of sets that contains among its elements
  all the subsets of the given set and them only.
 \begin_inset Formula 
@@ -4224,6 +4225,100 @@ If
 
 \begin_layout Definition
 Upper bound, lower bound, infimum, supremum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Axiom of Choice
+\end_layout
+
+\begin_layout Axiom*
+Axiom of Choice
+\end_layout
+
+\begin_layout Axiom*
+The Cartesian product of a non-empty family of non-empty sets is non-empty
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the collection of sets we are choosing from is finite, then the possibility
+ of simultaneous choice is an easy consequence; the role of the axiom of
+ choice is to guarantee that possibility in infinite cases.
+\end_layout
+
+\begin_layout Standard
+The axiom has a consequence
+\end_layout
+
+\begin_layout Proposition*
+There exists a function 
+\begin_inset Formula $f$
+\end_inset
+
+ with domain 
+\begin_inset Formula $P\left(X\right)-\left\{ \varnothing\right\} $
+\end_inset
+
+ s.t.
+ if 
+\begin_inset Formula $A$
+\end_inset
+
+ is in that domain, then 
+\begin_inset Formula $f\left(A\right)\in A$
+\end_inset
+
+, called a 
+\series bold
+choice function
+\emph on
+ 
+\series default
+\emph default
+for 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+Every infinite set has a subset equivalent to 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
 \end_layout
 
 \end_body
