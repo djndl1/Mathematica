@@ -22,8 +22,8 @@ theorems-chap-bytype
 \inputencoding auto
 \fontencoding global
 \font_roman "tgtermes" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
+\font_sans "tgheros" "default"
+\font_typewriter "tgcursor" "default"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
@@ -617,6 +617,10 @@ Omitted
 Finite-Dimensional Vector Space
 \end_layout
 
+\begin_layout Section
+Linear Combination and Span
+\end_layout
+
 \begin_layout Definition
 Linear combination
 \end_layout
@@ -924,6 +928,10 @@ For a nonnegative integer
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Linear Dependence and Independence
 \end_layout
 
 \begin_layout Definition
@@ -3725,6 +3733,585 @@ By definition
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Duality
+\end_layout
+
+\begin_layout Definition
+linear functional
+\end_layout
+
+\begin_layout Definition
+A linear functional on 
+\begin_inset Formula $V$
+\end_inset
+
+ is a linear map from 
+\begin_inset Formula $V$
+\end_inset
+
+ to 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ In other words, a linear functional is an element of 
+\begin_inset Formula $\mathcal{L}\left(V,F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+dual space, 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The dual space of 
+\begin_inset Formula $V$
+\end_inset
+
+, denoted 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+, is the vector space of all linear functionals on 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $V^{\prime}=\mathcal{L}\left(V,F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\dim V^{\prime}=\dim V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional.
+ Then 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+ is also finite-dimensional and 
+\begin_inset Formula $\dim V^{\prime}=\dim V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+dual basis
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+, then the dual basis of 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is the list 
+\begin_inset Formula $\phi_{1},\dots,\phi_{n}$
+\end_inset
+
+ of elements of 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+, where each 
+\begin_inset Formula $\phi_{j}$
+\end_inset
+
+ is the linear functional on 
+\begin_inset Formula $V$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+\varphi_{j}\left(v_{k}\right)=\begin{cases}
+1 & \text{if }k=j\\
+0 & \text{if }k\neq j
+\end{cases}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The terminology 
+\begin_inset Quotes eld
+\end_inset
+
+dual basis
+\begin_inset Quotes erd
+\end_inset
+
+ is justified.
+\end_layout
+
+\begin_layout Proposition
+Dual basis is a basis of the dual space
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional.
+ Then the dual basis of a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+dual map, 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+, then the dual map of 
+\begin_inset Formula $T$
+\end_inset
+
+ is the linear map 
+\begin_inset Formula $T^{\prime}\in\mathcal{L}\left(W^{\prime},V^{\prime}\right)$
+\end_inset
+
+ defined by 
+\begin_inset Formula $T^{\prime}\left(\phi\right)=\phi\circ T$
+\end_inset
+
+ for 
+\begin_inset Formula $\phi\in W^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Define 
+\begin_inset Formula $D\colon\mathcal{P}\left(\mathbb{R}\right)\to\mathcal{P}\left(\mathbb{R}\right)$
+\end_inset
+
+ by 
+\begin_inset Formula $Dp=p^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+Suppose 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ is the linear functional defined by 
+\begin_inset Formula $\varphi\left(p\right)=\int_{0}^{1}p.$
+\end_inset
+
+ Then 
+\begin_inset Formula $D^{\prime}\left(\varphi\right)$
+\end_inset
+
+ is the linear functional on 
+\begin_inset Formula $\mathcal{P}\left(\mathbb{R}\right)$
+\end_inset
+
+ given by
+\begin_inset Formula 
+\[
+D^{\prime}\left(\varphi\right)\left(p\right)=\left(\varphi\circ D\right)\left(p\right)=\varphi\left(Dp\right)=\int_{0}^{1}p^{\prime}=p\left(1\right)-p\left(0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Algebraic properties of dual maps
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\left(S+T\right)^{\prime}=S^{\prime}+T^{\prime}$
+\end_inset
+
+ for all 
+\begin_inset Formula $S,T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\left(\lambda T\right)^{\prime}=\lambda T^{\prime}$
+\end_inset
+
+ for all 
+\begin_inset Formula $\lambda\in F$
+\end_inset
+
+ and all 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\left(ST\right)^{\prime}=T^{\prime}S^{\prime}$
+\end_inset
+
+ for all 
+\begin_inset Formula $T\in\mathcal{L}\left(U,V\right)$
+\end_inset
+
+ and all 
+\begin_inset Formula $S\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+annihilator, 
+\begin_inset Formula $U^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+For 
+\begin_inset Formula $U\subset V$
+\end_inset
+
+, the annihilator of 
+\begin_inset Formula $U$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $U^{0}$
+\end_inset
+
+ is defined by
+\begin_inset Formula 
+\[
+U^{0}=\left\{ \varphi\in V^{\prime}\colon\varphi\left(u\right)=0'\quad\text{for all }u\in U\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The annihilator is a subspace
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $U\subset V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $U^{0}$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Dimension of the annihilator
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ is finite-dimensional and 
+\begin_inset Formula $U$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\dim U+\dim U^{0}=\dim V.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Choose a basis of 
+\begin_inset Formula $U$
+\end_inset
+
+, expand it to a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Show part of the dual basis is also a basis of 
+\begin_inset Formula $U^{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Alternative proof
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $i\in\mathcal{L}\left(U,V\right)$
+\end_inset
+
+ be the inclusion map defined by 
+\begin_inset Formula $i\left(u\right)=u$
+\end_inset
+
+ for 
+\begin_inset Formula $u\in U$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\dim\text{range }i^{\prime}+\dim\text{null }i^{\prime}=\dim V^{\prime}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+As 
+\begin_inset Formula $\text{null }i^{\prime}=U^{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\dim V^{'}=\dim V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $\varphi\in U^{\prime}$
+\end_inset
+
+, then 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ can be extended to a linear functional 
+\begin_inset Formula $\psi$
+\end_inset
+
+ on 
+\begin_inset Formula $V$
+\end_inset
+
+, then 
+\begin_inset Formula $i^{\prime}\left(\psi\right)=\varphi$
+\end_inset
+
+.
+ then 
+\begin_inset Formula $\varphi\in\text{range }i^{\prime}$
+\end_inset
+
+, which implies 
+\begin_inset Formula $\text{range }i^{\prime}=U^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The null space of 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are finite-dimensional and 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Proposition
+a.
+ 
+\begin_inset Formula $\text{null }T^{\prime}=\left(\text{range }T\right)^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+b.
+ 
+\begin_inset Formula $\dim\text{null }T^{\prime}=\dim\text{null }T+\dim W-\dim V$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
