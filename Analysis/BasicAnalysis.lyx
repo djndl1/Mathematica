@@ -21,8 +21,8 @@ theorems-chap-bytype
 \inputencoding auto
 \fontencoding global
 \font_roman "tgtermes" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
+\font_sans "tgheros" "default"
+\font_typewriter "tgcursor" "default"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
@@ -7493,8 +7493,278 @@ Use sequential limits, which have been generalized to extended real line,
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+Monotone functions and continuity
+\end_layout
 
+\begin_layout Definition
+Monotone function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is easy to computer one-sided limits for monotone functions.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\colon S\to\mathbb{R}$
+\end_inset
+
+ be increasing, and 
+\begin_inset Formula $g\colon S\to\mathbb{R}$
+\end_inset
+
+ be decreasing.
+ If 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S\cap\left(-\infty,c\right)$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+\lim_{x\to c^{-}}f\left(x\right)=\sup\left\{ f\left(x\right)\colon x<c,x\in S\right\} \quad\text{and}\quad\lim_{x\to c^{-}}g\left(x\right)=\inf\left\{ g\left(x\right)\colon x<c,x\in S\right\} .
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $c$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S\cap\left\{ c,\infty\right\} $
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+\lim_{x\to c^{+}}f\left(x\right)=\inf\left\{ f\left(x\right)\colon x>c,x\in S\right\} \quad\text{and}\quad\lim_{x\to c^{-}}g\left(x\right)=\sup\left\{ g\left(x\right)\colon x>c,x\in S\right\} .
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $\infty$
+\end_inset
+
+ is a cluster point of 
+\begin_inset Formula $S$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}f\left(x\right)=\sup\left\{ f\left(x\right)\colon x\in S\right\} \quad\text{and}\quad\lim_{x\to\infty}g\left(x\right)=\inf\left\{ g\left(x\right)\colon x\in S\right\} .
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ is a cluseter point of 
+\begin_inset Formula $S$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\lim_{x\to-\infty}f\left(x\right)=\inf\left\{ f\left(x\right)\colon x\in S\right\} \quad\text{and}\quad\lim_{x\to-\infty}g\left(x\right)=\sup\left\{ g\left(x\right)\colon x\in S\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+If 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+ is an interval and 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ is monotone and not constant, then 
+\begin_inset Formula $f\left(I\right)$
+\end_inset
+
+ is an interval iff 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is increasing and discontinuous at 
+\begin_inset Formula $c\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $c$
+\end_inset
+
+ is not an endpoint of 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+a=\lim_{x\to c^{-}}f\left(x\right)=\sup\left\{ f\left(x\right)\colon x\in I,x<c\right\} \quad b=\lim_{x\to c^{+}}f\left(x\right)=\inf\left\{ f\left(x\right)\colon x\in I,x>c\right\} .
+\]
+
+\end_inset
+
+As 
+\begin_inset Formula $c$
+\end_inset
+
+ is a discontinuity, 
+\begin_inset Formula $a<b$
+\end_inset
+
+, otherwise 
+\begin_inset Formula $f$
+\end_inset
+
+ would not be increasing.
+ Therefore no point in 
+\begin_inset Formula $\left(a,b\right)\backslash\left\{ f\left(c\right)\right\} $
+\end_inset
+
+ is in 
+\begin_inset Formula $f\left(I\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $c$
+\end_inset
+
+ is an endpoint of 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+a=\lim_{x\to c^{-}}f\left(x\right)=\sup\left\{ f\left(x\right)\colon x\in I,x<c\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula $a<f\left(c\right)$
+\end_inset
+
+, otherwise 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous or not increasing.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A striking property of monotone functions is that they cannot have too many
+ discontinuities.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+ be an interval and 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ be monotone.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ has at most countably many discontinuities.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $I\subset\mathbb{R}$
+\end_inset
+
+ is an interval and 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ is strictly montone.
+ Then the inverse 
+\begin_inset Formula $f^{-1}\colon f\left(I\right)\to I$
+\end_inset
+
+ is continuous.
+\end_layout
+
+\begin_layout Proof
+TODO
 \end_layout
 
 \end_body
