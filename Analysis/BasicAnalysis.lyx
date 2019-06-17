@@ -285,7 +285,7 @@ You should really think of a function as just a very big table of values.
 
 \begin_layout Standard
 some peculiar examples: the Laplace transform takes functions to functions.
- The derivative is a function mapping the set of differentialble functiosn
+ The derivative is a function mapping the set of differentiable functions
  to the set of all functions.
 \end_layout
 
@@ -7765,6 +7765,394 @@ If
 
 \begin_layout Proof
 TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+The Derivative
+\end_layout
+
+\begin_layout Section
+The derivative
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $I$
+\end_inset
+
+ be an interval, let 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ be a function, and let 
+\begin_inset Formula $c\in I$
+\end_inset
+
+.
+ If the limit
+\begin_inset Formula 
+\[
+L\coloneqq\lim_{x\to c}\frac{f\left(x\right)-f\left(c\right)}{x-c}
+\]
+
+\end_inset
+
+exists, then we say 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+, that 
+\begin_inset Formula $L$
+\end_inset
+
+ is the derivative of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $c$
+\end_inset
+
+ and write 
+\begin_inset Formula $f^{\prime}\left(c\right)=L$
+\end_inset
+
+.
+ The expression 
+\begin_inset Formula $\frac{f\left(x\right)-f\left(c\right)}{x-c}$
+\end_inset
+
+ is called the difference quotient.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $f\colon I\mapsto\mathbb{R}$
+\end_inset
+
+ be differentiable at 
+\begin_inset Formula $c\in I$
+\end_inset
+
+, then it is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\lim_{x\to c}\frac{f\left(x\right)-f\left(c\right)}{x-c}=f^{\prime}\left(c\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to c}\left(x-c\right)=0$
+\end_inset
+
+ exist.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\lim_{x\to c}\left(f\left(x\right)-f\left(c\right)\right)=\left(\lim_{x\to c}\frac{f\left(x\right)-f\left(c\right)}{x-c}\right)\left(\lim_{x\to c}\left(x-c\right)\right)=f^{\prime}\left(c\right)\cdot0=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An important property of the derivative is linearity.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $I$
+\end_inset
+
+ be an interval, let 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon I\to\mathbb{R}$
+\end_inset
+
+ be differentiable at 
+\begin_inset Formula $c\in I$
+\end_inset
+
+, and let 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+i.
+ Define 
+\begin_inset Formula $h\colon I\to\mathbb{R}$
+\end_inset
+
+ by 
+\begin_inset Formula $h\left(x\right)\coloneqq\alpha f\left(x\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $h$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $h^{\prime}\left(x\right)=\alpha f^{\prime}\left(c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ Define 
+\begin_inset Formula $h\colon I\to\mathbb{R}$
+\end_inset
+
+ by 
+\begin_inset Formula $h\left(x\right)\coloneqq f\left(x\right)+g\left(x\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $h$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $h^{\prime}\left(x\right)=f^{\prime}\left(c\right)+g^{\prime}\left(c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Product rule
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $I$
+\end_inset
+
+ be an interval, let 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon I\to\mathbb{R}$
+\end_inset
+
+ be funcitons differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $h\colon I\to\mathbb{R}$
+\end_inset
+
+ is defined by 
+\begin_inset Formula 
+\[
+h\left(x\right)=f\left(x\right)g\left(x\right),
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula $h$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+h^{\prime}\left(c\right)=f^{\prime}\left(c\right)g\left(c\right)+f\left(c\right)g^{\prime}\left(c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Quotient rule
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Chain Rule
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ be intervals, let 
+\begin_inset Formula $g\colon I_{1}\to I_{2}$
+\end_inset
+
+ be differentiable at 
+\begin_inset Formula $c\in I_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $f\colon I_{2}\to\mathbb{R}$
+\end_inset
+
+ be differntiable at 
+\begin_inset Formula $g\left(c\right)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $h\colon I_{1}\to\mathbb{R}$
+\end_inset
+
+ is defined by
+\begin_inset Formula 
+\[
+h\left(x\right)=\left(f\circ g\right)\left(x\right)=f\left(g\left(x\right)\right),
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula $h$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+h^{\prime}\left(c\right)=f^{\prime}\left(g\left(c\right)\right)g^{\prime}\left(c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $d=g\left(c\right)$
+\end_inset
+
+.
+ Define 
+\begin_inset Formula $u\colon I_{2}\to\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $v\colon I_{1}\to\mathbb{R}$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\begin{align*}
+u\left(y\right) & =\begin{cases}
+\frac{f\left(y\right)-f\left(d\right)}{y-d} & \text{if }y\neq d\\
+f^{\prime}\left(d\right) & \text{if }y=d
+\end{cases}\\
+v\left(x\right) & =\begin{cases}
+\frac{g\left(x\right)-g\left(c\right)}{x-c} & \text{if }x\neq c\\
+g^{\prime}\left(c\right) & \text{if }x=c
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{alignat*}{1}
+\frac{h\left(x\right)-h\left(c\right)}{x-c} & =\frac{f\left(g\left(x\right)\right)-f\left(g\left(c\right)\right)}{x-c}=\frac{u\left(g\left(x\right)\right)\left(g\left(x\right)-g\left(c\right)\right)}{x-c}\\
+ & =\frac{u\left(g\left(x\right)\right)\left(v\left(x\right)\left(x-c\right)\right)}{x-c}=u\left(g\left(x\right)\right)v\left(x\right)
+\end{alignat*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From Proposition 3.11 
+\begin_inset Formula $\lim_{x\to c}u\left(g\left(x\right)\right)=\lim_{y\to d}u\left(y\right)$
+\end_inset
+
+.
 \end_layout
 
 \end_body
