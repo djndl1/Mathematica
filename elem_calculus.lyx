@@ -1,0 +1,695 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-sec-bytype
+theorems-ams-extended-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Elements of Calculus
+\end_layout
+
+\begin_layout Section
+Sequences and Limits
+\end_layout
+
+\begin_layout Definition
+sequence of real numbers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+monotone sequences
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+sequential limit and convergent sequence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+sequence of elements in 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+sequential limit of elements in 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The absolute values are replaced with vector norms.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists K\in\mathbb{N}$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+\left\lVert \boldsymbol{x}^{\left(k\right)}-\boldsymbol{x}^{*}\right\rVert <\varepsilon\quad\text{for all }k>K.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+A convergent sequence has only one limit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Every convergent sequence is bounded.
+\backslash
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The proofs of the above two theorems are similar to those in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Every monotone bounded sequence in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is convergent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Consider a convergent sequence 
+\begin_inset Formula $\left\{ \boldsymbol{x}^{\left(k\right)}\right\} $
+\end_inset
+
+ with limit 
+\begin_inset Formula $\boldsymbol{x^{*}}$
+\end_inset
+
+.
+ Then any subsequences of 
+\begin_inset Formula $\left\{ \boldsymbol{x}^{\left(k\right)}\right\} $
+\end_inset
+
+ also converges to 
+\begin_inset Formula $\boldsymbol{x}^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Bolzano-Weierstrass theorem
+\end_layout
+
+\begin_layout Theorem
+Any bounded sequence contains a convergent subsequence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Consider a function 
+\begin_inset Formula $\boldsymbol{f}\colon\mathbb{R}^{n}\mapsto\mathbb{R}^{m}$
+\end_inset
+
+ and a point 
+\begin_inset Formula $\boldsymbol{x}_{0}\in\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\boldsymbol{f}$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $\boldsymbol{x}_{0}$
+\end_inset
+
+ iff
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}\boldsymbol{f\left(x\right)}=\boldsymbol{f\left(x_{0}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset href
+LatexCommand href
+name "Jacobian matrix"
+target "https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $f:\mathbb{R}^{n}→\mathbb{R}^{m}$
+\end_inset
+
+ is a function which takes as input the vector 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+ and produces as output the vector 
+\begin_inset Formula $f(x)\in\mathbb{R}^{m}$
+\end_inset
+
+.
+ Then the Jacobian matrix 
+\begin_inset Formula $J$
+\end_inset
+
+of 
+\begin_inset Formula $f$
+\end_inset
+
+ is an 
+\begin_inset Formula $m\times n$
+\end_inset
+
+matrix
+\begin_inset Formula 
+\[
+J_{ij}=\left[\frac{\partial f_{i}}{\partial x_{j}}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Some Matrix Calculus
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula 
+\[
+\mathbf{y=Ax}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{y}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times1$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times1$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ does not depend on 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{y}}{\partial\mathbf{x}}=\mathbf{A}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula 
+\[
+y_{i}=\sum_{k=1}^{n}a_{ik}x_{k}
+\]
+
+\end_inset
+
+it follows that 
+\begin_inset Formula 
+\[
+\frac{\partial y_{i}}{\partial x_{j}}=a_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula 
+\[
+\mathbf{y=Ax}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{y}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times1$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times1$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ does not depend on 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+.
+ Suppose that 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is a function of the vector 
+\begin_inset Formula $\mathbf{z}$
+\end_inset
+
+, while 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is independent of 
+\begin_inset Formula $\mathbf{z}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\frac{\partial\mathbf{y}}{\partial\mathbf{z}}=\mathbf{A}\frac{\partial\mathbf{x}}{\partial\mathbf{z}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula 
+\[
+y_{i}=\sum_{k=1}^{n}a_{ik}x_{k}
+\]
+
+\end_inset
+
+then
+\begin_inset Formula 
+\[
+\frac{\partial y_{i}}{\partial z_{j}}=\sum_{k=1}^{n}a_{ik}\frac{\partial x_{k}}{\partial z_{j}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let the scalar 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ be defined by 
+\begin_inset Formula 
+\[
+\alpha=\mathbf{y^{T}Ax}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{y}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times1$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times1$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is independent of 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{y}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\frac{\partial\alpha}{\partial\mathbf{x}}=\mathbf{y}^{T}\mathbf{A}
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\frac{\partial\alpha}{\partial\mathbf{y}}=\mathbf{x^{T}A^{T}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $\mathbf{w^{T}}=\mathbf{y^{T}A}$
+\end_inset
+
+ and use Proposition 1.1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+If the scalar 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is defined by the quadratic form 
+\begin_inset Formula 
+\[
+\alpha=\mathbf{x}^{T}\mathbf{Ax}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times1$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ does not depend on 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\frac{\partial\alpha}{\partial\mathbf{x}}=\mathbf{x}^{T}\left(\mathbf{A}+\mathbf{A}^{T}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula 
+\[
+\alpha=\sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}x_{i}x_{j}
+\]
+
+\end_inset
+
+then
+\begin_inset Formula 
+\[
+\frac{\partial\alpha}{\partial x_{k}}=\sum_{i=1}^{n}a_{kj}x_{j}+\sum_{i=1}^{n}a_{ik}x_{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
