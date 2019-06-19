@@ -771,9 +771,8 @@ ii.
 .
 \end_layout
 
-\begin_layout Standard
-e.g.
- the set of rational numbers 
+\begin_layout Example*
+the set of rational numbers 
 \begin_inset Formula $\mathbb{Q}$
 \end_inset
 
@@ -1199,9 +1198,8 @@ ation, commutativity, associativity, identity, inverse, distributivity
 
 \end_layout
 
-\begin_layout Standard
-e.g.
- The set 
+\begin_layout Example*
+The set 
 \begin_inset Formula $\mathbb{Q}$
 \end_inset
 
@@ -1253,14 +1251,13 @@ A field
 
 \end_layout
 
-\begin_layout Standard
-e.g.
- The rational numbers with the standard ordering is an ordered field.
+\begin_layout Example*
+The rational numbers with the standard ordering is an ordered field.
  The set 
 \begin_inset Formula $\mathbb{C}$
 \end_inset
 
- of complex numbers is not a n ordered field.
+ of complex numbers is not an ordered field.
 \end_layout
 
 \begin_layout Proposition
@@ -1370,10 +1367,6 @@ Let
 \end_inset
 
 
-\end_layout
-
-\begin_layout Proof
-Omitted
 \end_layout
 
 \begin_layout Standard
@@ -8153,6 +8146,378 @@ From Proposition 3.11
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mean value theorem
+\end_layout
+
+\begin_layout Definition
+relative maximum
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ be a set and let 
+\begin_inset Formula $f\colon S\mapsto\mathbb{R}$
+\end_inset
+
+ be a function.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is said to have a relative maximum at 
+\begin_inset Formula $c\in S$
+\end_inset
+
+ if there exists 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ for all 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ where 
+\begin_inset Formula $\left|x-c\right|<\delta$
+\end_inset
+
+ we have 
+\begin_inset Formula $f\left(x\right)\leq f\left(c\right)$
+\end_inset
+
+.
+ The defintion of relative minimum is analogous.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\mapsto\mathbb{R}$
+\end_inset
+
+ be a function differentiable at 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $f$
+\end_inset
+
+ has a relative minimum or a relative maximum at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $f^{\prime}\left(c\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Critical point is a broader term for stationary point.
+\end_layout
+
+\begin_layout Proof
+Check both sides of 
+\begin_inset Formula $c$
+\end_inset
+
+ to see that sequences from two sides approaching 
+\begin_inset Formula $c$
+\end_inset
+
+ should give the same limit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Rolle's theorem
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be continuous function differentiable on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f\left(a\right)=f\left(b\right)$
+\end_inset
+
+.
+ Then there exists a 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f^{\prime}\left(c\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From Theorem 3.1, 
+\begin_inset Formula $f$
+\end_inset
+
+ achieves both an absolute minimum and an absolute maximum on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Write 
+\begin_inset Formula $K=f\left(a\right)=f\left(b\right)$
+\end_inset
+
+, if there exists 
+\begin_inset Formula $x\in\left(a,b\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f\left(x\right)>K$
+\end_inset
+
+, then the absolute maximum is greater than 
+\begin_inset Formula $K$
+\end_inset
+
+ and occurs at 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+, thus 
+\begin_inset Formula $f^{\prime}\left(c\right)=0$
+\end_inset
+
+, similarly for 
+\begin_inset Formula $f\left(x\right)<K$
+\end_inset
+
+.
+ Otherwise, 
+\begin_inset Formula $f\left(x\right)=K$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+, thus 
+\begin_inset Formula $f^{\prime}\left(x\right)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Mean value theorem
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be a continuous function differentiable on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Then there exists a point 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\[
+f\left(b\right)-f\left(a\right)=f^{\prime}\left(c\right)\left(b-a\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Define the function 
+\begin_inset Formula $g\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+g\left(x\right)=f\left(x\right)-f\left(b\right)-\frac{f\left(b\right)-f\left(a\right)}{b-a}\left(x-b\right).
+\]
+
+\end_inset
+
+which is differentiable on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, continuous on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula 
+\[
+g\left(a\right)=g\left(b\right)=0.
+\]
+
+\end_inset
+
+Thus there exists a 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $g^{\prime}\left(c\right)=0$
+\end_inset
+
+, i.e.
+\begin_inset Formula 
+\[
+f^{\prime}\left(c\right)-\frac{f\left(b\right)-f\left(a\right)}{b-a}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Cauchy's mean value theorem
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $\varphi\colon\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ be continuous functions differentiable on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Then there exists a point 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+\left(f\left(b\right)-f\left(a\right)\right)\varphi^{\prime}\left(c\right)=f^{\prime}\left(c\right)\left(\varphi\left(b\right)-\varphi\left(a\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Consider 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)-f\left(b\right)-\frac{f\left(b\right)-f\left(a\right)}{\varphi\left(b\right)-\varphi\left(b\right)}\left(\varphi\left(x\right)-\varphi\left(a\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \end_body
