@@ -85,6 +85,11 @@ tabs-within-sections
 
 \begin_body
 
+\begin_layout Standard
+Definitions, propositions etc.
+ in this note are not meant to be formal.
+\end_layout
+
 \begin_layout Chapter
 Proof
 \end_layout
@@ -95,6 +100,201 @@ Proposition
 
 \begin_layout Definition
 A proposition is a statement that is either true or false.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+predicate
+\end_layout
+
+\begin_layout Definition
+A predicate can be understood as a proposition whose truth depends on the
+ value or one or more variables.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $P\left(n\right)\coloneqq$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+ is a perfect square
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Euclid's axiom-and-proof approach, called 
+\emph on
+axiomatic method,
+\emph default
+ remains the foundation for mathematics todya.
+\end_layout
+
+\begin_layout Definition
+logical deductions/inference rules
+\end_layout
+
+\begin_layout Definition
+methods used to prove new propositions using previously proved ones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Modus ponens
+\end_layout
+
+\begin_layout Definition
+A proof of 
+\begin_inset Formula $P$
+\end_inset
+
+ and a proof that 
+\begin_inset Formula $P$
+\end_inset
+
+ implies 
+\begin_inset Formula $Q$
+\end_inset
+
+ (antecedents) is a proof of 
+\begin_inset Formula $Q$
+\end_inset
+
+ (conclusion, consequent).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+implication
+\end_layout
+
+\begin_layout Definition
+Proposition of the form 
+\begin_inset Quotes eld
+\end_inset
+
+If 
+\begin_inset Formula $P$
+\end_inset
+
+, then 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+, also rephrased as 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $P$
+\end_inset
+
+ implies 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Proof by contrapositive
+\end_layout
+
+\begin_layout Definition
+If the statement is true, then its contrapositive is true, and vice versa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that for proof by contrapositive, there is no need to show a contradiction.
+ See 
+\begin_inset CommandInset href
+LatexCommand href
+name "this "
+target "http://faculty.cse.tamu.edu/hlee/csce222/proofs-contradiction-contraposition.pdf"
+literal "false"
+
+\end_inset
+
+for the difference.
+\end_layout
+
+\begin_layout Definition
+Proof by contradiction
+\end_layout
+
+\begin_layout Definition
+To prove 
+\begin_inset Formula $P$
+\end_inset
+
+, assume 
+\begin_inset Formula $P$
+\end_inset
+
+ to be false, and show it implies two mutually contradictory assertions.
 \end_layout
 
 \end_body
