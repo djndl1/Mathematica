@@ -189,8 +189,6 @@ A convergent sequence has only one limit.
 
 \begin_layout Theorem
 Every convergent sequence is bounded.
-\backslash
-
 \end_layout
 
 \begin_layout Standard
@@ -689,6 +687,408 @@ then
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $\mathbf{A}\in\mathbb{R}^{n\times n}$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\lim_{k\to\infty}\mathbf{A}^{k}=\mathbf{O}$
+\end_inset
+
+ iff the eigenvalues of 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $\left|\lambda_{i}\left(\mathbf{A}\right)\right|<1,i=1,\dots,n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+The series of 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrices
+\begin_inset Formula 
+\[
+I_{n}+A+A^{2}+\cdots+A^{k}+\cdots
+\]
+
+\end_inset
+
+converges iff 
+\begin_inset Formula $\lim_{k\to\infty}A^{k}=O$
+\end_inset
+
+.
+ In this case the sum of the series equals 
+\begin_inset Formula $\left(I_{n}-A\right)^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $A\colon\mathbb{R}^{r}\to\mathbb{R}^{n\times n}$
+\end_inset
+
+ be an 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrix-valued function that is continuous at 
+\begin_inset Formula $\xi_{0}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A\left(\xi_{0}\right)^{-1}$
+\end_inset
+
+ exists, then 
+\begin_inset Formula $A\left(\xi\right)^{-1}$
+\end_inset
+
+ exists for 
+\begin_inset Formula $\xi$
+\end_inset
+
+ sufficiently close 
+\begin_inset Formula $\xi_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $A\left(\cdot\right)^{-1}$
+\end_inset
+
+ is continuos at 
+\begin_inset Formula $\xi_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Differentiability
+\end_layout
+
+\begin_layout Standard
+Differential calculus is based on the idea of approximating an arbitrary
+ function by an affine function.
+\end_layout
+
+\begin_layout Definition
+Affine function
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $A\colon\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ is affine if there exists a linear function 
+\begin_inset Formula $L\colon R^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ and a vector 
+\begin_inset Formula $y\in\mathbb{R}^{m}$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+A\left(x\right)=L\left(x\right)+y
+\]
+
+\end_inset
+
+for every 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset href
+LatexCommand href
+name "total derivative"
+target "https://en.wikipedia.org/wiki/Total_derivative"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $f\colon\Omega\to\mathbb{R}^{m},\Omega\subset\mathbb{R}^{n}$
+\end_inset
+
+ is said to be differentiable at 
+\begin_inset Formula $x_{0}\in\Omega$
+\end_inset
+
+ if there is an affine function that approximates 
+\begin_inset Formula $f$
+\end_inset
+
+ near 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+; i.e.
+ there exists a linear function 
+\begin_inset Formula $L\colon\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0},x\in\Omega}\frac{\left\lVert f\left(x\right)-\left(L\left(x-x_{0}\right)+f\left(x_{0}\right)\right)\right\rVert }{\left\lVert x-x_{0}\right\rVert }=0.
+\]
+
+\end_inset
+
+The linear function 
+\begin_inset Formula $L$
+\end_inset
+
+ above is determined uniquely by 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ and is called the derivative of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is said to be differentiable on 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ if 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at every point of its domain 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, an affine function takes the form
+\begin_inset Formula 
+\[
+A\left(x\right)=ax+b.
+\]
+
+\end_inset
+
+then the derivative
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}\frac{\left|f\left(x\right)-\left(a\left(x-x_{0}\right)+f\left(x_{0}\right)\right)\right|}{\left|x-x_{0}\right|}=0
+\]
+
+\end_inset
+
+i.e.
+ (consider 
+\begin_inset Formula $a$
+\end_inset
+
+ as a matrix in the context of linear algebra)
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}\frac{f\left(x\right)-f\left(x_{0}\right)}{x-x_{0}}=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+If a function 
+\begin_inset Formula $f\colon\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, then the derivative of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ is determined uniquely and is represented by the 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ derivative matrix 
+\begin_inset Formula $Df\left(x_{0}\right)$
+\end_inset
+
+.
+ The best affine approximation to 
+\begin_inset Formula $f$
+\end_inset
+
+ near 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ is then given by 
+\begin_inset Formula 
+\[
+A\left(x\right)=f\left(x_{0}\right)+Df\left(x_{0}\right)\left(x-x_{0}\right)
+\]
+
+\end_inset
+
+in the sense that 
+\begin_inset Formula 
+\[
+f\left(x\right)=A\left(x\right)+r\left(x\right)
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula $\lim_{x\to x_{0}}\left\lVert r\left(x\right)\right\rVert /\left\lVert x-x_{0}\right\rVert =0$
+\end_inset
+
+.
+ The columns of the derivative matrix 
+\begin_inset Formula $Df\left(x_{0}\right)$
+\end_inset
+
+ are vector partial derivatives.
+ The vector 
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial x_{j}}\left(x_{0}\right)
+\]
+
+\end_inset
+
+is a tangent vector at 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ to the curve 
+\begin_inset Formula $f$
+\end_inset
+
+ obtained by varying only hte 
+\begin_inset Formula $j$
+\end_inset
+
+th coordinate of 
+\begin_inset Formula $x$
+\end_inset
+
+.
 \end_layout
 
 \end_body
