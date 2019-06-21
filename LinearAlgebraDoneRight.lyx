@@ -2973,6 +2973,35 @@ matrix of a vector
 \end_layout
 
 \begin_layout Proposition
+\begin_inset CommandInset label
+LatexCommand label
+name "matrix of vector "
+
+\end_inset
+
+The linear map 
+\begin_inset Formula $\mathcal{M}\left(\cdot\right)$
+\end_inset
+
+that takes a vector 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathbf{F}^{n,1}$
+\end_inset
+
+ is an isomorphism.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
 Linear maps act like matrix multiplication
 \end_layout
 
@@ -4309,6 +4338,425 @@ a.
 b.
  
 \begin_inset Formula $\dim\text{null }T^{\prime}=\dim\text{null }T+\dim W-\dim V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $T$
+\end_inset
+
+ surjective is equivalent to 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ injective
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are finite-dimensional and 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right).$
+\end_inset
+
+ Then 
+\begin_inset Formula $T$
+\end_inset
+
+ is surjective iff 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ is injective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The range of 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are finite-dimensional and 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Proposition
+a.
+ 
+\begin_inset Formula $\dim\text{range }T^{\prime}=\dim\text{range }T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+b.
+ 
+\begin_inset Formula $\text{range }T^{\prime}=\left(\text{null }T\right)^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $T$
+\end_inset
+
+ injective is equivalent to 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ surjective
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are finite-dimensional and 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $T$
+\end_inset
+
+ is injective iff 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ is surjective.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+transpose, 
+\begin_inset Formula $A^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Algebraic properties of transpose
+\end_layout
+
+\begin_layout Proposition
+1.
+ 
+\begin_inset Formula $\left(AC\right)^{t}=C^{t}A^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+2.
+ 
+\begin_inset Formula $\left(\lambda A\right)^{t}=\lambda A^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+3.
+ 
+\begin_inset Formula $\left(A+C\right)^{t}=A^{t}+C^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The matrix of 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ is transpose of the matrix of 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $M\left(T^{\prime}\right)=\left(M\left(T\right)\right)^{t}$
+\end_inset
+
+ (all w.r.t.
+ the bases and their dual bases).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+row rank, column rank
+\end_layout
+
+\begin_layout Definition
+Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ is an 
+\begin_inset Formula $m$
+\end_inset
+
+-by-
+\begin_inset Formula $n$
+\end_inset
+
+ matrix with entries in 
+\begin_inset Formula $\mathbf{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+The row rank of 
+\begin_inset Formula $A$
+\end_inset
+
+ is the dimension of the span of the rows of 
+\begin_inset Formula $A$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbf{F}^{1,n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+The column rank of 
+\begin_inset Formula $A$
+\end_inset
+
+ is the dimension of the span of the columns of 
+\begin_inset Formula $A$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbf{F}^{m,1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Dimension of 
+\begin_inset Formula $\text{range }T$
+\end_inset
+
+ equals column rank of 
+\begin_inset Formula $\mathcal{M}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ are finite-dimensional and 
+\begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\dim\text{range }T$
+\end_inset
+
+ equals the column rank of 
+\begin_inset Formula $\mathcal{M}\left(T\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $v_{1},\dots,v_{n}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{1},\dots,w_{m}$
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ There is a isomorphism from 
+\begin_inset Formula $w\in\text{span}\left(Tv_{1},\dots,Tv_{n}\right)$
+\end_inset
+
+ onto 
+\begin_inset Formula $\mathcal{M}\left(w\right)\in\text{span}\left(\mathcal{M}\left(Tv_{1}\right),\dots,\mathcal{M}\left(Tv_{n}\right)\right)$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "matrix of vector "
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ).
+ Thus 
+\begin_inset Formula $\dim\text{span }\left(Tv_{1},\dots,Tv_{n}\right)=\dim\text{span }\left(\mathcal{M}\left(Tv_{1}\right),\dots,\mathcal{M}\left(Tv_{n}\right)\right)$
+\end_inset
+
+.
+ It is easy to see that 
+\begin_inset Formula $\text{range }T=\text{span}\left(Tv_{1},\dots,Tv_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Row rank equals column rank
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $A\in\mathbf{F}^{m,n}$
+\end_inset
+
+, then the row rank of 
+\begin_inset Formula $A$
+\end_inset
+
+ equals the column rank of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\text{rank }A^{t}=\dim\text{range }T^{\prime}=\dim\text{range }T=\text{rank }A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+rank
+\end_layout
+
+\begin_layout Definition
+The rank of a matrix 
+\begin_inset Formula $A\in\mathbf{F}^{m,n}$
+\end_inset
+
+ is the column rank of 
+\begin_inset Formula $A$
 \end_inset
 
 .
