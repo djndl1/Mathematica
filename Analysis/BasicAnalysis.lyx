@@ -8520,5 +8520,273 @@ Consider
 
 \end_layout
 
+\begin_layout Chapter
+Metric Spaces
+\end_layout
+
+\begin_layout Standard
+To take limits in different contexts so that we don't reprove every propositions
+, the concept of a metric space is necessary, although not sufficient to
+ describe every type of limit we find in modern analysis, it gets us very
+ far indeed.
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be a set and let 
+\begin_inset Formula $d\colon X\times X\to\mathbb{R}$
+\end_inset
+
+ be a function s.t.
+ for all 
+\begin_inset Formula $x,y,z\in X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+i.
+ (nonnegativity) 
+\begin_inset Formula $d\left(x,y\right)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+ii.
+ 
+\begin_inset Formula $d\left(x,y\right)=0$
+\end_inset
+
+ iff 
+\begin_inset Formula $x=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+iii.
+ (symmetry) 
+\begin_inset Formula $d\left(x,y\right)=d\left(y,x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+iv.
+ (triangle inequality) 
+\begin_inset Formula $d\left(x,z\right)\leq d\left(x,y\right)+d\left(y,z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The pair 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ is called a 
+\emph on
+metric space.
+ 
+\emph default
+The function 
+\begin_inset Formula $d$
+\end_inset
+
+ is called the 
+\emph on
+metric
+\emph default
+ or the 
+\emph on
+distance function
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+The set of real numbers 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is a metric space with the metric 
+\begin_inset Formula 
+\[
+d\left(x,y\right)=\left|x-y\right|
+\]
+
+\end_inset
+
+which is the 
+\emph on
+standard metric
+\emph default
+ on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An important metric space is the 
+\begin_inset Formula $n$
+\end_inset
+
+-dimensional 
+\emph on
+Euclidean space
+\emph default
+ 
+\begin_inset Formula $\mathbb{R}^{n}=\mathbb{R}\times\mathbb{R}\times\cdots\times\mathbb{R}$
+\end_inset
+
+.
+ Before making 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ a metric space, there is an important inequality to prove
+\end_layout
+
+\begin_layout Lemma
+Cauchy-Schwarz inequality
+\end_layout
+
+\begin_layout Lemma
+If 
+\begin_inset Formula $x=\left(x_{1},x_{2},\dots,x_{n}\right)\in\mathbb{R}^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $y=\left(y_{1},y_{2},\dots,y_{n}\right)\in\mathbb{R}^{n}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\left(\sum_{j=1}^{n}x_{j}y_{j}\right)^{2}\leq\left(\sum_{j=1}^{n}x_{j}^{2}\right)\left(\sum_{j=1}^{n}y_{j}^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Any square of a real number is nonnegative.
+ Hence any sum of squares is nonnegative:
+\begin_inset Formula 
+\begin{align*}
+0 & \leq\sum_{j=1}^{n}\sum_{k=1}^{n}\left(x_{j}y_{k}-x_{k}y_{j}\right)^{2}\\
+ & =\sum_{j=1}^{n}\sum_{k=1}^{n}\left(x_{j}^{2}y_{k}^{2}+x_{k}^{2}y_{j}^{2}-2x_{j}x_{k}y_{j}y_{k}\right)\\
+ & =\left(\sum_{j=1}^{n}x_{j}^{2}\right)\left(\sum_{k=1}^{n}y_{k}^{2}\right)+\left(\sum_{j=1}^{n}y_{j}^{2}\right)\left(\sum_{k=1}^{n}x_{k}^{2}\right)-2\left(\sum_{j=1}^{n}x_{j}y_{j}\right)\left(\sum_{k=1}^{n}x_{k}y_{k}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The standard metric for 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+d\left(x,y\right)=\sqrt{\sum_{j=1}^{n}\left(x_{j}-y_{j}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+To show this function is really a metric, the only difficulty is to prove
+ triangle inequality:
+\begin_inset Formula 
+\begin{align*}
+\left(d\left(x,y\right)\right)^{2} & =\sum_{j=1}^{n}\left(x_{j}-z_{j}\right)^{2}\\
+ & =\sum_{j=1}^{n}\left(x_{j}-y_{j}+y_{j}-z_{j}\right)^{2}\\
+ & =\sum_{j=1}^{n}\left(\left(x_{j}-y_{j}\right)^{2}+\left(y_{j}-z_{j}\right)^{2}+2\left(x_{j}-y_{j}\right)\left(y_{j}-z_{j}\right)\right)\\
+ & \leq\sum_{j=1}^{n}\left(x_{j}-y_{j}\right)^{2}+\sum_{j=1}^{n}\left(y_{j}-z_{j}\right)^{2}+2\sqrt{\sum_{j=1}^{n}\left(x_{j}-y_{j}\right)^{2}\sum_{j=1}^{n}\left(y_{j}-z_{j}\right)^{2}}\\
+ & =\left(\sqrt{\sum_{j=1}^{n}\left(x_{j}-y_{j}\right)^{2}}+\sqrt{\sum_{j=1}^{n}\left(y_{j}-z_{j}\right)^{2}}\right)=\left(d\left(x,y\right)+d\left(y,z\right)\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Discrete metric.
+ For any set 
+\begin_inset Formula $X$
+\end_inset
+
+, define
+\begin_inset Formula 
+\[
+d\left(x,y\right)=\begin{cases}
+1 & \text{if }x\neq y\\
+0 & \text{if }x=y
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
