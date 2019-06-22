@@ -1,0 +1,420 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+todonotes
+eqs-within-sections
+figs-within-sections
+tabs-within-sections
+theorems-ams-bytype
+theorems-ams-extended-bytype
+theorems-sec-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Groups and examples
+\end_layout
+
+\begin_layout Definition
+Group
+\end_layout
+
+\begin_layout Definition
+A group 
+\begin_inset Formula $G$
+\end_inset
+
+ is a set with a law of composition which to each pair of elements 
+\begin_inset Formula $x,y$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ associates an element denoted by 
+\begin_inset Formula $xy$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ (closure) having the following properties
+\end_layout
+
+\begin_layout Definition
+1.
+ 
+\begin_inset Formula $\forall x,y,z\in G$
+\end_inset
+
+, we have associativity
+\begin_inset Formula 
+\[
+\left(xy\right)z=x\left(yz\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+2.
+ (identity) 
+\begin_inset Formula $\exists e\in G$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $ex=xe=x\quad\forall x\in G$
+\end_inset
+
+, which is called the 
+\emph on
+unit element 
+\emph default
+in the multiplicative case, the 
+\emph on
+zero element 
+\emph default
+in the additive case.
+\end_layout
+
+\begin_layout Definition
+3.
+ (inverse) If 
+\begin_inset Formula $x\in G$
+\end_inset
+
+, then 
+\begin_inset Formula $\exists y\in G$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $xy=yx=e$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Moreover, if 
+\begin_inset Formula $G$
+\end_inset
+
+ has the property that 
+\begin_inset Formula $\forall x,y\in G$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+xy=yx,
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula $G$
+\end_inset
+
+ is called an 
+\emph on
+abelian
+\emph default
+ group.
+\end_layout
+
+\begin_layout Definition
+A group of one element is said to be 
+\emph on
+trivial
+\emph default
+.
+ A group with a finite number of elements is a 
+\emph on
+finite group 
+\emph default
+and the cardinality is called its 
+\emph on
+order
+\emph default
+.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group.
+\end_layout
+
+\begin_layout Proposition
+1.
+ The identity element 
+\begin_inset Formula $e$
+\end_inset
+
+ is uniquely determined.
+\end_layout
+
+\begin_layout Proposition
+2.
+ Let 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+ The inverse element is uniquely determined.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+the set of rational numbers 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is a group under addition; the non-zero elements of 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ form a group under multiplication, denoted by 
+\begin_inset Formula $\mathbb{Q}^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+The real numbers and complex numbers are groups under addition.
+ The non-zero real numbers 
+\begin_inset Formula $\mathbb{R}^{*}$
+\end_inset
+
+ and non-zero complex numbers 
+\begin_inset Formula $\mathbb{C}^{*}$
+\end_inset
+
+ are groups under multiplication.
+\end_layout
+
+\begin_layout Example*
+The complex numbers of unit modulus form a group under multiplication.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $\left\{ 1,-1\right\} $
+\end_inset
+
+ is a group under multiplication.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $\left\{ 1,-1,i,-i\right\} $
+\end_inset
+
+ is a group under multiplication.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset href
+LatexCommand href
+name "Direct product"
+target "https://en.wikipedia.org/wiki/Direct_product#Group_direct_product"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Subgroup
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a groud and 
+\begin_inset Formula $H\subset G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup if
+\end_layout
+
+\begin_layout Definition
+1.
+ (identity) 
+\begin_inset Formula $H$
+\end_inset
+
+ contains the unit element 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+2.
+ 
+\begin_inset Formula $\forall x,y\in H$
+\end_inset
+
+, 
+\begin_inset Formula $xy$
+\end_inset
+
+ (closure) and 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ (inverse) are elements of 
+\begin_inset Formula $H$
+\end_inset
+
+\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Definition
+Then 
+\begin_inset Formula $H$
+\end_inset
+
+ is itself a group in its own right (associativity is automatically satisfied),
+ the law of composition in 
+\begin_inset Formula $H$
+\end_inset
+
+ being the same as that in 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+the unit element of 
+\begin_inset Formula $G$
+\end_inset
+
+ constitutes the a subgroup called the 
+\emph on
+trivial subgroup
+\emph default
+.
+\end_layout
+
+\end_body
+\end_document
