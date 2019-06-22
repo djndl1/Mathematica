@@ -84,8 +84,172 @@ tabs-within-sections
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Section
+Basic Properties
+\end_layout
 
+\begin_layout Standard
+The integeres are well-ordered
+\end_layout
+
+\begin_layout Proposition
+well-ordering
+\end_layout
+
+\begin_layout Proposition
+Every non-empty set of non-negative integers has a least element.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Induction First Form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Induction Second Form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Euclidean algorithm
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $m,n$
+\end_inset
+
+ be integers and 
+\begin_inset Formula $m>0$
+\end_inset
+
+.
+ Then there exist integers 
+\begin_inset Formula $q,r$
+\end_inset
+
+ with 
+\begin_inset Formula $0\leq r<m$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+n=qm+r.
+\]
+
+\end_inset
+
+The integers 
+\begin_inset Formula $q,r$
+\end_inset
+
+ are uniquely determined by these conditions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left\{ q\in\mathbb{N}|qm\leq n\right\} $
+\end_inset
+
+ is bounded above and by well-ordering has a largest element s.t.
+\begin_inset Formula 
+\[
+qm\leq n<\left(q+1\right)m=qm+m.
+\]
+
+\end_inset
+
+Hence
+\begin_inset Formula 
+\[
+0\leq n-qm<m.
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $r=n-qm$
+\end_inset
+
+.
+ then 
+\begin_inset Formula $0\leq r<m$
+\end_inset
+
+.
+ This proves the existence of the integers 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose that 
+\begin_inset Formula 
+\begin{align*}
+n & =q_{1}m+r_{1},\quad0\leq r_{1}<m,\\
+n & =q_{2}m+r_{2},\quad0\leq r_{2}<m.
+\end{align*}
+
+\end_inset
+
+then 
+\begin_inset Formula 
+\[
+\left(q_{1}-q_{2}\right)m=r_{2}-r_{1}>0.
+\]
+
+\end_inset
+
+but 
+\begin_inset Formula $r_{2}-r_{1}<m$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $q_{1}-q_{2}$
+\end_inset
+
+ cannot be an integer.
+ Hence we conclude that 
+\begin_inset Formula $r_{1}=r_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $q_{1}=q_{2}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
