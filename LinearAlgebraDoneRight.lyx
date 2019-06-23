@@ -340,7 +340,7 @@ A subset
 \begin_inset Formula $U$
 \end_inset
 
-is also a vector space (using the same addition and scalar multiplication
+ is also a vector space (using the same addition and scalar multiplication
  as on 
 \begin_inset Formula $V$
 \end_inset
@@ -380,10 +380,6 @@ A subset
 \begin_layout Theorem
 2.
  closed unser addition and scalar multiplication
-\end_layout
-
-\begin_layout Proof
-Omitted
 \end_layout
 
 \begin_layout Definition
@@ -572,10 +568,6 @@ Suppose
 .
 \end_layout
 
-\begin_layout Proof
-Omitted.
-\end_layout
-
 \begin_layout Standard
 For the direct sum of two subspaces
 \end_layout
@@ -607,10 +599,6 @@ Suppose
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Proof
-Omitted
 \end_layout
 
 \begin_layout Chapter
