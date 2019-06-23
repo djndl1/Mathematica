@@ -1,0 +1,20 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
+
+\begin{document}
+
+\begin{tikzpicture}[mindmap, grow cyclic, every node/ .style=concept, concept color=orange!40,
+  level 1/ .append style={level distance=5cm,sibling angle=90},
+  level 2/ .append style={level distance=3cm,sibling angle=45},]
+
+  \node [root, concept] {Vector Space}
+  child [concept, concept color=yellow!30] {node [concept] {definitions and related simple statements}
+  }
+  child [concept, concept color=blue!30]{ node [concept] {subspace}
+    child[concept, concept color=blue!30]{ node [concept] {direct sum}}
+  };
+
+\end{tikzpicture}
+\end{document}

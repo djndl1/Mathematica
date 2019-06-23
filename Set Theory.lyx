@@ -1621,7 +1621,7 @@ Suppose
 \begin_inset Formula $f$
 \end_inset
 
- be the function form 
+ be the function from 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1654,6 +1654,13 @@ one-to-one
  (
 \emph on
 injective)
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula $Y^{X}=\left\{ f|f\colon X\to Y\right\} $
+\end_inset
+
+
 \end_layout
 
 \begin_layout Remark*
