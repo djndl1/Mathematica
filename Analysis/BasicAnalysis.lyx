@@ -8524,6 +8524,10 @@ Consider
 Metric Spaces
 \end_layout
 
+\begin_layout Section
+metric spaces and examples
+\end_layout
+
 \begin_layout Standard
 To take limits in different contexts so that we don't reprove every propositions
 , the concept of a metric space is necessary, although not sufficient to
@@ -8786,6 +8790,629 @@ d\left(x,y\right)=\begin{cases}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+great circle distance
+\end_layout
+
+\begin_layout Example*
+Let 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+ be the unit sphere in 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, take 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+, define 
+\begin_inset Formula 
+\[
+d\left(x,y\right)=\theta
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle 
+\begin_inset Formula $\angle xOy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+This distance is the shortest distance between points on a sphere if we
+ are allowed travel on the sphere only.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is often useful to consider a subset of a larger metric space as a metric
+ space itself.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space and 
+\begin_inset Formula $Y\subset X$
+\end_inset
+
+, then the restriction 
+\begin_inset Formula $d|_{Y\times Y}$
+\end_inset
+
+ is a metric on 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ is a metric space, 
+\begin_inset Formula $Y\subset X$
+\end_inset
+
+, and 
+\begin_inset Formula $d^{\prime}=d|_{Y\times Y}$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(Y,d^{\prime}\right)$
+\end_inset
+
+ is said to be a subspace of 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+boundedness
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ subset 
+\begin_inset Formula $S\subset X$
+\end_inset
+
+ is said to be bounded if there exists a 
+\begin_inset Formula $p\in X$
+\end_inset
+
+ and a 
+\begin_inset Formula $B\in\mathbb{R}$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+d\left(p,x\right)\leq B\quad\forall x\in S.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+we say 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ is bounded if 
+\begin_inset Formula $X$
+\end_inset
+
+ itself is a bounded subset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+If we take the real numbers with the discrete metric, then we obtain a bounded
+ metric space.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Open and closed sets
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space, 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ Then define the 
+\emph on
+open ball
+\emph default
+ or simply 
+\emph on
+ball
+\emph default
+ of radius 
+\begin_inset Formula $\delta$
+\end_inset
+
+ around 
+\begin_inset Formula $x$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\[
+B\left(x,\delta\right)=\left\{ y\in X\colon d\left(x,y\right)<\delta\right\} .
+\]
+
+\end_inset
+
+Similarly 
+\emph on
+closed ball
+\emph default
+
+\begin_inset Formula 
+\[
+C\left(x,\delta\right)=\left\{ y\in X\colon d\left(x,y\right)\leq\delta\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Open sets and closed sets
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space.
+ A subset 
+\begin_inset Formula $V\subset X$
+\end_inset
+
+ is open if for every 
+\begin_inset Formula $x\in V$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $B\left(x,\delta\right)\subset V$
+\end_inset
+
+.
+ A subset 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ is closed if the complement 
+\begin_inset Formula $E^{C}=X\backslash E$
+\end_inset
+
+ is open.
+ When the ambient space 
+\begin_inset Formula $X$
+\end_inset
+
+ is not clear from context, we say 
+\begin_inset Formula $V$
+\end_inset
+
+ is open in 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $E$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $x\in V$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ is open, then we say 
+\begin_inset Formula $V$
+\end_inset
+
+ is an 
+\emph on
+open neighborhood
+\emph default
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+ is open while 
+\begin_inset Formula $[0,\infty)$
+\end_inset
+
+ is closed as 
+\begin_inset Formula $\left(-\infty,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space.
+\end_layout
+
+\begin_layout Proposition
+i.
+ 
+\begin_inset Formula $\varnothing$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ are open.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ If 
+\begin_inset Formula $V_{1},V_{2},\dots,V_{k}$
+\end_inset
+
+ are open then 
+\begin_inset Formula 
+\[
+\bigcap_{j=1}^{k}V_{j}
+\]
+
+\end_inset
+
+is also open.
+ That is, a finite intersection of open sets is open.
+\end_layout
+
+\begin_layout Proposition
+iii.
+ if 
+\begin_inset Formula $\left\{ V_{\lambda}\right\} _{\lambda\in I}$
+\end_inset
+
+ is an arbitrary collection of open sets, then
+\begin_inset Formula 
+\[
+\bigcup_{\lambda\in I}V_{\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space.
+\end_layout
+
+\begin_layout Proposition
+i.
+ 
+\begin_inset Formula $\varnothing$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ are closed.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ If 
+\begin_inset Formula $\left\{ E_{\lambda}\right\} _{\lambda\in I}$
+\end_inset
+
+ is an arbitrary collection of closed sets, then
+\begin_inset Formula 
+\[
+\bigcap_{\lambda\in I}E_{\lambda}
+\]
+
+\end_inset
+
+is also closed.
+ That is, an intersection of closed sets is closed.
+\end_layout
+
+\begin_layout Proposition
+iii.
+ If 
+\begin_inset Formula $E_{1},E_{2},\dots,E_{k}$
+\end_inset
+
+ are closed then
+\begin_inset Formula 
+\[
+\bigcup_{j=1}^{k}E_{j}
+\]
+
+\end_inset
+
+is also closed.
+ That is, a finite union of closed sets is closed.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space, 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $B\left(x,\delta\right)$
+\end_inset
+
+ is open and 
+\begin_inset Formula $C\left(x,\delta\right)$
+\end_inset
+
+ is closed.
+\end_layout
+
+\begin_layout Proof
+For a closed ball 
+\begin_inset Formula $C\left(x,\delta\right)$
+\end_inset
+
+, the complement
+\begin_inset Formula 
+\[
+C^{C}=\left\{ y\in X|d\left(y,x\right)>\delta\right\} .
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\forall y\in C^{C}$
+\end_inset
+
+, there exists 
+\begin_inset Formula $\delta_{0}=d\left(x,y\right)-\delta$
+\end_inset
+
+ s.t.
+ for all 
+\begin_inset Formula $z$
+\end_inset
+
+ in the ball of 
+\begin_inset Formula $y$
+\end_inset
+
+ with a radius 
+\begin_inset Formula $\delta_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $a<b$
+\end_inset
+
+ be two real numbers.
+ Then 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,\infty\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(-\infty,b\right)$
+\end_inset
+
+ are open in 
+\begin_inset Formula $\mathbb{R}.$
+\end_inset
+
+ Also 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\left[a,\infty\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $(-\infty,b]$
+\end_inset
+
+ are closed in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
