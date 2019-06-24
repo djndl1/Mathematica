@@ -297,5 +297,247 @@ To prove
  to be false, and show it implies two mutually contradictory assertions.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+The Well Ordering Principle
+\end_layout
+
+\begin_layout Standard
+the Well Ordering Principle provides one of the most important proof rules
+ in discrete mathematics.
+\end_layout
+
+\begin_layout Theorem
+Every nonempty set of nonnegative integers has a smallest element.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By constructing a set of counterexamples and applying Well Ordering, and
+ then somehow reaching a contradiction, Well Ordering can be used to prove
+ that some property 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ holds for every nonnegative integer 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+For any positive integer 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+, the fraction 
+\begin_inset Formula $m/n$
+\end_inset
+
+ can be written in lowest terms, i.e.
+ in the form 
+\begin_inset Formula $m^{\prime}/n^{\prime}$
+\end_inset
+
+ where 
+\begin_inset Formula $m^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $n^{\prime}$
+\end_inset
+
+ are positive integers with no common prime factors.
+\end_layout
+
+\begin_layout Proof
+Suppose that there are positive integers 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ s.t.
+ the fraction 
+\begin_inset Formula $m/n$
+\end_inset
+
+ cannot be written in lowest terms.
+ Let 
+\begin_inset Formula $C$
+\end_inset
+
+ be the set of positive integeres that are numerators of such fractions.
+ Then 
+\begin_inset Formula $m\in C$
+\end_inset
+
+, so 
+\begin_inset Formula $C$
+\end_inset
+
+ is nonempty.
+ By well ordering and the definition of 
+\begin_inset Formula $C$
+\end_inset
+
+, there is a smallest integer 
+\begin_inset Formula $m_{0}\in C$
+\end_inset
+
+ and a corresponding denominator 
+\begin_inset Formula $n_{0}>0$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+\text{the fraction }\frac{m_{0}}{n_{0}}\text{ cannot be written in lowest terms.}
+\]
+
+\end_inset
+
+which means that 
+\begin_inset Formula $m_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ must have a common prime factor 
+\begin_inset Formula $p>1$
+\end_inset
+
+.
+ But 
+\begin_inset Formula 
+\[
+\frac{m_{0}/p}{n_{0}/p}=\frac{m_{0}}{n_{0}}
+\]
+
+\end_inset
+
+implies that 
+\begin_inset Formula 
+\[
+\text{the fraction }\frac{m_{0}/p}{n_{0}/p}\text{ cannot be written in lowest terms either}.
+\]
+
+\end_inset
+
+i.e.
+ 
+\begin_inset Formula $m_{0}/p\in C$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $m_{0}/p<m_{0}$
+\end_inset
+
+, a contradiction is reached, implying that 
+\begin_inset Formula $C$
+\end_inset
+
+ must be empty.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Prime Factorization Theorem
+\end_layout
+
+\begin_layout Theorem
+Every positive integer greater than 
+\begin_inset Formula $1$
+\end_inset
+
+ can be factored into a product of primes.
+\end_layout
+
+\begin_layout Proof
+Define a set 
+\begin_inset Formula $C=\left\{ n>1|n\text{ cannot be factored into a product of primes}\right\} $
+\end_inset
+
+.
+ By Well Ordering, 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ is a smallest element of 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n$
+\end_inset
+
+ is product of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ where 
+\begin_inset Formula $1<a,b<n$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ can be factored into products of primes, thus 
+\begin_inset Formula $n$
+\end_inset
+
+ is also factored into a product of primes.
+ CONTRADICTION!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
