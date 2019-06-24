@@ -5,6 +5,10 @@
 \save_transient_properties true
 \origin unavailable
 \textclass amsbook
+\begin_preamble
+\newref{lemma}{name=lemma~,Name=Lemma~,names=lemmas~,Names=Lemmas~}
+\newref{theorem}{name=theorem~,Name=Theorem~,names=lemmas~,Names=Lemmas~}
+\end_preamble
 \use_default_options true
 \begin_removed_modules
 theorems-ams
@@ -2828,7 +2832,7 @@ monotone sequence
 \begin_layout Proposition
 \begin_inset CommandInset label
 LatexCommand label
-name "Proposition 2.3"
+name "A-monotone-sequence"
 
 \end_inset
 
@@ -3175,7 +3179,7 @@ Facts about limits of sequences
 \begin_layout Lemma
 \begin_inset CommandInset label
 LatexCommand label
-name "Squeeze-lemma"
+name "lemma:2.1"
 
 \end_inset
 
@@ -3963,7 +3967,7 @@ It is important to notice that
 \begin_layout Theorem
 \begin_inset CommandInset label
 LatexCommand label
-name "Theorem 2.1"
+name "theorem:2.1"
 
 \end_inset
 
@@ -4199,20 +4203,19 @@ Furthermore, if
 \end_layout
 
 \begin_layout Proof
-Lemma 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "Squeeze-lemma"
+reference "lemma:2.1"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- and Theorem 
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "Theorem 2.1"
+reference "theorem:2.1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -4309,10 +4312,9 @@ Suppose a sequence
 \end_layout
 
 \begin_layout Proof
-Theorem 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "Theorem 2.1"
+LatexCommand formatted
+reference "theorem:2.1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -9354,17 +9356,31 @@ C^{C}=\left\{ y\in X|d\left(y,x\right)>\delta\right\} .
 \end_inset
 
 
-\end_layout
+\begin_inset Formula 
+\[
+d\left(z,x\right)+d\left(z,y\right)\geq d\left(y,x\right)=\delta+\delta_{0}
+\]
 
-\begin_layout Standard
-\begin_inset Separator plain
 \end_inset
 
+then
+\begin_inset Formula 
+\[
+d\left(z,x\right)\geq\delta+\left(\delta_{0}-d\left(z,y\right)\right)\geq\delta
+\]
 
-\end_layout
+\end_inset
 
-\begin_layout Proof
-TODO
+hence 
+\begin_inset Formula $z\in C^{C}$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $C^{C}$
+\end_inset
+
+ is an open set.
 \end_layout
 
 \begin_layout Standard
@@ -9413,6 +9429,165 @@ Let
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ is a metric space, and 
+\begin_inset Formula $Y\subset X$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $U\subset Y$
+\end_inset
+
+ is open in 
+\begin_inset Formula $Y$
+\end_inset
+
+ (i.e.
+ in the subspace topology) iff there exists an open set 
+\begin_inset Formula $V\subset X$
+\end_inset
+
+ (so open in 
+\begin_inset Formula $X$
+\end_inset
+
+) s.t.
+ 
+\begin_inset Formula $V\cap Y=U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+let 
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $Y=\left[0,1\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U=[0,1/2)$
+\end_inset
+
+ is an open set in 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ We may take 
+\begin_inset Formula $V=\left(-1/2,1/2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+R
+\begin_inset Formula $\to$
+\end_inset
+
+L: For all 
+\begin_inset Formula $x\in U$
+\end_inset
+
+, there is a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $B_{X}\left(x,\delta\right)\subset V$
+\end_inset
+
+.???TODO See 
+\begin_inset CommandInset href
+LatexCommand href
+name "this"
+target "https://math.stackexchange.com/questions/1545132/question-about-the-proof-of-rudins-theorem-2-30/2202357"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Suppose 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ is a metric space, 
+\begin_inset Formula $V\subset X$
+\end_inset
+
+ is open and 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ is closed.
+\end_layout
+
+\begin_layout Proposition
+i.
+ 
+\begin_inset Formula $U\subset V$
+\end_inset
+
+ is open in the subspace topology iff 
+\begin_inset Formula $U$
+\end_inset
+
+ is open in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ 
+\begin_inset Formula $F\subset E$
+\end_inset
+
+ is closed in the subspace topology iff 
+\begin_inset Formula $F$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
 \end_layout
 
 \end_body
