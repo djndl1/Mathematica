@@ -7,11 +7,11 @@
 \textclass article
 \use_default_options true
 \begin_modules
-theorems-bytype
-theorems-sec-bytype
 eqs-within-sections
 figs-within-sections
 tabs-within-sections
+theorems-ams-bytype
+theorems-ams-extended-bytype
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -37,7 +37,16 @@ tabs-within-sections
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -131,6 +140,13 @@ Induction Second Form
 
 \begin_layout Theorem
 Euclidean algorithm
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Euclidean-algorithm"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Theorem
@@ -177,7 +193,8 @@ The integers
 \begin_inset Formula $\left\{ q\in\mathbb{N}|qm\leq n\right\} $
 \end_inset
 
- is bounded above and by well-ordering has a largest element s.t.
+ is bounded above and by well-ordering has a largest element (the least
+ element of the subset of all upper bounds) s.t.
 \begin_inset Formula 
 \[
 qm\leq n<\left(q+1\right)m=qm+m.
@@ -247,6 +264,442 @@ but
 
 , then 
 \begin_inset Formula $q_{1}=q_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Greatest Common Divisor
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ be a non-zero integer, we say that 
+\begin_inset Formula $d$
+\end_inset
+
+ divides 
+\begin_inset Formula $n$
+\end_inset
+
+ if there exists an integer 
+\begin_inset Formula $q$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\[
+n=dq.
+\]
+
+\end_inset
+
+written 
+\begin_inset Formula $d|n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Common divisor
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $m,n$
+\end_inset
+
+ be nonzero integers, an integer 
+\begin_inset Formula $d\neq0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $d|n$
+\end_inset
+
+ and 
+\begin_inset Formula $d|m$
+\end_inset
+
+ is called a common divisor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Greatest common divisor (g.c.d.)
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $m,n$
+\end_inset
+
+ be nonzero integers.
+ A common divisor 
+\begin_inset Formula $d$
+\end_inset
+
+ of 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ is the greatest common divisor if for a divisor 
+\begin_inset Formula $e$
+\end_inset
+
+ of 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $e$
+\end_inset
+
+ divides 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+ideal
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $J$
+\end_inset
+
+ be a subset of the integers.
+\end_layout
+
+\begin_layout Definition
+1.
+ Integer 
+\begin_inset Formula $0$
+\end_inset
+
+ is in 
+\begin_inset Formula $J$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+2.
+ if 
+\begin_inset Formula $m,n$
+\end_inset
+
+ are in 
+\begin_inset Formula $J$
+\end_inset
+
+, then 
+\begin_inset Formula $m+n$
+\end_inset
+
+ is in 
+\begin_inset Formula $J$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+3.
+ If 
+\begin_inset Formula $m$
+\end_inset
+
+ is in 
+\begin_inset Formula $J$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ is an arbitray integer, then 
+\begin_inset Formula $nm$
+\end_inset
+
+ is in 
+\begin_inset Formula $J$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+1.
+ Let 
+\begin_inset Formula $m_{1},\dots,m_{r}$
+\end_inset
+
+ (called 
+\emph on
+generators
+\emph default
+) be integers.
+ Let 
+\begin_inset Formula $J$
+\end_inset
+
+ be the set of all integers in the form 
+\begin_inset Formula 
+\[
+x_{1}m_{1}+\cdots+x_{r}m_{r}
+\]
+
+\end_inset
+
+with integers 
+\begin_inset Formula $x_{1},\dots,x_{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+2.
+ 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+ is called the 
+\emph on
+zero ideal.
+\end_layout
+
+\begin_layout Example*
+3.
+ 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ is the 
+\emph on
+unit ideal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $J$
+\end_inset
+
+ be an ideal of 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Then there exists an integer 
+\begin_inset Formula $d$
+\end_inset
+
+ which is a generator of 
+\begin_inset Formula $J$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $J\neq\left\{ 0\right\} $
+\end_inset
+
+ then one can take 
+\begin_inset Formula $d$
+\end_inset
+
+ to be the smallest positive integer in 
+\begin_inset Formula $J$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $J$
+\end_inset
+
+ is the zero ideal, then 
+\begin_inset Formula $0$
+\end_inset
+
+ is the generator.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $J\neq\left\{ 0\right\} $
+\end_inset
+
+.
+ If 
+\begin_inset Formula $n\in J$
+\end_inset
+
+ then 
+\begin_inset Formula $-n=\left(-1\right)n$
+\end_inset
+
+ is also in 
+\begin_inset Formula $J$
+\end_inset
+
+, so 
+\begin_inset Formula $J$
+\end_inset
+
+ contains some positive integer.
+ Let 
+\begin_inset Formula $d$
+\end_inset
+
+ be the smallest positive integer in 
+\begin_inset Formula $J$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $n\in J$
+\end_inset
+
+, write 
+\begin_inset Formula $n=dq+r$
+\end_inset
+
+ with 
+\begin_inset Formula $0\leq r<d$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "thm:Euclidean-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Then 
+\begin_inset Formula $r=n-dq$
+\end_inset
+
+ is in 
+\begin_inset Formula $J$
+\end_inset
+
+, and since 
+\begin_inset Formula $r<d$
+\end_inset
+
+ (the smallest postitive integer), it follows that 
+\begin_inset Formula $r=0$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $n=dq$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ is a generator.
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $m_{1},m_{2}$
+\end_inset
+
+ be positive integers.
+ Let 
+\begin_inset Formula $d$
+\end_inset
+
+ be a positive generator for the ideal generated by 
+\begin_inset Formula $m_{1},m_{2}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $d$
+\end_inset
+
+ is a greatest common divisor of 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}$
 \end_inset
 
 .
