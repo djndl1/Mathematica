@@ -1091,7 +1091,6 @@ th coordinate of
 .
 \end_layout
 
-\begin_deeper
 \begin_layout Proof
 Use the natural basis 
 \begin_inset Formula $\left\{ e_{1},\dots,e_{n}\right\} $
@@ -1113,7 +1112,7 @@ Use the natural basis
 By the definition of the derivative
 \begin_inset Formula 
 \[
-\lim_{x\to x_{0}}=\frac{\left\lVert f\left(x_{j}\right)-\left(L\left(te_{j}\right)+f\left(x_{0}\right)\right)\right\rVert }{\left\lVert x-x_{0}\right\rVert }=\lim_{t\to0}\frac{f\left(x_{j}\right)-\left(tLe_{j}+f\left(x_{0}\right)\right)}{t}=0
+\lim_{x\to x_{0}}=\frac{\left\lVert f\left(x_{j}\right)-\left(L\left(te_{j}\right)+f\left(x_{0}\right)\right)\right\rVert }{\left\lVert x-x_{0}\right\rVert }=?\lim_{t\to0}\frac{f\left(x_{j}\right)-\left(tLe_{j}+f\left(x_{0}\right)\right)}{t}=0
 \]
 
 \end_inset
@@ -1169,6 +1168,98 @@ the matrix has the form
 
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f\colon\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ is differentiable, then the gradient 
+\begin_inset Formula $\triangledown f=Df\left(x\right)^{T}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\triangledown f$
+\end_inset
+
+ is differentiable, we say that 
+\begin_inset Formula $f$
+\end_inset
+
+ is twice differentiable the second derivative is the so-called Hessian
+ matrix of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $f\colon\Omega\to\mathbb{R}^{m},\Omega\subset\mathbb{R}^{n}$
+\end_inset
+
+ is said to be 
+\emph on
+continuously differentiable
+\emph default
+ on 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ if it is differentiable and 
+\begin_inset Formula $Df\colon\Omega\to\mathbb{R}^{m\times n}$
+\end_inset
+
+ is continous, that is, the components of 
+\begin_inset Formula $f$
+\end_inset
+
+ have continuous partial derivatives.
+\end_layout
+
+\begin_layout Standard
+If the components of 
+\begin_inset Formula $f$
+\end_inset
+
+ have continuous partial derivatives of order 
+\begin_inset Formula $p$
+\end_inset
+
+, we write 
+\begin_inset Formula $f\in\mathcal{C}^{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The Hessian matrix of a function 
+\begin_inset Formula $f\colon\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ at 
+\begin_inset Formula $\boldsymbol{x}$
+\end_inset
+
+ is symmetric if 
+\begin_inset Formula $f$
+\end_inset
+
+ is twice continously differentiable at 
+\begin_inset Formula $\boldsymbol{x} $
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
