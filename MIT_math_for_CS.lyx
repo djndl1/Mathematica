@@ -535,6 +535,76 @@ Define a set
 
 \end_layout
 
+\begin_layout Definition
+well ordered sets
+\end_layout
+
+\begin_layout Definition
+A set of numbers is well ordered when each its nonempty subsets has a minumum
+ element.
+\end_layout
+
+\begin_layout Standard
+Well Ordering commonly comes up in CS as a method for proving the comptuations
+ won't run forever.
+ The idea is to assign a value to the successive steps of a computation
+ so that the values get smaller at every step.
+ If the values are all from a well ordered set, then the computation can't
+ run forever.
+\end_layout
+
+\begin_layout Theorem
+For any nonnegative integer 
+\begin_inset Formula $n$
+\end_inset
+
+, the set of integers greater than or equal 
+\begin_inset Formula $-n$
+\end_inset
+
+ is well ordered.
+\end_layout
+
+\begin_layout Proof
+This is done by defining 
+\begin_inset Formula $S=\left\{ k\in\mathbb{Z}|k\geq-n\right\} $
+\end_inset
+
+ and add 
+\begin_inset Formula $n$
+\end_inset
+
+ to every element of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+lower bound, upper bound of sets of real numbers
+\end_layout
+
+\begin_layout Corollary
+Any set of integers with a lower bound is well ordered.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Any nonempty set of integers with an upper bound has a maximum element.
+\end_layout
+
+\begin_layout Proof
+This is done by taking the additive inverse of the original set and finding
+ its minimum.
+\end_layout
+
 \begin_layout Standard
 
 \end_layout
