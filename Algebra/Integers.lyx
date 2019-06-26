@@ -193,8 +193,8 @@ The integers
 \begin_inset Formula $\left\{ q\in\mathbb{N}|qm\leq n\right\} $
 \end_inset
 
- is bounded above and by well-ordering has a largest element (the least
- element of the subset of all upper bounds) s.t.
+ is bounded above and by well-ordering has a largest element (by inversing
+ the whole set) s.t.
 \begin_inset Formula 
 \[
 qm\leq n<\left(q+1\right)m=qm+m.
@@ -676,6 +676,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3"
+
+\end_inset
+
 Let 
 \begin_inset Formula $m_{1},m_{2}$
 \end_inset
@@ -831,6 +837,232 @@ for some integers
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Unique Factorization
+\end_layout
+
+\begin_layout Definition
+prime number
+\end_layout
+
+\begin_layout Definition
+an integer 
+\begin_inset Formula $p\geq2$
+\end_inset
+
+ s.t.
+ given a factorization 
+\begin_inset Formula $p=mn$
+\end_inset
+
+ with positive integers 
+\begin_inset Formula $m,n$
+\end_inset
+
+, then 
+\begin_inset Formula $m=1$
+\end_inset
+
+ or 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be a prime number, and 
+\begin_inset Formula $m,n$
+\end_inset
+
+ non-zero integers s.t.
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ divides 
+\begin_inset Formula $mn$
+\end_inset
+
+, then 
+\begin_inset Formula $p|m$
+\end_inset
+
+ or 
+\begin_inset Formula $p|n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Suppose 
+\begin_inset Formula $p$
+\end_inset
+
+ does not divide one of 
+\begin_inset Formula $m,n$
+\end_inset
+
+, say 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Then the GCD of 
+\begin_inset Formula $p,m$
+\end_inset
+
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ By 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "thm:3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, there exists 
+\begin_inset Formula $a,b$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+1=ap+bm.
+\]
+
+\end_inset
+
+Then 
+\begin_inset Formula 
+\[
+n=nap+bmn
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $p$
+\end_inset
+
+ divides 
+\begin_inset Formula $mn$
+\end_inset
+
+, i.e.
+ for some integer 
+\begin_inset Formula $c$
+\end_inset
+
+, 
+\begin_inset Formula $mn=pc$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+n=\left(na+bc\right)p,
+\]
+
+\end_inset
+
+p divides 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Every positive integer 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ can be expressed as a product of prime numbers (not necessarily distinct),
+ 
+\begin_inset Formula 
+\[
+n=p_{1}\cdots p_{r},
+\]
+
+\end_inset
+
+uniquely determined up to the order of the factors.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+It is easy to prove the existence of such prime factorization by well ordering.
+ About the uniqueness, refer to Chap.7 of A Friendly Introduction to Number
+ Theory by Joseph H.
+ Silverman.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+More concisely, we can write the prime factorization into 
+\begin_inset Formula 
+\[
+n=p_{1}^{m_{1}}p_{2}^{m_{2}}\cdots p_{r}^{m_{r}}
+\]
+
+\end_inset
+
+for some nonnegative integers 
+\begin_inset Formula $m_{1},m_{2},\dots,m_{r}$
+\end_inset
+
+.
+ By writing a rational number 
+\begin_inset Formula $a$
+\end_inset
+
+ in its lowest terms and factorizing the numerator and denominator, we obtain
+ a factorization of 
+\begin_inset Formula $a$
+\end_inset
+
+ itself.
+\end_layout
+
+\begin_layout Section
+Equivalence relations and congruences
+\end_layout
+
+\begin_layout Definition
+equivalence relation
 \end_layout
 
 \end_body
