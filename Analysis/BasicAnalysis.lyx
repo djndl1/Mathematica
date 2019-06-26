@@ -9590,5 +9590,184 @@ ii.
 TODO
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Connected Sets
+\end_layout
+
+\begin_layout Standard
+One of the main features of an interval in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is that is it connected.
+ In 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ we usually study functions on intervals, and in more general metric spaces
+ we usually study functions on connected sets.
+\end_layout
+
+\begin_layout Definition
+A nonempty metric space 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ is connected if the only subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+ that are both open and closed (so-called clopen subsets) are 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ itself.
+ If a nonempty 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ is not connected we say it is disconnected.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In other words, a nonempty 
+\begin_inset Formula $X$
+\end_inset
+
+ is connected if whenever 
+\begin_inset Formula $X=X_{1}\cup X_{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $X_{1}\cap X_{2}=\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ are open, then either 
+\begin_inset Formula $X_{1}=\emptyset$
+\end_inset
+
+ or 
+\begin_inset Formula $X_{2}=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space.
+ A nonempty set 
+\begin_inset Formula $S\subset X$
+\end_inset
+
+ is disconnected iff there exist open sets 
+\begin_inset Formula $U_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $U_{2}$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $U_{1}\cap U_{2}\cap S=\emptyset,U_{1}\cap S\neq\emptyset,U_{2}\cap S\neq\emptyset$
+\end_inset
+
+ (disjoint and nonempty) and 
+\begin_inset Formula 
+\[
+S=\left(U_{1}\cap S\right)\cup\left(U_{2}\cap S\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+A nonempty set 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ is connected iff it is an interval or a single point.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+A ball 
+\begin_inset Formula $B\left(x,\delta\right)$
+\end_inset
+
+ is not always connected.
+ take a two point space 
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+ with the discrete metric.
+ The ball 
+\begin_inset Formula $B\left(a,2\right)=\left\{ a,b\right\} $
+\end_inset
+
+ is not connected as 
+\begin_inset Formula $B\left(a,1\right)=\left\{ a\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $B\left(b,1\right)=\left\{ b\right\} $
+\end_inset
+
+ are open and disjoint.
+\end_layout
+
 \end_body
 \end_document
