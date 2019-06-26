@@ -606,7 +606,92 @@ This is done by taking the additive inverse of the original set and finding
 \end_layout
 
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
 
+
+\end_layout
+
+\begin_layout Chapter
+Logical Formulas
+\end_layout
+
+\begin_layout Proposition
+An implication is true exactly when the if-part is false or the then-part
+ is true.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The proposition 
+\begin_inset Quotes eld
+\end_inset
+
+P iff Q
+\begin_inset Quotes erd
+\end_inset
+
+ asserts that P and Q have the same truth table.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Disjunctive normal form (DNF)
+\end_layout
+
+\begin_layout Definition
+sum of products
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+conjunctive normal form
+\end_layout
+
+\begin_layout Definition
+product of sums
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Every propositional formula is equivalent to both a disjunctive normal form
+ and a conjunctive normal form.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To prove that two formulas are equivalent, convert them both to disjunctive
+ normal form over the set of variables that appear in the terms.
 \end_layout
 
 \end_body
