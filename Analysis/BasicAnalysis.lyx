@@ -1016,6 +1016,10 @@ We require real numbers to have many algebraic properties.
  In particular, we require that they are a field.
 \end_layout
 
+\begin_layout Subsection
+Field
+\end_layout
+
 \begin_layout Definition
 A set 
 \begin_inset Formula $F$
@@ -1519,13 +1523,17 @@ The set of real numbers
 \end_layout
 
 \begin_layout Standard
-Instead of constructing thge real number set from the rational numbers,
- we simply state their existence as a theorem without proof.
+Instead of constructing the real number set from the rational numbers, we
+ simply state their existence as a theorem without proof.
  Assume that 
 \begin_inset Formula $\mathbb{Q}$
 \end_inset
 
  is an ordered field.
+\end_layout
+
+\begin_layout Subsection
+Real numbers and Achimedean Property
 \end_layout
 
 \begin_layout Theorem
@@ -1699,7 +1707,12 @@ i.
 \begin_inset Formula $t$
 \end_inset
 
-.
+, i.e.
+ 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ has no upper bound.
  Suppose 
 \begin_inset Formula $\mathbb{N}$
 \end_inset
@@ -1733,7 +1746,7 @@ i.
 \begin_inset Formula $m+1\in\mathbb{N}$
 \end_inset
 
-, contradition!
+, contradiction!
 \end_layout
 
 \begin_layout Proof
@@ -1744,7 +1757,7 @@ ii.
 
  s.t.
  
-\begin_inset Formula $n\left(x-y\right)>1$
+\begin_inset Formula $n\left(y-x\right)>1$
 \end_inset
 
 .
@@ -1858,6 +1871,10 @@ There comes a simple but useful corollary of the Archimedean property
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Some Properties about Suprema and infima
 \end_layout
 
 \begin_layout Definition
@@ -1990,8 +2007,11 @@ vi.
 
 \end_layout
 
-\begin_layout Proof
-TODO
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proposition
@@ -2069,10 +2089,6 @@ If
 .
 \end_layout
 
-\begin_layout Proof
-TODO
-\end_layout
-
 \begin_layout Standard
 A similar statement holds for infima.
 \end_layout
@@ -2091,6 +2107,10 @@ To write
 \end_inset
 
  being bounded and nonempty, we make the following natural definition.
+\end_layout
+
+\begin_layout Subsection
+Extended Real Numbers
 \end_layout
 
 \begin_layout Definition
@@ -2171,7 +2191,7 @@ extended real numbers
 \begin_layout Definition
 \begin_inset Formula 
 \[
--\infty<\infty\,\text{and \,}-\infty<x\,\text{and\,}x<\infty\quad\text{for all}\,x\in\mathbb{R}
+-\infty<\infty\text{ and }-\infty<x\text{ and }x<\infty\quad\text{for all }x\in\mathbb{R}
 \]
 
 \end_inset
@@ -9870,10 +9890,6 @@ TODO
 \begin_inset Separator plain
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
