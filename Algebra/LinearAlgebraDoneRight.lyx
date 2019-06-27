@@ -989,7 +989,7 @@ If some vector in a list of vector s in
 \begin_inset Formula $V$
 \end_inset
 
- is a linear combination of the other vectors, then list is linearly independent.
+ is a linear combination of the other vectors, then list is linearly dependent.
 \end_layout
 
 \begin_layout Lemma
@@ -1245,7 +1245,7 @@ Reduce the spanning list using Linear Dependence Lemma.
 \end_layout
 
 \begin_layout Corollary
-Every finite-dimensional vector space has basis.
+Every finite-dimensional vector space has bases.
 \end_layout
 
 \begin_layout Standard

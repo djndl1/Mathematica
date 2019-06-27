@@ -243,5 +243,128 @@ exclusive or,
 , but not both
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+conditional statement; implication; if 
+\begin_inset Formula $p$
+\end_inset
+
+, then 
+\begin_inset Formula $q$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $p$
+\end_inset
+
+ : hypothesis, antecedent, premise
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $q$
+\end_inset
+
+ : conclusion, consequence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In mathematical reasoning, conditional statements are of a more general
+ sort than we use in English.
+\end_layout
+
+\begin_layout Definition
+converse, contrapositive, inverse
+\end_layout
+
+\begin_layout Definition
+Given an implication 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $q\implies p$
+\end_inset
+
+ is the 
+\emph on
+converse;
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\lnot q\implies\lnot p$
+\end_inset
+
+ is the 
+\emph on
+contrapositive
+\emph default
+;
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $\lnot p\implies\lnot q$
+\end_inset
+
+ is the 
+\emph on
+inverse
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+a conditional statement and its contrapositive are equivalent.
+ The converse and the inverse of a conditional statement are also equivalent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+biconditional statement, 
+\begin_inset Formula $p\iff q$
+\end_inset
+
+, bi-implication, 
+\begin_inset Formula $p$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
