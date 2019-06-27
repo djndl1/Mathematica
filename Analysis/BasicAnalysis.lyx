@@ -9769,5 +9769,113 @@ A ball
  are open and disjoint.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space and 
+\begin_inset Formula $A\subset X$
+\end_inset
+
+.
+ Then the closure of 
+\begin_inset Formula $A$
+\end_inset
+
+ is the set 
+\begin_inset Formula 
+\[
+\bar{A}=\bigcap\left\{ E\subset X\colon E\text{ is closed and }A\subset E\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space and 
+\begin_inset Formula $A\subset X$
+\end_inset
+
+.
+ The closure 
+\begin_inset Formula $\bar{A}$
+\end_inset
+
+ is closed.
+ Furthermore if 
+\begin_inset Formula $A$
+\end_inset
+
+ is closed then 
+\begin_inset Formula $\bar{A}=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space and 
+\begin_inset Formula $A\subset X$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x\in\bar{A}$
+\end_inset
+
+ iff for every 
+\begin_inset Formula $\delta>0,B\left(x,\delta\right)\cap A\neq\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
