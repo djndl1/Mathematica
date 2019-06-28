@@ -1,0 +1,291 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+algorithm2e
+theorems-ams-bytype
+theorems-ams-extended-bytype
+todonotes
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "tgtermes" "default"
+\font_sans "tgheros" "default"
+\font_typewriter "tgcursor" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Much of discrete mathematics is devoted to the study of discrete structures,
+ sued to represent discrete objects.
+ Many important discrete structures are built using sets, which are collections
+ of objects.
+ Among the discrete structures built from sets are combinations, unordered
+ collectiosn of objects used extensively in counting; relations, sets of
+ ordered pairs that represent relationshps between objects; graphs, sets
+ of vertices and edges that connect vertices; finite state machine used
+ to model computing machines.
+\end_layout
+
+\begin_layout Section
+Set theory
+\end_layout
+
+\begin_layout Definition
+truth set
+\end_layout
+
+\begin_layout Definition
+Given a predicate 
+\begin_inset Formula $P$
+\end_inset
+
+ and a domain 
+\begin_inset Formula $D$
+\end_inset
+
+, the set of elements 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $D$
+\end_inset
+
+ for which 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ is true is the truth set of 
+\begin_inset Formula $P$
+\end_inset
+
+, denoted by 
+\begin_inset Formula 
+\[
+\left\{ x\in D|P\left(x\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Computer representation of Sets
+\end_layout
+
+\begin_layout Standard
+Given a universal set 
+\begin_inset Formula $U$
+\end_inset
+
+ of arbitrary ordering, represent a subset 
+\begin_inset Formula $A$
+\end_inset
+
+ with a string of binary bits whose 
+\begin_inset Formula $i$
+\end_inset
+
+-th bit is 
+\begin_inset Formula $1$
+\end_inset
+
+ if the corresponding element is in 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+ otherwise.
+ It is easy to find complements and unions, intersections and differences
+ just by bit operations.
+\end_layout
+
+\begin_layout Section
+Functions
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a function from the set 
+\begin_inset Formula $A$
+\end_inset
+
+ to the set 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ The graph of the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is the set of ordered pair 
+\begin_inset Formula $\left\{ \left(a,b\right)|a\in A,f\left(a\right)=b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+ceiling function, floor function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Useful properties of the floor and ceiling functions.
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $n$
+\end_inset
+
+ be an integer, and 
+\begin_inset Formula $x$
+\end_inset
+
+ be a real number.
+\end_layout
+
+\begin_layout Proposition
+i.
+ 
+\begin_inset Formula $x-1<\lfloor x\rfloor\leq x\leq\lceil x\rceil<x+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+ii.
+ 
+\begin_inset Formula $\lfloor-x\rfloor=-\lceil x\rceil$
+\end_inset
+
+, 
+\begin_inset Formula $\lceil-x\rceil=-\lfloor x\rfloor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+iii.
+ 
+\begin_inset Formula $\lfloor x+n\rfloor=\lfloor x\rfloor+n$
+\end_inset
+
+; 
+\begin_inset Formula $\lceil x+n\rceil=\lceil x\rceil+n$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
