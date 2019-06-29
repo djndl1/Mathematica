@@ -287,5 +287,216 @@ iii.
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sequences and Summations
+\end_layout
+
+\begin_layout Definition
+geometric progression,
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $a,ar,ar^{2},ar^{n},\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+arithmetic progression
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $a,a+d,a+2d,a+3d,\dots,a+nd,\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cardinality of Sets
+\end_layout
+
+\begin_layout Definition
+countability
+\end_layout
+
+\begin_layout Definition
+A set that is either finite or has the same cardinality as the set of positive
+ integers is called 
+\emph on
+countable
+\emph default
+.'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Hilbert's Grand Hotel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Cantor diagonalization argument
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are countable sets, then 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ is also countable.
+\end_layout
+
+\begin_layout Standard
+???
+\end_layout
+
+\begin_layout Section
+Matrices
+\end_layout
+
+\begin_layout Definition
+zero-one matrix
+\end_layout
+
+\begin_layout Definition
+A matrix all of whose entries are either 
+\begin_inset Formula $0$
+\end_inset
+
+ or 
+\begin_inset Formula $1$
+\end_inset
+
+ is called a 
+\emph on
+zero-one matrix
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Zero-one matrices are often used to represent discrete structures.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+the 
+\emph on
+join (elementwise OR, analogue to sum) and meet (elementwise AND, analogue
+ to multiplication) of zero-one matrices
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+boolean product,
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $C=A\odot B$
+\end_inset
+
+, whose element 
+\begin_inset Formula $c_{ij}=\left(a_{i1}\land b_{1j}\right)\lor\left(a_{i2}\land b_{2j}\right)\lor\dots\lor\left(a_{ik}\land b_{kj}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The boolean product of matrices is associative
+\end_layout
+
+\begin_layout Definition
+boolean power
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $A^{\left[r\right]}=A\odot A\odot\cdots\odot A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A^{\left[0\right]}=I_{n}$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
