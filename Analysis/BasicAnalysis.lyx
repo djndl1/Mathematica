@@ -7802,7 +7802,11 @@ Let
 \begin_inset Formula $I$
 \end_inset
 
- be an interval, let 
+ be an 
+\series bold
+interval
+\series default
+, let 
 \begin_inset Formula $f\colon I\to\mathbb{R}$
 \end_inset
 
@@ -8539,6 +8543,425 @@ Consider
 \begin_inset Separator plain
 \end_inset
 
+
+\end_layout
+
+\begin_layout Subsection
+Some corollaries and applications
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $I$
+\end_inset
+
+ be an interval and let 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ be a differentiable function s.t.
+ 
+\begin_inset Formula $f^{\prime}\left(x\right)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in I$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is constant.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $I$
+\end_inset
+
+ be an interval and let 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ be a differentiable function.
+\end_layout
+
+\begin_layout Proposition
+i.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ is increasing iff 
+\begin_inset Formula $f^{\prime}\left(x\right)\geq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in I$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Proposition
+ii.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ is decreasing iff 
+\begin_inset Formula $f^{\prime}\left(x\right)\leq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+R
+\begin_inset Formula $\to$
+\end_inset
+
+L: Choose random 
+\begin_inset Formula $x\in I,y\in I$
+\end_inset
+
+ and 
+\begin_inset Formula $x<y$
+\end_inset
+
+, then there exists 
+\begin_inset Formula $c\in\left(x,y\right)$
+\end_inset
+
+ s.t.
+\begin_inset Formula 
+\[
+f\left(y\right)-f\left(x\right)=f^{\prime}\left(c\right)\left(y-x\right)
+\]
+
+\end_inset
+
+since 
+\begin_inset Formula $f^{\prime}\left(c\right)\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $y-x>0$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(y\right)\geq f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $I$
+\end_inset
+
+ be an interval and let 
+\begin_inset Formula $f\colon I\to\mathbb{R}$
+\end_inset
+
+ be a differentiable function.
+\end_layout
+
+\begin_layout Proposition
+i.
+ If 
+\begin_inset Formula $f^{\prime}\left(x\right)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in I$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is strictly increasing;
+\end_layout
+
+\begin_layout Proposition
+ii.
+ If 
+\begin_inset Formula $f^{\prime}\left(x\right)<0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in I$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is strictly decreasing.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+The converse is not true! Counterexample, 
+\begin_inset Formula $f\left(x\right)=x^{3}$
+\end_inset
+
+ at 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Let 
+\begin_inset Formula $f\colon\left(a,b\right)\to\mathbb{R}$
+\end_inset
+
+ be continuous.
+ Let 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ and suppose 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\left(a,c\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(c,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+i.
+ If 
+\begin_inset Formula $f^{\prime}\left(x\right)\leq0$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in\left(a,c\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{\prime}\left(x\right)\geq0$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in\left(c,b\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ has an absolute minimum at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ If 
+\begin_inset Formula $f^{\prime}\left(x\right)\geq0$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in\left(a,c\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{\prime}\left(x\right)\leq0$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in\left(c,b\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ has an absolute maximum at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+i.
+ Find a sequence 
+\begin_inset Formula $\left\{ y_{n}\right\} \in\left(a,c\right)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\lim_{n\to\infty}y_{n}=c$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $f\left(x\right)\geq f\left(y_{n}\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left(a,c\right)$
+\end_inset
+
+, take limits on both sides
+\begin_inset Formula 
+\[
+f\left(x\right)\geq f\left(c\right).
+\]
+
+\end_inset
+
+ Similarly, 
+\begin_inset Formula $f\left(c\right)\leq f\left(x\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left(c,b\right)$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $f\left(c\right)$
+\end_inset
+
+ is an absolute minimum.
+\end_layout
+
+\begin_layout Proof
+ii.
+ Omitted.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+.
+\end_layout
+
+\begin_layout Proposition
+i.
+ Suppose 
+\begin_inset Formula $f\colon[a,b)\to\mathbb{R}$
+\end_inset
+
+ is continuous, differentiable in 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $\lim_{x\to a}f^{\prime}\left(x\right)=L$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{\prime}\left(a\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+ii.
+ Suppose 
+\begin_inset Formula $f\colon(a,b]\to\mathbb{R}$
+\end_inset
+
+ is continuous, differentiable in 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $\lim_{x\to b}f^{\prime}\left(x\right)=L$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{\prime}\left(b\right)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
