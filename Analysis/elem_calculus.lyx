@@ -1255,10 +1255,132 @@ The Hessian matrix of a function
 \end_inset
 
  is twice continously differentiable at 
-\begin_inset Formula $\boldsymbol{x} $
+\begin_inset Formula $\boldsymbol{x}$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Theorem
+Chain rule
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $g\colon D\to\mathbb{R}$
+\end_inset
+
+ be differentiable on open set 
+\begin_inset Formula $D\subset\mathbb{R}^{n}$
+\end_inset
+
+, and let 
+\begin_inset Formula $f\colon\left(a,b\right)\to D$
+\end_inset
+
+ be differentiable on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Then the composite function 
+\begin_inset Formula $h\colon\left(a,b\right)\to\mathbb{R}$
+\end_inset
+
+ given by 
+\begin_inset Formula $h\left(t\right)=g\left(f\left(t\right)\right)$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, and 
+\begin_inset Formula 
+\[
+h^{\prime}\left(t\right)=Dg\left(f\left(t\right)\right)Df\left(t\right)=\triangledown g\left(f\left(t\right)\right)^{T}\begin{bmatrix}f_{1}^{\prime}\left(t\right)\\
+\vdots\\
+f_{2}^{\prime}\left(t\right)
+\end{bmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Product rule
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\colon\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ and 
+\begin_inset Formula $g\colon\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ be two differentiable functions.
+ Define the function 
+\begin_inset Formula $h\colon\mathbb{R}^{n}\to\mathbb{R}$
+\end_inset
+
+ by 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)^{T}g\left(x\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $h$
+\end_inset
+
+ is also differentiable and 
+\begin_inset Formula 
+\[
+Dh\left(x\right)=f\left(x\right)^{T}Dg\left(x\right)+g\left(x\right)^{T}Df\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Some useful formulas
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\begin{align*}
+D\left(y^{T}Ax\right) & =y^{T}A\\
+D\left(x^{T}Ax\right) & =x^{T}\left(A+A^{T}\right)\quad\text{for square matrix }A\\
+D\left(y^{T}x\right) & =y^{T}\\
+D\left(x^{T}x\right) & =2x^{T}\text{(following from the second formula)}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
