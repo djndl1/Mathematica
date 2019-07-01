@@ -487,14 +487,9 @@ De Morgen laws are logically equivalences.
 \end_layout
 
 \begin_layout Proposition
-\begin_inset Formula $p\implies q$
-\end_inset
-
- and 
-\begin_inset Formula $\lnot p\lor q$
-\end_inset
-
- are logically equivalent.
+distributive laws, idempotent laws, double negation law, commutative laws,
+ associative laws, absorption laws, nagation laws, identity laws, domination
+ laws are logical equivalences
 \end_layout
 
 \begin_layout Standard
@@ -505,9 +500,330 @@ De Morgen laws are logically equivalences.
 \end_layout
 
 \begin_layout Proposition
-distributive laws, idempotent laws, double negation law, commutative laws,
- associative laws, absorption laws, nagation laws, identity laws, domination
- laws
+Important logical equivalences involving conditional statements
+\end_layout
+
+\begin_layout Proposition
+1.
+ 
+\begin_inset Formula $p\implies q\equiv\lnot p\lor q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+2.
+ 
+\begin_inset Formula $\text{\ensuremath{\lnot\left(p\implies q\right)\equiv p\land\lnot q} }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+3.
+ 
+\begin_inset Formula $p\lor q\equiv\lnot p\implies q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+4.
+ 
+\begin_inset Formula $p\land q\equiv\lnot\left(p\implies\lnot q\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Important logical equivalences involving biconditional statements
+\end_layout
+
+\begin_layout Proposition
+1.
+ 
+\begin_inset Formula $p\iff q\equiv\lnot p\iff\lnot q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+2.
+ 
+\begin_inset Formula $p\iff q\equiv\left(p\land q\right)\lor\left(\lnot p\land\lnot q\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+3.
+ 
+\begin_inset Formula $\lnot\left(p\iff q\right)\equiv p\iff\lnot q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+satisfiability
+\end_layout
+
+\begin_layout Definition
+A compound proposition is satisfiable if there is an assignment of truth
+ values to its variables that makes it true.
+ Such an assignment is a 
+\emph on
+solution
+\emph default
+ of this particular satisfiability problem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Predicates and Quantifiers
+\end_layout
+
+\begin_layout Definition
+predicate, 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, propositional function 
+\begin_inset Formula $P$
+\end_inset
+
+ at 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+In general, a statement involving the 
+\begin_inset Formula $n$
+\end_inset
+
+ variables 
+\begin_inset Formula $x_{1},x_{2},\dots,x_{n}$
+\end_inset
+
+ can be denoted by
+\begin_inset Formula 
+\[
+P\left(x_{1},x_{2},\dots,x_{n}\right).
+\]
+
+\end_inset
+
+A statement of the form 
+\begin_inset Formula $P\left(x_{1},x_{2},\dots,x_{n}\right)$
+\end_inset
+
+ is the value of the 
+\emph on
+propositional function 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\emph default
+at the 
+\begin_inset Formula $n$
+\end_inset
+
+-tuple 
+\begin_inset Formula $\left(x_{1},x_{2},\dots,x_{n}\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $P$
+\end_inset
+
+ is also called an 
+\begin_inset Formula $n$
+\end_inset
+
+-place predicate or a 
+\begin_inset Formula $n$
+\end_inset
+
+-ary (from -ary as in binary, ternary) predicate.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Predicates are also commonly used to talk about hte properties of objects,
+ by defining the set of all objects that have some property in common.
+ When 
+\begin_inset Formula $P$
+\end_inset
+
+ is a predicate on 
+\begin_inset Formula $X$
+\end_inset
+
+, one might say 
+\begin_inset Formula $P$
+\end_inset
+
+ is a property of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+precondition, postcondition
+\end_layout
+
+\begin_layout Definition
+The statements that describe valid input are known as preconditions.
+\end_layout
+
+\begin_layout Definition
+The conditions that the output should satisfy after the operation are known
+ as postconditions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+quantification
+\end_layout
+
+\begin_layout Definition
+Quantification expresses the extent to which a predicate is true over a
+ range of elements.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+universal quantification, existential quantification
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+predicate calculus
+\end_layout
+
+\begin_layout Definition
+the area of logic that deals with predicates and quantifiers is called the
+ 
+\emph on
+predicate calculus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+domain of discourse, universe of discourse
+\end_layout
+
+\begin_layout Definition
+a particular domain of a variable in which a property is true for all values
+ of the variable
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+universal quantification, universal quantifier 
+\begin_inset Formula $\forall$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An element for which 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ is false is caleld a counterexmaple of 
+\begin_inset Formula $\forall x\,P\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A universal predicate may be viewed as the conjunction of all propositions
+ over the domain.
 \end_layout
 
 \end_body
