@@ -106,6 +106,10 @@ Propositional Logic
 Propositions are the basic building blocks of logic.
 \end_layout
 
+\begin_layout Subsection
+Basic concepts
+\end_layout
+
 \begin_layout Definition
 Proposition
 \end_layout
@@ -363,7 +367,147 @@ biconditional statement,
 \begin_inset Formula $q$
 \end_inset
 
+, material equivalence
+\end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Propositional Equivalences
+\end_layout
+
+\begin_layout Definition
+tautology
+\end_layout
+
+\begin_layout Definition
+A compound proposition that is always true whatever the propositional variables
+ is assigned.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+contradiction
+\end_layout
+
+\begin_layout Definition
+A compound porposition that is always false
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+contingency
+\end_layout
+
+\begin_layout Definition
+a compound proposition that is neither a tautology nor a contradiction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Logical equivalences
+\end_layout
+
+\begin_layout Definition
+The compound propositions 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ are called 
+\emph on
+logically equivalent
+\emph default
+ if 
+\begin_inset Formula $p\iff q$
+\end_inset
+
+ is a tautology, i.e.
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ always have the same truth value, denoted by 
+\begin_inset Formula $p\equiv q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+De Morgan laws
+\end_layout
+
+\begin_layout Proposition
+De Morgen laws are logically equivalences.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ and 
+\begin_inset Formula $\lnot p\lor q$
+\end_inset
+
+ are logically equivalent.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+distributive laws, idempotent laws, double negation law, commutative laws,
+ associative laws, absorption laws, nagation laws, identity laws, domination
+ laws
 \end_layout
 
 \end_body
