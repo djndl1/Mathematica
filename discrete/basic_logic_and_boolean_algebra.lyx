@@ -750,17 +750,6 @@ Quantification expresses the extent to which a predicate is true over a
 \end_layout
 
 \begin_layout Definition
-universal quantification, existential quantification
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition
 predicate calculus
 \end_layout
 
@@ -824,6 +813,170 @@ An element for which
 \begin_layout Standard
 A universal predicate may be viewed as the conjunction of all propositions
  over the domain.
+\end_layout
+
+\begin_layout Definition
+existential quantification, existential quantifier 
+\begin_inset Formula $\exists$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+A domain must always be specified when a statement 
+\begin_inset Formula $\exists xP\left(x\right)$
+\end_inset
+
+ is used.
+ Furthermore, the meaning of 
+\begin_inset Formula $\exists xP\left(x\right)$
+\end_inset
+
+ changes when the domain changes.
+ Without specifying the domain, the statement has no meaning.
+ When all elements in the domain can be listed, the existential quantification
+ is the same as the disjunction over the domain.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+binding variable, free variable, scope
+\end_layout
+
+\begin_layout Definition
+When a quantifier is used on a variable 
+\begin_inset Formula $x$
+\end_inset
+
+, this occurence of the variable is 
+\emph on
+bound.
+ 
+\emph default
+An occurrence of a variable that is not bound by a quantifier or set equal
+ to a particular value is said to be 
+\emph on
+free.
+ 
+\emph default
+The part of a logical expression to which a quantifier is applied is called
+ the 
+\emph on
+scope
+\emph default
+ of the quantifier.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $\exists x\left(P\left(x\right)\land Q\left(x\right)\right)\lor\forall xR\left(x\right)$
+\end_inset
+
+, the scopes of the two quantifiers do not overlap.
+ The same letter is often used to represent variables bound by different
+ quantifiers with scopes that do not overlap.
+\end_layout
+
+\begin_layout Remark*
+All varaibles that occur in a propositional function must be bound or set
+ equal to a particular value to turn it into a preposition.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+De Morgen's laws for quantifiers
+\end_layout
+
+\begin_layout Proposition
+i.
+ 
+\begin_inset Formula $\lnot\forall xP\left(x\right)\equiv\exists x\lnot P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+ii.
+ 
+\begin_inset Formula $\lnot\exists xP\left(x\right)\equiv\forall x\lnot P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rules of Inference
+\end_layout
+
+\begin_layout Definition
+Proof, argument, valid, premise
+\end_layout
+
+\begin_layout Definition
+An argument is a sequence of statements that end with a conclusion.
+\end_layout
+
+\begin_layout Definition
+The conclusion or final statement of the argument must follow from the truth
+ of the preceding statements, or 
+\emph on
+premises
+\emph default
+, of the argument, so that the argument is 
+\emph on
+valid.
+\end_layout
+
+\begin_layout Definition
+Proofs in mathematics are valid arguments that establish the truth of mathematic
+al.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To deduce new statements from statements we already have, we use rules of
+ inference which are templates for constructing valid arguments.
+ Rules of inference are our basic tools for establishing the truth of statements.
 \end_layout
 
 \end_body
