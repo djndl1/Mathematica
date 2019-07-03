@@ -5,6 +5,9 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\usepackage{proof}
+\end_preamble
 \use_default_options true
 \begin_modules
 theorems-ams-bytype
@@ -51,7 +54,7 @@ tabs-within-sections
 \papersize default
 \use_geometry false
 \use_package amsmath 1
-\use_package amssymb 1
+\use_package amssymb 2
 \use_package cancel 1
 \use_package esint 1
 \use_package mathdots 1
@@ -942,28 +945,48 @@ ii.
 Rules of Inference
 \end_layout
 
-\begin_layout Definition
-Proof, argument, valid, premise
+\begin_layout Standard
+To deduce new statements from statements we already have, we use rules of
+ inference which are templates for constructing valid arguments.
+ Rules of inference are our basic tools for establishing the truth of statements.
 \end_layout
 
 \begin_layout Definition
-An argument is a sequence of statements that end with a conclusion.
+argument, argument form
 \end_layout
 
 \begin_layout Definition
-The conclusion or final statement of the argument must follow from the truth
- of the preceding statements, or 
+An argument in propositional logic is sequence of propositions.
+ All but the final proposition in the argument are called 
 \emph on
-premises
+premises 
 \emph default
-, of the argument, so that the argument is 
+and the final proposition is called the 
 \emph on
-valid.
+conclusion.
+
+\emph default
+ An argument is 
+\emph on
+valid
+\emph default
+ if the truth of all its premises implies the conclusion.
 \end_layout
 
 \begin_layout Definition
-Proofs in mathematics are valid arguments that establish the truth of mathematic
-al.
+An 
+\emph on
+argument form
+\emph default
+ in propositional logic is a sequence of compound propositions involving
+ propositional variables.
+ An argument form is 
+\emph on
+valid
+\emph default
+ no matter which particular propositions are substituted for the propositional
+ variables in its premises, the conclusion is true if the premises are all
+ true.
 \end_layout
 
 \begin_layout Standard
@@ -973,10 +996,504 @@ al.
 
 \end_layout
 
+\begin_layout Subsubsection
+Rules of inference for Propositional Logic
+\end_layout
+
+\begin_layout Definition
+rules of inference
+\end_layout
+
+\begin_layout Definition
+relatively simple valid argument forms
+\end_layout
+
 \begin_layout Standard
-To deduce new statements from statements we already have, we use rules of
- inference which are templates for constructing valid arguments.
- Rules of inference are our basic tools for establishing the truth of statements.
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+modus ponens, the law of detachment
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{q} {p & p 
+\backslash
+implies q}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+modus tollens
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{
+\backslash
+lnot p}{
+\backslash
+lnot q & p 
+\backslash
+implies q}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Hypothetical syllogism
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{p 
+\backslash
+implies r}{p 
+\backslash
+implies q & q 
+\backslash
+implies r}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Disjunctive syllogism
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{q}{p 
+\backslash
+lor q & 
+\backslash
+lnot p}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Resolution
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{q 
+\backslash
+lor r}{p 
+\backslash
+lor q & 
+\backslash
+lnot p 
+\backslash
+lor r}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The final disjunction 
+\begin_inset Formula $p\lor r$
+\end_inset
+
+ is called the 
+\series bold
+resolvent
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Fallacies
+\end_layout
+
+\begin_layout Definition
+fallacy of affirming the conclusion
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left(\left(p\implies q\right)\land q\right)\implies p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+fallacy of denying the hypothesis
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left(\left(p\implies q\right)\land\lnot p\right)\implies\lnot q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Rules of inference for quantified statements
+\end_layout
+
+\begin_layout Proposition
+Universal instantiation
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{P(c)}{
+\backslash
+forall x P
+\backslash
+left(x 
+\backslash
+right)}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Universal generalization
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{
+\backslash
+forall x P(x)}{P(c) 
+\backslash
+text{ for an arbitrary }c}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+To show 
+\begin_inset Formula $\forall xP\left(x\right)$
+\end_inset
+
+ is true, take an arbitrary element 
+\begin_inset Formula $c$
+\end_inset
+
+ from the domain and show that 
+\begin_inset Formula $P\left(c\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Existential instantiation
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{P(c) 
+\backslash
+text{ for some element }c}{
+\backslash
+exists x P(x)}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+This rule allows us to conclude that there is an element 
+\begin_inset Formula $c$
+\end_inset
+
+ in the domain for which 
+\begin_inset Formula $P\left(c\right)$
+\end_inset
+
+ is true if we know that 
+\begin_inset Formula $\exists xP\left(x\right)$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Existential generalization
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+infer{
+\backslash
+exists x P(x)}{P(c) 
+\backslash
+text{ for some element }c}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
