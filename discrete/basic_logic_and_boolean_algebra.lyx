@@ -1496,5 +1496,150 @@ $$
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Proofs
+\end_layout
+
+\begin_layout Definition
+Proof
+\end_layout
+
+\begin_layout Definition
+A proof is a valid argument that establishes the truth of a mathematical
+ statement.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Formal proofs can be extremely long and hard to follow.
+ In practice, the proofs of theorems designed for human consumption are
+ almost always 
+\emph on
+informal proofs, 
+\emph default
+where morethan one rule of inference may be used in eachc step, where steps
+ may be skipped, where the axioms being assumed and the rules of inference
+ used are not explicitly statement.
+ Informal proofs can ofen explain to humans why theorem are true, while
+ computers produce formal proofs using automated reasoning system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+theorem
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+theorem
+\emph default
+ is a statement that can shown to be true, sometimes also referred to as
+ 
+\emph on
+facts 
+\emph default
+or 
+\emph on
+results
+\emph default
+.
+ Less important theorems are sometimes called 
+\emph on
+propositions
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+axioms, postulates
+\end_layout
+
+\begin_layout Definition
+statements assumed to be true
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Lemma, corollary
+\end_layout
+
+\begin_layout Definition
+A less important theorem that is helpful in the proof of other results is
+ called a 
+\emph on
+lemma.
+\end_layout
+
+\begin_layout Definition
+A theorem that can be established directly from a theorem that has been
+ proved is called a 
+\emph on
+corollary
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+conjecture
+\end_layout
+
+\begin_layout Definition
+A conjecture is a stement that is being proposed to be a true statement,
+ usually on the basis of some partial evidence, a heuristic argument or
+ the intuition of an expert.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Many theorems assert that a property holds fro all elements in a domain.
+ Although the precise statement of such theorems needs to include a universal.
+\end_layout
+
 \end_body
 \end_document
