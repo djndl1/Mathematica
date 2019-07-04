@@ -688,7 +688,7 @@ at the
 \end_layout
 
 \begin_layout Remark*
-Predicates are also commonly used to talk about hte properties of objects,
+Predicates are also commonly used to talk about the properties of objects,
  by defining the set of all objects that have some property in common.
  When 
 \begin_inset Formula $P$
@@ -806,7 +806,7 @@ An element for which
 \begin_inset Formula $P\left(x\right)$
 \end_inset
 
- is false is caleld a counterexmaple of 
+ is false is called a counterexample of 
 \begin_inset Formula $\forall x\,P\left(x\right)$
 \end_inset
 
