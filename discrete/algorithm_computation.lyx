@@ -1,0 +1,656 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+algorithm2e
+theorems-ams-bytype
+theorems-ams-extended-bytype
+eqs-within-sections
+figs-within-sections
+tabs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "tgtermes" "default"
+\font_sans "tgheros" "default"
+\font_typewriter "tgcursor" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Algorithms
+\end_layout
+
+\begin_layout Standard
+There are many general classes of problems that arise in discrete mathematics.
+\end_layout
+
+\begin_layout Definition
+An algorithm is a finite sequence of precise instructions for performing
+ a computation or for solving a problem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+Finding the maximum Element in a Finite Sequence
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+
+\begin_inset Formula $max\left(a_{1},a_{2},\dots,a_{n}\colon\text{integers}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $max\coloneqq a_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $i\coloneqq2$
+\end_inset
+
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+if 
+\begin_inset Formula $max<a_{i}$
+\end_inset
+
+ then 
+\begin_inset Formula $max\coloneqq a_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+return 
+\begin_inset Formula $max$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+\emph default
+
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+There are several properties that algorithms generally share.
+\end_layout
+
+\begin_layout Description
+Input An algorithm has input values from a specified set.
+\end_layout
+
+\begin_layout Description
+Output From each set of input values an algorithm produces output values
+ from a specified set.
+ The output values are the solution to the problem.
+\end_layout
+
+\begin_layout Description
+Definiteness The steps of an algorithm must be defined precisely.
+\end_layout
+
+\begin_layout Description
+Correctness An algorithm should produce the correct output values for each
+ set of input values.
+\end_layout
+
+\begin_layout Description
+Finiteness An algorithm should produce the desired output after a finite
+ number of steps for any input in the set.
+\end_layout
+
+\begin_layout Description
+Effectiveness It must be possible to perform each step of an algorithm exactly
+ and in a finite amount of time.
+\end_layout
+
+\begin_layout Description
+Generality The procedure should be applicable for all problems of the desired
+ form, not just for a particular set of input values.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Searching
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+The linear search algorithm/sequential search
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+\emph default
+
+\begin_inset Formula $linear\,search\left(x\colon\text{integer},a_{1},a_{2},\dots,a_{n}\colon\text{ distinct integers}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $i\coloneqq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+while 
+\begin_inset Formula $\left(i\leq n\text{ and }x\neq a_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad i\coloneqq i+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+if 
+\begin_inset Formula $i\leq n$
+\end_inset
+
+ then 
+\begin_inset Formula $location\coloneqq i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+else 
+\begin_inset Formula $location\coloneqq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+return 
+\begin_inset Formula $location$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+The Binary Search Algorithm
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+\emph default
+
+\begin_inset Formula $binary\,search\left(x\colon\text{integer},a_{1},a_{2},\dots,a_{n}\colon\text{increasing integers}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $i\coloneqq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $j\coloneqq n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+while 
+\begin_inset Formula $i<j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad m\coloneqq\lfloor\left(i+j\right)/2\rfloor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+if 
+\begin_inset Formula $x>a_{m}$
+\end_inset
+
+ then 
+\begin_inset Formula $i\coloneqq m+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+else 
+\begin_inset Formula $j\coloneqq m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+if 
+\begin_inset Formula $x=a_{i}$
+\end_inset
+
+ then 
+\begin_inset Formula $location\coloneqq i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+else 
+\begin_inset Formula $location=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+return 
+\begin_inset Formula $location$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sorting
+\end_layout
+
+\begin_layout Standard
+Sorting is putting the elements into a list in which the elements are in
+ increasing order.
+ An amazingly large percentage of computing resources is devoted to sorting
+ one thing or another.
+ More than 
+\begin_inset Formula $100$
+\end_inset
+
+ sorting algorithms have been devised.
+\end_layout
+
+\begin_layout Subsubsection
+Bubble sort
+\end_layout
+
+\begin_layout Standard
+The bubble sort is one of the simplest sorting algorithms, but not one of
+ the most efficient.
+ It puts a list into increasing order successively comparing adjacent elements,
+ interchanging them if they are in the wrong order.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+The bubble sort
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+\emph default
+
+\begin_inset Formula $bubblesort\left(a_{1},\dots,a_{n}\colon\text{ real numbers with }n\geq2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $i\coloneqq1$
+\end_inset
+
+ to 
+\begin_inset Formula $n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $j\coloneqq1$
+\end_inset
+
+ to 
+\begin_inset Formula $n-i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad$
+\end_inset
+
+
+\series bold
+\emph on
+if 
+\begin_inset Formula $a_{j}>a_{j+1}$
+\end_inset
+
+ then 
+\series default
+interchange 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{j+1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
