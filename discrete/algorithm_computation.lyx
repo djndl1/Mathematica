@@ -712,5 +712,176 @@ interchange
 
 \end_layout
 
+\begin_layout Subsubsection
+insertion sort
+\end_layout
+
+\begin_layout Standard
+In general, in the 
+\begin_inset Formula $j$
+\end_inset
+
+th step of the insertion sort, the 
+\begin_inset Formula $j$
+\end_inset
+
+th element of the list is inserted into the correct position in the list
+ of the previously sorted 
+\begin_inset Formula $j-1$
+\end_inset
+
+ elements.
+ To insert the 
+\begin_inset Formula $j$
+\end_inset
+
+th element in the list, a linear search technique is used.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+The insertion sort
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+
+\begin_inset Formula $insertion\,sort\left(a_{1},a_{2},\dots,a_{n}\colon\text{real numbers with }n\geq2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $j\coloneqq2$
+\end_inset
+
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad i\coloneqq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+while 
+\begin_inset Formula $a_{j}>a_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad i\coloneqq i+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\hspace*{1em}m\coloneqq a_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $k\coloneqq0$
+\end_inset
+
+ to 
+\begin_inset Formula $j-i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad a_{j-k}\coloneqq a_{j-k-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad a_{i}\coloneqq m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Greedy Algorithms
+\end_layout
+
+\begin_layout Definition
+greedy algorithms
+\end_layout
+
+\begin_layout Definition
+Algorithms that make what seems to be the 
+\begin_inset Quotes eld
+\end_inset
+
+best
+\begin_inset Quotes erd
+\end_inset
+
+ choice at each step are called 
+\emph on
+greedy algorithms.
+\end_layout
+
 \end_body
 \end_document
