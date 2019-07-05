@@ -102,7 +102,7 @@ Logic is the basis of all mathematical reasoning and of all automated reasoning.
 \end_layout
 
 \begin_layout Section
-Propositional Logic
+Basic Logic
 \end_layout
 
 \begin_layout Standard
@@ -1639,6 +1639,138 @@ A conjecture is a stement that is being proposed to be a true statement,
 \begin_layout Standard
 Many theorems assert that a property holds fro all elements in a domain.
  Although the precise statement of such theorems needs to include a universal.
+\end_layout
+
+\begin_layout Subsubsection
+Direct proofs
+\end_layout
+
+\begin_layout Standard
+A direct proof of a contional statement 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is constructed when the first step is the assumption that 
+\begin_inset Formula $p$
+\end_inset
+
+ is true; subsequent steps are constructed using rules of inference with
+ the final step showing that 
+\begin_inset Formula $q$
+\end_inset
+
+ must also be true.
+\end_layout
+
+\begin_layout Subsubsection
+Proof by Contraposition
+\end_layout
+
+\begin_layout Standard
+Proofs by contraposition make use of the fact that conditional statement
+ 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ is equivalent to its contrapositive 
+\begin_inset Formula $\lnot q\implies\lnot p$
+\end_inset
+
+.
+ This means that the conditional statement 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ can be proved by showing that its contrapositive 
+\begin_inset Formula $\lnot q\implies\lnot p$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Definition
+vacuous proof
+\end_layout
+
+\begin_layout Definition
+For an implication 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+, we show 
+\begin_inset Formula $p$
+\end_inset
+
+ is false to prove it.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+trivial proof
+\end_layout
+
+\begin_layout Definition
+Prove a conditional statement 
+\begin_inset Formula $p\implies q$
+\end_inset
+
+ if we know that the conclusion 
+\begin_inset Formula $q$
+\end_inset
+
+ is true.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Proofs by contradiction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r\land\lnot r$
+\end_inset
+
+ is a contradiction.
+\end_layout
+
+\begin_layout Subsubsection
+Proofs of equivalence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(p\iff q\right)\iff\left(p\implies q\right)\land\left(q\implies p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When we prove that a group of statements are equivalent, we can establish
+ any chain of conditional statements to walk through the chain.
+\end_layout
+
+\begin_layout Section
+Boolean Algebra
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
