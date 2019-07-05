@@ -1530,9 +1530,9 @@ Formal proofs can be extremely long and hard to follow.
 \emph on
 informal proofs, 
 \emph default
-where morethan one rule of inference may be used in eachc step, where steps
+where more than one rule of inference may be used in each step, where steps
  may be skipped, where the axioms being assumed and the rules of inference
- used are not explicitly statement.
+ used are not explicitly stated.
  Informal proofs can ofen explain to humans why theorem are true, while
  computers produce formal proofs using automated reasoning system.
 \end_layout
@@ -1765,12 +1765,163 @@ When we prove that a group of statements are equivalent, we can establish
  any chain of conditional statements to walk through the chain.
 \end_layout
 
-\begin_layout Section
-Boolean Algebra
+\begin_layout Subsubsection
+proof by case
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\left(p_{1}\lor p_{2}\lor p_{3}\lor\dots\lor p_{n}\right)\implies q\right]\iff\left[\left(p_{1}\implies q\right)\land\left(p_{2}\implies q\right)\land\dots\land\left(p_{n}\implies q\right)\right]
+\]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The original statement with a hypothesis made up of a disjunction of the
+ propositions 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{n}$
+\end_inset
+
+ can be proved by proving each of the 
+\begin_inset Formula $n$
+\end_inset
+
+ conditional statements 
+\begin_inset Formula $p_{i}\implies q,i=1,2,\dots,n$
+\end_inset
+
+ individually.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Quotes eld
+\end_inset
+
+without loss of generality
+\begin_inset Quotes erd
+\end_inset
+
+ is used in a proof, no additional argument is required prove other specified
+ cases after examining one case.
+\end_layout
+
+\begin_layout Subsubsection
+Exhaustive proof
+\end_layout
+
+\begin_layout Standard
+Some theorems can be proved by examing a relatively small number of examples.
+\end_layout
+
+\begin_layout Subsubsection
+Existence proofs
+\end_layout
+
+\begin_layout Definition
+existence proof
+\end_layout
+
+\begin_layout Definition
+A proof of a proposition of the form 
+\begin_inset Formula $\exists xP\left(x\right)$
+\end_inset
+
+ is called an existence proof.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+The element 
+\begin_inset Formula $a$
+\end_inset
+
+ such that 
+\begin_inset Formula $P\left(a\right)$
+\end_inset
+
+ is true is called a 
+\emph on
+witness
+\emph default
+.
+ Finding such 
+\begin_inset Formula $a$
+\end_inset
+
+ to prove 
+\begin_inset Formula $\exists xP\left(x\right)$
+\end_inset
+
+ is a 
+\emph on
+constructive proof.
+ 
+\emph default
+Proving 
+\begin_inset Formula $\exists xP\left(x\right)$
+\end_inset
+
+ some other way is 
+\emph on
+nonconstructive
+\emph default
+.
+ One way to nonconstructively do an existence proof is proof by contradiction.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Uniqueness Proofs
+\end_layout
+
+\begin_layout Standard
+Show that an element 
+\begin_inset Formula $x$
+\end_inset
+
+ with the desired property exists, show that if 
+\begin_inset Formula $y\neq x$
+\end_inset
+
+, then 
+\begin_inset Formula $y$
+\end_inset
+
+ does not have the desired property.
+ Equivalently, show that if 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ have the desired property, then 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Boolean Algebra
 \end_layout
 
 \end_body
