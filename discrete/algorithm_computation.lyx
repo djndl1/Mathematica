@@ -883,5 +883,578 @@ best
 greedy algorithms.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+Greedy Change-Making Algorithm
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+\emph default
+
+\begin_inset Formula $change\left(c_{1},c_{2},\dots,c_{r}\colon\text{values of denominations of coins where }\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $c_{1}>c_{2}>\cdots>c_{r};n\colon\text{a positive integer}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $i\coloneqq1$
+\end_inset
+
+ to 
+\begin_inset Formula $r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad d_{i}\coloneqq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+while 
+\series default
+\emph default
+
+\begin_inset Formula $n\geq c_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad d_{i}\coloneqq d_{i}+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad n\coloneqq n-c_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are sets of coins for which the greedy algorithm does not necessarily
+ produce change using the fewest coins possible.
+ For example, 
+\begin_inset Formula $\left(25,10,1\right)$
+\end_inset
+
+ to change 
+\begin_inset Formula $30$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+The greedy Change-Making algorithm produces change using the fewest coins
+ possible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+Greedy Algorithm for Scheduling Talks
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+\emph default
+
+\begin_inset Formula $(s_{1}\leq s_{2}\leq\cdots\leq s_{n}\colon\text{ start times of talks}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad e_{1}\leq e_{2}\leq\cdots\leq e_{n}\colon\text{ ending times of talks})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $S\coloneqq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $j\coloneqq1$
+\end_inset
+
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\series bold
+\emph on
+if 
+\series default
+talk 
+\begin_inset Formula $j$
+\end_inset
+
+ is compatible with 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\series bold
+\emph default
+then
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad S\coloneqq S\cup\left\{ \text{talk }j\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+return 
+\series default
+\emph default
+
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Unsolvable Halting Problem
+\end_layout
+
+\begin_layout Standard
+It asks whether there is a procedure that takes as input a computer program
+ and input to the program and determines whether the program will eventually
+ stop when run with this input.
+\end_layout
+
+\begin_layout Proof
+Assume there is a solution 
+\begin_inset Formula $H\left(P,I\right)$
+\end_inset
+
+ to the problem, which outputs 
+\begin_inset Quotes eld
+\end_inset
+
+Loops forever
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+halts
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Define another procedure 
+\begin_inset Formula $K\left(P\right)$
+\end_inset
+
+ that outputs exactly the opposite to 
+\begin_inset Formula $H\left(P,P\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $H\left(K,K\right)$
+\end_inset
+
+ yields a contradiction.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Growth of Functions
+\end_layout
+
+\begin_layout Standard
+Big-O notation is used extensively to estimate the number of operations
+ an algorithm uses as its input grows.
+ With help of this notation, we can determine whether it is practical to
+ use a particular algorithm to solve a problem as the size of the input
+ increases.
+\end_layout
+
+\begin_layout Definition
+Big-O notation
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ be functions from the set of integers or the set of real numbers to the
+ set of real numbers.
+ We say that 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g\left(x\right)\right)$
+\end_inset
+
+ if there are constants 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ s.t
+\begin_inset Formula 
+\[
+\left|f\left(x\right)\right|\leq C\left|g\left(x\right)\right|
+\]
+
+\end_inset
+
+whenever 
+\begin_inset Formula $x>k$
+\end_inset
+
+.
+ The constants 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ are called 
+\emph on
+witness 
+\emph default
+to the relationship 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g\left(x\right)\right)$
+\end_inset
+
+.
+ We say that two funcitons 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ that satisfy both of these big-O relationships are of the 
+\emph on
+same order.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+A polynomial of degree 
+\begin_inset Formula $n$
+\end_inset
+
+ or less is 
+\begin_inset Formula $O\left(x^{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\log n!$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(n\log n\right)$
+\end_inset
+
+, taking 
+\begin_inset Formula $C=1$
+\end_inset
+
+ and 
+\begin_inset Formula $k=1$
+\end_inset
+
+ as witnesses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $\log_{b}n$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1,\log n,n,n\log n,n^{2},2^{n},n!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TODO: plot all the above functions.
+\end_layout
+
+\begin_layout Theorem
+Suppose that 
+\begin_inset Formula $f_{1}\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g_{1}\left(x\right)\right)$
+\end_inset
+
+ and that 
+\begin_inset Formula $f_{2}\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g_{2}\left(x\right)\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left(f_{1}+f_{2}\right)\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(\max\left(\left|g_{1}\left(x\right)\right|,\left|g_{2}\left(x\right)\right|\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Suppose that 
+\begin_inset Formula $f_{1}\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{2}\left(x\right)$
+\end_inset
+
+ are both 
+\begin_inset Formula $O\left(g\left(x\right)\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left(f_{1}+f_{2}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g\left(x\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Suppose that 
+\begin_inset Formula $f_{1}\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g_{1}\left(x\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{2}\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g_{2}\left(x\right)\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left(f_{1}f_{2}\right)\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(\left(g_{1}g_{2}\right)\left(x\right)\right)$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
