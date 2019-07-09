@@ -2532,6 +2532,22 @@ There exists a set containing
  and containing the successor of each of its elements (a successor set).
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sets such as the ones that the axiom of infinity describes deserve to be
+ called 
+\emph on
+infinite
+\emph default
+.
+\end_layout
+
 \begin_layout Definition*
 A set 
 \begin_inset Formula $A$
@@ -2557,11 +2573,25 @@ successor set
 \end_layout
 
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
 A 
 \emph on
 natural number 
 \emph default
 is, by definition, an element of the minimal successor set.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition*
