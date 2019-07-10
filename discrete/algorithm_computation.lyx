@@ -240,7 +240,10 @@ return
     max))
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
 
 \end_layout
 
@@ -261,7 +264,7 @@ return
 \end_layout
 
 \begin_layout LyX-Code
-            (max-cdr (max-integer (cdr lst))))          
+            (max-cdr (max-integer-recursive (cdr lst))))          
 \end_layout
 
 \begin_layout LyX-Code
@@ -277,7 +280,7 @@ return
 \end_layout
 
 \begin_layout Paragraph
-There are several properties that algorithms generally share.
+There are several properties that algorithms generally share:
 \end_layout
 
 \begin_layout Description
@@ -1454,6 +1457,281 @@ Suppose that
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Big-
+\begin_inset Formula $\Omega$
+\end_inset
+
+ notation
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ be functions from the set of integers or the set of real numbers to the
+ set of real numbers.
+ We say that 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\Omega\left(g\left(x\right)\right)$
+\end_inset
+
+ if there are positive constants 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|f\left(x\right)\right|\geq C\left|g\left(x\right)\right|
+\]
+
+\end_inset
+
+whenever 
+\begin_inset Formula $x>k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\Omega\left(g\left(x\right)\right)$
+\end_inset
+
+ iff 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(f\left(x\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Often, it is important to know the order of growth of a function in terms
+ of some relatively simple reference function.
+ Knowing the order of growth requires that we have both an upper bound and
+ a lower bound for the size of the function.
+\end_layout
+
+\begin_layout Definition
+Big-Theta notation
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ be functions from the set of integers or the set of real numbers to the
+ set of real numbers.
+ We say that 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\Theta\left(g\left(x\right)\right)$
+\end_inset
+
+ if 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $O\left(g\left(x\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\Omega\left(g\left(x\right)\right)$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\Theta\left(g\left(x\right)\right)$
+\end_inset
+
+ we say 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\emph on
+big-theta 
+\emph default
+of 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, that 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is of order 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ and that 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ are of 
+\emph on
+the same order.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\Theta\left(g\left(x\right)\right)$
+\end_inset
+
+ iff there are real numbers 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ and a positive real number 
+\begin_inset Formula $k$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\[
+C_{1}\left|g\left(x\right)\right|\leq\left|f\left(x\right)\right|\leq C_{2}\left|g\left(x\right)\right|
+\]
+
+\end_inset
+
+whenever 
+\begin_inset Formula $x>k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Big-Theta is used to express both of lower-bound and upper-bound relationships.
+ When big-Theta notation is used, the function 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $\Theta\left(g\left(x\right)\right)$
+\end_inset
+
+ is a relatively simple reference function while 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is relatively complicated.
+ Unfortunately, big-O notation is often used by careless writers and speakers
+ as if it had the same meaning as bit-Theta notation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{n},a_{n-1},\dots,a_{0}$
+\end_inset
+
+ are real numbers with 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is of order 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \end_body
