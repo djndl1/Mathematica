@@ -137,7 +137,11 @@ backgroundcolor "none"
 status open
 
 \begin_layout Algorithm
-Finding the maximum Element in a Finite Sequence
+Finding the maximum Element in a Finite Sequence 
+\begin_inset Formula $\Theta\left(n\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Algorithm
@@ -348,7 +352,11 @@ backgroundcolor "none"
 status open
 
 \begin_layout Algorithm
-The linear search algorithm/sequential search
+The linear search algorithm/sequential search 
+\begin_inset Formula $\Theta\left(n\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Algorithm
@@ -466,7 +474,11 @@ backgroundcolor "none"
 status open
 
 \begin_layout Algorithm
-The Binary Search Algorithm
+The Binary Search Algorithm 
+\begin_inset Formula $\Theta\left(\log_{2}n\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Algorithm
@@ -636,7 +648,11 @@ backgroundcolor "none"
 status open
 
 \begin_layout Algorithm
-The bubble sort
+The bubble sort 
+\begin_inset Formula $\Theta\left(n^{2}\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Algorithm
@@ -761,7 +777,11 @@ backgroundcolor "none"
 status open
 
 \begin_layout Algorithm
-The insertion sort
+The insertion sort 
+\begin_inset Formula $\Theta\left(n^{2}\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Algorithm
@@ -1732,6 +1752,516 @@ Let
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Complexity of Algorithms
+\end_layout
+
+\begin_layout Standard
+An analysis of the time required to solve a problem of a particular size
+ involves the 
+\emph on
+time complexity
+\emph default
+.
+ An analysis of the computer memory required involves the 
+\emph on
+space complexity 
+\emph default
+of the algorithm.
+ Considerations of the time and space complexity of an algorithm are essential
+ when algorithms are implemented.
+\end_layout
+
+\begin_layout Subsection
+Time complexity
+\end_layout
+
+\begin_layout Standard
+The time complexity of an algorithm can be expressed in terms of the number
+ of operations used by the algorithm when the input has a particular size.
+\end_layout
+
+\begin_layout Definition
+worst-case complexity
+\end_layout
+
+\begin_layout Definition
+the largest number of operations needed to solve the given problem using
+ the algorithm on input of specified size.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+average-case analysis
+\end_layout
+
+\begin_layout Definition
+The average number of operations used to solve the problem over all possible
+ inputs of a given size.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Algorithm
+Boolean product of Zero-One Matrices
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+procedure 
+\series default
+boolean product of Zero-One Matrices (
+\emph default
+
+\begin_inset Formula $A,B\colon\text{zero-one matrices}$
+\end_inset
+
+
+\emph on
+)
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $i\coloneqq1$
+\end_inset
+
+ to 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\hspace*{1em}$
+\end_inset
+
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $j\coloneqq1$
+\end_inset
+
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad c_{ij}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad$
+\end_inset
+
+
+\series bold
+\emph on
+for 
+\begin_inset Formula $q\coloneqq1$
+\end_inset
+
+ to 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+\begin_inset Formula $\quad\quad\quad c_{ij}=c_{ij}\lor\left(a_{iq}\land b_{qj}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm
+
+\series bold
+\emph on
+return 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Algorithmic Paradigms
+\end_layout
+
+\begin_layout Definition
+algorithmic paradigm
+\end_layout
+
+\begin_layout Definition
+a general approach based on a particular concept that can be used to construct
+ algorithms for solving a variety of problems.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Brute-Force Algorithms
+\end_layout
+
+\begin_layout Standard
+A problem is solved in the most straightforward manner based on the statement
+ of the problem of the definitions of terms.
+ Brute-force algorithms are designed to solve problems without regard to
+ the computing resources required.
+ In general, brute force algorithms are navie approaches for solving problems
+ that do not take advantage of any special structure ofthe problem or clever
+ ideas.
+\end_layout
+
+\begin_layout Example*
+bubble, insertion and selection sorts;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Complexity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Complexity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Terminology
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Constant
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta\left(\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Logarithmic
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linear
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Linearithmic
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta\left(n^{b}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Polynomial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta\left(b^{n}\right),b>1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exponential
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta\left(n!\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factorial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+tractability
+\end_layout
+
+\begin_layout Definition
+A problem that is solvable using an algorithm worst-case complexity is called
+ 
+\emph on
+tractable
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+A problem can be solved using an algorithm with polynomial worst-case time
+ complexity is no guarantee that the problem can be solved in a reasonable
+ amount of time for even relatively small input values.
+ Many problems important in industry are thought be intractable but can
+ be practically solved for essentially all sets of input that arise in daily
+ life.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+P Versus NP
+\end_layout
+
+\begin_layout Standard
+Many solvable problems are believed to have the property that no algorithm
+ with polynomial worst-case time complexity solves them, but that a solution,
+ if known, can be checked in polynomial time.
+\end_layout
+
+\begin_layout Definition
+Class NP (nondeterministic polynomial), Class P
+\end_layout
+
+\begin_layout Definition
+Problems for which a solution can be checked in polynomial time; tractable
+ problems are said to belong to class P.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+NP-complete problems
+\end_layout
+
+\begin_layout Definition
+If any of NP-complete problems can be solved by a polynomial worst-case
+ time algorithm, then all problems in the class NP can be solved by polyniomial
+ worst-case time algorithms.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The P versus NP problem asks whther NP equals P.
+ The P versus NP problem is one of the most famous unsolved problems in
+ the mathematical sciences.
 \end_layout
 
 \end_body
