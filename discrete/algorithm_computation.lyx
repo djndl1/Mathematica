@@ -440,6 +440,46 @@ return
 
 \end_layout
 
+\begin_layout LyX-Code
+(defun linear-search-recursive (lst obj)
+\end_layout
+
+\begin_layout LyX-Code
+    (if (null lst)
+\end_layout
+
+\begin_layout LyX-Code
+        nil
+\end_layout
+
+\begin_layout LyX-Code
+        (if (eql obj (car lst))
+\end_layout
+
+\begin_layout LyX-Code
+            0
+\end_layout
+
+\begin_layout LyX-Code
+            (let ((cur-pos
+\end_layout
+
+\begin_layout LyX-Code
+                    (linear-search-recursive (cdr lst) obj)))
+\end_layout
+
+\begin_layout LyX-Code
+              (if (null cur-pos)
+\end_layout
+
+\begin_layout LyX-Code
+                  nil
+\end_layout
+
+\begin_layout LyX-Code
+                  (+ 1 cur-pos))))))
+\end_layout
+
 \begin_layout Standard
 \begin_inset space ~
 \end_inset
