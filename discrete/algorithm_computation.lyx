@@ -1795,6 +1795,41 @@ Let
 \end_layout
 
 \begin_layout Section
+Induction and Recursion
+\end_layout
+
+\begin_layout Definition
+Principle of mathematical induction
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\left(P\left(1\right)\land\forall k\left(P\left(k\right)\implies P\left(k+1\right)\right)\implies\forall nP\left(n\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Mathematical induction can be used to prove a conjecture once it has been
+ made.
+ However, it does not bring insights.
+ it does not provide insights as to why theorems are true.
+ Many theorems have other preferred proofs than induction because of the
+ insights they bring.
+\end_layout
+
+\begin_layout Section
 Complexity of Algorithms
 \end_layout
 
@@ -2884,6 +2919,92 @@ Context-free and regular grammars play an importatnt role in programming
  languages.
  Regular grammars are used to search text for certain patterns and in lexical
  analysis.
+\end_layout
+
+\begin_layout Definition
+derivation, parse tree
+\end_layout
+
+\begin_layout Definition
+A derivation in a context-free language can be represented graphically using
+ an ordered rooted tree called a 
+\emph on
+derivation, 
+\emph default
+or 
+\emph on
+parse tree
+\emph default
+, of which the root represents 
+\begin_inset Formula $S$
+\end_inset
+
+, the internal vertices represent the nonterminal symbols that arise in
+ the derivation and the leaves represent the terminal symbols that arise.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Top-down parsing, that is, starting from 
+\begin_inset Formula $S$
+\end_inset
+
+ to the string to parse; bottom-up parsing, working from the string up to
+ 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is another notation that is sometimes used to specify a type 2 grammar.
+\end_layout
+
+\begin_layout Definition
+Backus-Naur Form
+\end_layout
+
+\begin_layout Definition
+The productions in a type 2 grammar have a single nonterminal symbol as
+ their left-hand side.
+ All nonterminal symbols are enclosed in brackets 
+\begin_inset Formula $\left\langle \right\rangle $
+\end_inset
+
+, and all the right-hand sides of production are listed in the same statement,
+ separated by bars.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula $\left\langle A\right\rangle \Coloneqq\left\langle A\right\rangle a|a|\left\langle A\right\rangle \left\langle B\right\rangle $
+\end_inset
+
+ is 
+\begin_inset Formula $A\to Aa,A\to a,A\to AB$
+\end_inset
+
+.
 \end_layout
 
 \end_body
