@@ -1813,6 +1813,18 @@ Principle of mathematical induction
 
 \end_layout
 
+\begin_layout Definition
+Also, the base case 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ can be 
+\begin_inset Formula $P\left(b\right),b>1$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -2437,7 +2449,7 @@ over
 \begin_inset Formula $V^{*}$
 \end_inset
 
-, the set of all words over 
+ which is the set of all words over 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2996,7 +3008,7 @@ The productions in a type 2 grammar have a single nonterminal symbol as
 
 \end_layout
 
-\begin_layout Remark*
+\begin_layout Example*
 \begin_inset Formula $\left\langle A\right\rangle \Coloneqq\left\langle A\right\rangle a|a|\left\langle A\right\rangle \left\langle B\right\rangle $
 \end_inset
 
@@ -3005,6 +3017,417 @@ The productions in a type 2 grammar have a single nonterminal symbol as
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Finite-State Machines
+\end_layout
+
+\begin_layout Standard
+All finite-state machines include 
+\emph on
+a finite set of states
+\emph default
+, whith a desigated 
+\emph on
+starting state
+\emph default
+, an 
+\emph on
+input alphabet
+\emph default
+, and a 
+\emph on
+transition function 
+\emph default
+that assigns a next state to every state and input pair.
+\end_layout
+
+\begin_layout Standard
+Finite-state machines are used extensively in applications in computer science
+ and data networking, such as in spell checking, grammar checking, indexing
+ or searching large bodies of text, recognizing speech, and network protocols.
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+finite-state machine 
+\emph default
+
+\begin_inset Formula $M=\left(S,I,O,f,g,s_{0}\right)$
+\end_inset
+
+ consists of a finite set 
+\begin_inset Formula $S$
+\end_inset
+
+ of states, a finite input alphabet 
+\begin_inset Formula $I$
+\end_inset
+
+, a finite output alphabet 
+\begin_inset Formula $O$
+\end_inset
+
+, a transition function 
+\begin_inset Formula $f$
+\end_inset
+
+ that assigns to each state and input pair a new state, an output function
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ that assigns to each state and input pair an output, and an initial state
+ 
+\begin_inset Formula $s_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A finite-state machine can be represeted using 
+\series bold
+state table
+\emph on
+ 
+\series default
+\emph default
+or 
+\series bold
+state diagram
+\series default
+, which is a directed graph with labels (input, output pair) on the edges.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+g
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+State
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+states
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+states after input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+outputs under a certain state and input pair
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Unit delay machine
+\end_layout
+
+\begin_layout Definition
+A FSM that produces as output the input string delayed by a specified amount
+ of time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $M=\left(S,I,O,f,g,s_{0}\right)$
+\end_inset
+
+ be a finite-state machine and 
+\begin_inset Formula $L\subset I^{*}$
+\end_inset
+
+.
+ We say that 
+\begin_inset Formula $M$
+\end_inset
+
+ recoginizes or accepts 
+\begin_inset Formula $L$
+\end_inset
+
+ if an input string 
+\begin_inset Formula $x$
+\end_inset
+
+ belongs to 
+\begin_inset Formula $L$
+\end_inset
+
+ iff the last output bit produced by 
+\begin_inset Formula $M$
+\end_inset
+
+ when given 
+\begin_inset Formula $x$
+\end_inset
+
+ as input is a 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Mealy machines, Moore machines
+\end_layout
+
+\begin_layout Definition
+Mealy machines: A FSM whose output corresponds to transition between states
+ and inputs.
+\end_layout
+
+\begin_layout Definition
+Moore machines: A FSM whose output is deteremined only by the states\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One of the most important applications of finite-state machines is in language
+ recognition.
+ This application plays a fundamental role in the design and construction
+ of compilers for programming languages.
+ For a finite-state automaton, a string is recognized iff it takes the starting
+ state to one of the final states.
+\end_layout
+
+\begin_layout Definition
+String concatenation
+\end_layout
+
+\begin_layout Definition
+Suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are subsets of 
+\begin_inset Formula $V^{*}$
+\end_inset
+
+, where 
+\begin_inset Formula $V$
+\end_inset
+
+ is a vocabulary.
+ The 
+\emph on
+concatenation 
+\emph default
+of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $AB$
+\end_inset
+
+, is the set of all strings of the form 
+\begin_inset Formula $xy$
+\end_inset
+
+ where 
+\begin_inset Formula $x$
+\end_inset
+
+ is a string in 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ is a string in 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Also, 
+\begin_inset Formula $A^{0}=\left\{ \lambda\right\} ,A^{n+1}=A^{n}A\quad\text{for \ensuremath{n=0,1,2,\dots}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Kleene closure
+\end_layout
+
+\begin_layout Definition
+Suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $V^{*}$
+\end_inset
+
+.
+ Then the 
+\emph on
+Kleene closure 
+\emph default
+of 
+\begin_inset Formula $A$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+, is the set consisting of concatenations of arbitrarily many strings from
+ 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ That is 
+\begin_inset Formula 
+\[
+A^{*}=\bigcup_{k=0}^{\infty}A^{k}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
