@@ -3430,5 +3430,136 @@ A^{*}=\bigcup_{k=0}^{\infty}A^{k}.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+finite-state automaton
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+finite-state automaton 
+\emph default
+
+\begin_inset Formula $M=\left(S,I,f,s_{0},F\right)$
+\end_inset
+
+ consists of a finite set 
+\begin_inset Formula $S$
+\end_inset
+
+ of states, a finite 
+\emph on
+input alphabet 
+\begin_inset Formula $I$
+\end_inset
+
+
+\emph default
+, a 
+\emph on
+transition function 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\emph default
+that assigns a next state to every pair of state and input so that 
+\begin_inset Formula $f\colon S\times I\to S$
+\end_inset
+
+, an 
+\emph on
+initial state
+\emph default
+ 
+\begin_inset Formula $s_{0}$
+\end_inset
+
+, and a subset 
+\begin_inset Formula $F$
+\end_inset
+
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ consisting of 
+\emph on
+final 
+\emph default
+or 
+\emph on
+accepting states
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Language recognition by Finite-state machines
+\end_layout
+
+\begin_layout Definition
+A string 
+\begin_inset Formula $x$
+\end_inset
+
+ is said to be recognized or accepted by the machine 
+\begin_inset Formula $M=\left(S,I,f,s_{0},F\right)$
+\end_inset
+
+ if it takes the initial state 
+\begin_inset Formula $s_{0}$
+\end_inset
+
+ to a final state, that is, 
+\begin_inset Formula $f\left(s_{0},x\right)$
+\end_inset
+
+ is a state in 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ The language recognized or accepted by the machine 
+\begin_inset Formula $M$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $L\left(M\right)$
+\end_inset
+
+, is the set of all strings that are recognized by 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Two finite-state automata are called 
+\emph on
+equivalent 
+\emph default
+if they recognize the same language.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
