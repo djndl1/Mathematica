@@ -3534,7 +3534,10 @@ A string
 \end_inset
 
 .
- The language recognized or accepted by the machine 
+\end_layout
+
+\begin_layout Definition
+The language recognized or accepted by the machine 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3547,7 +3550,10 @@ A string
 \end_inset
 
 .
- Two finite-state automata are called 
+\end_layout
+
+\begin_layout Definition
+Two finite-state automata are called 
 \emph on
 equivalent 
 \emph default
@@ -3559,6 +3565,111 @@ if they recognize the same language.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+To design a finite-state automaton, when appropriate, we include states
+ taht can keep track of some of the properties of the input string, providing
+ the finite-state automaton with limited memory.
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+nondeterministic finite-state automaton
+\emph default
+ 
+\begin_inset Formula $M=\left(S,I,f,s_{0},F\right)$
+\end_inset
+
+ consists of a set 
+\begin_inset Formula $S$
+\end_inset
+
+ of states, an input alphabet 
+\begin_inset Formula $I$
+\end_inset
+
+, a transition function 
+\begin_inset Formula $f$
+\end_inset
+
+ that assigns a set of states to each pair of state and input so that 
+\begin_inset Formula $f\colon S\times I\to P\left(S\right)$
+\end_inset
+
+, a starting state 
+\begin_inset Formula $s_{0}$
+\end_inset
+
+ and a subset of 
+\begin_inset Formula $F$
+\end_inset
+
+ of 
+\begin_inset Formula $S$
+\end_inset
+
+ consistint of the final states.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+A nondeterministic finite-state automaton is said to recognize or accept
+ a string if there is a final state in the set of all states that can be
+ obtained from 
+\begin_inset Formula $s_{0}$
+\end_inset
+
+ using 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+If the language 
+\begin_inset Formula $L$
+\end_inset
+
+ is recognized by a nondeterministic finite-state automaton 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+, then 
+\begin_inset Formula $L$
+\end_inset
+
+ is also recognized by a deterministic finite-state automaton 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Turing Machines
 \end_layout
 
 \end_body
