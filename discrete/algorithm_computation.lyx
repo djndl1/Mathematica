@@ -1841,6 +1841,70 @@ Mathematical induction can be used to prove a conjecture once it has been
  insights they bring.
 \end_layout
 
+\begin_layout Definition
+Strong Induction
+\end_layout
+
+\begin_layout Definition
+To prove that 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for all positive integers 
+\begin_inset Formula $n$
+\end_inset
+
+, where 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is a propositional function:
+\end_layout
+
+\begin_layout Definition
+basic step: verify that the proposition 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is true;
+\end_layout
+
+\begin_layout Definition
+inductive step: show that the conditional statement 
+\begin_inset Formula $\left[P\left(1\right)\land P\left(2\right)\land\cdots\land P\left(k\right)\right]\implies P\left(k+1\right)$
+\end_inset
+
+ is true for all positive integers 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mathematical induction and strong induction are equivalent.
+ Any proof using mathematical induction can also be considered to be a proof
+ by strong induction.
+ it is much more awkward to convert a proof by strong induction into a proof
+ using the principle of mathematical induction.
+ Use mathematical induction when it is straightforward to prove that 
+\begin_inset Formula $P\left(k\right)\implies P\left(k+1\right)$
+\end_inset
+
+ is true for all positive integers 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Complexity of Algorithms
 \end_layout
