@@ -188,5 +188,655 @@ multiple
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ be integers, where 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+ then
+\end_layout
+
+\begin_layout Theorem
+1.
+ if 
+\begin_inset Formula $a|b$
+\end_inset
+
+ and 
+\begin_inset Formula $a|c$
+\end_inset
+
+, then 
+\begin_inset Formula $a|\left(b+c\right)$
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Theorem
+2.
+ if 
+\begin_inset Formula $a|b$
+\end_inset
+
+ then 
+\begin_inset Formula $a|bc$
+\end_inset
+
+ for all integers 
+\begin_inset Formula $c$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+3.
+ if 
+\begin_inset Formula $a|b$
+\end_inset
+
+ and 
+\begin_inset Formula $b|c$
+\end_inset
+
+, then 
+\begin_inset Formula $a|c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+If 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are integers, where 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $a|b$
+\end_inset
+
+ and 
+\begin_inset Formula $a|c$
+\end_inset
+
+, then 
+\begin_inset Formula $a|mb+nc$
+\end_inset
+
+ whenever 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ are integers.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset href
+LatexCommand href
+name "The Division Algorithm"
+target "https://en.wikipedia.org/wiki/Remainder#Integer_division"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ be an integer and 
+\begin_inset Formula $d$
+\end_inset
+
+ a positive integer.
+ Then there are unique integers 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ with 
+\begin_inset Formula $0\leq r<d$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $a=dq+r$
+\end_inset
+
+.
+ In case that 
+\begin_inset Formula $d$
+\end_inset
+
+ is negative, 
+\begin_inset Formula $0\leq r<\left|d\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+With the division algorithm, 
+\begin_inset Formula $d$
+\end_inset
+
+ is called the 
+\emph on
+divisor
+\emph default
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ is called the 
+\emph on
+dividend
+\emph default
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ is called the 
+\emph on
+quotient
+\emph default
+, and 
+\begin_inset Formula $r$
+\end_inset
+
+ is called the 
+\emph on
+remainder
+\emph default
+.
+ 
+\begin_inset Formula 
+\[
+q=a\text{ div }d,r=a\text{ mod }d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are integers and 
+\begin_inset Formula $m$
+\end_inset
+
+ is a positive integer, then 
+\begin_inset Formula $a$
+\end_inset
+
+ is 
+\emph on
+congruent to 
+\begin_inset Formula $b$
+\end_inset
+
+ modulo 
+\begin_inset Formula $m$
+\end_inset
+
+ 
+\emph default
+if 
+\begin_inset Formula $m$
+\end_inset
+
+ divides 
+\begin_inset Formula $a-b$
+\end_inset
+
+, denoted by 
+\begin_inset Formula 
+\[
+a\equiv b\left(\text{mod }m\right),
+\]
+
+\end_inset
+
+a 
+\emph on
+congruence
+\emph default
+, and that 
+\begin_inset Formula $m$
+\end_inset
+
+ is its 
+\emph on
+modulus
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be integers, and let 
+\begin_inset Formula $m$
+\end_inset
+
+ be a positive integer.
+ Then 
+\begin_inset Formula $a\equiv b\left(\text{mod }m\right)$
+\end_inset
+
+ iff 
+\begin_inset Formula $a\text{ mod }m=b\text{ mod }m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $m$
+\end_inset
+
+ be a positive integer.
+ The integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are congruent modulo 
+\begin_inset Formula $m$
+\end_inset
+
+ iff there is an integer 
+\begin_inset Formula $k$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $a=b+km$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Congruence Class
+\end_layout
+
+\begin_layout Definition
+The set of all integers congruent to an integer 
+\begin_inset Formula $a$
+\end_inset
+
+ modulo 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Additions and multiplications preserve congruences.
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $m$
+\end_inset
+
+ be a positive integer.
+ If 
+\begin_inset Formula $a\equiv b\left(\text{mod }m\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $c\equiv d\left(\text{mod }m\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+a+c\equiv b+d\left(\text{mod }m\right)
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+ac\equiv bd\left(\text{mod }m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+Let 
+\begin_inset Formula $m$
+\end_inset
+
+ be a positive integer and let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be integers.
+ Then 
+\begin_inset Formula 
+\[
+\left(a+b\right)\text{mod }m=\left(\left(a\text{ mod }m\right)+\left(b\text{ mod }m\right)\right)\text{ mod }m
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+ab\text{ mod }m=\left(\left(a\text{ mod }m\right)\left(b\text{ mod }m\right)\right)\text{ mod }m.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Arithmetic Modulo, defined on 
+\begin_inset Formula $Z_{m}$
+\end_inset
+
+, the set of nonnegative integers less than 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+addition modulo 
+\begin_inset Formula $m$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $a+_{m}b=\left(a+b\right)\text{ mod }m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+multiplication modulo 
+\begin_inset Formula $m$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $a\cdot_{m}b=\left(a\cdot b\right)\text{ mod }m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These two operations satisfy
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Closure
+\series default
+ If 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ belong to 
+\begin_inset Formula $Z_{m}$
+\end_inset
+
+, then 
+\begin_inset Formula $a+_{m}b$
+\end_inset
+
+ and 
+\begin_inset Formula $a\cdot_{m}b$
+\end_inset
+
+ belong to 
+\begin_inset Formula $Z_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Associativity
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Commutativity
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Identity
+\begin_inset space ~
+\end_inset
+
+elements 
+\series default
+0 and 1
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Additive
+\begin_inset space ~
+\end_inset
+
+Inverse 
+\series default
+If 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ belongs to 
+\begin_inset Formula $Z_{m}$
+\end_inset
+
+, then 
+\begin_inset Formula $m-a$
+\end_inset
+
+ is an additive inverse of 
+\begin_inset Formula $a$
+\end_inset
+
+ modulo 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+ is its own additive inverse.
+\begin_inset Formula 
+\[
+a+_{m}\left(m-a\right)=0
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+0+_{m}0=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Distributivity 
+\end_layout
+
 \end_body
 \end_document
