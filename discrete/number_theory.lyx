@@ -835,7 +835,701 @@ and
 \labelwidthstring 00.00.0000
 
 \series bold
-Distributivity 
+Distributivity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Integer Representation and Algorithms
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $b$
+\end_inset
+
+ be an integer greater than 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Then if 
+\begin_inset Formula $n$
+\end_inset
+
+ is a positive integer, it can be expressed uniquely in the form
+\begin_inset Formula 
+\[
+n=a_{k}b^{k}+a_{k-1}b^{k-1}+\cdots+a_{1}b+a_{0},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $k$
+\end_inset
+
+ is a nonnegative integer, 
+\begin_inset Formula $a_{0},a_{1},\dots,a_{k}$
+\end_inset
+
+ are nonnegative integers less than 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{k}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Constructing Base 
+\begin_inset Formula $b$
+\end_inset
+
+ Expansions
+\end_layout
+
+\begin_layout Description
+
+\series bold
+procedure 
+\series default
+base 
+\begin_inset Formula $b$
+\end_inset
+
+ expansion(
+\begin_inset Formula $n,b$
+\end_inset
+
+: positive integers with 
+\begin_inset Formula $b>1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $q\coloneqq n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $k\coloneqq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+while 
+\begin_inset Formula $q\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $a_{k}\coloneqq q\mod b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $q\coloneqq q\text{ div }b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $k\coloneqq k+1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+return 
+\begin_inset Formula $\left(a_{k-1},\dots,a_{1},a_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Addition of Integers
+\end_layout
+
+\begin_layout Description
+procedure add(
+\begin_inset Formula $a$
+\end_inset
+
+,
+\begin_inset Formula $b$
+\end_inset
+
+: positive integers) {the binary expansion of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are 
+\begin_inset Formula $\left(a_{n-1}a_{n-2}\dots a_{1}a_{0}\right)_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b_{n-1}b_{n-2}\dots b_{1}b_{0}\right)_{2}$
+\end_inset
+
+ respectively}
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $c\coloneqq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+for 
+\begin_inset Formula $j\coloneqq0$
+\end_inset
+
+ to 
+\begin_inset Formula $n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $d\coloneqq\lfloor\left(a_{j}+b_{j}+c\right)/2\rfloor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $s_{j}\coloneqq a_{j}+b_{j}+c-2d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $c\coloneqq d$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+\begin_inset Formula $s_{n}\coloneqq c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+return 
+\begin_inset Formula $\left(s_{0},s_{1},\dots,s_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Multiplication of Integers
+\end_layout
+
+\begin_layout Description
+procedure multiply(
+\begin_inset Formula $a,b$
+\end_inset
+
+: positive integers){the binary expansion of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are 
+\begin_inset Formula $\left(a_{n-1}a_{n-2}\dots a_{1}a_{0}\right)_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b_{n-1}b_{n-2}\dots b_{1}b_{0}\right)_{2}$
+\end_inset
+
+ respectively}
+\end_layout
+
+\begin_layout Description
+for 
+\begin_inset Formula $j\coloneqq0$
+\end_inset
+
+ to 
+\begin_inset Formula $n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+if 
+\begin_inset Formula $b_{j}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+then 
+\begin_inset Formula $c_{j}\coloneqq a$
+\end_inset
+
+ shifted 
+\begin_inset Formula $j$
+\end_inset
+
+ places
+\end_layout
+
+\begin_layout Description
+else 
+\begin_inset Formula $c_{j}\coloneqq0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+\begin_inset Formula $p\coloneqq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+for 
+\begin_inset Formula $j\coloneqq0$
+\end_inset
+
+ to 
+\begin_inset Formula $n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $p\coloneqq p+c_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+return 
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Computing div and mod
+\end_layout
+
+\begin_layout Description
+procedure division algorithm(
+\begin_inset Formula $a$
+\end_inset
+
+: integer, 
+\begin_inset Formula $d$
+\end_inset
+
+: positive integer)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $q\coloneqq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $r\coloneqq\left|a\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+while 
+\begin_inset Formula $r\geq d$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $r\coloneqq r-d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $q\coloneqq q+1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+if 
+\begin_inset Formula $a<0$
+\end_inset
+
+ and 
+\begin_inset Formula $r>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+then
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $r\coloneqq d-r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $q\coloneqq-\left(q+1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+return 
+\begin_inset Formula $\left(q,r\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Modular Exponentiation 
+\begin_inset Formula $b^{n}\mod n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+procedure modular exponentiation(
+\begin_inset Formula $b$
+\end_inset
+
+: integer, 
+\begin_inset Formula $n=\left(a_{k-1}a_{k-2}\dots a_{1}a_{0}\right)_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+: positive integer)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $x\coloneqq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $power\coloneqq b\mod m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+for 
+\begin_inset Formula $i\coloneqq0$
+\end_inset
+
+ to 
+\begin_inset Formula $k-1$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+if 
+\begin_inset Formula $a_{i}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+then 
+\begin_inset Formula $x\coloneqq\left(x\cdot power\right)\mod m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $power\coloneqq\left(power\cdot power\right)\mod m$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+return 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The algorithm successively finds 
+\begin_inset Formula $b\mod m$
+\end_inset
+
+, 
+\begin_inset Formula $b^{2}\mod m,b^{4}\mod m,\dots,b^{2^{k-1}}\mod m$
+\end_inset
+
+ and multiplies together those terms 
+\begin_inset Formula $b^{2j}\mod m$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{j}=1$
+\end_inset
+
+, finding the remainder of the product when divided by 
+\begin_inset Formula $m$
+\end_inset
+
+ after each multiplication.
+\end_layout
+
+\begin_layout LyX-Code
+def modular_expo(b, n, m):
+\end_layout
+
+\begin_layout LyX-Code
+    bin_rep = "{0:b}".format(n)
+\end_layout
+
+\begin_layout LyX-Code
+    x = 1
+\end_layout
+
+\begin_layout LyX-Code
+    power = b % m
+\end_layout
+
+\begin_layout LyX-Code
+    for digit in reversed(bin_rep):
+\end_layout
+
+\begin_layout LyX-Code
+        if digit == '1':
+\end_layout
+
+\begin_layout LyX-Code
+            x = (x * power) % m
+\end_layout
+
+\begin_layout LyX-Code
+        power = (power * power) % m
+\end_layout
+
+\begin_layout LyX-Code
+    return x
 \end_layout
 
 \end_body
