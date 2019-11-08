@@ -1532,5 +1532,229 @@ def modular_expo(b, n, m):
     return x
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Primes and Greatest Common Divisors
+\end_layout
+
+\begin_layout Standard
+One important concept based on divisibility is that of a prime number.
+ Primes have become essential in modern cryptographic systems.
+\end_layout
+
+\begin_layout Definition
+Prime
+\end_layout
+
+\begin_layout Definition
+An integer 
+\begin_inset Formula $p$
+\end_inset
+
+ greater than 
+\begin_inset Formula $1$
+\end_inset
+
+ is called 
+\emph on
+prime
+\emph default
+ if the only positive factors of 
+\begin_inset Formula $p$
+\end_inset
+
+ are 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ A positive integer that is greater than 
+\begin_inset Formula $1$
+\end_inset
+
+ and is not prime is called 
+\emph on
+composite
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+The Fundamental Theorem of Arithmetic (Prime Factorization)
+\end_layout
+
+\begin_layout Theorem
+Every integer greater than 
+\begin_inset Formula $1$
+\end_inset
+
+ can be written uniquely as a prime or as the product of two or more primes
+ where the prime factors are written in order of nondecreasing size.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is often important to show that a given integer is prime.
+\end_layout
+
+\begin_layout Theorem
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ is a composite integer, then 
+\begin_inset Formula $n$
+\end_inset
+
+ has a prime divisor less than or equal to 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $n$
+\end_inset
+
+ is composite, 
+\begin_inset Formula $n=ab$
+\end_inset
+
+ for 
+\begin_inset Formula $a\leq\sqrt{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $b\leq\sqrt{n}$
+\end_inset
+
+, i.e., 
+\begin_inset Formula $n$
+\end_inset
+
+ has a divisor not exceeding 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+.
+ Denote this divisor as 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+, either 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ itself is a prime or it has a prime factor less than 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+, that is, less than 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This theorem leads to a brute-force algorithm known as 
+\series bold
+trial division
+\series default
+, that is, dividing 
+\begin_inset Formula $n$
+\end_inset
+
+ by all primes not exceeding 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+ and conclude that 
+\begin_inset Formula $n$
+\end_inset
+
+ is prime is it is not divisible by any of these primes.
+\end_layout
+
+\begin_layout LyX-Code
+def is_prime(n):
+\end_layout
+
+\begin_layout LyX-Code
+    if n <= 3:
+\end_layout
+
+\begin_layout LyX-Code
+        return n > 1
+\end_layout
+
+\begin_layout LyX-Code
+    if n % 2 == 0 or n % 3 == 0:
+\end_layout
+
+\begin_layout LyX-Code
+        return False
+\end_layout
+
+\begin_layout LyX-Code
+    i = 5
+\end_layout
+
+\begin_layout LyX-Code
+    while i * i < n:
+\end_layout
+
+\begin_layout LyX-Code
+        if n % i == 0 or n % (i + 2) == 0:
+\end_layout
+
+\begin_layout LyX-Code
+            return False
+\end_layout
+
+\begin_layout LyX-Code
+        i += 6
+\end_layout
+
+\begin_layout LyX-Code
+    return True
+\end_layout
+
 \end_body
 \end_document
