@@ -1741,15 +1741,7 @@ def is_prime(n):
 \end_layout
 
 \begin_layout LyX-Code
-        if n % i == 0:
-\end_layout
-
-\begin_layout LyX-Code
-            return False
-\end_layout
-
-\begin_layout LyX-Code
-        if (i + 2) * (i + 2) <= n and n % (i + 2) == 0:
+        if n % i == 0 or n % (i + 2) == 0:
 \end_layout
 
 \begin_layout LyX-Code
