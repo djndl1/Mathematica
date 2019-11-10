@@ -1,10 +1,15 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+% Added by lyx2lyx
+\renewcommand{\textendash}{--}
+\renewcommand{\textemdash}{---}
+\end_preamble
 \use_default_options true
 \begin_modules
 theorems-ams-bytype
@@ -25,8 +30,6 @@ theorems-ams-extended-bytype
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -56,7 +59,6 @@ theorems-ams-extended-bytype
 \suppress_date false
 \justification true
 \use_refstyle 1
-\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -65,10 +67,7 @@ theorems-ams-extended-bytype
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style english
-\dynamic_quotes 0
+\quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -319,7 +318,6 @@ If
 LatexCommand href
 name "The Division Algorithm"
 target "https://en.wikipedia.org/wiki/Remainder#Integer_division"
-literal "false"
 
 \end_inset
 
@@ -1546,6 +1544,8 @@ Primes and Greatest Common Divisors
 \begin_layout Standard
 One important concept based on divisibility is that of a prime number.
  Primes have become essential in modern cryptographic systems.
+ Factoring and primality testing have become important in the applications
+ of number theory or crytography.
 \end_layout
 
 \begin_layout Definition
@@ -1754,6 +1754,235 @@ def is_prime(n):
 
 \begin_layout LyX-Code
     return True
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+sieve of Eratosthenes
+\emph default
+ is used to find all primes not exceeding a specified positive integer 
+\begin_inset Formula $n$
+\end_inset
+
+ .
+ Suppose we know all primes not exceeding 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+, then any prime not exceeding 
+\begin_inset Formula $n$
+\end_inset
+
+ is cannot be divided by any of these primes.
+ All integers other than 
+\begin_inset Formula $\left\{ n|p\text{ div }n,p\text{ is a prime not exceeding \sqrt{n}}\right\} $
+\end_inset
+
+ are primes.
+\end_layout
+
+\begin_layout Theorem
+There are infinitely many primes.
+\end_layout
+
+\begin_layout Proof
+Suppose there only a finite number of primes 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+Q=p_{1}p_{2}\cdots p_{n}+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $Q$
+\end_inset
+
+ is not prime, then it is the product of two or more primes.
+ Then there exists a prime 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ that divides 
+\begin_inset Formula $Q$
+\end_inset
+
+, then 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ divides 
+\begin_inset Formula $Q-p_{1}p_{2}\cdots p_{n}$
+\end_inset
+
+, which is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Mersenne Primes
+\end_layout
+
+\begin_layout Definition
+Primes in the form of 
+\begin_inset Formula $2^{p}-1$
+\end_inset
+
+ where 
+\begin_inset Formula $p$
+\end_inset
+
+ is a prime.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+The Prime Number Theorem
+\end_layout
+
+\begin_layout Theorem
+The ratio of the number of primes not exceeding 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $x/\ln x$
+\end_inset
+
+ approaches 
+\begin_inset Formula $1$
+\end_inset
+
+ as 
+\begin_inset Formula $x$
+\end_inset
+
+ grows without bound.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}\frac{\pi\left(x\right)}{\left[\frac{x}{\ln x}\right]}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+We can use the prime number theorem to estimate the odds that a randomly
+ chosen number is prime.The number of primes not exceeding 
+\begin_inset Formula $x$
+\end_inset
+
+ can be approximated by 
+\begin_inset Formula $x/\ln x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Every arithmetic progressions 
+\begin_inset Formula $ak+b,k=1,2,\dots,$
+\end_inset
+
+ contains infinitely many primes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Conjecture
+Goldbach's Conjecture
+\end_layout
+
+\begin_layout Conjecture
+Every even integer 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $n>2$
+\end_inset
+
+, is the sum of two primes.
+\end_layout
+
+\begin_layout Remark*
+Most mathematicians believe this conjecture is true.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Conjecture
+The Twin Prime (pairs of primes that differ by 
+\begin_inset Formula $2$
+\end_inset
+
+) Conjecture
+\end_layout
+
+\begin_layout Conjecture
+There are infinitely many twin primes.
 \end_layout
 
 \end_body
