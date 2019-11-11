@@ -1985,5 +1985,406 @@ The Twin Prime (pairs of primes that differ by
 There are infinitely many twin primes.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Least Common Multiple
+\end_layout
+
+\begin_layout Definition
+The 
+\emph on
+least common multiple 
+\emph default
+of the positive integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ is the smallest positive integer that is divisible by both 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $\text{lcm}\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Greatest Common Divisor
+\end_layout
+
+\begin_layout Definition
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be integers, not both zero,.
+ The largest integer 
+\begin_inset Formula $d$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $d|a$
+\end_inset
+
+ and 
+\begin_inset Formula $d|b$
+\end_inset
+
+ is called the 
+\emph on
+greatest common divisor 
+\emph default
+of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $\gcd\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The integer 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are 
+\emph on
+relatively prime 
+\emph default
+if their greatest common divisor is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ The integer5s 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{n}$
+\end_inset
+
+ are 
+\emph on
+pairwise relatively prime 
+\emph default
+if 
+\begin_inset Formula $\gcd\left(a_{i},a_{j}\right)=1$
+\end_inset
+
+ whenever 
+\begin_inset Formula $1\leq i<j\leq n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One way to find the GCD of two integers is to use the prime factorization:
+ Suppose that the prime factorization of two integers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are 
+\begin_inset Formula 
+\[
+a=p_{1}^{a_{1}}p_{2}^{a_{2}}\cdots p_{n}^{a_{n}}\quad b=p_{1}^{b_{1}}p_{2}^{b_{2}}\cdots p_{n}^{b_{n}},
+\]
+
+\end_inset
+
+where each exponent is a nonnegative integer and where all primes occuring
+ in the prime factorization of either 
+\begin_inset Formula $a$
+\end_inset
+
+ or 
+\begin_inset Formula $b$
+\end_inset
+
+ are included in both factorization, with zero exponents if necessary.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gcd\left(a,b\right)=p_{1}^{\min\left(a_{1},b_{1}\right)}p_{2}^{\min\left(a_{2},b_{2}\right)}\cdots p_{n}^{\min\left(a_{n},b_{n}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prime factorizations can also be used to find the least common multiple
+ of two integers:
+\begin_inset Formula 
+\[
+\text{lcm}\left(a,b\right)=p_{1}^{\max\left(a_{1},b_{1}\right)}p_{2}^{\max\left(a_{2},b_{2}\right)}\cdots p_{n}^{\max\left(a_{n},b_{n}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ be positive integers.
+ Then 
+\begin_inset Formula 
+\[
+ab=\gcd\left(a,b\right)\text{lcm}\left(a,b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Computing the GCD of two integers directly from the prime factorization
+ is inefficient.
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $a=bq+r$
+\end_inset
+
+ where 
+\begin_inset Formula $a,b,q$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ are integers.
+ Then 
+\begin_inset Formula $\gcd\left(a,b\right)=\gcd\left(b,r\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+It's easy to show that any divisor of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ is a divisor of 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ and vice versa.
+ That is 
+\begin_inset Formula 
+\[
+\left\{ x|x|a\text{ and }x|b\right\} =\left\{ y|y|r\text{ and }y|r\right\} .
+\]
+
+\end_inset
+
+Obviously, 
+\begin_inset Formula $\gcd\left(a,b\right)=\gcd\left(b,r\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+The Euclidean Algorithm
+\end_layout
+
+\begin_layout Description
+procedure gcd(a,b: positive integers)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $x\coloneqq a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $y\coloneqq b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+while 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $r\coloneqq x\mod y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $x\coloneqq y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $y\coloneqq r$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+return 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+def gcd(a, b):
+\end_layout
+
+\begin_layout LyX-Code
+    (x, y) = (a, b) if a > b else (b, a)
+\end_layout
+
+\begin_layout LyX-Code
+    while y != 0:
+\end_layout
+
+\begin_layout LyX-Code
+        _ , r = divmod(x, y)
+\end_layout
+
+\begin_layout LyX-Code
+        x, y = y, r
+\end_layout
+
+\begin_layout LyX-Code
+    return x
+\end_layout
+
 \end_body
 \end_document
