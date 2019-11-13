@@ -590,6 +590,12 @@ Additions and multiplications preserve congruences.
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:5"
+
+\end_inset
+
 Let 
 \begin_inset Formula $m$
 \end_inset
@@ -1613,6 +1619,55 @@ Every integer greater than
 TODO
 \end_layout
 
+\begin_layout Proof
+Uniqueness: Suppose there are two factorizations
+\begin_inset Formula 
+\[
+p_{1}p_{2}\cdots p_{s}=q_{1}q_{2}\cdots q_{t}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{1}\leq p_{2}\leq\cdots p_{s}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{1}\leq q_{2}\cdots\leq q_{t}$
+\end_inset
+
+.
+ Remove all common primes
+\begin_inset Formula 
+\[
+p_{i_{1}}p_{i_{2}}\cdots p_{i_{u}}=q_{j_{1}}q_{j_{2}}\cdots q_{j_{v}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+By 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lem:3"
+
+\end_inset
+
+, 
+\begin_inset Formula $\exists i_{k}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p_{i_{1}}|q_{i_{k}}$
+\end_inset
+
+, which means a prime divides another prime.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -2384,6 +2439,267 @@ def gcd(a, b):
 
 \begin_layout LyX-Code
     return x
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gcd\left(a,b\right)$
+\end_inset
+
+ can be expressed as a 
+\series bold
+linear combination
+\series default
+ with integer coefficient of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are positive integers, then there exist integers 
+\begin_inset Formula $s$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ such that 
+\begin_inset Formula $gcd\left(a,b\right)=sa+tb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Definition
+Bezout coefficients, Bezout
+\end_layout
+
+\begin_layout Definition
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are positive integers, t hen integer 
+\begin_inset Formula $s$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ such that 
+\begin_inset Formula $\gcd\left(a,b\right)=sa+tb$
+\end_inset
+
+ are called Bezout coefficients of 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Also, the equation 
+\begin_inset Formula $\gcd\left(a,b\right)=sa+tb$
+\end_inset
+
+ is called Bezout identity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+The coefficients can be obtained by working the Euclidean algorithm forward
+ and then backward.
+\end_layout
+
+\begin_layout Lemma
+If 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are positive integers such that 
+\begin_inset Formula $\gcd\left(a,b\right)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $a|bc$
+\end_inset
+
+, then 
+\begin_inset Formula $a|c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+There exists integers 
+\begin_inset Formula $s$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\[
+sa+tb=1
+\]
+
+\end_inset
+
+then
+\begin_inset Formula 
+\begin{align*}
+csa+ctb & =c\\
+csa+taq & =c
+\end{align*}
+
+\end_inset
+
+i.e.
+\begin_inset Formula 
+\[
+c=\left(cs+tq\right)a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:3"
+
+\end_inset
+
+If 
+\begin_inset Formula $p$
+\end_inset
+
+ is prime and 
+\begin_inset Formula $p|a_{1}a_{2}\cdots a_{n}$
+\end_inset
+
+, where each 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ is an integer, then 
+\begin_inset Formula $p|a_{i}$
+\end_inset
+
+ for some 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $m$
+\end_inset
+
+ be a positive integer and let 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ be integers.
+ If 
+\begin_inset Formula $ac\equiv bc\left(\text{ mod }m\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\gcd\left(c,m\right)=1$
+\end_inset
+
+, then 
+\begin_inset Formula $a\equiv b\left(\text{ mod }m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+Look back at 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "thm:5"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
