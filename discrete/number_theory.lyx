@@ -1,15 +1,10 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
 \origin unavailable
 \textclass article
-\begin_preamble
-% Added by lyx2lyx
-\renewcommand{\textendash}{--}
-\renewcommand{\textemdash}{---}
-\end_preamble
 \use_default_options true
 \begin_modules
 theorems-ams-bytype
@@ -20,9 +15,9 @@ theorems-ams-extended-bytype
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
+\font_roman "tgtermes" "default"
+\font_sans "tgheros" "default"
+\font_typewriter "tgcursor" "default"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
@@ -30,6 +25,8 @@ theorems-ams-extended-bytype
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -59,6 +56,7 @@ theorems-ams-extended-bytype
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -67,7 +65,10 @@ theorems-ams-extended-bytype
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -180,7 +181,7 @@ multiple
 \begin_inset Formula $a$
 \end_inset
 
- does not 
+ does not divide 
 \begin_inset Formula $b$
 \end_inset
 
@@ -318,6 +319,7 @@ If
 LatexCommand href
 name "The Division Algorithm"
 target "https://en.wikipedia.org/wiki/Remainder#Integer_division"
+literal "false"
 
 \end_inset
 
@@ -329,11 +331,11 @@ Let
 \begin_inset Formula $a$
 \end_inset
 
- be an integer and 
+ and 
 \begin_inset Formula $d$
 \end_inset
 
- a positive integer.
+ be integers.
  Then there are unique integers 
 \begin_inset Formula $q$
 \end_inset
@@ -343,21 +345,12 @@ Let
 \end_inset
 
  with 
-\begin_inset Formula $0\leq r<d$
+\begin_inset Formula $0\leq r<\left|d\right|$
 \end_inset
 
  s.t.
  
 \begin_inset Formula $a=dq+r$
-\end_inset
-
-.
- In case that 
-\begin_inset Formula $d$
-\end_inset
-
- is negative, 
-\begin_inset Formula $0\leq r<\left|d\right|$
 \end_inset
 
 .
@@ -513,6 +506,22 @@ Let
 
  iff 
 \begin_inset Formula $a\text{ mod }m=b\text{ mod }m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+Congruence in the sense that 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ congrue in having the same remainder when divided by 
+\begin_inset Formula $m$
 \end_inset
 
 .
@@ -2700,6 +2709,22 @@ reference "thm:5"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Linear Congruences
+\end_layout
+
+\begin_layout Standard
+Solving linear congruences is an essential task in the study of number theory
+ and its applications.
 \end_layout
 
 \end_body
