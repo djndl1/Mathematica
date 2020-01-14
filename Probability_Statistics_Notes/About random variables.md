@@ -7,14 +7,13 @@ The formal definition and related properties as well as proofs are not presented
 
 1. A random variable $X:\Omega\mapsto E$ is a measurable function from a set of possible __outcomes__ to a __measurable space__. It is a function dependent on samples.
 
-2. A random variables's possible values conceptually represent either the results of an __"objectively" random process__ (such as rolling a die), or the "subjective" randomness that results from __incomplete knowledge__of a quantity. The meaning of the probabilities assigned to the potential values of a random variable is not part of probability theory itself but instead related to philosophical arguments over the [interpretation of probability](https://plato.stanford.edu/entries/probability-interpret/). The mathematics works the same regardless of the particular interpretation in use.
+2. A random variables's possible values conceptually represent either the results of an __"objectively" random process__ (such as rolling a die), or the "subjective" randomness that results from __incomplete knowledge__ of a quantity. The meaning of the probabilities assigned to the potential values of a random variable is not part of probability theory itself but instead related to philosophical arguments over the [interpretation of probability](https://plato.stanford.edu/entries/probability-interpret/). The mathematics works the same regardless of the particular interpretation in use.
 
 3. The discrete counterpart of probability density function of a random variable is the _probability mass function_. It is often the primary means of defining a discrete probability distribution and can be seen as a special case of the distribution and the probability density function w.r.t. the [counting measure](https://en.wikipedia.org/wiki/Counting_measure). See [here](https://en.wikipedia.org/wiki/Probability_mass_function#Measure_theoretic_formulation) for more details.
 
 4. The generalization of _random variable_, with a more broad measurable space image $E$ is a [_random element_](https://en.wikipedia.org/wiki/Random_element), frequently assumed a topological vector space. The narrow concept _random variable_ is more used as with values in $R$. Do note that random process a one of the case of _random element_.
 
-5. The distribution of a random variable is defined on the sample space $\Omega$. The notation $P(X=2)$ is actually just a shorthand of $P\{\omega\colon X(\omega)=2\}$, although in practice the underlying probability space $\Omega$ is completely disposed, only as a technical device to guarantee the existence of random variables. In fact, one can just works with probability distribution
-s instead of random variables, see [quantile function](https://en.wikipedia.org/wiki/Quantile_function).
+5. The distribution of a random variable is defined on the sample space $\Omega$. The notation $P(X=2)$ is actually just a shorthand of $P\{\omega\colon X(\omega)=2\}$, although in practice the underlying probability space $\Omega$ is completely disposed, only as a technical device to guarantee the existence of random variables. In fact, one can just works with probability distributions instead of random variables, see [quantile function](https://en.wikipedia.org/wiki/Quantile_function).
 
 6. The most formal, axiomatic definition of a random variable involves measure theory.
 
