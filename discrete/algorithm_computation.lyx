@@ -1798,11 +1798,11 @@ Let
 Induction and Recursion
 \end_layout
 
-\begin_layout Definition
+\begin_layout Proposition
 Principle of mathematical induction
 \end_layout
 
-\begin_layout Definition
+\begin_layout Proposition
 \begin_inset Formula 
 \[
 \left(P\left(1\right)\land\forall k\left(P\left(k\right)\implies P\left(k+1\right)\right)\implies\forall nP\left(n\right)\right).
@@ -1813,7 +1813,7 @@ Principle of mathematical induction
 
 \end_layout
 
-\begin_layout Definition
+\begin_layout Proposition
 Also, the base case 
 \begin_inset Formula $P\left(1\right)$
 \end_inset
@@ -1841,11 +1841,11 @@ Mathematical induction can be used to prove a conjecture once it has been
  insights they bring.
 \end_layout
 
-\begin_layout Definition
+\begin_layout Proposition
 Strong Induction
 \end_layout
 
-\begin_layout Definition
+\begin_layout Proposition
 To prove that 
 \begin_inset Formula $P\left(n\right)$
 \end_inset
@@ -1861,7 +1861,7 @@ To prove that
  is a propositional function:
 \end_layout
 
-\begin_layout Definition
+\begin_layout Proposition
 basic step: verify that the proposition 
 \begin_inset Formula $P\left(1\right)$
 \end_inset
@@ -1869,7 +1869,7 @@ basic step: verify that the proposition
  is true;
 \end_layout
 
-\begin_layout Definition
+\begin_layout Proposition
 inductive step: show that the conditional statement 
 \begin_inset Formula $\left[P\left(1\right)\land P\left(2\right)\land\cdots\land P\left(k\right)\right]\implies P\left(k+1\right)$
 \end_inset
@@ -1903,6 +1903,49 @@ Mathematical induction and strong induction are equivalent.
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Proposition
+Well Ordering Property
+\end_layout
+
+\begin_layout Proposition
+Every nonempty set of nonempty set of nonnegative integers has a least element.
+\end_layout
+
+\begin_layout Definition
+Recursion
+\end_layout
+
+\begin_layout Definition
+Sometimes it is difficult ot define an object explicitly, but it may be
+ easy to define this object in terms of itself.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Recursive/inductive Definition
+\end_layout
+
+\begin_layout Definition
+1.
+ Specify the value of the function at zero
+\end_layout
+
+\begin_layout Definition
+2.
+ Give a rule for finding its value at an integer from its values at smaller
+ integers
+\end_layout
+
+\begin_layout Remark*
+Recusively defined functions are well defined.
 \end_layout
 
 \begin_layout Section
