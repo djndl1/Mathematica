@@ -212,11 +212,20 @@ Then
 \end_layout
 
 \begin_layout Proof
-Hint: Using well-ordering property of natural numbers.
+Hint: Using well-ordering property of natural numbers and prove by contradiction.
 \end_layout
 
 \begin_layout Standard
-There is an equivalent introduction called 
+There is an equivalent
+\begin_inset CommandInset href
+LatexCommand href
+name "equivalent"
+target "http://math.oxford.emory.edu/site/math125/strongInductionEquivalence/"
+literal "false"
+
+\end_inset
+
+ introduction called 
 \series bold
 strong induction:
 \end_layout
@@ -274,6 +283,12 @@ Then
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Remark*
+Use A to prove B is exactly that A implies B since the underlying assumption
+ is that A is true, and we need to prove that B is true.
+ Once proved, A being true does mean B being true
 \end_layout
 
 \begin_layout Subsubsection
