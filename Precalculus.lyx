@@ -267,5 +267,20 @@ Expand the RHS and compare the coefficients to form a series of equations
 .
 \end_layout
 
+\begin_layout Section*
+trinometric Identities
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+sin^{2}\theta+cos^{2}\theta=1
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
