@@ -1,0 +1,39 @@
+#+title: Math Models For Physics Engineering Lab
+
+* Preliminary
+
+** Functions and Equations
+
+*** Polynomial
+
+#+begin_src octave
+# coefficients in descending order
+coeff = [1 0 -5]
+
+# naive evaluation
+x = 5
+dot(x.^((length(coeff) - 1):-1:0), coeff)
+
+# Horner's Method
+polyval(coeff, x)
+
+# solving polynomial roots
+roots(coeff)
+#+end_src
+
+The python counterparts
+
+#+begin_src python
+# numpy
+import numpy as np
+import scipy as sp
+
+coeff = np.array([1, 0, -5])
+
+np.polyval(coeff, 5)
+np.roots(coeff)
+
+p = np.polynomial.Polynomial(coeff[::-1])
+p(5)
+p.roots()
+#+end_src
