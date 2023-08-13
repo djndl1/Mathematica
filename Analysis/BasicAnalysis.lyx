@@ -308,6 +308,10 @@ some peculiar examples: the Laplace transform takes functions to functions.
  to the set of all functions.
 \end_layout
 
+\begin_layout Standard
+Here, functions are defined as subsets of Cartesian products.
+\end_layout
+
 \begin_layout Proposition*
 Let 
 \begin_inset Formula $f:A\mapsto B$

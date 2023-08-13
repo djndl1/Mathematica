@@ -306,5 +306,20 @@ Expand the RHS and compare the coefficients to form a series of equations
  The resultant polynomial can be thus further factorized.
 \end_layout
 
+\begin_layout Section*
+trinometric Identities
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+sin^{2}\theta+cos^{2}\theta=1
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
