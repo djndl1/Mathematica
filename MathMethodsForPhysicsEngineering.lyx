@@ -310,10 +310,21 @@ Expand the RHS and compare the coefficients to form a series of equations
 trinometric Identities
 \end_layout
 
+\begin_layout Subsection
+Single Angle Identities
+\end_layout
+
+\begin_layout Theorem*
+Pythagorean
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \[
-sin^{2}\theta+cos^{2}\theta=1
+\begin{aligned}\sin^{2}\theta+\cos^{2}\theta & =1\\
+1+\tan^{2}\theta & =\sec^{2}\theta\\
+\cot^{2}\theta+1 & =\csc^{2}\theta
+\end{aligned}
 \]
 
 \end_inset
