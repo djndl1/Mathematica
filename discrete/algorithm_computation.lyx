@@ -1360,6 +1360,26 @@ A polynomial of degree
 .
 \end_layout
 
+\begin_layout Proof
+Take k = 1 and transform the polynomial of degree n with the triangle inequality
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ would be 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\left|a_{n}\right|+\left|a_{n-1}\right|+\cdots+\left|a_{0}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1785,6 +1805,19 @@ Let
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Proof
+See 
+\begin_inset CommandInset href
+LatexCommand href
+name "Big Omega of a Polynomial"
+target "https://cs.stackexchange.com/questions/105981/proving-big-omega-of-a-polynomial-without-limits"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
