@@ -100,6 +100,11 @@ theorems-chap-bytype
 
 \begin_body
 
+\begin_layout Standard
+In algebra, we prove equalities directly; in analysis, we prove inequalities
+ and by estimating.
+\end_layout
+
 \begin_layout Chapter*
 Naive Set Theory
 \end_layout
@@ -115,6 +120,19 @@ naive set theory
 \end_inset
 
 , which is used by the majority of mathematicians.
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+universe
+\series default
+ set is the set of elements we are interested in and should be understood
+ from context.
+\end_layout
+
+\begin_layout Standard
+The De Morgan's laws of sets derive from the De Moran's laws of logic.
 \end_layout
 
 \begin_layout Subsection
@@ -144,6 +162,7 @@ If there exists an
 least element
 \series default
 .
+ 
 \end_layout
 
 \begin_layout Standard
