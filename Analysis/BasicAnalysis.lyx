@@ -5,10 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass amsbook
-\begin_preamble
-\newref{lemma}{name=lemma~,Name=Lemma~,names=lemmas~,Names=Lemmas~}
-\newref{theorem}{name=theorem~,Name=Theorem~,names=lemmas~,Names=Lemmas~}
-\end_preamble
 \use_default_options true
 \begin_removed_modules
 theorems-ams
@@ -74,7 +70,7 @@ theorems-chap-bytype
 \paperorientation portrait
 \suppress_date false
 \justification true
-\use_refstyle 1
+\use_refstyle 0
 \use_minted 0
 \index Index
 \shortcut idx
@@ -3005,7 +3001,7 @@ monotone sequence
 \begin_layout Proposition
 \begin_inset CommandInset label
 LatexCommand label
-name "A-monotone-sequence"
+name "Proposition 2.3"
 
 \end_inset
 
