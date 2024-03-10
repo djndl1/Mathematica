@@ -134,6 +134,165 @@ For mathematical purposes, no other elements than sets need ever considered
 , which will reveal itself in text below.
 \end_layout
 
+\begin_layout Standard
+An element may belongs to a set, written as 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ Two sets may be equal to each other, written as 
+\begin_inset Formula $A=B$
+\end_inset
+
+, or if not equal, written as 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The most basic property of belonging is its relation to equality, formulated
+ as follows:
+\end_layout
+
+\begin_layout Definition*
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are two sets and if every element of 
+\begin_inset Formula $A$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $B$
+\end_inset
+
+ ,then 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\emph on
+subset
+\emph default
+ of 
+\begin_inset Formula $B$
+\end_inset
+
+, or 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\emph on
+includes
+\emph default
+ 
+\begin_inset Formula $A$
+\end_inset
+
+, written as 
+\begin_inset Formula 
+\[
+A\subset B
+\]
+
+\end_inset
+
+ or 
+\begin_inset Formula 
+\[
+B\supset A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+If 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+and 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\emph on
+proper/strict 
+\emph default
+subset of 
+\begin_inset Formula $B$
+\end_inset
+
+, written as 
+\begin_inset Formula $A\subsetneq B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Set inclusion is 
+\emph on
+reflexive
+\emph default
+: 
+\begin_inset Formula $A\subset A$
+\end_inset
+
+, 
+\emph on
+transitive
+\emph default
+ 
+\begin_inset Formula $A\subset B\land B\subset C\implies A\subset C$
+\end_inset
+
+ but 
+\emph on
+antisymmetric
+\emph default
+ 
+\begin_inset Formula $A\subset B\land B\subset A\implies A=B$
+\end_inset
+
+, or 
+\begin_inset Formula $A\neq B\land A\subset B\implies\lnot\left(B\subset A\right)$
+\end_inset
+
+.
+ Also, there is some notation difference between authors: some use 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ for inclusion and 
+\begin_inset Formula $\subset$
+\end_inset
+
+ for proper inclusion.
+\end_layout
+
 \begin_layout Axiom*
 \begin_inset CommandInset href
 LatexCommand href
