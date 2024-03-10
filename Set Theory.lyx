@@ -103,6 +103,37 @@ General set theory is pretty trivial stuff really, but, if you want to be
 Basics
 \end_layout
 
+\begin_layout Standard
+Here, the definition of a set is not given, rather, it is supported by human
+ intuition.
+ The word 
+\emph on
+collection
+\emph default
+ is used interchangebly with 
+\emph on
+set.
+ 
+\end_layout
+
+\begin_layout Standard
+A set may have 
+\emph on
+elements 
+\emph default
+or 
+\emph on
+members
+\emph default
+.
+ A set may be an element of another set.
+ 
+\emph on
+For mathematical purposes, no other elements than sets need ever considered
+\emph default
+, which will reveal itself in text below.
+\end_layout
+
 \begin_layout Axiom*
 \begin_inset CommandInset href
 LatexCommand href
