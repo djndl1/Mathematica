@@ -87,6 +87,18 @@ theorems-ams-extended
 Set Theory
 \end_layout
 
+\begin_layout Standard
+This node is not intended as a thourough treatment of set theory.
+ It is only elements of naive set theory: set theory is regarded as a body
+ of facts, of which the axioms are a brief and convenient summary.
+\end_layout
+
+\begin_layout Quotation
+General set theory is pretty trivial stuff really, but, if you want to be
+ a mathematician, you need some, and here it is; read it, absorb it, and
+ forget it.
+\end_layout
+
 \begin_layout Section
 Basics
 \end_layout
