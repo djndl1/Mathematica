@@ -293,29 +293,11 @@ antisymmetric
  for proper inclusion.
 \end_layout
 
-\begin_layout Axiom*
-Axiom of extension
-\end_layout
-
-\begin_layout Axiom*
-Two sets are equal iff they have the same elements, or a set is determined
- by its extension.
-\end_layout
-
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
 
-\end_layout
-
-\begin_layout Remark*
-This axiom is a logically necessary property of equality but it requires
- the relationship of 
-\emph on
-belonging
-\emph default
-, otherwise this axiom wouldn't be true.
 \end_layout
 
 \begin_layout Axiom*
@@ -341,6 +323,22 @@ Two sets are equal if and only if they have the same elements: a set is
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+This axiom is a logically necessary property of equality but it requires
+ the relationship of 
+\emph on
+belonging
+\emph default
+, otherwise this axiom wouldn't be true.
 \end_layout
 
 \begin_layout Definition*
