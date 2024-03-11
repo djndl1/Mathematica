@@ -392,7 +392,7 @@ To every set
 \begin_inset Formula $A$
 \end_inset
 
- and to every condtion 
+ and to every condition 
 \begin_inset Formula $S(x)$
 \end_inset
 
@@ -424,8 +424,8 @@ B=\{x\in A:S(x)\}
 
 \end_layout
 
-\begin_layout Remark*
-The 
+\begin_layout Axiom*
+where the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -445,8 +445,33 @@ and
 \begin_inset Quotes erd
 \end_inset
 
-.The axiom of specification forbids the universe set, a set containing all
- the objects that enter into the discussion, which leads to 
+.
+ 
+\end_layout
+
+\begin_layout Remark*
+This new set 
+\begin_inset Formula $B$
+\end_inset
+
+ is unique by the axiom of extension.
+ 
+\end_layout
+
+\begin_layout Remark*
+The original version of axiom of comprehension (unrestricted) does not restrict
+ 
+\begin_inset Formula $B$
+\end_inset
+
+'s elements to a certain 
+\begin_inset Formula $A$
+\end_inset
+
+, implying a certain implicit universe.
+ The axiom of specification forbids a set containing all the objects that
+ satisfy a certain property (unrestricted comprehension), which leads to
+ 
 \begin_inset CommandInset href
 LatexCommand href
 name "Russell's paradox"
@@ -456,6 +481,8 @@ literal "false"
 \end_inset
 
 .
+ One set has to be made out of some existing set, not some implicit universe
+ set.
 \end_layout
 
 \begin_layout Proof
@@ -480,7 +507,12 @@ It must be that
 \begin_inset Formula $B\in A$
 \end_inset
 
-, however, if 
+ since 
+\begin_inset Formula $A$
+\end_inset
+
+ contains every object.
+ However, if 
 \begin_inset Formula $B\in B$
 \end_inset
 
