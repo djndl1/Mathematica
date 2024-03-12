@@ -91,7 +91,7 @@ Simple Functions, Polynimials And Equations
 \end_layout
 
 \begin_layout Definition*
-Polynomial
+Polynomial Equation
 \begin_inset Formula 
 \[
 f\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}=0
@@ -116,6 +116,15 @@ degree
 \end_inset
 
 .
+ Repeated roots are said to have a 
+\emph on
+multiplicity
+\emph default
+ greater than 
+\begin_inset Formula $1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -129,18 +138,19 @@ For polynomial equations containing powers of
 
  general methods do not exist for obtaining explicit expressions for the
  roots.
+ 
 \end_layout
 
 \begin_layout Standard
-Repeated roots are said to have a 
-\emph on
-multiplicity
-\emph default
- greater than 
-\begin_inset Formula $1$
-\end_inset
-
-.
+Sometimes, the exact values of a polynomial equation is not required but
+ some partial information.
+ In most cases, analytic methods yield only information about the roots
+ rather than their exact values.
+ The complete set of roots can be obtained by numerical methods to any desired
+ accuracy.
+ There is no general steps to determine such information, but the fundamental
+ theorem of algebra, derivatives, the Rolle's theorem and some other proposition
+s are commonly employed.
 \end_layout
 
 \begin_layout Theorem*
@@ -159,7 +169,20 @@ An n-th degree polynomial equation has exactly n roots.
 \end_layout
 
 \begin_layout Theorem*
+If the coefficients of a polynomial are real, its complex roots appear in
+ pairs of complex conjugates.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
 A polynomial of odd degree always has at least one real root.
+ If the coefficients are real, it has an odd number of real roots.
 \end_layout
 
 \begin_layout Remark*
@@ -197,10 +220,28 @@ A polynomial functions is continuous and by the Rolle's theorem, we can
 \end_inset
 
  real roots, this polynomial must have 
-\begin_inset Formula $n+1$
+\begin_inset Formula $n-1$
 \end_inset
 
  real roots.
+ If a 
+\begin_inset Formula $\phi\left(x\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi'\left(x\right)=0$
+\end_inset
+
+ for some 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+, then this 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ is a repeated real root.
+ 
 \end_layout
 
 \begin_layout Proposition*
