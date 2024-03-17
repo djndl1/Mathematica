@@ -373,5 +373,209 @@ Pythagorean
 
 \end_layout
 
+\begin_layout Section
+Differentiation
+\end_layout
+
+\begin_layout Standard
+Differentiation is a limiting process: it deals only with the infinitesimal
+ change in one quantity resulting from an infinitesimal change in another.
+\end_layout
+
+\begin_layout Definition*
+The first derivative of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is defined as
+\begin_inset Formula 
+\[
+f'\left(x\right)\equiv\lim_{\Delta x\rightarrow0}\frac{f\left(x+\Delta x\right)-f\left(x\right)}{\Delta x}
+\]
+
+\end_inset
+
+ provided that the limit exists.
+ The nth derivative of the function 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+f^{\left(n\right)}\left(x\right)=\lim_{\Delta\rightarrow0}\frac{f^{\left(n-1\right)}\left(x+\Delta x\right)-f^{\left(n-1\right)}\left(x\right)}{\Delta x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ must be continuous at 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ for it to be differentiable at 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ The derivatives of common functions shoud be remembered to avoid resorting
+ to the definition.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}x^{n} & \rightarrow nx^{n-1}\\
+e^{ax} & \rightarrow ae^{ax}\\
+\ln ax & \rightarrow\frac{1}{x}\\
+\sin\left(ax\right) & \rightarrow a\cos\left(ax\right)\\
+\cos\left(ax\right) & \rightarrow-a\sin\left(ax\right)\\
+\sec\left(ax\right) & \rightarrow a\sec\left(ax\right)\tan\left(ax\right)\\
+\tan\left(ax\right) & \rightarrow a\sec^{2}ax\\
+\arcsin\left(\frac{x}{a}\right) & \rightarrow\frac{1}{\sqrt[]{a^{2}-x^{2}}}\\
+\arccos\left(\frac{x}{a}\right) & \rightarrow-\frac{1}{\sqrt[]{a^{2}-x^{2}}}\\
+\arctan\left(\frac{x}{a}\right) & \rightarrow\frac{a}{a^{2}+x^{2}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Complex functions may be decomposed into simple functions and their derivatives
+ may be derived from the derivatives of these simple functions.
+\end_layout
+
+\begin_layout Theorem*
+Differentiation of Products
+\end_layout
+
+\begin_layout Theorem*
+Given a function 
+\begin_inset Formula $f=uv$
+\end_inset
+
+, its derivative
+\begin_inset Formula 
+\[
+\begin{aligned}f^{'}\left(x\right) & =\lim_{\Delta x\rightarrow0}\frac{f\left(x+\Delta x\right)-f\left(x\right)}{\Delta x}\\
+ & =\lim_{\Delta x\rightarrow0}\left(u\left(x+\Delta x\right)\left[\frac{v\left(x+\Delta x\right)-v\left(x\right)}{\Delta x}\right]+\left[\frac{u\left(x+\Delta x\right)-u\left(x\right)}{\Delta x}\right]v\left(x\right)\right)\\
+ & =u\left(x\right)v^{'}\left(x\right)+u^{'}\left(x\right)v\left(x\right)
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Then, for a function 
+\begin_inset Formula $f=uvw$
+\end_inset
+
+ we can also have
+\begin_inset Formula 
+\[
+f^{'}=uvw^{'}+uv^{'}w+u^{'}vw
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Differentiation of Qutients
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula 
+\[
+\begin{aligned}f^{'} & =\left(\frac{u}{v}\right)^{'}=u\left(\frac{1}{v}\right)^{'}+u^{'}\left(\frac{1}{v}\right)=u\frac{-v^{'}}{v^{2}}+\frac{u^{'}v}{v^{2}}\\
+ & =\frac{u^{'}v-uv^{'}}{v^{2}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+Chain Rule
+\end_layout
+
+\begin_layout Theorem*
+Given a function 
+\begin_inset Formula $f\left(x\right)=u\left(v\left(x\right)\right)$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+\frac{df}{dx}=\frac{du}{dv}\frac{dv}{dx}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+For a function 
+\begin_inset Formula $f\left(x\right)=\frac{1}{v\left(x\right)}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f^{'}\left(x\right)=-\frac{1}{v^{2}}v^{'}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
