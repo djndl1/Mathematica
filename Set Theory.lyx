@@ -550,6 +550,61 @@ It must be that
 
 \begin_layout Standard
 From the axiom of specification, 
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+The sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and B do not exist, but a class 
+\begin_inset Formula $A$
+\end_inset
+
+ of sets where 
+\begin_inset Formula $x=x$
+\end_inset
+
+ for any set in 
+\begin_inset Formula $A$
+\end_inset
+
+ may exist! Russel's Paradox prohibits the unrestricted comprehension but
+ it does not require that require set be in the form of restricted comprehension.
+ 
+\begin_inset Formula $\left\{ x:S\left(x\right)\right\} $
+\end_inset
+
+ is not the correct way to create sets due to Russel's Paradox, but it does
+ not mean that the notation itself is unacceptable.
+ It just happens that 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ being 
+\begin_inset Formula $x=x$
+\end_inset
+
+ or 
+\begin_inset Formula $x\notin x$
+\end_inset
+
+ causes problems for 
+\begin_inset Formula $\left\{ x:S\left(x\right)\right\} $
+\end_inset
+
+.
+ We shall see the axiom of pairing permits a set in the form of 
+\begin_inset Formula $\left\{ x:x=a\,\text{or}\,x=b\right\} $
+\end_inset
+
+.
+\end_layout
+
 \begin_inset Formula 
 \[
 \varnothing=\{x\in A:x\neq x\}
