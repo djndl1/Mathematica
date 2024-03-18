@@ -643,11 +643,7 @@ literal "false"
 \end_layout
 
 \begin_layout Axiom*
-For any two sets there exists a set that they both belong to.
-\end_layout
-
-\begin_layout Axiom*
-If there are sets 
+For any two sets 
 \begin_inset Formula $a$
 \end_inset
 
@@ -655,15 +651,64 @@ If there are sets
 \begin_inset Formula $b$
 \end_inset
 
-, the set
+ there exists a set 
+\begin_inset Formula $A$
+\end_inset
+
+ that they both belong to.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary*
+(also an equivalent formulation of axiom of pairing) If there are sets 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, by axiom of pairing, there exists a set 
+\begin_inset Formula $A$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in A$
+\end_inset
+
+.
+ By axiom of specification, there exists a set
 \begin_inset Formula 
 \[
-B=\{x\in A:x=a\;or\;x=b\}
+B=\{x\in A:x=a\;\text{or}\;x=b\}=\left\{ x=a\,\text{or}\,x=b\right\} 
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Corollary*
+that contains 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ and nothing else.
 \end_layout
 
 \begin_layout Remark*
@@ -696,11 +741,42 @@ literal "false"
 \end_inset
 
 .
- 
-\emph default
+ Here 
+\begin_inset Formula $B$
+\end_inset
+
+ may be written without 
+\begin_inset Formula $A$
+\end_inset
+
+ as this axiom is independent of the axiom of specification.
+\end_layout
+
+\begin_layout Remark*
 The axiom of pairing ensures that every set is an element of some set (singleton
 ) and that any two sets are simultaneously elements of some one and the
  same set.
+ Moreoever, now that we have 
+\begin_inset Formula $\varnothing$
+\end_inset
+
+, we may have 
+\begin_inset Formula $\left\{ \varnothing\right\} $
+\end_inset
+
+ and even 
+\begin_inset Formula $\left\{ \left\{ \varnothing\right\} \right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ \left\{ \left\{ \varnothing\right\} \right\} \right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ \varnothing,\left\{ \varnothing\right\} \right\} $
+\end_inset
+
+ etc.
 \end_layout
 
 \begin_layout Axiom*
