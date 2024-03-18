@@ -375,10 +375,16 @@ literal "false"
  and transitive.
 \end_layout
 
+\begin_layout Standard
+We have already defined what is a subset, but a definition does not assert
+ the existence.
+ Does a subset of a set really exists?
+\end_layout
+
 \begin_layout Axiom*
 \begin_inset CommandInset href
 LatexCommand href
-name "Axiom of specification"
+name "Axiom of specification/restricted comprehension"
 target "https://en.wikipedia.org/wiki/Axiom_schema_of_specification"
 literal "false"
 
@@ -455,6 +461,8 @@ This new set
 \end_inset
 
  is unique by the axiom of extension.
+ With axiom of specification ,we may construct a set that is a subset of
+ another set.
  
 \end_layout
 
