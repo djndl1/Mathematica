@@ -549,7 +549,6 @@ It must be that
 \end_layout
 
 \begin_layout Standard
-From the axiom of specification, 
 \begin_inset Separator plain
 \end_inset
 
@@ -605,6 +604,22 @@ The sets
 .
 \end_layout
 
+\begin_layout Standard
+Until now, we have been discussing in a vacuum without actually discussing
+ a specific set as we know none of them.
+ Suppose 
+\end_layout
+
+\begin_layout Axiom*
+there exists a set 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+from the axiom of specification, 
 \begin_inset Formula 
 \[
 \varnothing=\{x\in A:x\neq x\}
@@ -628,6 +643,12 @@ literal "false"
 ).
  In addition, empty set is a subset of every set including itself (vacuously
  true or proof by contradiction).
+ The existence of the empty set comes from the existence of the assumed
+ set 
+\begin_inset Formula $A$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Axiom*
