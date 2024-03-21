@@ -800,6 +800,10 @@ The axiom of pairing ensures that every set is an element of some set (singleton
  etc.
 \end_layout
 
+\begin_layout Remark*
+Sets may be united into one set and this set does exist:
+\end_layout
+
 \begin_layout Axiom*
 Axiom of unions
 \end_layout
@@ -807,9 +811,32 @@ Axiom of unions
 \begin_layout Axiom*
 For every collection of sets there exists a set that contains all the elements
  that belong to at lease one set of the given collection.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+This set 
+\begin_inset Formula $U$
+\end_inset
+
+ may be too broad and can be limited further by specification, resulting
+ in the 
+\emph on
+union
+\emph default
+ of the colection:
+\end_layout
+
+\begin_layout Remark*
 \begin_inset Formula 
 \[
-\{x\in U:x\in X;\;for\;some\;X\;in\;\mathscr{{C}}\}
+\{x\in U:x\in X\;\text{for\;some}\;X\;\text{in}\;\mathscr{{C}}\}
 \]
 
 \end_inset
@@ -817,8 +844,8 @@ For every collection of sets there exists a set that contains all the elements
 
 \end_layout
 
-\begin_layout Axiom*
-or 
+\begin_layout Remark*
+or denoted by
 \begin_inset Formula 
 \[
 \bigcup\mathscr{C}\;or\;\bigcup\{X:X\in\mathscr{C}\}\;or\;\bigcup_{X\in\mathscr{C}}X
@@ -830,11 +857,124 @@ or
 \end_layout
 
 \begin_layout Remark*
+For a collection of two sets, i.e.
+ an unordered pair, special notation is used
+\begin_inset Formula 
+\[
+\bigcup\left\{ X:X\in\left\{ A,B\right\} \right\} =A\bigcup B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+Some facts properties of union:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\bigcup\left\{ A\right\}  & =A\\
+\bigcup\varnothing & =\varnothing\\
+A\bigcup\varnothing & =A\\
+A\bigcup B & =B\bigcup A\text{ (communitativity)}\\
+A\bigcup\left(B\bigcup C\right) & =\left(A\bigcup B\right)\bigcup C\text{ (associativity)}\\
+A\bigcup A & =A\text{ (idempotence)}\\
+A\subset B & \iff A\bigcup B=B
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Based on the corresponding properties of the logical operator 
+\begin_inset Formula $\lor$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 The axiom of unions introduces the existence of 
 \emph on
-unordered triple, quarduples, 
+unordered triple, quarduples, etc, 
 \emph default
-etc.
+that is, certain union sets exist
+\emph on
+.
+
+\emph default
+ Given three sets 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+, their singletons 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ c\right\} $
+\end_inset
+
+ exist by axiom of pairing, and thus 
+\begin_inset Formula $\left\{ a\right\} \bigcup\left\{ b\right\} \bigcup\left\{ c\right\} $
+\end_inset
+
+ exists.
+ Based on 
+\begin_inset Formula $x=a\iff x\in\left\{ a\right\} $
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\left\{ a,b\right\}  & =\left\{ a\right\} \bigcup\left\{ b\right\} \\
+\left\{ a,b,c\right\}  & =\left\{ a\right\} \bigcup\left\{ b\right\} \bigcup\left\{ c\right\} 
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the notation 
+\begin_inset Formula $\left\{ a,b,c\right\} $
+\end_inset
+
+ means 
+\begin_inset Formula $\left\{ x:x=a\lor x=b\lor x=c\right\} $
+\end_inset
+
+, called an unordered triple.
 \end_layout
 
 \begin_layout Standard
