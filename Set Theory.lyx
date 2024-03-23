@@ -1011,7 +1011,12 @@ where
 \end_inset
 
 , a non-empty collection of sets (Note that union does not require this
- colection be non-empty as it is an independent axiom).
+ colection be non-empty as it is an independent axiom, otherwise, the conditiona
+l statement would always be false and 
+\begin_inset Formula $V$
+\end_inset
+
+ would be the universal set).
  The axiom of extension guarantees the uniqueness of such a set, independent
  of a certain set in the given collection.
  Note that this intersection set may be an empty set.
