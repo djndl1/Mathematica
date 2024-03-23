@@ -1010,10 +1010,11 @@ where
 \begin_inset Formula $\mathscr{C}$
 \end_inset
 
-, a non-empty collection of sets.
+, a non-empty collection of sets (Note that union does not require this
+ colection be non-empty as it is an independent axiom).
  The axiom of extension guarantees the uniqueness of such a set, independent
  of a certain set in the given collection.
- Note that this set may be an empty set.
+ Note that this intersection set may be an empty set.
 \end_layout
 
 \begin_layout Remark*
@@ -1043,6 +1044,45 @@ and
 distributivity
 \emph default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+Some properties of intersection
+\begin_inset Formula 
+\[
+\begin{aligned}A\bigcap\varnothing & =\varnothing\\
+A\bigcap B & =B\bigcap A\,\text{(commutative)}\\
+A\bigcap\left(B\bigcap C\right) & =\left(A\bigcap B\right)\bigcap C\,\text{(associative)}\\
+A\bigcap A & =A\,\text{(idempotence)}\\
+A\subset B & \iff A\bigcap B=A
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+Moreover, combined with union,
+\begin_inset Formula 
+\[
+\begin{aligned}A\bigcap\left(B\bigcup C\right) & =\left(A\bigcap B\right)\bigcup\left(A\bigcap C\right)\\
+A\bigcup\left(B\bigcap C\right) & =\left(A\bigcup B\right)\bigcap\left(A\bigcup C\right)
+\end{aligned}
+\,\text{(distributivity)}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition*
