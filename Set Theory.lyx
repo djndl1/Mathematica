@@ -1093,7 +1093,7 @@ A\bigcup\left(B\bigcap C\right) & =\left(A\bigcup B\right)\bigcap\left(A\bigcup 
 \begin_layout Definition*
 
 \emph on
-difference/relative difference
+relative difference and complementation
 \end_layout
 
 \begin_layout Definition*
@@ -1104,10 +1104,6 @@ A-B=\{x\in A:x\notin B\}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Remark*
 Define set 
 \begin_inset Formula $E$
 \end_inset
@@ -1124,9 +1120,40 @@ Define set
 \begin_inset Formula $A'$
 \end_inset
 
-, we have 
-\emph on
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+Some Properties of Complementation
+\end_layout
+
+\begin_layout Proposition*
+\begin_inset Formula 
+\[
+\begin{aligned}\left(A^{\prime}\right)^{\prime} & =A\\
+\varnothing^{\prime}=E & ,E^{\prime}=\varnothing\\
+A\bigcap A^{\prime}=\varnothing & ,A\bigcup A^{\prime}=E,\\
+A\subset B & \iff B^{\prime}\subset A^{\prime}\\
+A-B & =A\bigcap B^{\prime}\\
+A\subset B & \iff A-B=\varnothing
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+
+\emph on
 \begin_inset CommandInset href
 LatexCommand href
 name "De Morgan laws"
@@ -1135,9 +1162,30 @@ literal "false"
 
 \end_inset
 
-.
- 
-\emph default
+
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula 
+\[
+\begin{aligned}\left(A\bigcup B\right)^{\prime} & =A^{\prime}\bigcup B^{\prime}\\
+\left(A\bigcap B\right)^{\prime} & =A^{\prime}\bigcap B^{\prime}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
 The complement form of a set theorem usually leads to 
 \emph on
 
