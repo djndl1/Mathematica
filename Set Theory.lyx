@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -12,11 +12,11 @@ eqs-within-sections
 figs-within-sections
 theorems-ams-extended
 \end_modules
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "tgtermes" "default"
 \font_sans "tgheros" "default"
 \font_typewriter "tgcursor" "default"
@@ -24,7 +24,9 @@ theorems-ams-extended
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -58,7 +60,9 @@ theorems-ams-extended
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -74,11 +78,16 @@ theorems-ams-extended
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -88,15 +97,21 @@ Set Theory
 \end_layout
 
 \begin_layout Standard
-This node is not intended as a thourough treatment of set theory.
- It is only elements of naive set theory: set theory is regarded as a body
- of facts, of which the axioms are a brief and convenient summary.
+This note is not intended as a thourough treatment of set theory.
+ It is only elements of naive set theory:
+ set theory is regarded as a body of facts,
+ of which the axioms are a brief and convenient summary.
 \end_layout
 
 \begin_layout Quotation
-General set theory is pretty trivial stuff really, but, if you want to be
- a mathematician, you need some, and here it is; read it, absorb it, and
- forget it.
+General set theory is pretty trivial stuff really,
+ but,
+ if you want to be a mathematician,
+ you need some,
+ and here it is;
+ read it,
+ absorb it,
+ and forget it.
 \end_layout
 
 \begin_layout Section
@@ -104,8 +119,10 @@ Basics
 \end_layout
 
 \begin_layout Standard
-Here, the definition of a set is not given, rather, it is supported by human
- intuition.
+Here,
+ the definition of a set is not given,
+ rather,
+ it is supported by human intuition.
  The word 
 \emph on
 collection
@@ -114,6 +131,19 @@ collection
 \emph on
 set.
  
+\end_layout
+
+\begin_layout Standard
+We start by introducing the concepts of set belonging,
+ set inclusion and how two sets may be equal (axiom of extension),
+ and then how a subset may be constructed out of an existing set.
+ Suppose we do have a set,
+ then a special set called empty set ,
+ defined as a set containing elements that are not equal to themselves,
+ proves to exist.
+ Two sets may be combined to form another set (axiom of pairing).
+ Furthermore,
+ a collection of sets may form a new set by combining their elements (axiom of unions).
 \end_layout
 
 \begin_layout Standard
@@ -129,22 +159,28 @@ members
  A set may be an element of another set.
  
 \emph on
-For mathematical purposes, no other elements than sets need ever considered
+For mathematical purposes,
+ no other elements than sets need ever considered
 \emph default
-, which will reveal itself in text below.
+,
+ which will reveal itself in text below.
 \end_layout
 
 \begin_layout Standard
-An element may belongs to a set, written as 
+An element may belongs to a set,
+ written as 
 \begin_inset Formula $x\in A$
 \end_inset
 
 .
- Two sets may be equal to each other, written as 
+ Two sets may be equal to each other,
+ written as 
 \begin_inset Formula $A=B$
 \end_inset
 
-, or if not equal, written as 
+,
+ or if not equal,
+ written as 
 \begin_inset Formula $A\neq B$
 \end_inset
 
@@ -152,8 +188,8 @@ An element may belongs to a set, written as
 \end_layout
 
 \begin_layout Standard
-The most basic property of belonging is its relation to equality, formulated
- as follows:
+The most basic property of belonging is its relation to equality,
+ formulated as follows:
 \end_layout
 
 \begin_layout Definition*
@@ -185,7 +221,8 @@ subset
 \begin_inset Formula $B$
 \end_inset
 
-, or 
+,
+ or 
 \begin_inset Formula $B$
 \end_inset
 
@@ -197,7 +234,8 @@ includes
 \begin_inset Formula $A$
 \end_inset
 
-, written as 
+,
+ written as 
 \begin_inset Formula 
 \[
 A\subset B
@@ -225,7 +263,8 @@ and
 \begin_inset Formula $A\neq B$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $A$
 \end_inset
 
@@ -237,7 +276,8 @@ subset of
 \begin_inset Formula $B$
 \end_inset
 
-, written as 
+,
+ written as 
 \begin_inset Formula $A\subsetneq B$
 \end_inset
 
@@ -257,11 +297,13 @@ Set inclusion is
 \emph on
 reflexive
 \emph default
-: 
+:
+ 
 \begin_inset Formula $A\subset A$
 \end_inset
 
-, 
+,
+ 
 \emph on
 transitive
 \emph default
@@ -277,12 +319,15 @@ antisymmetric
 \begin_inset Formula $A\subset B\land B\subset A\implies A=B$
 \end_inset
 
-, or 
+,
+ or 
 \begin_inset Formula $A\neq B\land A\subset B\implies\lnot\left(B\subset A\right)$
 \end_inset
 
 .
- Also, there is some notation difference between authors: some use 
+ Also,
+ there is some notation difference between authors:
+ some use 
 \begin_inset Formula $\subseteq$
 \end_inset
 
@@ -313,8 +358,8 @@ literal "false"
 \end_layout
 
 \begin_layout Axiom*
-Two sets are equal if and only if they have the same elements: a set is
- determined by its extension.
+Two sets are equal if and only if they have the same elements:
+ a set is determined by its extension.
 \begin_inset Formula 
 \[
 \forall A\forall B(\forall X(X\in A\iff X\in B)\iff A=B
@@ -333,12 +378,12 @@ Two sets are equal if and only if they have the same elements: a set is
 \end_layout
 
 \begin_layout Remark*
-This axiom is a logically necessary property of equality but it requires
- the relationship of 
+This axiom is a logically necessary property of equality but it requires the relationship of 
 \emph on
 belonging
 \emph default
-, otherwise this axiom wouldn't be true.
+,
+ otherwise this axiom wouldn't be true.
 \end_layout
 
 \begin_layout Definition*
@@ -358,12 +403,15 @@ Duck test
 \end_layout
 
 \begin_layout Standard
-All the basic principles of set theory, except only the axiom of extension.
+All the basic principles of set theory,
+ except only the axiom of extension.
 \end_layout
 
 \begin_layout Standard
-Equality for sets is reflexive, symmetric and transitive; inclusion for
- sets is reflexive, 
+Equality for sets is reflexive,
+ symmetric and transitive;
+ inclusion for sets is reflexive,
+ 
 \begin_inset CommandInset href
 LatexCommand href
 name "antisymmetric"
@@ -376,8 +424,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-We have already defined what is a subset, but a definition does not assert
- the existence.
+We have already defined what is a subset,
+ but a definition does not assert the existence.
  Does a subset of a set really exists?
 \end_layout
 
@@ -461,14 +509,12 @@ This new set
 \end_inset
 
  is unique by the axiom of extension.
- With axiom of specification ,we may construct a set that is a subset of
- another set.
+ With axiom of specification ,we may construct a set that is a subset of another set.
  
 \end_layout
 
 \begin_layout Remark*
-The original version of axiom of comprehension (unrestricted) does not restrict
- 
+The original version of axiom of comprehension (unrestricted) does not restrict 
 \begin_inset Formula $B$
 \end_inset
 
@@ -476,10 +522,10 @@ The original version of axiom of comprehension (unrestricted) does not restrict
 \begin_inset Formula $A$
 \end_inset
 
-, implying a certain implicit universe.
- The axiom of specification forbids a set containing all the objects that
- satisfy a certain property (unrestricted comprehension), which leads to
- 
+,
+ implying a certain implicit universe.
+ The axiom of specification forbids a set containing all the objects that satisfy a certain property (unrestricted comprehension),
+ which leads to 
 \begin_inset CommandInset href
 LatexCommand href
 name "Russell's paradox"
@@ -489,8 +535,8 @@ literal "false"
 \end_inset
 
 .
- One set has to be made out of some existing set, not some implicit universe
- set.
+ One set has to be made out of some existing set,
+ not some implicit universe set.
 \end_layout
 
 \begin_layout Proof
@@ -499,7 +545,8 @@ Suppose there is a set
 \end_inset
 
  that contains every object.
- From the axiom of specification, we can have a set
+ From the axiom of specification,
+ we can have a set
 \begin_inset Formula 
 \[
 B=\{x\in A:x\notin x\}
@@ -520,23 +567,29 @@ It must be that
 \end_inset
 
  contains every object.
- However, if 
+ However,
+ if 
 \begin_inset Formula $B\in B$
 \end_inset
 
-, then by definition of 
+,
+ then by definition of 
 \begin_inset Formula $B$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $B\notin B$
 \end_inset
 
-, the other way around, if 
+,
+ the other way around,
+ if 
 \begin_inset Formula $B\notin B$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $B\in B$
 \end_inset
 
@@ -560,7 +613,8 @@ The sets
 \begin_inset Formula $A$
 \end_inset
 
- and B do not exist, but a class 
+ and B do not exist,
+ but a class 
 \begin_inset Formula $A$
 \end_inset
 
@@ -572,14 +626,14 @@ The sets
 \begin_inset Formula $A$
 \end_inset
 
- may exist! Russel's Paradox prohibits the unrestricted comprehension but
- it does not require that require set be in the form of restricted comprehension.
+ may exist!
+ Russel's Paradox prohibits the unrestricted comprehension but it does not require that a set be in the form of restricted comprehension.
  
 \begin_inset Formula $\left\{ x:S\left(x\right)\right\} $
 \end_inset
 
- is not the correct way to create sets due to Russel's Paradox, but it does
- not mean that the notation itself is unacceptable.
+ is not the correct way to create sets due to Russel's Paradox,
+ but it does not mean that the notation itself is unacceptable.
  It just happens that 
 \begin_inset Formula $S\left(x\right)$
 \end_inset
@@ -605,8 +659,8 @@ The sets
 \end_layout
 
 \begin_layout Standard
-Until now, we have been discussing in a vacuum without actually discussing
- a specific set as we know none of them.
+Until now,
+ we have been discussing in a vacuum without actually discussing a specific set as we know none of them.
  Suppose 
 \end_layout
 
@@ -619,7 +673,8 @@ there exists a set
 \end_layout
 
 \begin_layout Standard
-from the axiom of specification, 
+from the axiom of specification,
+ 
 \begin_inset Formula 
 \[
 \varnothing=\{x\in A:x\neq x\}
@@ -631,7 +686,8 @@ from the axiom of specification,
 \end_layout
 
 \begin_layout Standard
-is obtained and from the axiom of extension, this set is unique (
+is obtained and from the axiom of extension,
+ this set is unique (
 \begin_inset CommandInset href
 LatexCommand href
 name "vacuously true"
@@ -641,14 +697,25 @@ literal "false"
 \end_inset
 
 ).
- In addition, empty set is a subset of every set including itself (vacuously
- true or proof by contradiction).
- The existence of the empty set comes from the existence of the assumed
- set 
+ In addition,
+ empty set is a subset of every set including itself (vacuously true or proof by contradiction).
+ The existence of the empty set comes from the existence of the assumed set 
 \begin_inset Formula $A$
 \end_inset
 
 .
+ The empty set is special in that it contains no elements due to reflexivity of equality,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall A\left(\forall x\in A\left(x\notin\varnothing\right)\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Axiom*
@@ -695,7 +762,9 @@ For any two sets
 \begin_inset Formula $b$
 \end_inset
 
-, by axiom of pairing, there exists a set 
+,
+ by axiom of pairing,
+ there exists a set 
 \begin_inset Formula $A$
 \end_inset
 
@@ -709,7 +778,8 @@ For any two sets
 \end_inset
 
 .
- By axiom of specification, there exists a set
+ By axiom of specification,
+ there exists a set
 \begin_inset Formula 
 \[
 B=\{x\in A:x=a\;\text{or}\;x=b\}=\left\{ x=a\,\text{or}\,x=b\right\} 
@@ -774,14 +844,14 @@ literal "false"
 \end_layout
 
 \begin_layout Remark*
-The axiom of pairing ensures that every set is an element of some set (singleton
-) and that any two sets are simultaneously elements of some one and the
- same set.
- Moreoever, now that we have 
+The axiom of pairing ensures that every set is an element of some set (singleton) and that any two sets are simultaneously elements of some one and the same set.
+ Moreoever,
+ now that we have 
 \begin_inset Formula $\varnothing$
 \end_inset
 
-, we may have 
+,
+ we may have 
 \begin_inset Formula $\left\{ \varnothing\right\} $
 \end_inset
 
@@ -789,11 +859,13 @@ The axiom of pairing ensures that every set is an element of some set (singleton
 \begin_inset Formula $\left\{ \left\{ \varnothing\right\} \right\} $
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\left\{ \left\{ \left\{ \varnothing\right\} \right\} \right\} $
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\left\{ \varnothing,\left\{ \varnothing\right\} \right\} $
 \end_inset
 
@@ -809,8 +881,7 @@ Axiom of unions
 \end_layout
 
 \begin_layout Axiom*
-For every collection of sets there exists a set that contains all the elements
- that belong to at lease one set of the given collection.
+For every collection of sets there exists a set that contains all the elements that belong to at lease one set of the given collection.
 \end_layout
 
 \begin_layout Standard
@@ -825,8 +896,8 @@ This set
 \begin_inset Formula $U$
 \end_inset
 
- may be too broad and can be limited further by specification, resulting
- in the 
+ may be too broad and can be limited further by specification,
+ resulting in the 
 \emph on
 union
 \emph default
@@ -857,8 +928,10 @@ or denoted by
 \end_layout
 
 \begin_layout Remark*
-For a collection of two sets, i.e.
- an unordered pair, special notation is used
+For a collection of two sets,
+ i.e.
+ an unordered pair,
+ special notation is used
 \begin_inset Formula 
 \[
 \bigcup\left\{ X:X\in\left\{ A,B\right\} \right\} =A\bigcup B
@@ -909,9 +982,13 @@ Based on the corresponding properties of the logical operator
 \begin_layout Standard
 The axiom of unions introduces the existence of 
 \emph on
-unordered triple, quarduples, etc, 
+unordered triple,
+ quarduples,
+ etc,
+ 
 \emph default
-that is, certain union sets exist
+that is,
+ certain union sets exist
 \emph on
 .
 
@@ -920,27 +997,33 @@ that is, certain union sets exist
 \begin_inset Formula $a$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $b$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $c$
 \end_inset
 
-, their singletons 
+,
+ their singletons 
 \begin_inset Formula $\left\{ a\right\} $
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\left\{ b\right\} $
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\left\{ c\right\} $
 \end_inset
 
- exist by axiom of pairing, and thus 
+ exist by axiom of pairing,
+ and thus 
 \begin_inset Formula $\left\{ a\right\} \bigcup\left\{ b\right\} \bigcup\left\{ c\right\} $
 \end_inset
 
@@ -949,7 +1032,8 @@ that is, certain union sets exist
 \begin_inset Formula $x=a\iff x\in\left\{ a\right\} $
 \end_inset
 
-, we have
+,
+ we have
 \end_layout
 
 \begin_layout Standard
@@ -974,11 +1058,13 @@ where the notation
 \begin_inset Formula $\left\{ x:x=a\lor x=b\lor x=c\right\} $
 \end_inset
 
-, called an unordered triple.
+,
+ called an unordered triple.
 \end_layout
 
 \begin_layout Standard
-The intersection of sets relies rather on the axiom of specification, i.e.
+The intersection of sets relies rather on the axiom of specification,
+ i.e.
 \begin_inset Formula 
 \[
 A\cap B=\{x\in A:x\in B\}
@@ -1010,15 +1096,16 @@ where
 \begin_inset Formula $\mathscr{C}$
 \end_inset
 
-, a non-empty collection of sets (Note that union does not require this
- colection be non-empty as it is an independent axiom, otherwise, the conditiona
-l statement would always be false and 
+,
+ a non-empty collection of sets (Note that union does not require this colection be non-empty as it is an independent axiom,
+ otherwise,
+ the conditional statement would always be false and 
 \begin_inset Formula $V$
 \end_inset
 
  would be the universal set).
- The axiom of extension guarantees the uniqueness of such a set, independent
- of a certain set in the given collection.
+ The axiom of extension guarantees the uniqueness of such a set,
+ independent of a certain set in the given collection.
  Note that this intersection set may be an empty set.
 \end_layout
 
@@ -1027,7 +1114,8 @@ if
 \begin_inset Formula $A\bigcap B=\varnothing$
 \end_inset
 
-, the sets 
+,
+ the sets 
 \begin_inset Formula $A$
 \end_inset
 
@@ -1042,7 +1130,9 @@ disjoint
 .
  The intersection and the union operations has the properties of 
 \emph on
-communitativity, associativity, idempotence 
+communitativity,
+ associativity,
+ idempotence 
 \emph default
 and 
 \emph on
@@ -1076,7 +1166,8 @@ A\subset B & \iff A\bigcap B=A
 \end_layout
 
 \begin_layout Proposition*
-Moreover, combined with union,
+Moreover,
+ combined with union,
 \begin_inset Formula 
 \[
 \begin{aligned}A\bigcap\left(B\bigcup C\right) & =\left(A\bigcap B\right)\bigcup\left(A\bigcap C\right)\\
@@ -1108,7 +1199,8 @@ Define set
 \begin_inset Formula $E$
 \end_inset
 
- as the union of all sets involved, denote the complement of set 
+ as the union of all sets involved,
+ denote the complement of set 
 \begin_inset Formula $A$
 \end_inset
 
@@ -1230,11 +1322,13 @@ or alternatively denoted by
 \begin_inset Formula $\triangle$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\oplus$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\ominus$
 \end_inset
 
@@ -1266,8 +1360,7 @@ literal "false"
 \end_layout
 
 \begin_layout Axiom*
-For each set there exists a collection of sets that contains among its elements
- all the subsets of the given set and them only.
+For each set there exists a collection of sets that contains among its elements all the subsets of the given set and them only.
 \begin_inset Formula 
 \[
 \forall x\exists y\forall z\left[z\in y\iff\forall\omega\left(\omega\in z\implies\omega\in x\right)\right]
@@ -1279,11 +1372,13 @@ For each set there exists a collection of sets that contains among its elements
 \end_layout
 
 \begin_layout Proposition*
-In other words, if 
+In other words,
+ if 
 \begin_inset Formula $E$
 \end_inset
 
- is a set, there exists a collection of set 
+ is a set,
+ there exists a collection of set 
 \begin_inset Formula $\mathscr{P}$
 \end_inset
 
@@ -1300,7 +1395,8 @@ In other words, if
 \begin_inset Formula $\mathscr{P}$
 \end_inset
 
- is called a power set, denoted by 
+ is called a power set,
+ denoted by 
 \begin_inset Formula $\mathscr{P}\left(E\right)$
 \end_inset
 
@@ -1328,7 +1424,8 @@ The ordered pair of
 \begin_inset Formula $b$
 \end_inset
 
-, with first coordinate 
+,
+ with first coordinate 
 \begin_inset Formula $a$
 \end_inset
 
@@ -1336,7 +1433,8 @@ The ordered pair of
 \begin_inset Formula $b$
 \end_inset
 
-, is the set defined by
+,
+ is the set defined by
 \end_layout
 
 \begin_layout Definition*
@@ -1369,8 +1467,8 @@ Given two sets
 \begin_inset Formula $B$
 \end_inset
 
-, it is proved that there exists a set of ordered paired with one coordinate
- from 
+,
+ it is proved that there exists a set of ordered paired with one coordinate from 
 \begin_inset Formula $A$
 \end_inset
 
@@ -1386,11 +1484,13 @@ Suppose
 \begin_inset Formula $a\in A$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $b\in B$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $\left\{ a\right\} \in P\left\{ A\cup B\right\} $
 \end_inset
 
@@ -1402,7 +1502,8 @@ Suppose
 \begin_inset Formula $\implies\left\{ \left\{ a\right\} ,\left\{ a,b\right\} \right\} \subset P\left\{ A\cup B\right\} $
 \end_inset
 
-, i.e.
+,
+ i.e.
  
 \begin_inset Formula 
 \[
@@ -1415,8 +1516,8 @@ Suppose
 \end_layout
 
 \begin_layout Proof
-From the axiom of union and the axiom of power set, the power set of the
- union of 
+From the axiom of union and the axiom of power set,
+ the power set of the union of 
 \begin_inset Formula $A$
 \end_inset
 
@@ -1424,7 +1525,8 @@ From the axiom of union and the axiom of power set, the power set of the
 \begin_inset Formula $B$
 \end_inset
 
-, therefore 
+,
+ therefore 
 \begin_inset Formula $\left(a,b\right)$
 \end_inset
 
@@ -1432,7 +1534,8 @@ From the axiom of union and the axiom of power set, the power set of the
 \end_layout
 
 \begin_layout Proof
-Apply the axiom of specification, we have defined the 
+Apply the axiom of specification,
+ we have defined the 
 \emph on
 Cartesian product
 \emph default
@@ -1448,16 +1551,18 @@ A\times B=\left\{ x=\left(a,b\right)\in P\left\{ P\left\{ A\cup B\right\} \right
 \end_layout
 
 \begin_layout Proof
-and from the axiom of extension, the Cartesian product is unique.
+and from the axiom of extension,
+ the Cartesian product is unique.
 \end_layout
 
 \begin_layout Standard
-Tips: use union to remove braces.
+Tips:
+ use union to remove braces.
 \end_layout
 
 \begin_layout Standard
-It is possible to obtain the two sets from the Cartesian product, which
- sets are called the 
+It is possible to obtain the two sets from the Cartesian product,
+ which sets are called the 
 \emph on
 projections 
 \emph default
@@ -1477,11 +1582,13 @@ Suppose
 \begin_inset Formula $R$
 \end_inset
 
-, rewritten as 
+,
+ rewritten as 
 \begin_inset Formula $\left\{ \left\{ a\right\} ,\left\{ a,b\right\} \right\} $
 \end_inset
 
-, the union of all such ordered pairs exists and
+,
+ the union of all such ordered pairs exists and
 \begin_inset Formula 
 \[
 \left\{ a\right\} \in\bigcup_{p\in R}p\;and\;\left\{ a,b\right\} \in\bigcup_{p\in R}p
@@ -1518,14 +1625,14 @@ B & =\left\{ b:\text{for some \ensuremath{a} }\left(a,b\right)\in R\right\}
 \end_layout
 
 \begin_layout Standard
-The definition of ordered pair and the relevant should be here and never
- elsewhere: they are weird but only because they are defined such.
+The definition of ordered pair and the relevant should be here and never elsewhere:
+ they are weird but only because they are defined such.
  It can be done axiomatically with the same properties in other theories.
 \end_layout
 
 \begin_layout Standard
-Using ordered pairs, we can formulate the mathematical theory of relations
- in set-theoretic language.
+Using ordered pairs,
+ we can formulate the mathematical theory of relations in set-theoretic language.
 \end_layout
 
 \begin_layout Section
@@ -1547,7 +1654,8 @@ a set
 \begin_inset Formula $R$
 \end_inset
 
- is an ordered pair, denoted by
+ is an ordered pair,
+ denoted by
 \begin_inset Formula 
 \[
 x\,R\,y\subset X\times Y
@@ -1631,7 +1739,8 @@ reflexive
 \begin_inset Formula $\forall x\in X,x\,R\,x$
 \end_inset
 
-; 
+;
+ 
 \emph on
 symmetric 
 \emph default
@@ -1643,7 +1752,8 @@ if
 \begin_inset Formula $y\,R\,x$
 \end_inset
 
-; 
+;
+ 
 \emph on
 transitive 
 \emph default
@@ -1664,7 +1774,8 @@ if
 \emph on
 equivalent
 \emph default
- if it is reflexive, symmetric and transitive.
+ if it is reflexive,
+ symmetric and transitive.
  The smallest equivalence relation in a set 
 \begin_inset Formula $X$
 \end_inset
@@ -1693,7 +1804,8 @@ If
 \begin_inset Formula $X$
 \end_inset
 
-, and if 
+,
+ and if 
 \begin_inset Formula $x$
 \end_inset
 
@@ -1701,7 +1813,8 @@ If
 \begin_inset Formula $X$
 \end_inset
 
-, the 
+,
+ the 
 \emph on
 equivalence class 
 \emph default
@@ -1713,7 +1826,8 @@ of
 \begin_inset Formula $R$
 \end_inset
 
-, denoted by 
+,
+ denoted by 
 \begin_inset Formula $x/R$
 \end_inset
 
@@ -1733,7 +1847,8 @@ of
 \begin_inset Quotes erd
 \end_inset
 
-), is the set of all those elements 
+),
+ is the set of all those elements 
 \begin_inset Formula $y$
 \end_inset
 
@@ -1745,7 +1860,8 @@ of
 \begin_inset Formula $x\,R\,y$
 \end_inset
 
-, and 
+,
+ and 
 \begin_inset Formula $X/R$
 \end_inset
 
@@ -1758,11 +1874,13 @@ of
 \begin_inset Formula $R$
 \end_inset
 
- is a singleton; if 
+ is a singleton;
+ if 
 \begin_inset Formula $R=X\times X$
 \end_inset
 
-, then the set 
+,
+ then the set 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1778,7 +1896,9 @@ Suppose
 \begin_inset Formula $X$
 \end_inset
 
-, that is, a disjoint collection of non-empty subsets of 
+,
+ that is,
+ a disjoint collection of non-empty subsets of 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1786,7 +1906,8 @@ Suppose
 \begin_inset Formula $X$
 \end_inset
 
-, a relation 
+,
+ a relation 
 \begin_inset Formula $X/\mathscr{C}$
 \end_inset
 
@@ -1839,7 +1960,8 @@ if
 \begin_inset Formula $X$
 \end_inset
 
-, then the set of equivalence classes is a partition of 
+,
+ then the set of equivalence classes is a partition of 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1847,7 +1969,8 @@ if
 \begin_inset Formula $R$
 \end_inset
 
-, and if 
+,
+ and if 
 \begin_inset Formula $\mathscr{C}$
 \end_inset
 
@@ -1855,8 +1978,8 @@ is a partition of
 \begin_inset Formula $X$
 \end_inset
 
-, then the induced relation is an equivalence relation whose set of equivalence
- classes is exactly 
+,
+ then the induced relation is an equivalence relation whose set of equivalence classes is exactly 
 \begin_inset Formula $\mathscr{C}$
 \end_inset
 
@@ -1878,16 +2001,19 @@ Suppose
 \end_inset
 
 .
- From reflexitivity, 
+ From reflexitivity,
+ 
 \begin_inset Formula $x\,R\,x$
 \end_inset
 
-, i.e.
+,
+ i.e.
  
 \begin_inset Formula $x\in x/R$
 \end_inset
 
-, thus the union of all equivalence classes is all 
+,
+ thus the union of all equivalence classes is all 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1896,7 +2022,8 @@ Suppose
 \begin_inset Formula $\forall x\in X,\forall y\in X$
 \end_inset
 
-, if 
+,
+ if 
 \begin_inset Formula $z\in x/R$
 \end_inset
 
@@ -1904,11 +2031,14 @@ Suppose
 \begin_inset Formula $z\in y/R$
 \end_inset
 
-, from transitivity, 
+,
+ from transitivity,
+ 
 \begin_inset Formula $x\,R\,y$
 \end_inset
 
-, i.e.
+,
+ i.e.
  for every element 
 \begin_inset Formula $a$
 \end_inset
@@ -1926,8 +2056,9 @@ a\in x/R\iff x\,R\,a\iff a\,R\,x\iff a\,R\,y\iff y\,R\,a\iff a\in y/R
 \end_inset
 
  which implies that if two equivalence classes have an element in common,
- they are identical, otherwise they are disjoint, thus all these equivalence
- classes form a partition of 
+ they are identical,
+ otherwise they are disjoint,
+ thus all these equivalence classes form a partition of 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1955,7 +2086,8 @@ function
 \begin_inset Formula $Y$
 \end_inset
 
- (codomain, target set) is a relation 
+ (codomain,
+ target set) is a relation 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2013,7 +2145,8 @@ argument
 \begin_inset Formula $x$
 \end_inset
 
-; or we may say 
+;
+ or we may say 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2035,7 +2168,10 @@ map
 \emph default
  or 
 \emph on
-mapping, transformation, correspondence, 
+mapping,
+ transformation,
+ correspondence,
+ 
 \emph default
 and 
 \emph on
@@ -2058,7 +2194,8 @@ function
 \begin_inset Formula $P\left(X\times Y\right)$
 \end_inset
 
-, and denoted by 
+,
+ and denoted by 
 \begin_inset Formula $Y^{X}$
 \end_inset
 
@@ -2067,7 +2204,8 @@ function
 \begin_inset Formula $\text{dom}f=Y$
 \end_inset
 
-, we say 
+,
+ we say 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2079,7 +2217,8 @@ function
 \begin_inset Formula $Y$
 \end_inset
 
- (surjective), denoted by 
+ (surjective),
+ denoted by 
 \begin_inset Formula $f\left(X\right)=Y$
 \end_inset
 
@@ -2098,7 +2237,8 @@ function
 
  maps is called the 
 \emph on
-image, 
+image,
+ 
 \emph default
 denoted by 
 \begin_inset Formula $f\left(A\right)$
@@ -2116,7 +2256,8 @@ If
 \begin_inset Formula $Y$
 \end_inset
 
-, the function 
+,
+ the function 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2140,7 +2281,8 @@ inclusion map
 \emph on
 embedding
 \emph default
-, or the 
+,
+ or the 
 \emph on
 injection
 \emph default
@@ -2177,11 +2319,13 @@ Let
 \begin_inset Formula $X\subset Y$
 \end_inset
 
-, and 
+,
+ and 
 \begin_inset Formula $f\colon Y\mapsto Z$
 \end_inset
 
-, define 
+,
+ define 
 \begin_inset Formula $g\colon X\mapsto Z$
 \end_inset
 
@@ -2214,7 +2358,8 @@ of
 \begin_inset Formula $X$
 \end_inset
 
-, and 
+,
+ and 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2251,7 +2396,8 @@ The function
 \emph on
 projection
 \emph default
- onto the first coordinate, similarly for 
+ onto the first coordinate,
+ similarly for 
 \begin_inset Formula $f\colon X\times Y\mapsto Y$
 \end_inset
 
@@ -2267,7 +2413,8 @@ Suppose
 \begin_inset Formula $X$
 \end_inset
 
-, and let 
+,
+ and let 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2296,8 +2443,7 @@ canonical map
 \end_layout
 
 \begin_layout Remark*
-A function that always maps distinct elements onto distinct elements is
- called 
+A function that always maps distinct elements onto distinct elements is called 
 \emph on
 one-to-one
 \emph default
@@ -2322,7 +2468,8 @@ If
 \begin_inset Formula $X$
 \end_inset
 
-, the 
+,
+ the 
 \emph on
 characteristic function 
 \emph default
@@ -2370,10 +2517,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-There are occasions when the range of a funciton is deemed to be more important
- than the function itself.
- When this is the case, both terminology and the notation undergo radical
- alterations.
+There are occasions when the range of a funciton is deemed to be more important than the function itself.
+ When this is the case,
+ both terminology and the notation undergo radical alterations.
 \end_layout
 
 \begin_layout Standard
@@ -2393,13 +2539,16 @@ index set
 \begin_inset Formula $X$
 \end_inset
 
-, with the range called 
+,
+ with the range called 
 \emph on
 indexed set
 \emph default
-, and the function itself is called 
+,
+ and the function itself is called 
 \emph on
-family, 
+family,
+ 
 \emph default
 and each value of the family is called a 
 \emph on
@@ -2414,8 +2563,8 @@ literal "false"
 
 \end_inset
 
- is the range of some family, considering the identity mapping on the collection
- in the role of the family.
+ is the range of some family,
+ considering the identity mapping on the collection in the role of the family.
  The family of
 \end_layout
 
@@ -2428,11 +2577,13 @@ Suppose that
 \begin_inset Formula $J$
 \end_inset
 
-; write 
+;
+ write 
 \begin_inset Formula $K=\bigcup_{j}I_{j}$
 \end_inset
 
-, and let 
+,
+ and let 
 \begin_inset Formula $\left\{ A_{k}\right\} $
 \end_inset
 
@@ -2440,7 +2591,8 @@ Suppose that
 \begin_inset Formula $K$
 \end_inset
 
-, then
+,
+ then
 \end_layout
 
 \begin_layout Standard
@@ -2508,11 +2660,9 @@ Note
 \end_layout
 
 \begin_layout Standard
-The notation of families is normally used in generalizing the concept of
- Cartesian product.
- There is a natural one-to-one correspondence between Cartesian products
- and a certain set of families, thus renders the difference between them
- a mere matter of notation.
+The notation of families is normally used in generalizing the concept of Cartesian product.
+ There is a natural one-to-one correspondence between Cartesian products and a certain set of families,
+ thus renders the difference between them a mere matter of notation.
 \end_layout
 
 \begin_layout Definition*
@@ -2536,7 +2686,8 @@ If
 \begin_inset Formula $\left(i\in I\right)$
 \end_inset
 
-, the Cartesian product of the family is the set of all families 
+,
+ the Cartesian product of the family is the set of all families 
 \begin_inset Formula $\left\{ x_{i}\right\} $
 \end_inset
 
@@ -2568,23 +2719,25 @@ If
 \end_layout
 
 \begin_layout Standard
-Ordered triples, ordered quadruples, etc.
- may be defined as families whose index sets are unordered triples, quardruples.
+Ordered triples,
+ ordered quadruples,
+ etc.
+ may be defined as families whose index sets are unordered triples,
+ quardruples.
 \end_layout
 
 \begin_layout Standard
-The coordinates and partial Cartesian product can be obtained by restricting
- the index set.
+The coordinates and partial Cartesian product can be obtained by restricting the index set.
  Let 
 \begin_inset Formula $J\subset I$
 \end_inset
 
-, then to each element of 
+,
+ then to each element of 
 \begin_inset Formula $X$
 \end_inset
 
- there corresponds in a natural way an element of the partial Cartesian
- product 
+ there corresponds in a natural way an element of the partial Cartesian product 
 \begin_inset Formula $\mathsf{X}_{i\in J}X_{i}$
 \end_inset
 
@@ -2604,11 +2757,13 @@ If
 \begin_inset Formula $X$
 \end_inset
 
-, the domain of a function 
+,
+ the domain of a function 
 \begin_inset Formula $f$
 \end_inset
 
-, then
+,
+ then
 \end_layout
 
 \begin_layout Lemma*
@@ -2643,11 +2798,13 @@ Given a function
 \begin_inset Formula $Y$
 \end_inset
 
-, let 
+,
+ let 
 \begin_inset Formula $f^{-1}$
 \end_inset
 
-, the 
+,
+ the 
 \emph on
 inverse
 \emph default
@@ -2655,7 +2812,8 @@ inverse
 \begin_inset Formula $f$
 \end_inset
 
-, be the function from 
+,
+ be the function from 
 \begin_inset Formula $P\left(Y\right)$
 \end_inset
 
@@ -2668,7 +2826,8 @@ inverse
 \begin_inset Formula $B\subset Y$
 \end_inset
 
-, then
+,
+ then
 \end_layout
 
 \begin_layout Definition*
@@ -2744,12 +2903,13 @@ The symbol
 \begin_inset Formula $f^{-1}$
 \end_inset
 
- is frequently assigned a second interpretation, namely as the function
- whose domain is the range of 
+ is frequently assigned a second interpretation,
+ namely as the function whose domain is the range of 
 \begin_inset Formula $f$
 \end_inset
 
-, and whose value for each 
+,
+ and whose value for each 
 \begin_inset Formula $y$
 \end_inset
 
@@ -2781,16 +2941,19 @@ If
 \begin_inset Formula $B\subset Y$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $f\left(f^{-1}\left(B\right)\right)\subset B$
 \end_inset
 
 .
- Moreover, if 
+ Moreover,
+ if 
 \begin_inset Formula $f$
 \end_inset
 
- is surjective, then 
+ is surjective,
+ then 
 \begin_inset Formula $f\left(f^{-1}\left(B\right)\right)=B$
 \end_inset
 
@@ -2809,16 +2972,19 @@ If
 \begin_inset Formula $A\subset X$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $A\subset f^{-1}\left(f\left(A\right)\right)$
 \end_inset
 
 .
- Moreover, if 
+ Moreover,
+ if 
 \begin_inset Formula $f$
 \end_inset
 
- is injective, then 
+ is injective,
+ then 
 \begin_inset Formula $A=f^{-1}\left(f\left(A\right)\right)$
 \end_inset
 
@@ -2841,7 +3007,8 @@ If
 \begin_inset Formula $Y$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $B$
 \end_inset
 
@@ -2849,7 +3016,8 @@ If
 \begin_inset Formula $Y$
 \end_inset
 
-, then
+,
+ then
 \begin_inset Formula 
 \begin{align*}
 f^{-1}\left(\bigcup_{i}B_{i}\right) & =\bigcup_{i}f^{-1}\left(B_{i}\right)\\
@@ -2867,8 +3035,7 @@ The last euqation is kind of commutative law
 \end_layout
 
 \begin_layout Standard
-The discussion of inverses shows that what a function does can in a certain
- sense undone.
+The discussion of inverses shows that what a function does can in a certain sense undone.
  Two functions do can sometimes be done in one step.
 \end_layout
 
@@ -2896,7 +3063,8 @@ The discussion of inverses shows that what a function does can in a certain
 \begin_inset Formula $Z$
 \end_inset
 
-, then every element in the range of 
+,
+ then every element in the range of 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2904,7 +3072,8 @@ The discussion of inverses shows that what a function does can in a certain
 \begin_inset Formula $g$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $g\left(f\left(x\right)\right)$
 \end_inset
 
@@ -2916,7 +3085,8 @@ The discussion of inverses shows that what a function does can in a certain
 \begin_inset Formula $X$
 \end_inset
 
-, denoted by 
+,
+ denoted by 
 \begin_inset Formula $h=g\left(f\left(x\right)\right)$
 \end_inset
 
@@ -2940,7 +3110,8 @@ of the functions
 \begin_inset Formula $g$
 \end_inset
 
-, denoted by 
+,
+ denoted by 
 \begin_inset Formula 
 \[
 g\circ f
@@ -2952,7 +3123,8 @@ g\circ f
 \end_layout
 
 \begin_layout Standard
-Functional composition is not commutative, but always associative.
+Functional composition is not commutative,
+ but always associative.
 \end_layout
 
 \begin_layout Proposition*
@@ -2964,7 +3136,8 @@ Let
 \begin_inset Formula $g\colon Y\mapsto Z$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $g\circ f$
 \end_inset
 
@@ -2976,8 +3149,7 @@ Let
 \end_layout
 
 \begin_layout Standard
-Inversion and composition for functions are cases of similar operations
- for relations.
+Inversion and composition for functions are cases of similar operations for relations.
  Associated with every relation 
 \begin_inset Formula $R$
 \end_inset
@@ -3056,7 +3228,8 @@ converse
 \begin_inset Formula $Z$
 \end_inset
 
-, is defined so that 
+,
+ is defined so that 
 \begin_inset Formula $x~T~z$
 \end_inset
 
@@ -3078,21 +3251,22 @@ converse
 \end_inset
 
 .
- The algebraic properties of inversion and composition are the same for
- relations as for functions.
+ The algebraic properties of inversion and composition are the same for relations as for functions.
 \end_layout
 
 \begin_layout Standard
-The three defining properties of an equivalence relation can be formulated
- in algebraic terms as: reflexitivity means 
+The three defining properties of an equivalence relation can be formulated in algebraic terms as:
+ reflexitivity means 
 \begin_inset Formula $I\subset R$
 \end_inset
 
-, symmetry means 
+,
+ symmetry means 
 \begin_inset Formula $R\subset R^{-1}$
 \end_inset
 
-, and transitivity means 
+,
+ and transitivity means 
 \begin_inset Formula $RR\subset R$
 \end_inset
 
@@ -3104,7 +3278,8 @@ numbers
 \end_layout
 
 \begin_layout Standard
-To construct numbers, for every set 
+To construct numbers,
+ for every set 
 \begin_inset Formula $x$
 \end_inset
 
@@ -3140,7 +3315,8 @@ In defining
 \begin_inset Formula $0$
 \end_inset
 
- to be a set with zero elements, we have no choice
+ to be a set with zero elements,
+ we have no choice
 \begin_inset Formula 
 \[
 0=\varnothing
@@ -3166,8 +3342,8 @@ then
 \end_layout
 
 \begin_layout Standard
-To allow the construction to be carried out ad infinitum, note we haven't
- defined infinity yet.
+To allow the construction to be carried out ad infinitum,
+ note we haven't defined infinity yet.
 \end_layout
 
 \begin_layout Proposition*
@@ -3190,8 +3366,7 @@ There exists a set containing
 \end_layout
 
 \begin_layout Standard
-Sets such as the ones that the axiom of infinity describes deserve to be
- called 
+Sets such as the ones that the axiom of infinity describes deserve to be called 
 \emph on
 infinite
 \emph default
@@ -3234,7 +3409,9 @@ A
 \emph on
 natural number 
 \emph default
-is, by definition, an element of the minimal successor set.
+is,
+ by definition,
+ an element of the minimal successor set.
 \end_layout
 
 \begin_layout Standard
@@ -3253,8 +3430,7 @@ A family
 \begin_inset Formula $\left\{ x_{i}\right\} $
 \end_inset
 
- whose index set is either a natural number (finite) or else the set of
- all natural numbers (infinite) by called a sequence
+ whose index set is either a natural number (finite) or else the set of all natural numbers (infinite) by called a sequence
 \end_layout
 
 \begin_layout Standard
@@ -3287,7 +3463,8 @@ if
 \begin_inset Formula $n\in\omega$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $n^{+}\in\omega$
 \end_inset
 
@@ -3319,7 +3496,8 @@ if
 \begin_inset Formula $S\subset\omega$
 \end_inset
 
-, if 
+,
+ if 
 \begin_inset Formula $0\in S$
 \end_inset
 
@@ -3331,7 +3509,8 @@ if
 \begin_inset Formula $n\in S$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $S=\omega$
 \end_inset
 
@@ -3369,7 +3548,8 @@ Since
 \begin_inset Formula $n$
 \end_inset
 
-, but 
+,
+ but 
 \begin_inset Formula $0$
 \end_inset
 
@@ -3400,7 +3580,8 @@ if
 \begin_inset Formula $n^{+}=m^{+}$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $n=m$
 \end_inset
 
@@ -3415,7 +3596,8 @@ if
 \end_layout
 
 \begin_layout Proof
-To prove this proposition, we need to prove
+To prove this proposition,
+ we need to prove
 \end_layout
 
 \begin_layout Proof
@@ -3424,7 +3606,8 @@ i.
 \end_layout
 
 \begin_layout Proof
-By mathematical induction, let 
+By mathematical induction,
+ let 
 \begin_inset Formula $S$
 \end_inset
 
@@ -3433,7 +3616,8 @@ By mathematical induction, let
 \end_inset
 
  that are not included in any of their elements.
- Obviously, 
+ Obviously,
+ 
 \begin_inset Formula $0\in S$
 \end_inset
 
@@ -3442,27 +3626,33 @@ By mathematical induction, let
 \begin_inset Formula $n\in S$
 \end_inset
 
-, and 
+,
+ and 
 \begin_inset Formula $n^{+}=n\cup\left\{ n\right\} $
 \end_inset
 
-, suppose 
+,
+ suppose 
 \begin_inset Formula $n^{+}\subset x$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $n\subset x$
 \end_inset
 
-, hence 
+,
+ hence 
 \begin_inset Formula $x\notin n$
 \end_inset
 
-, otherwise 
+,
+ otherwise 
 \begin_inset Formula $n\notin S$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $n^{+}$
 \end_inset
 
@@ -3470,15 +3660,18 @@ By mathematical induction, let
 \begin_inset Formula $n$
 \end_inset
 
-, and if 
+,
+ and if 
 \begin_inset Formula $n^{+}\subset n$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $n\in n$
 \end_inset
 
-, but 
+,
+ but 
 \begin_inset Formula $n\notin n$
 \end_inset
 
@@ -3502,7 +3695,8 @@ ii.
 \begin_inset Formula $y\in E$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $x\in E$
 \end_inset
 
@@ -3529,7 +3723,8 @@ Let
 \begin_inset Formula $x\in n^{+}$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $x=n$
 \end_inset
 
@@ -3537,7 +3732,8 @@ Let
 \begin_inset Formula $x\in n$
 \end_inset
 
-, in either case 
+,
+ in either case 
 \begin_inset Formula $x\subset n^{+}$
 \end_inset
 
@@ -3555,7 +3751,8 @@ Let prove the original proposition now.
 \begin_inset Formula $n\in n^{+}$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $n\in m^{+},$
 \end_inset
 
@@ -3581,7 +3778,8 @@ Let prove the original proposition now.
 \begin_inset Formula $m\neq n$
 \end_inset
 
-, then we must have 
+,
+ then we must have 
 \begin_inset Formula $n\in m$
 \end_inset
 
@@ -3589,25 +3787,26 @@ Let prove the original proposition now.
 \begin_inset Formula $m\in n$
 \end_inset
 
-, from the second auxilliary proposition 
+,
+ from the second auxilliary proposition 
 \begin_inset Formula $n\subset n$
 \end_inset
 
-, which contradicts the first auxilliary proposition.
+,
+ which contradicts the first auxilliary proposition.
 \end_layout
 
 \begin_layout Standard
 The above five propositions are known as the peano axioms.
- From them it is possible to define intergers, rational numbers, real numbers
- and complex numbers and to derive their usual arithmetic and analytic propertie
-s.
+ From them it is possible to define intergers,
+ rational numbers,
+ real numbers and complex numbers and to derive their usual arithmetic and analytic properties.
 \end_layout
 
 \begin_layout Standard
 Induction is often used not only to prove things but also define things.
- The principle of mathematical induction does indeed prove that there can
- be at most one function satisfyin g all the stated conditions, but it does
- not establish the existence of such a function.
+ The principle of mathematical induction does indeed prove that there can be at most one function satisfyin g all the stated conditions,
+ but it does not establish the existence of such a function.
  To prove the existence,
 \end_layout
 
@@ -3624,7 +3823,8 @@ if
 \begin_inset Formula $X$
 \end_inset
 
-, and if 
+,
+ and if 
 \begin_inset Formula $f$
 \end_inset
 
@@ -3636,7 +3836,8 @@ if
 \begin_inset Formula $X$
 \end_inset
 
-, then there exists a function 
+,
+ then there exists a function 
 \begin_inset Formula $u$
 \end_inset
 
@@ -3685,8 +3886,7 @@ Arithmetic
 \end_layout
 
 \begin_layout Standard
-The introduction of addtion for natural number is a typical example of definitio
-n by induction.
+The introduction of addtion for natural number is a typical example of definition by induction.
 \end_layout
 
 \begin_layout Definition*
@@ -3723,7 +3923,8 @@ For each natural number
 \begin_inset Formula $n$
 \end_inset
 
-; the value 
+;
+ the value 
 \begin_inset Formula $s_{m}\left(n\right)$
 \end_inset
 
@@ -3735,8 +3936,7 @@ For each natural number
 \end_layout
 
 \begin_layout Standard
-The general arithmetic properties of addition are proved by repeated application
-s of the principle of mathematical induction.
+The general arithmetic properties of addition are proved by repeated applications of the principle of mathematical induction.
 \end_layout
 
 \begin_layout Definition*
@@ -3891,7 +4091,8 @@ a.
 \begin_inset Formula $0=0$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $0\in S\left(0\right)$
 \end_inset
 
@@ -3904,7 +4105,9 @@ b.
 \begin_inset Formula $m\in S\left(0\right)$
 \end_inset
 
-, that is, either 
+,
+ that is,
+ either 
 \begin_inset Formula $0\in m$
 \end_inset
 
@@ -3920,7 +4123,8 @@ b.
 \begin_inset Formula $0\in m^{+}$
 \end_inset
 
-), thus 
+),
+ thus 
 \begin_inset Formula $m^{+}\in S\left(0\right)$
 \end_inset
 
@@ -3933,7 +4137,8 @@ b.
 \begin_inset Formula $S\left(n\right)=\omega$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $S\left(n^{+}\right)=\omega$
 \end_inset
 
@@ -3950,7 +4155,9 @@ a.
 \begin_inset Formula $n$
 \end_inset
 
- are comparable, that is, either 
+ are comparable,
+ that is,
+ either 
 \begin_inset Formula $0\in n$
 \end_inset
 
@@ -3966,7 +4173,8 @@ a.
 \begin_inset Formula $0\in n^{+}$
 \end_inset
 
-), thus 
+),
+ thus 
 \begin_inset Formula $0\in S\left(n^{+}\right)$
 \end_inset
 
@@ -3979,7 +4187,8 @@ b.
 \begin_inset Formula $m\in S\left(n^{+}\right)$
 \end_inset
 
-, when 
+,
+ when 
 \begin_inset Formula $m=n^{+}$
 \end_inset
 
@@ -3987,7 +4196,8 @@ b.
 \begin_inset Formula $n^{+}\in m$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $n^{+}\in m^{+}$
 \end_inset
 
@@ -3996,7 +4206,8 @@ b.
 \begin_inset Formula $m\in n^{+}$
 \end_inset
 
-, either 
+,
+ either 
 \begin_inset Formula $m=n$
 \end_inset
 
@@ -4009,15 +4220,18 @@ b.
 \end_inset
 
 .
- In the latter case, since 
+ In the latter case,
+ since 
 \begin_inset Formula $m^{+}\in S\left(n\right)$
 \end_inset
 
-, either 
+,
+ either 
 \begin_inset Formula $n\in m^{+}$
 \end_inset
 
-, or 
+,
+ or 
 \begin_inset Formula $n=m^{+}$
 \end_inset
 
@@ -4042,7 +4256,8 @@ b.
 \begin_inset Formula $n=m$
 \end_inset
 
-, which contradicts the fact that 
+,
+ which contradicts the fact that 
 \begin_inset Formula $m\in n$
 \end_inset
 
@@ -4061,9 +4276,11 @@ b.
 \end_layout
 
 \begin_layout Standard
-In fact, always exactly one of the three possibilities holds.
- If any two of them hold, it would conclude that some natural number belong
- to itself, which is not true.
+In fact,
+ always exactly one of the three possibilities holds.
+ If any two of them hold,
+ it would conclude that some natural number belong to itself,
+ which is not true.
 \end_layout
 
 \begin_layout Standard
@@ -4071,11 +4288,13 @@ The three relations are rewritten as
 \begin_inset Formula $m<n$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $m=n$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $m>n$
 \end_inset
 
@@ -4084,7 +4303,8 @@ The three relations are rewritten as
 \begin_inset Formula $n$
 \end_inset
 
-, if 
+,
+ if 
 \begin_inset Formula $a\in n$
 \end_inset
 
@@ -4092,7 +4312,8 @@ The three relations are rewritten as
 \begin_inset Formula $b\in a$
 \end_inset
 
-, i.e.
+,
+ i.e.
  
 \begin_inset Formula $a<n$
 \end_inset
@@ -4101,11 +4322,13 @@ The three relations are rewritten as
 \begin_inset Formula $b<a$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $a\subset n$
 \end_inset
 
-, which implies 
+,
+ which implies 
 \begin_inset Formula $b\in a$
 \end_inset
 
@@ -4125,11 +4348,13 @@ Two sets
 \begin_inset Formula $F$
 \end_inset
 
- are called equivalent, in symbols 
+ are called equivalent,
+ in symbols 
 \begin_inset Formula $E\sim F$
 \end_inset
 
-, if there exists a one-to-one correspondence (bijection) between them.
+,
+ if there exists a one-to-one correspondence (bijection) between them.
 \end_layout
 
 \begin_layout Proposition*
@@ -4146,7 +4371,8 @@ By induction.
 \begin_inset Formula $n$
 \end_inset
 
-, and if 
+,
+ and if 
 \begin_inset Formula $E$
 \end_inset
 
@@ -4154,7 +4380,8 @@ By induction.
 \begin_inset Formula $n^{+}$
 \end_inset
 
-, then either 
+,
+ then either 
 \begin_inset Formula $E\subsetneq n$
 \end_inset
 
@@ -4167,7 +4394,8 @@ By induction.
 \end_inset
 
 .
- In the latter case, find a number 
+ In the latter case,
+ find a number 
 \begin_inset Formula $k$
 \end_inset
 
@@ -4179,7 +4407,8 @@ By induction.
 \begin_inset Formula $E$
 \end_inset
 
- (there must be one, otherwise 
+ (there must be one,
+ otherwise 
 \begin_inset Formula $E=n^{+}$
 \end_inset
 
@@ -4220,16 +4449,19 @@ By induction.
 \begin_inset Formula $n$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\text{range }f\subset n$
 \end_inset
 
-, which is equivalent to some smaller natural number in 
+,
+ which is equivalent to some smaller natural number in 
 \begin_inset Formula $n$
 \end_inset
 
 .
- By composite, 
+ By composite,
+ 
 \begin_inset Formula $E$
 \end_inset
 
@@ -4242,7 +4474,8 @@ By induction.
 \end_inset
 
  itself.
- In all the cases, 
+ In all the cases,
+ 
 \begin_inset Formula $E$
 \end_inset
 
@@ -4265,7 +4498,8 @@ If
 \begin_inset Formula $n\in\omega$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $n$
 \end_inset
 
@@ -4289,7 +4523,8 @@ A set
 \emph on
 finite
 \emph default
- if it is equivalent to some natural number; otherwise it is 
+ if it is equivalent to some natural number;
+ otherwise it is 
 \emph on
 infinite
 \emph default
@@ -4306,8 +4541,8 @@ infinite
 \begin_layout Standard
 A set can be equivalent to at most one natural number.
  A finite set is never equivalent to a proper subset.
- As long as we stick to finite sets, the whole is always greater than any
- of its parts.
+ As long as we stick to finite sets,
+ the whole is always greater than any of its parts.
 \end_layout
 
 \begin_layout Proposition*
@@ -4323,11 +4558,13 @@ A set can be equivalent to at most one natural number.
 \begin_inset Formula $\omega$
 \end_inset
 
- is finite, define a function 
+ is finite,
+ define a function 
 \begin_inset Formula $f\left(n\right)=n^{+}$
 \end_inset
 
-, it is easy to show that 
+,
+ it is easy to show that 
 \begin_inset Formula $\omega$
 \end_inset
 
@@ -4335,7 +4572,8 @@ A set can be equivalent to at most one natural number.
 \begin_inset Formula $\omega\backslash\left\{ 0\right\} $
 \end_inset
 
-, which is impossible for a finite set.
+,
+ which is impossible for a finite set.
 \end_layout
 
 \begin_layout Proof
@@ -4364,7 +4602,8 @@ number of elements
 \begin_inset Formula $E$
 \end_inset
 
-, denoted by 
+,
+ denoted by 
 \begin_inset Formula $\#E$
 \end_inset
 
@@ -4387,7 +4626,8 @@ If
 \begin_inset Formula $F$
 \end_inset
 
- are finite sets, then 
+ are finite sets,
+ then 
 \begin_inset Formula $E\cup F$
 \end_inset
 
@@ -4399,7 +4639,8 @@ If
 \begin_inset Formula $F$
 \end_inset
 
- are disjoint, then
+ are disjoint,
+ then
 \begin_inset Formula 
 \[
 \#\left(E\cup F\right)=\#E+\#F.
@@ -4427,7 +4668,8 @@ The union of a finite set of finite sets is finite.
 \begin_inset Formula $E$
 \end_inset
 
- is finite, then 
+ is finite,
+ then 
 \begin_inset Formula $P\left(E\right)$
 \end_inset
 
@@ -4447,8 +4689,8 @@ If
 \begin_inset Formula $E$
 \end_inset
 
- is a non-empty finite set of natural numbers, then there exists an element
- 
+ is a non-empty finite set of natural numbers,
+ then there exists an element 
 \begin_inset Formula $k$
 \end_inset
 
@@ -4495,8 +4737,7 @@ order
 \end_layout
 
 \begin_layout Standard
-The only thing to remember is that the primary motivation comes from the
- familiar properties of 
+The only thing to remember is that the primary motivation comes from the familiar properties of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4513,8 +4754,8 @@ less than
 \end_inset
 
 .
- There is no profound reason for this; it just happens that the generalizaation
- of 
+ There is no profound reason for this;
+ it just happens that the generalizaation of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4554,7 +4795,8 @@ antisymmetric
 \begin_inset Formula $X$
 \end_inset
 
-, the simultaneous validity of 
+,
+ the simultaneous validity of 
 \begin_inset Formula $x~R~y$
 \end_inset
 
@@ -4581,7 +4823,8 @@ A partial order in a set
 \begin_inset Formula $X$
 \end_inset
 
- is a reflexive, antisymmetric and transitive relation in 
+ is a reflexive,
+ antisymmetric and transitive relation in 
 \begin_inset Formula $X$
 \end_inset
 
@@ -4606,7 +4849,8 @@ A partial order in
 \begin_inset Formula $x$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $y$
 \end_inset
 
@@ -4618,7 +4862,8 @@ A partial order in
 \begin_inset Formula $X$
 \end_inset
 
-, we have
+,
+ we have
 \end_layout
 
 \begin_layout Definition
@@ -4640,7 +4885,8 @@ ii.
 \begin_inset Formula $y\leqq x$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $x=y$
 \end_inset
 
@@ -4657,7 +4903,8 @@ iii.
 \begin_inset Formula $y\leqq z$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $x\leqq z$
 \end_inset
 
@@ -4704,7 +4951,8 @@ if for every
 \begin_inset Formula $y\leqq x$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $\leqq$
 \end_inset
 
@@ -4727,7 +4975,8 @@ chain.
 
 \begin_layout Standard
 e.g.
- inclusion in a power set is a partial order; 
+ inclusion in a power set is a partial order;
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4735,8 +4984,8 @@ less than or equal to
 \begin_inset Quotes erd
 \end_inset
 
- in the set of natural number is a total order; the relation of extension
- for functions is a partial order.
+ in the set of natural number is a total order;
+ the relation of extension for functions is a partial order.
 \end_layout
 
 \begin_layout Definition
@@ -4744,7 +4993,8 @@ a partially ordered set is an ordered pair
 \begin_inset Formula $\left(X,\leqq\right)$
 \end_inset
 
- , where 
+ ,
+ where 
 \begin_inset Formula $X$
 \end_inset
 
@@ -4767,11 +5017,12 @@ a partially ordered set is an ordered pair
 \end_layout
 
 \begin_layout Standard
-This kind of definition is very common in mathematics; a mathematics structure
- is almost always a set together with soem specified other sets, functions,
+This kind of definition is very common in mathematics;
+ a mathematics structure is almost always a set together with soem specified other sets,
+ functions,
  and relations.
- The accepted way of making such definitions precise is by reference to
- ordered pairs, triples or whatever is appropriate.
+ The accepted way of making such definitions precise is by reference to ordered pairs,
+ triples or whatever is appropriate.
 \end_layout
 
 \begin_layout Standard
@@ -4783,7 +5034,8 @@ If
 \begin_inset Formula $x\neq y$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $x$
 \end_inset
 
@@ -4821,7 +5073,8 @@ The connection between
 \begin_inset Formula $X$
 \end_inset
 
-, we can define a relation 
+,
+ we can define a relation 
 \begin_inset Formula $S$
 \end_inset
 
@@ -4862,7 +5115,8 @@ If
 \begin_inset Formula $X$
 \end_inset
 
- is a partially ordered set, then it could happen that 
+ is a partially ordered set,
+ then it could happen that 
 \begin_inset Formula $X$
 \end_inset
 
@@ -4888,7 +5142,8 @@ If
 \begin_inset Formula $X$
 \end_inset
 
- has a least element, then it has only one.
+ has a least element,
+ then it has only one.
  Similar for the greatest element.
 \end_layout
 
@@ -4904,11 +5159,16 @@ If
 \begin_inset Formula $x=a$
 \end_inset
 
-, similar for maximal, which are different from least/greatest elements.
+,
+ similar for maximal,
+ which are different from least/greatest elements.
 \end_layout
 
 \begin_layout Definition
-Upper bound, lower bound, infimum, supremum
+Upper bound,
+ lower bound,
+ infimum,
+ supremum
 \end_layout
 
 \begin_layout Standard
@@ -4938,9 +5198,9 @@ The Cartesian product of a non-empty family of non-empty sets is non-empty
 \end_layout
 
 \begin_layout Standard
-If the collection of sets we are choosing from is finite, then the possibility
- of simultaneous choice is an easy consequence; the role of the axiom of
- choice is to guarantee that possibility in infinite cases.
+If the collection of sets we are choosing from is finite,
+ then the possibility of simultaneous choice is an easy consequence;
+ the role of the axiom of choice is to guarantee that possibility in infinite cases.
 \end_layout
 
 \begin_layout Standard
@@ -4961,11 +5221,13 @@ There exists a function
 \begin_inset Formula $A$
 \end_inset
 
- is in that domain, then 
+ is in that domain,
+ then 
 \begin_inset Formula $f\left(A\right)\in A$
 \end_inset
 
-, called a 
+,
+ called a 
 \series bold
 choice function
 \emph on
