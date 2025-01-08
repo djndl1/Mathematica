@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -11,11 +11,11 @@ theorems-ams
 eqs-within-sections
 figs-within-sections
 \end_modules
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -23,7 +23,9 @@ figs-within-sections
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -57,7 +59,9 @@ figs-within-sections
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -73,11 +77,16 @@ figs-within-sections
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -98,9 +107,75 @@ Import-Export
 \end_layout
 
 \begin_layout Standard
-This is commonly used and is the traditional way to prove the equivalence
- of two implications.
+This is commonly used and is the traditional way to prove the equivalence of two implications.
  This is easy to prove (??).
+\end_layout
+
+\begin_layout Section
+How to disprove an implication
+\end_layout
+
+\begin_layout Standard
+To disprove 
+\begin_inset Formula $\forall x\,P\left(x\right)\implies Q\left(x\right)$
+\end_inset
+
+,
+ there must be a case where 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ holds but 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ is false,
+ that is 
+\begin_inset Formula $\exists x\,P\left(x\right)\land\lnot Q\left(x)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ is a rational number and 
+\begin_inset Formula $b$
+\end_inset
+
+ is irrational,
+ then 
+\begin_inset Formula $a+b$
+\end_inset
+
+ must be irrational.
+\end_layout
+
+\begin_layout Proof
+Negate the implication,
+ that is,
+ since this implication is false,
+ there must be a case where the condition is correct,
+ but 
+\begin_inset Formula $a+b$
+\end_inset
+
+ is rational (the real number field is closed),
+ then 
+\begin_inset Formula $\left(a+b\right)-a=b$
+\end_inset
+
+ is rational,
+ contradicting the assumption that 
+\begin_inset Formula $b$
+\end_inset
+
+ is irrational.
+ This means we cannot negate this implication,
+ and thus this implication must be true.
 \end_layout
 
 \end_body
