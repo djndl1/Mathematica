@@ -116,6 +116,39 @@ How to disprove an implication
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+\lnot\left(P\implies Q\right)\equiv P\land\lnot Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This should be obvious:
+ given 
+\begin_inset Formula $P$
+\end_inset
+
+ is true,
+ for this implication to be false,
+ 
+\begin_inset Formula $Q$
+\end_inset
+
+ cannot be true,
+ otherwise the implication is true,
+ so 
+\begin_inset Formula $Q$
+\end_inset
+
+ must be false,
+ thus the above.
+\end_layout
+
+\begin_layout Standard
 To disprove 
 \begin_inset Formula $\forall x\,P\left(x\right)\implies Q\left(x\right)$
 \end_inset
@@ -135,6 +168,38 @@ To disprove
 \end_inset
 
 
+\end_layout
+
+\begin_layout Remark*
+Truth table is not really evil,
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+given 
+\begin_inset Formula $P$
+\end_inset
+
+ is true
+\begin_inset Quotes erd
+\end_inset
+
+ part above is basically the mindset behind truth table:
+ enumeraing scenarios.
+ We do not usually use the negation 
+\begin_inset Formula $P\implies Q\equiv\lnot P\lor Q$
+\end_inset
+
+ simply because the straightforward way requyires only one case 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $Q$
+\end_inset
+
+,
+ whereas the right side requires evalution of the expression.
 \end_layout
 
 \begin_layout Example*
