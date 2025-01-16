@@ -1,0 +1,288 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children no
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Function limit and composite functions
+\end_layout
+
+\begin_layout Standard
+It is not true that if 
+\begin_inset Formula $\lim_{x\to c}g\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to L}f\left(x\right)=u$
+\end_inset
+
+ then 
+\begin_inset Formula $\lim_{x\to c}f\left(g\left(x\right)\right)=u$
+\end_inset
+
+.
+ An counterexample is 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+4 & \text{if }x\neq7\\
+3 & \text{if }x=7
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $g\left(x\right)=7$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\lim_{u\to7}f\left(u\right)=4$
+\end_inset
+
+,
+ but 
+\begin_inset Formula $\lim_{u\to7}f\left(g\left(x\right)\right)=\lim_{u\to7}f\left(7\right)=\lim_{u\to7}3=3$
+\end_inset
+
+.
+ The definition of function limit never reaches the target value,
+ rather approaches it.
+ What if 
+\begin_inset Formula $u=7$
+\end_inset
+
+ for 
+\begin_inset Formula $f\left(u\right)$
+\end_inset
+
+?
+ The two limits above do guarantee that when 
+\begin_inset Formula $x$
+\end_inset
+
+ approaches 
+\begin_inset Formula $c$
+\end_inset
+
+,
+ 
+\begin_inset Formula $u$
+\end_inset
+
+ approaches 
+\begin_inset Formula $c$
+\end_inset
+
+,
+ but not that 
+\begin_inset Formula $u$
+\end_inset
+
+ is not equal 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ It is likely that 
+\begin_inset Formula $\lim_{u\to L}f\left(L\right)$
+\end_inset
+
+ is not equal to 
+\begin_inset Formula $\lim_{u\to L}f\left(x\right)$
+\end_inset
+
+ .
+ If 
+\begin_inset Formula $g$
+\end_inset
+
+ takes 
+\begin_inset Formula $L$
+\end_inset
+
+ near 
+\begin_inset Formula $c$
+\end_inset
+
+,
+ say 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+,
+ then 
+\begin_inset Formula $f\left(g\left(x_{0}\right)\right)=f\left(L\right)$
+\end_inset
+
+,
+ and 
+\begin_inset Formula $\left|f\left(L\right)-u\right|<\varepsilon$
+\end_inset
+
+ no longer holds for any 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+An extra necessary condition is required either of the following is sufficient:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left|f\left(L\right)-u\right|=0<\varepsilon$
+\end_inset
+
+ even if 
+\begin_inset Formula $g$
+\end_inset
+
+ takes 
+\begin_inset Formula $L$
+\end_inset
+
+ near 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g$
+\end_inset
+
+ does not take the value 
+\begin_inset Formula $L$
+\end_inset
+
+ near 
+\begin_inset Formula $c$
+\end_inset
+
+,
+ that is,
+ 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+ s.t.
+ if 
+\begin_inset Formula $0<\left|x-a\right|<\delta$
+\end_inset
+
+ then 
+\begin_inset Formula $\left|g\left(x\right)-L\right|>0$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
