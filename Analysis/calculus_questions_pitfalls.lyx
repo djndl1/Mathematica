@@ -94,6 +94,21 @@ figs-within-sections
 \begin_body
 
 \begin_layout Section
+Intuitively Understanding Limits
+\end_layout
+
+\begin_layout Standard
+Limit is about the behavior of a function when the independent variable approaches a point,
+ not actually when it reaches there.
+ The definition simply says for any error 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+,
+ the function can be as close as is required near the point.
+\end_layout
+
+\begin_layout Section
 Function limit and composite functions
 \end_layout
 
