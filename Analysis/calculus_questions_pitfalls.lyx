@@ -109,6 +109,61 @@ Limit is about the behavior of a function when the independent variable approach
 \end_layout
 
 \begin_layout Section
+Infinitesimal Functions
+\end_layout
+
+\begin_layout Standard
+The termi 
+\begin_inset Quotes eld
+\end_inset
+
+infinitesimal
+\begin_inset Quotes erd
+\end_inset
+
+,
+ evolved from its original meaning by Leibniz,
+ has been used to refer to a function tending to zero.
+ This term comes from the intuition that as 
+\begin_inset Formula $f$
+\end_inset
+
+ approaches 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f\left(x\right)-A$
+\end_inset
+
+ becomes infinitely small.
+ And since 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=A$
+\end_inset
+
+,
+ then 
+\begin_inset Formula $\lim_{x\to a}\left[f\left(x\right)-A\right]=0$
+\end_inset
+
+,
+ that is,
+ this difference function tends to zero (becomes infinitely small,
+ infinitesimal),
+ which conforms to the definition of an 
+\emph on
+infinitesimal function
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Aside from Tongji's Higher Mathmatics,
+ refer to Sternberg's Advnced Calculus for more rigorous treatment.
+\end_layout
+
+\begin_layout Section
 Function limit and composite functions
 \end_layout
 
@@ -294,6 +349,209 @@ An extra necessary condition is required either of the following is sufficient:
 
  then 
 \begin_inset Formula $\left|g\left(x\right)-L\right|>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Limit of function in interval
+\end_layout
+
+\begin_layout Theorem*
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a real function on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi\in\left(a,b\right)$
+\end_inset
+
+,
+ suppose that 
+\begin_inset Formula $\forall x\in\left(a,b\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\xi\leq f\left(x\right)\leq x$
+\end_inset
+
+ or 
+\begin_inset Formula $x\leq f\left(x\right)\leq\xi$
+\end_inset
+
+,
+ then 
+\begin_inset Formula 
+\[
+\lim_{x\to\xi}f\left(x\right)=\xi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+By Squeeze Theorem
+\end_layout
+
+\begin_layout Remark*
+This theorem is useful when some statements introduce an intermediate value between two other values.
+ For example,
+ when dealing with Cauchy or Lagrange Mean Value Theorem,
+ there is a 
+\begin_inset Formula $\xi$
+\end_inset
+
+ between the two end points so that the function derivative at 
+\begin_inset Formula $\xi$
+\end_inset
+
+ is equal to some difference or ratio equations.
+ When proving L'Hopital's Rule with the Cauchy mean value theorem,
+ the limit of the ratio of two infinitesimal functions
+\begin_inset Formula 
+\[
+\lim_{x\to a}\frac{f\left(x\right)}{g\left(x\right)}=\lim_{x\to a}\frac{f^{\prime}\left(\xi\right)}{g^{\prime}\left(\xi\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+where 
+\begin_inset Formula $a<\xi<x$
+\end_inset
+
+,
+ and a function of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $x\to a$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\xi\to a$
+\end_inset
+
+,
+ and since 
+\begin_inset Formula $\xi=F\left(x\right)$
+\end_inset
+
+ can never take 
+\begin_inset Formula $a$
+\end_inset
+
+ (the inequality),
+ by the limit of compsite functions
+\begin_inset Formula 
+\[
+\lim_{x\to a}\frac{f^{\prime}\left(\xi\right)}{g^{\prime}\left(\xi\right)}=\lim_{x\to a}\frac{f^{\prime}\left(F\left(x\right)\right)}{g^{\prime}\left(F\left(x\right)\right)}=\lim_{\xi\to a}\frac{f^{\prime}\left(\xi\right)}{g^{\prime}\left(\xi\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset href
+LatexCommand href
+name "L'Hopital's Rule"
+target "https://www.macmillanlearning.com/studentresources/highschool/mathematics/rogawskiap2e/additionalproofs/proofoflhopitalsrule.pdf"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The theorem covers two indeterminate forms 
+\begin_inset Formula $\frac{\infty}{\infty}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{0}{0}$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to a$
+\end_inset
+
+ or 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+the antiderivative of 
+\begin_inset Formula $\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can be sure that 
+\begin_inset Formula 
+\[
+\frac{d}{dx}\left(\ln\left(\left|x\right|\right)\right)=\begin{cases}
+\frac{1}{x} & x\geq0\\
+\frac{1}{-x}\times\left(-1\right)=\frac{1}{x} & x<0
+\end{cases}=\frac{1}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the reason why 
+\begin_inset Formula $\ln\left|x\right|$
+\end_inset
+
+ is the preferred antiderivative is because its domain the 
+\begin_inset Formula $R\backslash\left\{ 0\right\} $
+\end_inset
+
+ is wide,
+ instead of 
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+ of 
+\begin_inset Formula $\ln x$
 \end_inset
 
 .
