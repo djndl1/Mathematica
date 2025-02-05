@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -16,11 +16,11 @@ theorems-named
 theorems-ams-bytype
 theorems-chap-bytype
 \end_modules
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language english
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "tgtermes" "default"
 \font_sans "tgheros" "default"
 \font_typewriter "tgcursor" "default"
@@ -28,7 +28,9 @@ theorems-chap-bytype
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -62,7 +64,9 @@ theorems-chap-bytype
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -78,14 +82,23 @@ theorems-chap-bytype
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+Linear algebra is the study of linear maps on finite-dimensional vector spaces.
+\end_layout
 
 \begin_layout Chapter
 Vector Spaces
@@ -108,9 +121,50 @@ literal "false"
  along with their operations.
 \end_layout
 
+\begin_layout Definition
+Complex Numbers
+\end_layout
+
+\begin_layout Definition
+An ordered pair 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+,
+ written as 
+\begin_inset Formula $a+bi$
+\end_inset
+
+ (
+\begin_inset Formula $i$
+\end_inset
+
+ as the square root of 
+\begin_inset Formula $-1$
+\end_inset
+
+) with addition and multiplication defined on them as the following
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\begin{aligned}(a+bi)+(c+di)= & \left(a+c\right)+\left(b+d\right)i\\
+\left(a+bi\right)\left(c+di\right)= & \left(ac-bd\right)+\left(ad+bc\right)i
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-The motivation for the definition of a vector space comes from properties
- of addition and scalar multiplication in 
+The motivation for the definition of a vector space comes from properties of addition and scalar multiplication in 
 \begin_inset Formula $F^{n}$
 \end_inset
 
@@ -118,7 +172,8 @@ The motivation for the definition of a vector space comes from properties
 \end_layout
 
 \begin_layout Definition
-addition, scalar multiplication
+addition,
+ scalar multiplication
 \end_layout
 
 \begin_layout Definition
@@ -166,6 +221,24 @@ on a set
 \end_layout
 
 \begin_layout Standard
+The complex set 
+\begin_inset Formula $\mathbf{C}$
+\end_inset
+
+ satisfies commutativity,
+ associativity,
+ distributive property,
+ has an additive identity (单位元) and a multiplicative identity,
+ a unique additive inverse (逆元) and a multiplicative inverse for any element.
+ The uniqueness of additive inverse and multiplicative inverse derive from commutativity,
+ associativity and identities.
+\end_layout
+
+\begin_layout Standard
+Subtraction and division are defined in terms of addition and multiplication with their inverses.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
@@ -194,13 +267,18 @@ vector space
 \end_inset
 
  s.t.
- the following properties hold.
+ the following properties hold:
 \end_layout
 
 \begin_layout Definition
-closure under addition and multiplication, commutativity, associativity,
- compatibility of scalar multiplication with field multiplication, additive
- identity, additive inverse, multiplicative identity, distributive properties
+closure under addition and multiplication,
+ commutativity,
+ associativity,
+ compatibility of scalar multiplication with field multiplication,
+ additive identity,
+ unique additive inverse,
+ multiplicative identity,
+ distributive properties
 \end_layout
 
 \begin_layout Definition
@@ -224,7 +302,8 @@ Note that a vector space depends on a filed
 
  is called a 
 \emph on
-real vector space, 
+real vector space,
+ 
 \emph default
 likewise there is a 
 \emph on
@@ -269,7 +348,8 @@ Omitted
 \begin_inset Formula $v$
 \end_inset
 
-; 
+;
+ 
 \begin_inset Formula $w-v$
 \end_inset
 
@@ -340,8 +420,7 @@ A subset
 \begin_inset Formula $U$
 \end_inset
 
- is also a vector space (using the same addition and scalar multiplication
- as on 
+ is also a vector space (using the same addition and scalar multiplication as on 
 \begin_inset Formula $V$
 \end_inset
 
@@ -468,14 +547,14 @@ It is easy to prove that the sum of subspaces is the subspace of
 \begin_inset Formula $U_{1}+\dots+U_{m}$
 \end_inset
 
-, because subspaces must contain all finite sums of their elements.
+,
+ because subspaces must contain all finite sums of their elements.
 \end_layout
 
 \begin_layout Standard
-Sums of subspaces in the theory of vector spaces are analogous to unions
- of subsets in set theory.
- given two subsets of a set, the smallest subset containing them is their
- union.
+Sums of subspaces in the theory of vector spaces are analogous to unions of subsets in set theory.
+ given two subsets of a set,
+ the smallest subset containing them is their union.
  Direct sums of subspaces are analogous to disjoint unions of subsets.
 \end_layout
 
@@ -541,7 +620,8 @@ Suppose
 \begin_inset Formula $V$
 \end_inset
 
-, Then 
+,
+ Then 
 \begin_inset Formula $U_{1}+\cdots+U_{m}$
 \end_inset
 
@@ -557,7 +637,8 @@ Suppose
 \begin_inset Formula $u_{j}\in U_{j}$
 \end_inset
 
-, is by taking each 
+,
+ is by taking each 
 \begin_inset Formula $u_{j}$
 \end_inset
 
@@ -708,7 +789,8 @@ If
 \begin_inset Formula $V$
 \end_inset
 
-, we say that 
+,
+ we say that 
 \begin_inset Formula $v_{1},\dots,v_{m}$
 \end_inset
 
@@ -747,7 +829,8 @@ A vector space is called
 \emph on
 finite-dimensional
 \emph default
- if some list of vectors in it spans the space, otherwise 
+ if some list of vectors in it spans the space,
+ otherwise 
 \emph on
 infinite-dimensional
 \emph default
@@ -762,7 +845,8 @@ infinite-dimensional
 \end_layout
 
 \begin_layout Definition
-polynomial, 
+polynomial,
+ 
 \begin_inset Formula $\mathcal{P}\left(F\right)$
 \end_inset
 
@@ -820,7 +904,8 @@ The coefficients of a polynomial are uniquely determined by the polynomial.
 \end_layout
 
 \begin_layout Definition
-degree of polynomial, 
+degree of polynomial,
+ 
 \begin_inset Formula $\deg p$
 \end_inset
 
@@ -872,7 +957,8 @@ for all
 \begin_inset Formula $m$
 \end_inset
 
-, we write 
+,
+ we write 
 \begin_inset Formula $\deg p=m$
 \end_inset
 
@@ -896,7 +982,8 @@ For a nonnegative integer
 \begin_inset Formula $m$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\mathcal{P}_{m}\left(F\right)$
 \end_inset
 
@@ -955,7 +1042,8 @@ if the only choice of
 \begin_inset Formula $a_{1}=\cdots=a_{m}=0$
 \end_inset
 
-, otherwise linearly dependent.
+,
+ otherwise linearly dependent.
 \end_layout
 
 \begin_layout Definition
@@ -989,7 +1077,8 @@ If some vector in a list of vector s in
 \begin_inset Formula $V$
 \end_inset
 
- is a linear combination of the other vectors, then list is linearly dependent.
+ is a linear combination of the other vectors,
+ then list is linearly dependent.
 \end_layout
 
 \begin_layout Lemma
@@ -1051,9 +1140,8 @@ Length of linearly independent list
 \end_layout
 
 \begin_layout Proposition
-In a finite-dimensional vector space, the length of every linearly independent
- list of vectors is less than or equal to the length of every spanning list
- of vectors.
+In a finite-dimensional vector space,
+ the length of every linearly independent list of vectors is less than or equal to the length of every spanning list of vectors.
 \end_layout
 
 \begin_layout Proof
@@ -1065,7 +1153,8 @@ Suppose
 \begin_inset Formula $V$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $w_{1},\dots,w_{n}$
 \end_inset
 
@@ -1082,8 +1171,9 @@ Step 1.
 \begin_inset Formula $u_{1}$
 \end_inset
 
- to the beginning of the spanning list, producing a linearly dependent list
- (proposition 2.2) and from Lemma 2.1, one of 
+ to the beginning of the spanning list,
+ producing a linearly dependent list (proposition 2.2) and from Lemma 2.1,
+ one of 
 \begin_inset Formula $w$
 \end_inset
 
@@ -1092,17 +1182,17 @@ Step 1.
 
 \begin_layout Proof
 Step j.
- repeat the step above, the only vector removed from the list is one of
- 
+ repeat the step above,
+ the only vector removed from the list is one of 
 \begin_inset Formula $w$
 \end_inset
 
-, since none of 
+,
+ since none of 
 \begin_inset Formula $v$
 \end_inset
 
- can be represented by the vectors before it because of linear independence
- of 
+ can be represented by the vectors before it because of linear independence of 
 \begin_inset Formula $v_{i}$
 \end_inset
 
@@ -1114,15 +1204,18 @@ If
 \begin_inset Formula $m>n$
 \end_inset
 
-, then after 
+,
+ then after 
 \begin_inset Formula $n$
 \end_inset
 
- step, all 
+ step,
+ all 
 \begin_inset Formula $w$
 \end_inset
 
- are removed, and the remaining list 
+ are removed,
+ and the remaining list 
 \begin_inset Formula $u_{1},\dots,u_{n}$
 \end_inset
 
@@ -1130,7 +1223,8 @@ If
 \begin_inset Formula $V$
 \end_inset
 
-, which contradicts the hypothesis that 
+,
+ which contradicts the hypothesis that 
 \begin_inset Formula $u_{1},\dots,u_{m}$
 \end_inset
 
@@ -1231,17 +1325,18 @@ Spanning list contains a basis
 \end_layout
 
 \begin_layout Proposition
-Every spanning list in a vector space can be reduced to a basis of the vector
- space.
+Every spanning list in a vector space can be reduced to a basis of the vector space.
 \end_layout
 
 \begin_layout Proof
 Reduce the spanning list using Linear Dependence Lemma.
  As the spanning list remains to be a spanning list during the reduction,
- the spanning list cannot be reduced to an empty list, and it must be longer
- than or at least of the same length as any linearly independent list.
- After the reduction stops, were the spanning list linearly dependent, the
- reduction must go on, hence it must be linearly independent.
+ the spanning list cannot be reduced to an empty list,
+ and it must be longer than or at least of the same length as any linearly independent list.
+ After the reduction stops,
+ were the spanning list linearly dependent,
+ the reduction must go on,
+ hence it must be linearly independent.
 \end_layout
 
 \begin_layout Corollary
@@ -1260,13 +1355,11 @@ Linearly independent list extends to a basis
 \end_layout
 
 \begin_layout Proposition
-Every linearly independent list of vectorsd in a finite-dimensional vector
- space can be extended to a basis of the vectors space.
+Every linearly independent list of vectorsd in a finite-dimensional vector space can be extended to a basis of the vectors space.
 \end_layout
 
 \begin_layout Proof
-Append a spanning list to the end of linearly independent list and reduce
- it using Linear Dependence Lemma.
+Append a spanning list to the end of linearly independent list and reduce it using Linear Dependence Lemma.
 \end_layout
 
 \begin_layout Standard
@@ -1335,7 +1428,8 @@ Any two bases of a finite-dimensional vector space have the same length.
 \end_layout
 
 \begin_layout Definition
-dimension, 
+dimension,
+ 
 \begin_inset Formula $\dim V$
 \end_inset
 
@@ -1349,8 +1443,8 @@ The
 dimension
 \series default
 \emph default
- of a finite-dimensional vector space is the length of any basis of the
- vector space, denoted by 
+ of a finite-dimensional vector space is the length of any basis of the vector space,
+ denoted by 
 \begin_inset Formula $\dim V$
 \end_inset
 
@@ -1374,7 +1468,8 @@ If
 \begin_inset Formula $V$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $\dim U\leq\dim V$
 \end_inset
 
@@ -1446,10 +1541,9 @@ Suppose
 \end_layout
 
 \begin_layout Standard
-The following formula is analogous to a familiar counting formula: the number
- of elements in the union of two finite sets equals the number of elements
- in the first set plus the number of elements in the second set, minus the
- number of elements in the intersection of the two sets.
+The following formula is analogous to a familiar counting formula:
+ the number of elements in the union of two finite sets equals the number of elements in the first set plus the number of elements in the second set,
+ minus the number of elements in the intersection of the two sets.
 \end_layout
 
 \begin_layout Proposition
@@ -1465,7 +1559,8 @@ If
 \begin_inset Formula $U_{2}$
 \end_inset
 
- are subspaces of a finite-dimensional vector space, then 
+ are subspaces of a finite-dimensional vector space,
+ then 
 \begin_inset Formula 
 \[
 \dim\left(U_{1}+U_{2}\right)=\dim U_{1}+\dim U_{2}-\dim\left(U_{1}\cap U_{2}\right).
@@ -1544,14 +1639,16 @@ The set of all linear maps from
 \end_layout
 
 \begin_layout Standard
-Some examples: zero map, identity map, differentiation, integration.
+Some examples:
+ zero map,
+ identity map,
+ differentiation,
+ integration.
 \end_layout
 
 \begin_layout Standard
-The existence part of the next result means that we can find a linear map
- that takes on whatever values we wish on the vectors in a basis.
- The uniqueness part of the next result means that a linear map is completely
- determined by its values on a basis.
+The existence part of the next result means that we can find a linear map that takes on whatever values we wish on the vectors in a basis.
+ The uniqueness part of the next result means that a linear map is completely determined by its values on a basis.
 \end_layout
 
 \begin_layout Proposition
@@ -1591,8 +1688,7 @@ Tv_{j}=w_{j}\quad j=1,\dots,n.
 \end_layout
 
 \begin_layout Proof
-It is easy to show that the relation given forms a function and is a linear
- map.
+It is easy to show that the relation given forms a function and is a linear map.
 \end_layout
 
 \begin_layout Proof
@@ -1613,7 +1709,8 @@ then for every
 \begin_inset Formula $v\in V$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula 
 \[
 v=c_{1}v_{1}+\cdots+c_{n}v_{n}
@@ -1637,7 +1734,8 @@ Zv & =c_{1}w_{1}+\cdots+c_{n}w_{n}
 \begin_inset Formula $Tv=Zv$
 \end_inset
 
-, uniquely determined on 
+,
+ uniquely determined on 
 \begin_inset Formula $span\left(v_{1},\dots,v_{n}\right)$
 \end_inset
 
@@ -1676,7 +1774,8 @@ Suppose
 \begin_inset Formula $\lambda\in F$
 \end_inset
 
-, the sum 
+,
+ the sum 
 \begin_inset Formula $S+T$
 \end_inset
 
@@ -1754,7 +1853,8 @@ If
 \begin_inset Formula $S\in\mathcal{L}\left(V,W\right)$
 \end_inset
 
-, then the product of 
+,
+ then the product of 
 \begin_inset Formula $ST\in\mathcal{L}\left(U,W\right)$
 \end_inset
 
@@ -1924,7 +2024,8 @@ Null Spaces and Ranges
 \end_layout
 
 \begin_layout Definition
-null space, 
+null space,
+ 
 \begin_inset Formula $\text{null}\,T$
 \end_inset
 
@@ -1936,7 +2037,8 @@ For
 \begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
 \end_inset
 
-, the 
+,
+ the 
 \emph on
 null space
 \emph default
@@ -1944,11 +2046,13 @@ null space
 \begin_inset Formula $T$
 \end_inset
 
-, denoted 
+,
+ denoted 
 \begin_inset Formula $\text{null }T$
 \end_inset
 
-, is the subset of 
+,
+ is the subset of 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2115,7 +2219,8 @@ If
 \begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $\text{range }T$
 \end_inset
 
@@ -2275,8 +2380,7 @@ Suppose
 
 \begin_layout Standard
 The above two have important cosnequences in the theory of linear equtions.
- The idea is to express questions about systems of linea equations in terms
- of linear maps.
+ The idea is to express questions about systems of linea equations in terms of linear maps.
 \end_layout
 
 \begin_layout Standard
@@ -2303,8 +2407,7 @@ Homogeneous system of linear equations
 \end_layout
 
 \begin_layout Proposition
-A homogeneous system of linear equations with more variables than equations
- has nonzero solutions.
+A homogeneous system of linear equations with more variables than equations has nonzero solutions.
 \end_layout
 
 \begin_layout Proof
@@ -2316,15 +2419,15 @@ Inhomogeneous system of linear equations
 \end_layout
 
 \begin_layout Proposition
-An inhomogeneous system of linear equations with more equations than variables
- has no solutions for some choice of the constant terms.
+An inhomogeneous system of linear equations with more equations than variables has no solutions for some choice of the constant terms.
 \end_layout
 
 \begin_layout Proof
 \begin_inset Formula $\dim\text{range }T\leq\dim V<\dim W$
 \end_inset
 
-, thus not surjective.
+,
+ thus not surjective.
 \end_layout
 
 \begin_layout Standard
@@ -2415,7 +2518,8 @@ Tv_{k}=A_{1,k}w_{1}+\cdots+A_{m,k}w_{m}
 \end_layout
 
 \begin_layout Definition
-If the bases are not clear from the context, then the notation 
+If the bases are not clear from the context,
+ then the notation 
 \begin_inset Formula $M\left(T,\left(v_{1},\dots,v_{n}\right),\left(w_{1},\dots,w_{m}\right)\right)$
 \end_inset
 
@@ -2430,8 +2534,8 @@ If the bases are not clear from the context, then the notation
 \end_layout
 
 \begin_layout Standard
-The bases should be clear from the context, and thus they are often not
- included in notation.
+The bases should be clear from the context,
+ and thus they are often not included in notation.
 \end_layout
 
 \begin_layout Definition
@@ -2580,7 +2684,8 @@ if
 \begin_inset Formula $S\in\mathcal{L}\left(V,W\right)$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $M\left(ST\right)=M\left(S\right)M\left(T\right)$
 \end_inset
 
@@ -2635,7 +2740,8 @@ Ac=c_{1}A_{\cdot,1}+\cdots+c_{n}A_{\cdot,n}
 \end_layout
 
 \begin_layout Proposition
-In other words, 
+In other words,
+ 
 \begin_inset Formula $Ac$
 \end_inset
 
@@ -2643,7 +2749,8 @@ In other words,
 \begin_inset Formula $A$
 \end_inset
 
-, with the scalars that multiply the columns coming from 
+,
+ with the scalars that multiply the columns coming from 
 \begin_inset Formula $c$
 \end_inset
 
@@ -2662,7 +2769,8 @@ Invertibility and Isomorphic Vector Spaces
 \end_layout
 
 \begin_layout Definition
-invertible, inverse
+invertible,
+ inverse
 \end_layout
 
 \begin_layout Definition
@@ -2699,7 +2807,8 @@ A linear map
 \begin_inset Formula $T$
 \end_inset
 
-, denoted by 
+,
+ denoted by 
 \begin_inset Formula $T^{-1}$
 \end_inset
 
@@ -2744,7 +2853,8 @@ A linear map is invertible iff and it is injective and surjective.
 \end_layout
 
 \begin_layout Definition
-isomorphism, isomorphic
+isomorphism,
+ isomorphic
 \end_layout
 
 \begin_layout Definition
@@ -2847,11 +2957,13 @@ We already prove that
 \end_layout
 
 \begin_layout Proof
-Injectivity: Let 
+Injectivity:
+ Let 
 \begin_inset Formula $M\left(T\right)=0$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $v_{1},\dots,v_{n}$
 \end_inset
 
@@ -2859,7 +2971,8 @@ Injectivity: Let
 \begin_inset Formula $V$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula 
 \[
 Tv_{k}=0\quad\forall k=1,2,\dots,n
@@ -2871,15 +2984,18 @@ Tv_{k}=0\quad\forall k=1,2,\dots,n
 \end_layout
 
 \begin_layout Proof
-Hence, for all 
+Hence,
+ for all 
 \begin_inset Formula $v\in V$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $Tv=0$
 \end_inset
 
-, i.e.
+,
+ i.e.
  
 \begin_inset Formula $T=0$
 \end_inset
@@ -2888,7 +3004,8 @@ Hence, for all
 \end_layout
 
 \begin_layout Proof
-Surjectivity: Suppose 
+Surjectivity:
+ Suppose 
 \begin_inset Formula $A\in F^{m,n}$
 \end_inset
 
@@ -3042,7 +3159,8 @@ M\left(Tv\right)=M\left(T\right)M\left(v\right).
 \end_layout
 
 \begin_layout Definition
-operator, 
+operator,
+ 
 \begin_inset Formula $\mathcal{L}\left(V\right)$
 \end_inset
 
@@ -3343,7 +3461,8 @@ Suppose
 \end_layout
 
 \begin_layout Definition
-affine subset, parallel
+affine subset,
+ parallel
 \end_layout
 
 \begin_layout Definition
@@ -3387,7 +3506,8 @@ For
 \begin_inset Formula $U$
 \end_inset
 
-, the affine subset 
+,
+ the affine subset 
 \begin_inset Formula $v+U$
 \end_inset
 
@@ -3595,8 +3715,7 @@ Suppose
 \end_layout
 
 \begin_layout Proof
-The potential problem with the defintions above of addtion and scalar multiplica
-tion on 
+The potential problem with the defintions above of addtion and scalar multiplication on 
 \begin_inset Formula $V/U$
 \end_inset
 
@@ -3634,7 +3753,8 @@ By Proposition 3.28
 \end_inset
 
 .
- Similarly, multiplication is well defined.
+ Similarly,
+ multiplication is well defined.
 \end_layout
 
 \begin_layout Standard
@@ -3645,7 +3765,8 @@ By Proposition 3.28
 \end_layout
 
 \begin_layout Definition
-quotient map, 
+quotient map,
+ 
 \begin_inset Formula $\pi$
 \end_inset
 
@@ -3738,7 +3859,8 @@ By definition
 \end_inset
 
  is surjective.
- By Proposition 3.28, 
+ By Proposition 3.28,
+ 
 \begin_inset Formula $\text{null }\pi=U$
 \end_inset
 
@@ -3774,7 +3896,8 @@ A linear functional on
 \end_inset
 
 .
- In other words, a linear functional is an element of 
+ In other words,
+ a linear functional is an element of 
 \begin_inset Formula $\mathcal{L}\left(V,F\right)$
 \end_inset
 
@@ -3789,7 +3912,8 @@ A linear functional on
 \end_layout
 
 \begin_layout Definition
-dual space, 
+dual space,
+ 
 \begin_inset Formula $V^{\prime}$
 \end_inset
 
@@ -3801,11 +3925,13 @@ The dual space of
 \begin_inset Formula $V$
 \end_inset
 
-, denoted 
+,
+ denoted 
 \begin_inset Formula $V^{\prime}$
 \end_inset
 
-, is the vector space of all linear functionals on 
+,
+ is the vector space of all linear functionals on 
 \begin_inset Formula $V$
 \end_inset
 
@@ -3868,7 +3994,8 @@ If
 \begin_inset Formula $V$
 \end_inset
 
-, then the dual basis of 
+,
+ then the dual basis of 
 \begin_inset Formula $v_{1},\dots,v_{n}$
 \end_inset
 
@@ -3880,7 +4007,8 @@ If
 \begin_inset Formula $V^{\prime}$
 \end_inset
 
-, where each 
+,
+ where each 
 \begin_inset Formula $\phi_{j}$
 \end_inset
 
@@ -3950,7 +4078,8 @@ Suppose
 \end_layout
 
 \begin_layout Definition
-dual map, 
+dual map,
+ 
 \begin_inset Formula $T^{\prime}$
 \end_inset
 
@@ -3962,7 +4091,8 @@ If
 \begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
 \end_inset
 
-, then the dual map of 
+,
+ then the dual map of 
 \begin_inset Formula $T$
 \end_inset
 
@@ -4088,7 +4218,8 @@ Algebraic properties of dual maps
 \end_layout
 
 \begin_layout Definition
-annihilator, 
+annihilator,
+ 
 \begin_inset Formula $U^{0}$
 \end_inset
 
@@ -4100,11 +4231,13 @@ For
 \begin_inset Formula $U\subset V$
 \end_inset
 
-, the annihilator of 
+,
+ the annihilator of 
 \begin_inset Formula $U$
 \end_inset
 
-, denoted by 
+,
+ denoted by 
 \begin_inset Formula $U^{0}$
 \end_inset
 
@@ -4195,7 +4328,8 @@ Choose a basis of
 \begin_inset Formula $U$
 \end_inset
 
-, expand it to a basis of 
+,
+ expand it to a basis of 
 \begin_inset Formula $V$
 \end_inset
 
@@ -4253,7 +4387,8 @@ If
 \begin_inset Formula $\varphi\in U^{\prime}$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $\varphi$
 \end_inset
 
@@ -4265,7 +4400,8 @@ If
 \begin_inset Formula $V$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $i^{\prime}\left(\psi\right)=\varphi$
 \end_inset
 
@@ -4274,7 +4410,8 @@ If
 \begin_inset Formula $\varphi\in\text{range }i^{\prime}$
 \end_inset
 
-, which implies 
+,
+ which implies 
 \begin_inset Formula $\text{range }i^{\prime}=U^{\prime}$
 \end_inset
 
@@ -4474,7 +4611,8 @@ Suppose
 \end_layout
 
 \begin_layout Definition
-transpose, 
+transpose,
+ 
 \begin_inset Formula $A^{t}$
 \end_inset
 
@@ -4543,7 +4681,8 @@ Suppose
 \begin_inset Formula $T\in\mathcal{L}\left(V,W\right)$
 \end_inset
 
-, then 
+,
+ then 
 \begin_inset Formula $M\left(T^{\prime}\right)=\left(M\left(T\right)\right)^{t}$
 \end_inset
 
@@ -4559,7 +4698,8 @@ Suppose
 \end_layout
 
 \begin_layout Definition
-row rank, column rank
+row rank,
+ column rank
 \end_layout
 
 \begin_layout Definition
@@ -4691,6 +4831,7 @@ reference "matrix of vector "
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -4716,7 +4857,8 @@ Suppose
 \begin_inset Formula $A\in\mathbf{F}^{m,n}$
 \end_inset
 
-, then the row rank of 
+,
+ then the row rank of 
 \begin_inset Formula $A$
 \end_inset
 
@@ -4751,12 +4893,14 @@ The rank of a matrix
 \end_layout
 
 \begin_layout Chapter
-Eigenvalues, Eigenvectors, and Invariant Subspaces
+Eigenvalues,
+ Eigenvectors,
+ and Invariant Subspaces
 \end_layout
 
 \begin_layout Standard
-In this chapter, we begin the investigation of linear maps from a finite-dimensi
-onal vector space to itself.
+In this chapter,
+ we begin the investigation of linear maps from a finite-dimensional vector space to itself.
 \end_layout
 
 \begin_layout Definition
@@ -4816,15 +4960,18 @@ For a linear operator
 \begin_inset Formula $\left\{ 0\right\} $
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $V$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\text{null }T$
 \end_inset
 
-, and 
+,
+ and 
 \begin_inset Formula $\text{range }T$
 \end_inset
 
@@ -4854,7 +5001,8 @@ Suppose
 \begin_inset Formula $v\in V$
 \end_inset
 
-, called an eigenvector of 
+,
+ called an eigenvector of 
 \begin_inset Formula $T$
 \end_inset
 
@@ -4905,7 +5053,8 @@ Suppose
 \begin_inset Formula $V$
 \end_inset
 
- is finite-dimensional, 
+ is finite-dimensional,
+ 
 \begin_inset Formula $T\in\mathcal{L}\left(V\right)$
 \end_inset
 
@@ -5007,7 +5156,8 @@ Suppose
 \end_inset
 
  is linearly dependent.
- By the Linear Dependence Lemma, we can find a smallest 
+ By the Linear Dependence Lemma,
+ we can find a smallest 
 \begin_inset Formula $k$
 \end_inset
 
@@ -5016,7 +5166,8 @@ Suppose
 \begin_inset Formula $v_{k}\in\text{\text{span}}\left\{ v_{1},\dots,v_{k-1}\right\} $
 \end_inset
 
-, i.e.
+,
+ i.e.
 \end_layout
 
 \begin_layout Proof
@@ -5083,11 +5234,13 @@ Since all eigenvalues are different and
 \begin_inset Formula $v_{1},\dots,v_{k-1}$
 \end_inset
 
- is linearly independent, hence 
+ is linearly independent,
+ hence 
 \begin_inset Formula $v_{k}=0$
 \end_inset
 
-, contradicts the fact that 
+,
+ contradicts the fact that 
 \begin_inset Formula $v_{k}$
 \end_inset
 
