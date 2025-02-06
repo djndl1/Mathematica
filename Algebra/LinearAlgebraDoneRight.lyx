@@ -18,8 +18,8 @@ theorems-chap-bytype
 \end_modules
 \maintain_unincluded_children no
 \language english
-\language_package default
-\inputencoding auto-legacy
+\language_package babel
+\inputencoding utf8-cjk
 \fontencoding auto
 \font_roman "tgtermes" "default"
 \font_sans "tgheros" "default"
@@ -33,6 +33,7 @@ theorems-chap-bytype
 \font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\font_cjk gbsn
 \use_microtype false
 \use_dash_ligatures true
 \graphics default
@@ -40,6 +41,8 @@ theorems-chap-bytype
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -105,7 +108,7 @@ Vector Spaces
 \end_layout
 
 \begin_layout Section
-Basic concepts
+Complex Field and N-Tuple Fields
 \end_layout
 
 \begin_layout Standard
@@ -239,10 +242,153 @@ Subtraction and division are defined in terms of addition and multiplication wit
 \end_layout
 
 \begin_layout Standard
+With 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+ defined,
+ it is possible to define addition and scalar multiplication on it.
+\end_layout
+
+\begin_layout Definition
+Addition in 
+\begin_inset Formula $\mathbb{F}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Addition in 
+\begin_inset Formula $\mathbb{F}^{n}$
+\end_inset
+
+ is defined by adding corresponding coordinates.
+\end_layout
+
+\begin_layout Remark*
+Geometrically,
+ addition joins two vectors and form another that joins the beginning of the first vector and the end of the second vector.
+ Commutativity,
+ associativity hold for addition in 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+.
+ There is also an addition identity 
+\begin_inset Formula $\left(0,0,0,\dots,0\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+.
+ Also,
+ 
+\begin_inset Formula $\forall x\in F^{n}\exists\left(-x\right)\in F^{n}$
+\end_inset
+
+,
+ whose coordinate is the negative of the corresponding of 
+\begin_inset Formula $x$
+\end_inset
+
+,
+ as its unique additive inverse.
+\end_layout
+
+\begin_layout Definition
+Scalar Multiplication in 
+\begin_inset Formula $\mathbb{F}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+For a vector 
+\begin_inset Formula $x\in\mathbb{F}^{n}$
+\end_inset
+
+ and a number 
+\begin_inset Formula $\lambda$
+\end_inset
+
+,
+ the product 
+\begin_inset Formula $\lambda x$
+\end_inset
+
+ is computed by multiplying each coordinate of the vector by 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+Geometrically,
+ scalar multiplication shrinks or stretches a vector (forwards or backwards).
+ There is a multiplicative identity 
+\begin_inset Formula $\left(1,1,\dots,1\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+ and for each vector 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+ there is a multiplicative inverse,
+ whose coordinate is the multiplicative inverse of the corresponding coordinate in 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Furthermore,
+ distributive property holds for addition and scalar multiplication defined on 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Field
+\end_layout
+
+\begin_layout Definition
+A field is a set with operations of addition and multiplication satisfying commutativity,
+ associativity,
+ distributive property,
+ containing an additive identity 
+\begin_inset Formula $0$
+\end_inset
+
+,
+ a multiplicative identity 
+\begin_inset Formula $1$
+\end_inset
+
+ and has a multiplicative inverse and an additive inverse for each element.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Vector Spaces
 \end_layout
 
 \begin_layout Definition
