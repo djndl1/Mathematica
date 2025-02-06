@@ -290,7 +290,7 @@ Geometrically,
 \end_inset
 
 ,
- whose coordinate is the negative of the corresponding of 
+ whose coordinate is the inverse of the corresponding of 
 \begin_inset Formula $x$
 \end_inset
 
@@ -334,30 +334,7 @@ Geometrically,
 \begin_inset Formula $\left(\lambda\mu\right)a=\lambda\left(\mu a\right)$
 \end_inset
 
-holds .
- There is a multiplicative identity 
-\begin_inset Formula $\left(1,1,\dots,1\right)$
-\end_inset
-
- in 
-\begin_inset Formula $F^{n}$
-\end_inset
-
- and for each vector 
-\begin_inset Formula $x$
-\end_inset
-
- in 
-\begin_inset Formula $F^{n}$
-\end_inset
-
- there is a multiplicative inverse,
- whose coordinate is the multiplicative inverse of the corresponding coordinate in 
-\begin_inset Formula $x$
-\end_inset
-
-.
- Furthermore,
+holds .Furthermore,
  distributive property 
 \begin_inset Formula $\lambda\left(a+b\right)=\lambda a+\lambda b$
 \end_inset
