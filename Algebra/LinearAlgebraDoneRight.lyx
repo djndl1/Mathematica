@@ -381,6 +381,18 @@ A field is a set with operations of addition and multiplication satisfying commu
 Vector Spaces
 \end_layout
 
+\begin_layout Standard
+The set 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+ introduced above is a typical example of 
+\series bold
+vector space
+\series default
+.
+\end_layout
+
 \begin_layout Definition
 vector space
 \end_layout
@@ -402,19 +414,109 @@ vector space
 \begin_inset Formula $V$
 \end_inset
 
+ over 
+\begin_inset Formula $F$
+\end_inset
+
  s.t.
  the following properties hold:
 \end_layout
 
 \begin_layout Definition
-closure under addition and multiplication,
- commutativity,
- associativity,
- compatibility of scalar multiplication with field multiplication,
- additive identity,
- unique additive inverse,
- multiplicative identity,
- distributive properties
+1.
+ closure under addition and multiplication;
+\end_layout
+
+\begin_layout Definition
+2.
+ commutativity under addition;
+ 
+\end_layout
+
+\begin_layout Definition
+3.
+ associativity of addition and scalar multiplication:
+ 
+\begin_inset Formula $\left(u+v\right)+w=u+\left(v+w\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(ab\right)x=a\left(vx\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $u,v,x\in V$
+\end_inset
+
+ and 
+\begin_inset Formula $a,b\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+4.
+ there is an additive identity 
+\begin_inset Formula $\mathbf{0}$
+\end_inset
+
+ in 
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+5.
+ 
+\begin_inset Formula $\forall v\in V$
+\end_inset
+
+ there is a unique additive inverse
+\end_layout
+
+\begin_layout Definition
+6.
+ there is a multiplicative identity 
+\begin_inset Formula $1$
+\end_inset
+
+ in 
+\begin_inset Formula $F$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $1v=v\,\forall v\in F$
+\end_inset
+
+(not a vector,
+ but an element in the dependent field).
+\end_layout
+
+\begin_layout Definition
+7.
+ distributive properties:
+ 
+\begin_inset Formula $a\left(u+v\right)=au+av$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a+b\right)x=ax+bx$
+\end_inset
+
+ where 
+\begin_inset Formula $u,v,x\in V$
+\end_inset
+
+ and 
+\begin_inset Formula $a,b\in F$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -427,7 +529,7 @@ vectors
 points.
  
 \emph default
-Note that a vector space depends on a filed 
+Note that a vector space depends on a field 
 \begin_inset Formula $F$
 \end_inset
 
@@ -445,6 +547,211 @@ likewise there is a
 \emph on
 complex vector space
 \emph default
+.
+ 
+\end_layout
+
+\begin_layout Example*
+By definition,
+ a field is a vector space over itself.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Not only is 
+\begin_inset Formula $F^{n}$
+\end_inset
+
+ (including 
+\begin_inset Formula $F$
+\end_inset
+
+) is a vector space over 
+\begin_inset Formula $F$
+\end_inset
+
+,
+ so is 
+\begin_inset Formula $F^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+ is one of the simplest vector space.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Given a field 
+\begin_inset Formula $F$
+\end_inset
+
+ and another nonempty set 
+\begin_inset Formula $S$
+\end_inset
+
+,
+ the functions from 
+\begin_inset Formula $S$
+\end_inset
+
+ to 
+\begin_inset Formula $F$
+\end_inset
+
+,
+ noted by 
+\begin_inset Formula $F^{S}$
+\end_inset
+
+ is also a vector space over 
+\begin_inset Formula $F$
+\end_inset
+
+:
+ 
+\end_layout
+
+\begin_layout Example*
+1.
+ associativity and commutativity of addition:
+ derived from the associativity and commutativity of 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+2.
+ associativity of scalar multiplication:
+ derived from multiplicative associativity in 
+\end_layout
+
+\begin_layout Example*
+3.
+ additive identity:
+ 
+\begin_inset Formula $0\left(x\right)=0\,\,\forall x$
+\end_inset
+
+,
+ derived from additive identity in 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+4.
+ additive inverse:
+ 
+\begin_inset Formula $g\left(x\right)=-\left(f\left(x\right)\right)\forall x\in S$
+\end_inset
+
+,
+ derived from additive inverse in 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+5.
+ multiplicative identity:
+ 
+\begin_inset Formula $1f\left(x\right)=1\left(f\left(x\right)\right)=f\left(x\right)$
+\end_inset
+
+,
+ derived from multiplicative identity in 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example*
+6.
+ distributivity:
+ 
+\begin_inset Formula 
+\[
+a\left(f+g\right)\left(x\right)=a\left(f\left(x\right)+g\left(x\right)\right)=a\left[\left(f\left(x\right)\right)+\left(g\left(x\right)\right)\right]=a\left(f\left(x\right)\right)+a\left(g\left(x\right)\right)=af\left(x\right)+ag\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(a+b\right)f\left(x\right)=\left(a+b\right)\left(f\left(x\right)\right)=a\left(f\left(x\right)\right)+b\left(f\left(x\right)\right)=af\left(x\right)+bf\left(x\right)
+\]
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Example*
+\begin_inset Formula $F^{n}$
+\end_inset
+
+ over 
+\begin_inset Formula $F$
+\end_inset
+
+ is a special case of 
+\begin_inset Formula $F^{S}$
+\end_inset
+
+ where the number set 
+\begin_inset Formula $\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+ is the domain and 
+\begin_inset Formula $\left\{ x_{1},x_{2},\dots,x_{n}\right\} $
+\end_inset
+
+ is the range,
+ then all 
+\begin_inset Formula $\left(x_{1},x_{2},\dots,x_{n}\right)$
+\end_inset
+
+ form a set of functions from 
+\begin_inset Formula $\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+ to 
+\begin_inset Formula $F$
+\end_inset
+
 .
 \end_layout
 
@@ -477,11 +784,9 @@ Omitted
 \end_layout
 
 \begin_layout Remark*
+Since the additive inverse is unique,
+ we can denote it with a single notation 
 \begin_inset Formula $-v$
-\end_inset
-
- denotes the additive inverse of 
-\begin_inset Formula $v$
 \end_inset
 
 ;
@@ -497,7 +802,7 @@ Omitted
 \end_layout
 
 \begin_layout Proposition
-\begin_inset Formula $0v=0$
+\begin_inset Formula $0v=\mathbf{0}$
 \end_inset
 
  for every 
@@ -506,18 +811,92 @@ Omitted
 
 .
  
-\begin_inset Formula $a0=0$
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $0v=\left(0+0\right)v=0v+0v$
+\end_inset
+
+ (from additive inverse in 
+\begin_inset Formula $F$
+\end_inset
+
+ and distributivity),
+ since 
+\begin_inset Formula $0v$
+\end_inset
+
+ is a vector in 
+\begin_inset Formula $V$
+\end_inset
+
+,
+ it must have an additive inverse
+\begin_inset Formula 
+\[
+\begin{aligned}0v+\left(-0v\right)= & 0v+0v+\left(-0v\right)\\
+\mathbf{0=} & 0v+\mathbf{0}=0v
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula $a\mathbf{0}=\mathbf{0}$
 \end_inset
 
  for every 
 \begin_inset Formula $a\in F$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
-Omitted
+\begin_inset Formula $a\mathbf{0}=a\left(\mathbf{0}+\mathbf{0}\right)=a\mathbf{0}+a\mathbf{0}$
+\end_inset
+
+ (from additive inverse in 
+\begin_inset Formula $V$
+\end_inset
+
+ and distributivity),
+ since 
+\begin_inset Formula $a\mathbf{0}$
+\end_inset
+
+ is a vector in 
+\begin_inset Formula $V$
+\end_inset
+
+,
+ it has an additive inverse 
+\begin_inset Formula $-a\mathbf{0}$
+\end_inset
+
+,
+ then
+\begin_inset Formula 
+\[
+\begin{aligned}a\mathbf{0}= & a\mathbf{0}+a\mathbf{0}\\
+a\mathbf{0}+\left(-a\mathbf{0}\right)= & a\mathbf{0}+a\mathbf{0}+\left(-a\mathbf{0}\right)\\
+\mathbf{0=} & a\mathbf{0}+\mathbf{0}=a\mathbf{0}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proposition
@@ -529,6 +908,13 @@ Omitted
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(-1\right)v+v=\left(-1\right)v+1v=\left(-1+1\right)v=0v=\mathbf{0}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
