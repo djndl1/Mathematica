@@ -1,0 +1,6960 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta name="generator" content="LyX 2.4.0" />
+<title>LyX Document</title>
+<style>
+/* LyX Provided Styles */
+mstyle.math { font-style: italic; }
+
+/* Layout-provided Styles */
+h1.part_ {
+font-weight: bold;
+font-size: xx-large;
+margin-top: 4ex;
+margin-bottom: 4ex;
+text-align: center;
+
+}
+div.standard {
+text-align: left;
+
+}
+blockquote.quotation {
+margin-top: 0.5ex;
+margin-bottom: 0.5ex;
+margin-left: 3ex;
+margin-right: 3ex;
+text-align: left;
+
+}
+h2.section {
+font-weight: normal;
+font-style: normal;
+font-variant: small-caps;
+font-size: medium;
+margin-top: 1.3ex;
+margin-bottom: 0.7ex;
+text-align: center;
+
+}
+div.definition_ {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.definition__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.remark_ {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.remark__label {
+font-weight: normal;
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+
+}
+div.axiom_ {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.axiom__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.proof {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.proof_label {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+
+}
+div.corollary_ {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.corollary__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.proposition_ {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.proposition__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.theorem {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.theorem_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.definition {
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.definition_label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.lemma_ {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.lemma__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+div.theorem_ {
+font-style: italic;
+font-variant: normal;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+span.theorem__label {
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+font-size: medium;
+
+}
+
+
+</style>
+</head>
+<body dir="auto">
+<h1 class='part_' id='magicparlabel-1'>Set Theory</h1>
+<div class='standard' id='magicparlabel-2'>This node is not intended as a thourough treatment of set theory. It is only elements of naive set theory: set theory is regarded as a body of facts, of which the axioms are a brief and convenient summary.</div>
+<blockquote class='quotation' id='magicparlabel-3'>
+<div class="quotation_item">General set theory is pretty trivial stuff really, but, if you want to be a mathematician, you need some, and here it is; read it, absorb it, and forget it.</div>
+</blockquote>
+<section>
+<h2 class='section' id='magicparlabel-4'><span class="section_label">1</span> Basics</h2>
+<div class='standard' id='magicparlabel-5'>Here, the definition of a set is not given, rather, it is supported by human intuition. The word <em>collection</em> is used interchangebly with <em>set. </em></div>
+
+<div class='standard' id='magicparlabel-6'>A set may have <em>elements </em>or <em>members</em>. A set may be an element of another set. <em>For mathematical purposes, no other elements than sets need ever considered</em>, which will reveal itself in text below.</div>
+
+<div class='standard' id='magicparlabel-7'>An element may belongs to a set, written as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+. Two sets may be equal to each other, written as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+, or if not equal, written as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2260;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+.</div>
+
+<div class='standard' id='magicparlabel-8'>The most basic property of belonging is its relation to equality, formulated as follows:</div>
+<div class='definition_' id='magicparlabel-9'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ are two sets and if every element of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ is an element of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ ,then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ is a <em>subset</em> of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+, or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ <em>includes</em> <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+, written as 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+ or 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2283;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+</div>
+<div class="definition__item">If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2260;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ is a <em>proper/strict </em>subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+, written as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x228A;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+. </div>
+</div>
+<div class='standard' id='magicparlabel-11'>
+<br />
+</div>
+<div class='remark_' id='magicparlabel-12'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+Set inclusion is <em>reflexive</em>: <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+, <em>transitive</em> <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>B</mi>
+ <mo>&#x22C0;</mo>
+ <mi>B</mi>
+ <mo>&#x2282;</mo>
+ <mi>C</mi>
+ <mo>&#x27F9;</mo>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>C</mi>
+</mrow>
+</math>
+ but <em>antisymmetric</em> <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>B</mi>
+ <mo>&#x22C0;</mo>
+ <mi>B</mi>
+ <mo>&#x2282;</mo>
+ <mi>A</mi>
+ <mo>&#x27F9;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+, or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2260;</mo>
+ <mi>B</mi>
+ <mo>&#x22C0;</mo>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>B</mi>
+ <mo>&#x27F9;</mo>
+ <mi>&#xAC;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>B</mi>
+   <mo>&#x2282;</mo>
+   <mi>A</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Also, there is some notation difference between authors: some use <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2286;</mo>
+</math>
+ for inclusion and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2282;</mo>
+</math>
+ for proper inclusion.</div>
+</div>
+<div class='standard' id='magicparlabel-13'>
+<br />
+</div>
+<div class='axiom_' id='magicparlabel-14'>
+<div class="axiom__item"><span class="axiom__label">Axiom.</span>
+<a href="https://en.wikipedia.org/wiki/Axiom_of_extensionality">The axiom of extension/extensionality</a></div>
+<div class="axiom__item">Two sets are equal if and only if they have the same elements: a set is determined by its extension.
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>&#x2200;</mi>
+ <mi>A</mi>
+ <mi>&#x2200;</mi>
+ <mi>B</mi>
+ <mo stretchy='false'>(</mo>
+ <mi>&#x2200;</mi>
+ <mi>X</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mrow>
+   <mi>X</mi>
+   <mo>&#x2208;</mo>
+   <mi>A</mi>
+   <mo>&#x27fa;</mo>
+   <mi>X</mi>
+   <mo>&#x2208;</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+ <mo>&#x27fa;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-16'>
+<br />
+</div>
+<div class='remark_' id='magicparlabel-17'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+This axiom is a logically necessary property of equality but it requires the relationship of <em>belonging</em>, otherwise this axiom wouldn&#8217;t be true.</div>
+</div>
+<div class='definition_' id='magicparlabel-18'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<a href="https://en.wikipedia.org/wiki/Extensionality">Extensionality</a></div>
+<div class="definition__item">Duck test</div>
+</div>
+<div class='standard' id='magicparlabel-20'>All the basic principles of set theory, except only the axiom of extension.</div>
+
+<div class='standard' id='magicparlabel-21'>Equality for sets is reflexive, symmetric and transitive; inclusion for sets is reflexive, <a href="https://en.wikipedia.org/wiki/Antisymmetric_relation">antisymmetric</a> and transitive.</div>
+
+<div class='standard' id='magicparlabel-22'>We have already defined what is a subset, but a definition does not assert the existence. Does a subset of a set really exists?</div>
+<div class='axiom_' id='magicparlabel-23'>
+<div class="axiom__item"><span class="axiom__label">Axiom.</span>
+<a href="https://en.wikipedia.org/wiki/Axiom_schema_of_specification">Axiom of specification/restricted comprehension</a></div>
+<div class="axiom__item">To every set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and to every condition <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mi>x</mi>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+</mrow>
+</math>
+ there corresponds a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ whose elements are exactly those elements <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ for which <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mi>x</mi>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+</mrow>
+</math>
+ holds. denoted by
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>S</mi>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mi>x</mi>
+  <mo stretchy='false'>)</mo>
+ </mrow>}
+</mrow>
+</math>
+</div>
+<div class="axiom__item">where the &#8220;<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo stretchy='false'>:</mo>
+</math>
+&#8221; in the above notation can be interpreted as &#8220;and&#8221;. </div>
+</div>
+<div class='remark_' id='magicparlabel-26'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+This new set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ is unique by the axiom of extension. With axiom of specification ,we may construct a set that is a subset of another set. </div>
+<div class="remark__item">The original version of axiom of comprehension (unrestricted) does not restrict <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+&#8217;s elements to a certain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+, implying a certain implicit universe. The axiom of specification forbids a set containing all the objects that satisfy a certain property (unrestricted comprehension), which leads to <a href="https://en.wikipedia.org/wiki/Russell%27s_paradox">Russell's paradox</a>. One set has to be made out of some existing set, not some implicit universe set.</div>
+</div>
+<div class='proof' id='magicparlabel-28'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+Suppose there is a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ that contains every object. From the axiom of specification, we can have a set
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>x</mi>
+ <mo>&#x2209;</mo>
+ <mi>x</mi>}
+</mrow>
+</math>
+</div>
+<div class="proof_item">It must be that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+ since <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ contains every object. However, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2208;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+, then by definition of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2209;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+, the other way around, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2209;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2208;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+. Hence such a set as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ does not exist.</div>
+</div>
+<div class='standard' id='magicparlabel-30'>
+<br />
+</div>
+<div class='remark_' id='magicparlabel-31'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+The sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and B do not exist, but a class <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ of sets where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+ for any set in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ may exist! Russel&#8217;s Paradox prohibits the unrestricted comprehension but it does not require that require set be in the form of restricted comprehension. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>x</mi>
+  <mo stretchy='false'>:</mo>
+  <mi>S</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>x</mi>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ is not the correct way to create sets due to Russel&#8217;s Paradox, but it does not mean that the notation itself is unacceptable. It just happens that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ being <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2209;</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+ causes problems for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>x</mi>
+  <mo stretchy='false'>:</mo>
+  <mi>S</mi>
+  <mrow>
+   <mo>(</mo>
+   <mi>x</mi>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+. We shall see the axiom of pairing permits a set in the form of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>x</mi>
+  <mo stretchy='false'>:</mo>
+  <mi>x</mi>
+  <mo stretchy='false'>=</mo>
+  <mi>a</mi>
+  <mspace width="6px"/>
+  <mtext>or</mtext>
+  <mspace width="6px"/>
+  <mi>x</mi>
+  <mo stretchy='false'>=</mo>
+  <mi>b</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-32'>Until now, we have been discussing in a vacuum without actually discussing a specific set as we know none of them. Suppose </div>
+<div class='axiom_' id='magicparlabel-33'>
+<div class="axiom__item"><span class="axiom__label">Axiom.</span>
+there exists a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-34'>from the axiom of specification, 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>&#x2205;</mi>
+ <mo stretchy='false'>=</mo>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>x</mi>
+ <mo>&#x2260;</mo>
+ <mi>x</mi>}
+</mrow>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-35'>is obtained and from the axiom of extension, this set is unique (<a href="https://en.wikipedia.org/wiki/Vacuous_truth">vacuously true</a>). In addition, empty set is a subset of every set including itself (vacuously true or proof by contradiction). The existence of the empty set comes from the existence of the assumed set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+.</div>
+<div class='axiom_' id='magicparlabel-36'>
+<div class="axiom__item"><span class="axiom__label">Axiom.</span>
+<a href="https://en.wikipedia.org/wiki/Axiom_of_pairing">Axiom of pairing</a></div>
+<div class="axiom__item">For any two sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>b</mi>
+</math>
+ there exists a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ that they both belong to.</div>
+</div>
+<div class='standard' id='magicparlabel-38'>
+<br />
+</div>
+<div class='corollary_' id='magicparlabel-39'>
+<div class="corollary__item"><span class="corollary__label">Corollary.</span>
+(also an equivalent formulation of axiom of pairing) If there are sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>b</mi>
+</math>
+, by axiom of pairing, there exists a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>b</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+. By axiom of specification, there exists a set
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>a</mi>
+ <mspace width="10px"/>
+ <mtext>or</mtext>
+ <mspace width="10px"/>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>b</mi>}
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo stretchy='false'>=</mo>
+   <mi>a</mi>
+   <mspace width="6px"/>
+   <mtext>or</mtext>
+   <mspace width="6px"/>
+   <mi>x</mi>
+   <mo stretchy='false'>=</mo>
+   <mi>b</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<div class="corollary__item">that contains <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>b</mi>
+</math>
+ and nothing else.</div>
+</div>
+<div class='remark_' id='magicparlabel-41'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+also denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>{
+ <mi>a</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>b</mi>}
+</mrow>
+</math>
+ is a <em>unordered pair. </em>The pair <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>{
+ <mi>a</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>a</mi>}
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>{
+ <mi>a</mi>}
+</mrow>
+</math>
+ is a <em><a href="https://en.wikipedia.org/wiki/Singleton_(mathematics)">singleton</a>. Here <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ may be written without <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ as this axiom is independent of the axiom of specification.</em></div>
+<div class="remark__item">The axiom of pairing ensures that every set is an element of some set (singleton) and that any two sets are simultaneously elements of some one and the same set. Moreoever, now that we have <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x2205;</mi>
+</math>
+, we may have <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mi>&#x2205;</mi>
+ <mo>}</mo>
+</mrow>
+</math>
+ and even <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>&#x2205;</mi>
+  <mo>}</mo>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mo>{</mo>
+   <mi>&#x2205;</mi>
+   <mo>}</mo>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>&#x2205;</mi>
+  <mo stretchy='false'>,</mo>
+  <mrow>
+   <mo>{</mo>
+   <mi>&#x2205;</mi>
+   <mo>}</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ etc.</div>
+<div class="remark__item">Sets may be united into one set and this set does exist:</div>
+</div>
+<div class='axiom_' id='magicparlabel-44'>
+<div class="axiom__item"><span class="axiom__label">Axiom.</span>
+Axiom of unions</div>
+<div class="axiom__item">For every collection of sets there exists a set that contains all the elements that belong to at lease one set of the given collection.</div>
+</div>
+<div class='standard' id='magicparlabel-46'>
+<br />
+</div>
+<div class='remark_' id='magicparlabel-47'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+This set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>U</mi>
+</math>
+ may be too broad and can be limited further by specification, resulting in the <em>union</em> of the colection:</div>
+<div class="remark__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>U</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>X</mi>
+ <mspace width="10px"/>
+ <mtext>for
+ <mspace width="10px"/>some</mtext>
+ <mspace width="10px"/>
+ <mi>X</mi>
+ <mspace width="10px"/>
+ <mtext>in</mtext>
+ <mspace width="10px"/>
+ <mrow>
+  <mi>C</mi>
+ </mrow>}
+</mrow>
+</math>
+</div>
+<div class="remark__item">or denoted by
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>&#x22C3;</mo>
+ <mi>C</mi>
+ <mspace width="10px"/>
+ <mi>o</mi>
+ <mi>r</mi>
+ <mspace width="10px"/>
+ <mo>&#x22C3;</mo>{
+ <mi>X</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>X</mi>
+ <mo>&#x2208;</mo>
+ <mi>C</mi>}
+ <mspace width="10px"/>
+ <mi>o</mi>
+ <mi>r</mi>
+ <mspace width="10px"/>
+ <munder>
+  <mo>&#x22C3;</mo>
+  <mrow>
+   <mi>X</mi>
+   <mo>&#x2208;</mo>
+   <mi>C</mi>
+  </mrow>
+ </munder>
+ <mi>X</mi>
+</mrow>
+</math>
+</div>
+<div class="remark__item">For a collection of two sets, i.e. an unordered pair, special notation is used
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mo>&#x22C3;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>X</mi>
+   <mo stretchy='false'>:</mo>
+   <mi>X</mi>
+   <mo>&#x2208;</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>A</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>B</mi>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>A</mi>
+ <mo>&#x22C3;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-51'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-52'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Some facts properties of union:</div>
+</div>
+<div class='standard' id='magicparlabel-53'>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>&#x22C3;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mi>A</mi>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>A</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>&#x22C3;</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C3;</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>A</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C3;</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>B</mi>
+    <mo>&#x22C3;</mo>
+    <mi>A</mi>
+    <mtext>&#0160;
+    <mrow>
+     <mo stretchy='false'>(</mo>communitativity
+     <mo stretchy='false'>)</mo>
+    </mrow></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C3;</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>B</mi>
+      <mo>&#x22C3;</mo>
+      <mi>C</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>A</mi>
+      <mo>&#x22C3;</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>&#x22C3;</mo>
+    <mi>C</mi>
+    <mtext>&#0160;
+    <mrow>
+     <mo stretchy='false'>(</mo>associativity
+     <mo stretchy='false'>)</mo>
+    </mrow></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C3;</mo>
+    <mi>A</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>A</mi>
+    <mtext>&#0160;
+    <mrow>
+     <mo stretchy='false'>(</mo>idempotence
+     <mo stretchy='false'>)</mo>
+    </mrow></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x2282;</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x27fa;</mo>
+    <mi>A</mi>
+    <mo>&#x22C3;</mo>
+    <mi>B</mi>
+    <mo stretchy='false'>=</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+<div class='proof' id='magicparlabel-54'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+Based on the corresponding properties of the logical operator <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x22C1;</mo>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-55'>The axiom of unions introduces the existence of <em>unordered triple, quarduples, etc, </em>that is, certain union sets exist<em>.</em> Given three sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>b</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>c</mi>
+</math>
+, their singletons <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mi>a</mi>
+ <mo>}</mo>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mi>b</mi>
+ <mo>}</mo>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mi>c</mi>
+ <mo>}</mo>
+</mrow>
+</math>
+ exist by axiom of pairing, and thus <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>{</mo>
+  <mi>a</mi>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x22C3;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>b</mi>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x22C3;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>c</mi>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+ exists. Based on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>a</mi>
+ <mo>&#x27fa;</mo>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>a</mi>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+, we have</div>
+
+<div class='standard' id='magicparlabel-56'>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>a</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>b</mi>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mi>a</mi>
+     <mo>}</mo>
+    </mrow>
+    <mo>&#x22C3;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mi>b</mi>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>a</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>b</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>c</mi>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mi>a</mi>
+     <mo>}</mo>
+    </mrow>
+    <mo>&#x22C3;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mi>b</mi>
+     <mo>}</mo>
+    </mrow>
+    <mo>&#x22C3;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mi>c</mi>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-57'>where the notation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>a</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>b</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>c</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+ means <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mi>x</mi>
+  <mo stretchy='false'>:</mo>
+  <mi>x</mi>
+  <mo stretchy='false'>=</mo>
+  <mi>a</mi>
+  <mo>&#x22C1;</mo>
+  <mi>x</mi>
+  <mo stretchy='false'>=</mo>
+  <mi>b</mi>
+  <mo>&#x22C1;</mo>
+  <mi>x</mi>
+  <mo stretchy='false'>=</mo>
+  <mi>c</mi>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+, called an unordered triple.</div>
+
+<div class='standard' id='magicparlabel-58'>The intersection of sets relies rather on the axiom of specification, i.e.
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2229;</mo>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>B</mi>}
+</mrow>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-59'>A more generalized formation
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>V</mi>
+ <mo stretchy='false'>=</mo>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <msub>
+  <mi>X</mi>
+  <mn>0</mn>
+ </msub>
+ <mo stretchy='false'>:</mo>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>X</mi>
+ <mspace width="10px"/>
+ <mi>f</mi>
+ <mi>o</mi>
+ <mi>r</mi>
+ <mspace width="10px"/>
+ <mi>e</mi>
+ <mi>v</mi>
+ <mi>e</mi>
+ <mi>r</mi>
+ <mi>y</mi>
+ <mspace width="10px"/>
+ <mi>X</mi>
+ <mspace width="10px"/>
+ <mi>i</mi>
+ <mi>n</mi>
+ <mspace width="10px"/>
+ <mrow>
+  <mrow>
+   <mi>C</mi>
+  </mrow>}
+ </mrow>
+</mrow>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-60'>where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>X</mi>
+ <mn>0</mn>
+</msub>
+</math>
+ is a particular set in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+, a non-empty collection of sets (Note that union does not require this colection be non-empty as it is an independent axiom, otherwise, the conditional statement would always be false and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>V</mi>
+</math>
+ would be the universal set). The axiom of extension guarantees the uniqueness of such a set, independent of a certain set in the given collection. Note that this intersection set may be an empty set.</div>
+<div class='remark_' id='magicparlabel-61'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x22C2;</mo>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x2205;</mi>
+</mrow>
+</math>
+, the sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ are called <em>disjoint</em>. The intersection and the union operations has the properties of <em>communitativity, associativity, idempotence </em>and <em>distributivity</em>.</div>
+</div>
+<div class='standard' id='magicparlabel-62'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-63'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Some properties of intersection
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C2;</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C2;</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>B</mi>
+    <mo>&#x22C2;</mo>
+    <mi>A</mi>
+    <mspace width="6px"/>
+    <mtext>
+    <mrow>
+     <mo stretchy='false'>(</mo>commutative
+     <mo stretchy='false'>)</mo>
+    </mrow></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C2;</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>B</mi>
+      <mo>&#x22C2;</mo>
+      <mi>C</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>A</mi>
+      <mo>&#x22C2;</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>&#x22C2;</mo>
+    <mi>C</mi>
+    <mspace width="6px"/>
+    <mtext>
+    <mrow>
+     <mo stretchy='false'>(</mo>associative
+     <mo stretchy='false'>)</mo>
+    </mrow></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C2;</mo>
+    <mi>A</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>A</mi>
+    <mspace width="6px"/>
+    <mtext>
+    <mrow>
+     <mo stretchy='false'>(</mo>idempotence
+     <mo stretchy='false'>)</mo>
+    </mrow></mtext>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x2282;</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x27fa;</mo>
+    <mi>A</mi>
+    <mo>&#x22C2;</mo>
+    <mi>B</mi>
+    <mo stretchy='false'>=</mo>
+    <mi>A</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+<div class="proposition__item">Moreover, combined with union,
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mtable>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>A</mi>
+     <mo>&#x22C2;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>B</mi>
+       <mo>&#x22C3;</mo>
+       <mi>C</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>=</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>A</mi>
+       <mo>&#x22C2;</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&#x22C3;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>A</mi>
+       <mo>&#x22C2;</mo>
+       <mi>C</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+  <mtr>
+   <mtd>
+    <mrow>
+     <mi>A</mi>
+     <mo>&#x22C3;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>B</mi>
+       <mo>&#x22C2;</mo>
+       <mi>C</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+   <mtd>
+    <mrow>
+     <mo stretchy='false'>=</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>A</mi>
+       <mo>&#x22C3;</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&#x22C2;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>A</mi>
+       <mo>&#x22C3;</mo>
+       <mi>C</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mtd>
+  </mtr>
+ </mtable>
+ <mspace width="6px"/>
+ <mtext>
+ <mrow>
+  <mo stretchy='false'>(</mo>distributivity
+  <mo stretchy='false'>)</mo>
+ </mrow></mtext>
+</mrow>
+</math>
+</div>
+</div>
+<div class='definition_' id='magicparlabel-65'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<em>relative difference and complementation</em></div>
+<div class="definition__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>A</mi>
+ <mo stretchy='false'>-</mo>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>{
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>:</mo>
+ <mi>x</mi>
+ <mo>&#x2209;</mo>
+ <mi>B</mi>}
+</mrow>
+</math>
+Define set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ as the union of all sets involved, denote the complement of set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo stretchy='false'>'</mo>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-67'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-68'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Some Properties of Complementation</div>
+<div class="proposition__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable>
+ <mtr>
+  <mtd>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <msup>
+      <mi>A</mi>
+      <mi>&#x2032;</mi>
+     </msup>
+     <mo>)</mo>
+    </mrow>
+    <mi>&#x2032;</mi>
+   </msup>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>A</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>&#x2205;</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+    <mo stretchy='false'>=</mo>
+    <mi>E</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>,</mo>
+    <msup>
+     <mi>E</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x22C2;</mo>
+    <msup>
+     <mi>A</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>,</mo>
+    <mi>A</mi>
+    <mo>&#x22C3;</mo>
+    <msup>
+     <mi>A</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+    <mo stretchy='false'>=</mo>
+    <mi>E</mi>
+    <mo stretchy='false'>,</mo>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x2282;</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x27fa;</mo>
+    <msup>
+     <mi>B</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+    <mo>&#x2282;</mo>
+    <msup>
+     <mi>A</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>A</mi>
+    <mo>&#x22C2;</mo>
+    <msup>
+     <mi>B</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>A</mi>
+    <mo>&#x2282;</mo>
+    <mi>B</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo>&#x27fa;</mo>
+    <mi>A</mi>
+    <mo stretchy='false'>-</mo>
+    <mi>B</mi>
+    <mo stretchy='false'>=</mo>
+    <mi>&#x2205;</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='definition_' id='magicparlabel-70'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<em><a href="https://en.wikipedia.org/wiki/De_Morgan_Laws">De Morgan laws</a></em></div>
+<div class="definition__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable>
+ <mtr>
+  <mtd>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>A</mi>
+      <mo>&#x22C3;</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mi>&#x2032;</mi>
+   </msup>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mi>A</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+    <mo>&#x22C3;</mo>
+    <msup>
+     <mi>B</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>A</mi>
+      <mo>&#x22C2;</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mi>&#x2032;</mi>
+   </msup>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mi>A</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+    <mo>&#x22C2;</mo>
+    <msup>
+     <mi>B</mi>
+     <mi>&#x2032;</mi>
+    </msup>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-72'>
+<br />
+</div>
+<div class='remark_' id='magicparlabel-73'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+The complement form of a set theorem usually leads to <em><a href="https://en.wikipedia.org/wiki/Duality_(mathematics)#Complement_of_a_subset">the principle of duality</a>.</em></div>
+</div>
+<div class='definition_' id='magicparlabel-74'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<em><a href="https://en.wikipedia.org/wiki/Symmetric_difference">symmetic difference/boolean sum/disjunctive union</a></em></div>
+<div class="definition__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>A</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mrow>
+   <mi>A</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+ <mo>&#x222A;</mo>
+ <mrow>
+  <mo stretchy='false'>(</mo>
+  <mrow>
+   <mi>B</mi>
+   <mo stretchy='false'>-</mo>
+   <mi>A</mi>
+  </mrow>
+  <mo stretchy='false'>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<div class="definition__item">or alternatively denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x25B5;</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2295;</mo>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2296;</mo>
+</math>
+.</div>
+</div>
+<div class='remark_' id='magicparlabel-77'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+This operation is commutative and associative and is such that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>&#x2205;</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='axiom_' id='magicparlabel-78'>
+<div class="axiom__item"><span class="axiom__label">Axiom.</span>
+<a href="https://en.wikipedia.org/wiki/Axiom_of_power_set">Axiom of power set</a></div>
+<div class="axiom__item">For each set there exists a collection of sets that contains among its elements all the subsets of the given set and them only.
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>&#x2200;</mi>
+ <mi>x</mi>
+ <mi>&#x2203;</mi>
+ <mi>y</mi>
+ <mi>&#x2200;</mi>
+ <mi>z</mi>
+ <mrow>
+  <mo>[</mo>
+  <mrow>
+   <mi>z</mi>
+   <mo>&#x2208;</mo>
+   <mi>y</mi>
+   <mo>&#x27fa;</mo>
+   <mi>&#x2200;</mi>
+   <mi>&#x3C9;</mi>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>&#x3C9;</mi>
+     <mo>&#x2208;</mo>
+     <mi>z</mi>
+     <mo>&#x27F9;</mo>
+     <mi>&#x3C9;</mi>
+     <mo>&#x2208;</mo>
+     <mi>x</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<div class='proposition_' id='magicparlabel-80'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+In other words, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is a set, there exists a collection of set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>P</mi>
+</math>
+ such that if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo>&#x2282;</mo>
+ <mi>E</mi>
+ <mo stretchy='false'>,</mo>
+</mrow>
+</math>
+ then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo>&#x2208;</mo>
+ <mi>P</mi>
+</mrow>
+</math>
+. The set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>P</mi>
+</math>
+ is called a power set, denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>P</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>E</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-81'><span class="section_label">2</span> Ordered Pair</h2>
+<div class='definition_' id='magicparlabel-82'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<em>ordered pair</em></div>
+<div class="definition__item"><em>The ordered pair of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>b</mi>
+</math>
+, with first coordinate <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ and second coordinate <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>b</mi>
+</math>
+, is the set defined by</em></div>
+<div class="definition__item"><em>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>a</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>b</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mi>a</mi>
+    <mo>}</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>a</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>b</mi>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+</em></div>
+</div>
+<div class='standard' id='magicparlabel-85'>It it easy to prove that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>a</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>b</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>y</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x27fa;</mo>
+ <mrow>
+  <mo>[</mo>
+  <mrow>
+   <mi>a</mi>
+   <mo stretchy='false'>=</mo>
+   <mi>x</mi>
+   <mtext>&#0160;and&#0160;</mtext>
+   <mi>b</mi>
+   <mo stretchy='false'>=</mo>
+   <mi>y</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+
+<div class='standard' id='magicparlabel-86'>Given two sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+, it is proved that there exists a set of ordered paired with one coordinate from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and the other from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+</div>
+<div class='proof' id='magicparlabel-87'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+Suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>b</mi>
+ <mo>&#x2208;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>{</mo>
+  <mi>a</mi>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <mi>P</mi>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>A</mi>
+   <mo>&#x222A;</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>a</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>b</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <mi>P</mi>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>A</mi>
+   <mo>&#x222A;</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>&#x27F9;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mi>a</mi>
+    <mo>}</mo>
+   </mrow>
+   <mo stretchy='false'>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>a</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>b</mi>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x2282;</mo>
+ <mi>P</mi>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>A</mi>
+   <mo>&#x222A;</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+, i.e. 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>&#x2200;</mi>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>&#x2200;</mi>
+ <mi>b</mi>
+ <mo>&#x2208;</mo>
+ <mi>B</mi>
+ <mrow>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>a</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>b</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>&#x2208;</mo>
+   <mi>P</mi>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>P</mi>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mi>A</mi>
+       <mo>&#x222A;</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<div class="proof_item">From the axiom of union and the axiom of power set, the power set of the union of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+, therefore <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>a</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>b</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ must exist.</div>
+<div class="proof_item">Apply the axiom of specification, we have defined the <em>Cartesian product</em>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x00D7;</mo>
+ <mi>B</mi>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo stretchy='false'>=</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>a</mi>
+     <mo stretchy='false'>,</mo>
+     <mi>b</mi>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>&#x2208;</mo>
+   <mi>P</mi>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>P</mi>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mi>A</mi>
+       <mo>&#x222A;</mo>
+       <mi>B</mi>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo stretchy='false'>:</mo>
+   <mi>a</mi>
+   <mo>&#x2208;</mo>
+   <mi>A</mi>
+   <mspace width="10px"/>
+   <mi>a</mi>
+   <mi>n</mi>
+   <mi>d</mi>
+   <mspace width="10px"/>
+   <mi>b</mi>
+   <mo>&#x2208;</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<div class="proof_item">and from the axiom of extension, the Cartesian product is unique.</div>
+</div>
+<div class='standard' id='magicparlabel-91'>Tips: use union to remove braces.</div>
+
+<div class='standard' id='magicparlabel-92'>It is possible to obtain the two sets from the Cartesian product, which sets are called the <em>projections </em>of the Cartesian product <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+:</div>
+<div class='proof' id='magicparlabel-93'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+Suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>a</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>b</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ is an ordered pair in a Cartesian product <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+, rewritten as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <mrow>
+  <mrow>
+   <mo>{</mo>
+   <mi>a</mi>
+   <mo>}</mo>
+  </mrow>
+  <mo stretchy='false'>,</mo>
+  <mrow>
+   <mo>{</mo>
+   <mrow>
+    <mi>a</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>b</mi>
+   </mrow>
+   <mo>}</mo>
+  </mrow>
+ </mrow>
+ <mo>}</mo>
+</mrow>
+</math>
+, the union of all such ordered pairs exists and
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mrow>
+  <mo>{</mo>
+  <mi>a</mi>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <munder>
+  <mo>&#x22C3;</mo>
+  <mrow>
+   <mi>p</mi>
+   <mo>&#x2208;</mo>
+   <mi>R</mi>
+  </mrow>
+ </munder>
+ <mi>p</mi>
+ <mspace width="10px"/>
+ <mi>a</mi>
+ <mi>n</mi>
+ <mi>d</mi>
+ <mspace width="10px"/>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>a</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>b</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <munder>
+  <mo>&#x22C3;</mo>
+  <mrow>
+   <mi>p</mi>
+   <mo>&#x2208;</mo>
+   <mi>R</mi>
+  </mrow>
+ </munder>
+ <mi>p</mi>
+</mrow>
+</math>
+</div>
+<div class="proof_item">continue the union of the obtained set we have <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <mo>&#x22C3;</mo>
+ <mo>&#x22C3;</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>b</mi>
+ <mo>&#x2208;</mo>
+ <mo>&#x22C3;</mo>
+ <mo>&#x22C3;</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+. The axiom of specification further produces the sets</div>
+<div class="proof_item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mi>A</mi>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>a</mi>
+      <mo stretchy='false'>:</mo>
+      <mtext>for&#0160;some&#0160;
+      <mstyle class='math'>
+       <mi>b</mi>
+      </mstyle>&#0160;</mtext>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>a</mi>
+        <mo stretchy='false'>,</mo>
+        <mi>b</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo>&#x2208;</mo>
+      <mi>R</mi>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mi>B</mi>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>b</mi>
+      <mo stretchy='false'>:</mo>
+      <mtext>for&#0160;some&#0160;
+      <mstyle class='math'>
+       <mi>a</mi>
+      </mstyle>&#0160;</mtext>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>a</mi>
+        <mo stretchy='false'>,</mo>
+        <mi>b</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo>&#x2208;</mo>
+      <mi>R</mi>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-96'>The definition of ordered pair and the relevant should be here and never elsewhere: they are weird but only because they are defined such. It can be done axiomatically with the same properties in other theories.</div>
+
+<div class='standard' id='magicparlabel-97'>Using ordered pairs, we can formulate the mathematical theory of relations in set-theoretic language.</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-98'><span class="section_label">3</span> Relation</h2>
+<div class='definition_' id='magicparlabel-99'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<em>relation</em></div>
+<div class="definition__item">a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is a relation if each element of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is an ordered pair, denoted by
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>y</mi>
+ <mo>&#x2282;</mo>
+ <mi>X</mi>
+ <mo>&#x00D7;</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+</div>
+<div class="definition__item">the two projections of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ are called <em>domain</em> and <em>range </em>respectively</div>
+<div class="definition__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>d</mi>
+    <mi>o</mi>
+    <mi>m</mi>
+    <mspace width="6px"/>
+    <mi>R</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo stretchy='false'>:</mo>
+      <mtext>for&#0160;some&#0160;</mtext>
+      <mi>y</mi>
+      <mo stretchy='false'>,</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>x</mi>
+        <mspace width="6px"/>
+        <mi>R</mi>
+        <mspace width="6px"/>
+        <mi>y</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mi>r</mi>
+    <mi>a</mi>
+    <mi>n</mi>
+    <mspace width="6px"/>
+    <mi>R</mi>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mi>y</mi>
+      <mo stretchy='false'>:</mo>
+      <mtext>for&#0160;some&#0160;</mtext>
+      <mi>x</mi>
+      <mo stretchy='false'>,</mo>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>x</mi>
+        <mspace width="6px"/>
+        <mi>R</mi>
+        <mspace width="6px"/>
+        <mi>y</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='remark_' id='magicparlabel-103'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+The empty set and the Cartesian product of any two sets are two examples. Another example can be the relation of <em>equality</em> that is the set of all those pairs <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>x</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>y</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo>&#x00D7;</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+ for which <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-104'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-105'>A relation in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is <em>reflexive</em> if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x2200;</mi>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>X</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>x</mi>
+</mrow>
+</math>
+; <em>symmetric </em>if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+ implies that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>x</mi>
+</mrow>
+</math>
+; <em>transitive </em>if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>z</mi>
+</mrow>
+</math>
+ imply that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>z</mi>
+</mrow>
+</math>
+. It is <em>equivalent</em> if it is reflexive, symmetric and transitive. The smallest equivalence relation in a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is the relation of equality in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ and the largest equivalence relation in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo>&#x00D7;</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+.</div>
+
+<div class='standard' id='magicparlabel-106'>If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is an equivalence relation in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ is in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, the <em>equivalence class </em>of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ with respect <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+, denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+ (read &#8220;<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ modulo <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+&#8221;), is the set of all those elements <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ for which <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+ denotes the set of all equivalence classes. each equivalence class of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ w.r.t equality <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is a singleton; if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>R</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>X</mi>
+ <mo>&#x00D7;</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+, then the set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ itself is the only equivalence class.</div>
+
+<div class='standard' id='magicparlabel-107'>Suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+ is a partition of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, that is, a disjoint collection of non-empty subsets of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ whose union is <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, a relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>C</mi>
+</mrow>
+</math>
+ is defined in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ induced by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>X</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>C</mi>
+ <mspace width="6px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-108'>in case <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ belong to the same set of the collection <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+. It is easy to see this relation is a equivalence relation.</div>
+
+<div class='standard' id='magicparlabel-109'>This gives arise to a proposition</div>
+<div class='proposition_' id='magicparlabel-110'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is an equivalence relation in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, then the set of equivalence classes is a partition of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ that induces the relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+, and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+is a partition of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, then the induced relation is an equivalence relation whose set of equivalence classes is exactly <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>C</mi>
+</math>
+.</div>
+</div>
+<div class='proof' id='magicparlabel-111'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+It is fairly easy to see the second half simply by the definition. We mainly focus on the first half.</div>
+<div class="proof_item">Suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is an equivalence relation in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+. From reflexitivity, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>x</mi>
+</mrow>
+</math>
+, i.e. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>x</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+, thus the union of all equivalence classes is all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x2200;</mi>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>X</mi>
+ <mo stretchy='false'>,</mo>
+ <mi>&#x2200;</mi>
+ <mi>y</mi>
+ <mo>&#x2208;</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>z</mi>
+ <mo>&#x2208;</mo>
+ <mi>x</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>z</mi>
+ <mo>&#x2208;</mo>
+ <mi>y</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+, from transitivity, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+, i.e. for every element <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ in the equivalence class of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <mi>x</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+ <mo>&#x27fa;</mo>
+ <mi>x</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>a</mi>
+ <mo>&#x27fa;</mo>
+ <mi>a</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>x</mi>
+ <mo>&#x27fa;</mo>
+ <mi>a</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>y</mi>
+ <mo>&#x27fa;</mo>
+ <mi>y</mi>
+ <mspace width="6px"/>
+ <mi>R</mi>
+ <mspace width="6px"/>
+ <mi>a</mi>
+ <mo>&#x27fa;</mo>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <mi>y</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+ which implies that if two equivalence classes have an element in common, they are identical, otherwise they are disjoint, thus all these equivalence classes form a partition of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+.</div>
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-113'><span class="section_label">4</span> Function</h2>
+<div class='definition' id='magicparlabel-114'>
+<div class="definition_item"><span class="definition_label">Definition 1.</span>
+function</div>
+<div class="definition_item">A <em>function</em> from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ (codomain, target set) is a relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>dom</mtext>
+ <mi>f</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+ and s.t for each <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ there is a unique element <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo stretchy='false'>,</mo>
+   <mi>y</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <mi>f</mi>
+</mrow>
+</math>
+. The element <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ is called the <em>value</em> that the function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ <em>assumes</em> (or <em>takes on</em>) at the <em>argument</em> <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+; or we may say <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ sends or maps or transforms <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ into <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+.</div>
+</div>
+<div class='remark_' id='magicparlabel-116'>
+<div class="remark__item"><span class="remark__label">Remark.</span>
+The words <em>map</em> or <em>mapping, transformation, correspondence, </em>and <em>operator</em> are among some of the many that are sometimes used as synonyms for <em>function</em>. The set of all functions from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ is a subset of the power set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>P</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>X</mi>
+   <mo>&#x00D7;</mo>
+   <mi>Y</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, and denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>Y</mi>
+ <mi>X</mi>
+</msup>
+</math>
+. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>dom</mtext>
+ <mi>f</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+, we say <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ maps <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ onto <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ (surjective), denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>X</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+. The subset of all values to which from a subset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ maps is called the <em>image, </em>denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>A</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+<div class="remark__item">If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is a subset of a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+, the function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ defined by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+ for each <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is called the <em>inclusion map</em> (the <em>embedding</em>, or the <em>injection</em>) of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ into <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+. The inclusion map of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ into <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is called the <em>the identity map</em> on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+.</div>
+<div class="remark__item">Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo>&#x2282;</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mo>&#x003A;</mo>
+ <mi>Y</mi>
+ <mo>&#x21A4;</mo>
+ <mi>Z</mi>
+</mrow>
+</math>
+, define <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>g</mi>
+ <mo>&#x003A;</mo>
+ <mi>X</mi>
+ <mo>&#x21A4;</mo>
+ <mi>Z</mi>
+</mrow>
+</math>
+ to be equal to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ for each <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+. The function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>g</mi>
+</math>
+ is called a <em>restriction </em>of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is called an<em> extension </em>of <em><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>g</mi>
+</math>
+ </em>to<em> <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+. </em>This makes small functions out of larger ones.</div>
+<div class="remark__item">The function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mo>&#x003A;</mo>
+ <mi>X</mi>
+ <mo>&#x00D7;</mo>
+ <mi>Y</mi>
+ <mo>&#x21A4;</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+ is called a <em>projection</em> onto the first coordinate, similarly for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mo>&#x003A;</mo>
+ <mi>X</mi>
+ <mo>&#x00D7;</mo>
+ <mi>Y</mi>
+ <mo>&#x21A4;</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+.</div>
+<div class="remark__item">Suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is is an equivalence relation in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, and let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ be the function from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ onto <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+ defined by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>x</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+. This function is sometimes called the <em>canonical map</em> from X to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>X</mi>
+ <mo stretchy='false'>/</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+.</div>
+<div class="remark__item">A function that always maps distinct elements onto distinct elements is called <em>one-to-one</em> (<em>injective)</em></div>
+<div class="remark__item"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>Y</mi>
+  <mi>X</mi>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>f</mi>
+   <mo stretchy='false'>|</mo>
+   <mi>f</mi>
+   <mo>&#x003A;</mo>
+   <mi>X</mi>
+   <mo>&#x2192;</mo>
+   <mi>Y</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<div class="remark__item">If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ is a subset of a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, the <em>characteristic function </em>of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ is the function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C7;</mi>
+</math>
+ from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to 2 such that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C7;</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+</math>
+ according to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>X</mi>
+ <mo stretchy='false'>-</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+.</div>
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-124'><span class="section_label">5</span> <a href="https://en.wikipedia.org/wiki/Indexed_family">Families</a></h2>
+<div class='standard' id='magicparlabel-125'>There are occasions when the range of a funciton is deemed to be more important than the function itself. When this is the case, both terminology and the notation undergo radical alterations.</div>
+
+<div class='standard' id='magicparlabel-126'>A function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ from the <em>index set </em><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>I</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, with the range called <em>indexed set</em>, and the function itself is called <em>family, </em>and each value of the family is called a <em>term</em>.<a href="https://en.wikipedia.org/wiki/Family_of_sets"> Every collection of sets</a> is the range of some family, considering the identity mapping on the collection in the role of the family. The family of</div>
+
+<div class='standard' id='magicparlabel-127'>Suppose that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>I</mi>
+  <mi>j</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ is a family of sets with domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>J</mi>
+</math>
+; write <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>K</mi>
+ <mo stretchy='false'>=</mo>
+ <munder>
+  <mo>&#x22C3;</mo>
+  <mi>j</mi>
+ </munder>
+ <msub>
+  <mi>I</mi>
+  <mi>j</mi>
+ </msub>
+</mrow>
+</math>
+, and let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>A</mi>
+  <mi>k</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ be a family of sets with domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>K</mi>
+</math>
+, then</div>
+
+<div class='standard' id='magicparlabel-128'>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <munder>
+     <mo>&#x22C3;</mo>
+     <mrow>
+      <mi>k</mi>
+      <mo>&#x2208;</mo>
+      <mi>K</mi>
+     </mrow>
+    </munder>
+    <msub>
+     <mi>A</mi>
+     <mi>k</mi>
+    </msub>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder>
+     <mo>&#x22C3;</mo>
+     <mrow>
+      <mi>j</mi>
+      <mo>&#x2208;</mo>
+      <mi>J</mi>
+     </mrow>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x22C3;</mo>
+       <mrow>
+        <mi>i</mi>
+        <mo>&#x2208;</mo>
+        <msub>
+         <mi>I</mi>
+         <mi>j</mi>
+        </msub>
+       </mrow>
+      </munder>
+      <msub>
+       <mi>A</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow/>
+  </mtd>
+  <mtd>
+   <mrow/>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-129'>which are the <a href="https://proofwiki.org/wiki/Union_is_Associative">generalized associative law</a> for unions and the generalized version of the commutative law (TODO).</div>
+
+<div class='standard' id='magicparlabel-130'>If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>A</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ is a family of subsets of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2282;</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+,then</div>
+
+<div class='standard' id='magicparlabel-131'>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x22C2;</mo>
+       <mi>j</mi>
+      </munder>
+      <msub>
+       <mi>B</mi>
+       <mi>j</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>&#x2229;</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x22C3;</mo>
+       <mi>i</mi>
+      </munder>
+      <msub>
+       <mi>A</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder>
+     <mo>&#x22C3;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>j</mi>
+     </mrow>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>B</mi>
+       <mi>j</mi>
+      </msub>
+      <mo>&#x2229;</mo>
+      <msub>
+       <mi>A</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x22C2;</mo>
+       <mi>j</mi>
+      </munder>
+      <msub>
+       <mi>B</mi>
+       <mi>j</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>&#x222A;</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x22C2;</mo>
+       <mi>i</mi>
+      </munder>
+      <msub>
+       <mi>A</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder>
+     <mo>&#x22C2;</mo>
+     <mrow>
+      <mi>i</mi>
+      <mo stretchy='false'>,</mo>
+      <mi>j</mi>
+     </mrow>
+    </munder>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <msub>
+       <mi>B</mi>
+       <mi>j</mi>
+      </msub>
+      <mo>&#x222A;</mo>
+      <msub>
+       <mi>A</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-132'>Note <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<munder>
+ <mo>&#x22C2;</mo>
+ <mrow>
+  <mi>i</mi>
+  <mo stretchy='false'>,</mo>
+  <mi>j</mi>
+ </mrow>
+</munder>
+</math>
+ is an abbreviation for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<munder>
+ <mo>&#x22C2;</mo>
+ <mrow>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <mi>i</mi>
+    <mo stretchy='false'>,</mo>
+    <mi>j</mi>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo>&#x2208;</mo>
+  <mi>I</mi>
+  <mo>&#x00D7;</mo>
+  <mi>J</mi>
+ </mrow>
+</munder>
+</math>
+.</div>
+
+<div class='standard' id='magicparlabel-133'>The notation of families is normally used in generalizing the concept of Cartesian product. There is a natural one-to-one correspondence between Cartesian products and a certain set of families, thus renders the difference between them a mere matter of notation.</div>
+<div class='definition_' id='magicparlabel-134'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<a href="https://en.wikipedia.org/wiki/Cartesian_product#Infinite_Cartesian_products">Cartesian product of a family of sets</a></div>
+<div class="definition__item">If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>X</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ is a family of sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>i</mi>
+  <mo>&#x2208;</mo>
+  <mi>I</mi>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+, the Cartesian product of the family is the set of all families <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>x</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>x</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>&#x2208;</mo>
+ <msub>
+  <mi>X</mi>
+  <mi>i</mi>
+ </msub>
+</mrow>
+</math>
+ for each <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>i</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>I</mi>
+</math>
+. denoted by</div>
+<div class="definition__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msub>
+  <mstyle mathvariant='sans-serif'>
+   <mi>X</mi>
+  </mstyle>
+  <mrow>
+   <mi>i</mi>
+   <mo>&#x2208;</mo>
+   <mi>I</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>X</mi>
+  <mi>i</mi>
+ </msub>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-137'>Ordered triples, ordered quadruples, etc. may be defined as families whose index sets are unordered triples, quardruples.</div>
+
+<div class='standard' id='magicparlabel-138'>The coordinates and partial Cartesian product can be obtained by restricting the index set. Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>J</mi>
+ <mo>&#x2282;</mo>
+ <mi>I</mi>
+</mrow>
+</math>
+, then to each element of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ there corresponds in a natural way an element of the partial Cartesian product <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mstyle mathvariant='sans-serif'>
+   <mi>X</mi>
+  </mstyle>
+  <mrow>
+   <mi>i</mi>
+   <mo>&#x2208;</mo>
+   <mi>J</mi>
+  </mrow>
+ </msub>
+ <msub>
+  <mi>X</mi>
+  <mi>i</mi>
+ </msub>
+</mrow>
+</math>
+.</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-139'><span class="section_label">6</span> Inverse and Composites</h2>
+<div class='lemma_' id='magicparlabel-140'>
+<div class="lemma__item"><span class="lemma__label">Lemma.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>A</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ is a family of subsets of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, the domain of a function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+, then</div>
+<div class="lemma__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <munder>
+    <mo>&#x22C3;</mo>
+    <mi>i</mi>
+   </munder>
+   <msub>
+    <mi>A</mi>
+    <mi>i</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <munder>
+  <mo>&#x22C3;</mo>
+  <mi>i</mi>
+ </munder>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <msub>
+   <mi>A</mi>
+   <mi>i</mi>
+  </msub>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-142'>The corresponding equation for intersections is false in general.</div>
+<div class='definition_' id='magicparlabel-143'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+inverse function</div>
+<div class="definition__item">Given a function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+, let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>f</mi>
+ <mrow>
+  <mo stretchy='false'>-</mo>
+  <mn>1</mn>
+ </mrow>
+</msup>
+</math>
+, the <em>inverse</em> of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+, be the function from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>P</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>Y</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>P</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>X</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ s.t. if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2282;</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+, then</div>
+<div class="definition__item">
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msup>
+  <mi>f</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mi>B</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo>&#x2208;</mo>
+   <mi>X</mi>
+   <mo>&#x003A;</mo>
+   <mi>f</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>x</mi>
+    <mo>)</mo>
+   </mrow>
+   <mo>&#x2208;</mo>
+   <mi>B</mi>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+ <mspace width="20px"/>
+ <mtext>
+ <mrow>
+  <mo stretchy='false'>(</mo>inverse&#0160;image
+  <mo stretchy='false'>)</mo>
+ </mrow></mtext>
+</mrow>
+</math>
+</div>
+</div>
+<div class='proposition_' id='magicparlabel-146'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ maps <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ <b>onto</b> <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ iff the inverse image under <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ of each non-empty subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ is a non-empty subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-147'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-148'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is one-to-one iff the inverse image under <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+of each singleton in the range of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is a singleton in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-149'>The symbol <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>f</mi>
+ <mrow>
+  <mo stretchy='false'>-</mo>
+  <mn>1</mn>
+ </mrow>
+</msup>
+</math>
+ is frequently assigned a second interpretation, namely as the function whose domain is the range of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+, and whose value for each <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ is the range of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is the unique <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ for which <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+.</div>
+
+<div class='standard' id='magicparlabel-150'>There are some straight forward propositions about inverse.</div>
+<div class='proposition_' id='magicparlabel-151'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>B</mi>
+ <mo>&#x2282;</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>f</mi>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <mrow>
+    <mo>(</mo>
+    <mi>B</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2282;</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+. Moreover, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is surjective, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msup>
+    <mi>f</mi>
+    <mrow>
+     <mo stretchy='false'>-</mo>
+     <mn>1</mn>
+    </mrow>
+   </msup>
+   <mrow>
+    <mo>(</mo>
+    <mi>B</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>B</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-152'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-153'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <mi>X</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mi>f</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>f</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>A</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+. Moreover, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is injective, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>A</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>f</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>f</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>A</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-154'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-155'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>B</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ is a family of subsets of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>B</mi>
+</math>
+ is any subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+, then
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>f</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x22C3;</mo>
+       <mi>i</mi>
+      </munder>
+      <msub>
+       <mi>B</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder>
+     <mo>&#x22C3;</mo>
+     <mi>i</mi>
+    </munder>
+    <msup>
+     <mi>f</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>B</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>f</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <munder>
+       <mo>&#x22C2;</mo>
+       <mi>i</mi>
+      </munder>
+      <msub>
+       <mi>B</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <munder>
+     <mo>&#x22C2;</mo>
+     <mi>i</mi>
+    </munder>
+    <msup>
+     <mi>f</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <msub>
+      <mi>B</mi>
+      <mi>i</mi>
+     </msub>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mrow>
+    <msup>
+     <mi>f</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>Y</mi>
+      <mo stretchy='false'>-</mo>
+      <mi>B</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <mi>X</mi>
+    <mo stretchy='false'>-</mo>
+    <msup>
+     <mi>f</mi>
+     <mrow>
+      <mo stretchy='false'>-</mo>
+      <mn>1</mn>
+     </mrow>
+    </msup>
+    <mrow>
+     <mo>(</mo>
+     <mi>B</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-156'>The last euqation is kind of commutative law</div>
+
+<div class='standard' id='magicparlabel-157'>The discussion of inverses shows that what a function does can in a certain sense undone. Two functions do can sometimes be done in one step.</div>
+<div class='definition_' id='magicparlabel-158'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is a function from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>g</mi>
+</math>
+ is a function from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+, then every element in the range of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ belongs to the domain of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>g</mi>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>g</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>f</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>x</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ makes sense for each <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>h</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>g</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>f</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>x</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+ is called the <em>composite </em>of the functions <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>g</mi>
+</math>
+, denoted by 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mi>g</mi>
+ <mo>&#x25CB;</mo>
+ <mi>f</mi>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-159'>Functional composition is not commutative, but always associative.</div>
+<div class='proposition_' id='magicparlabel-160'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mo>&#x003A;</mo>
+ <mi>X</mi>
+ <mo>&#x21A4;</mo>
+ <mi>Y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>g</mi>
+ <mo>&#x003A;</mo>
+ <mi>Y</mi>
+ <mo>&#x21A4;</mo>
+ <mi>Z</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>g</mi>
+ <mo>&#x25CB;</mo>
+ <mi>f</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>f</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+ <mo>&#x25CB;</mo>
+ <msup>
+  <mi>g</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+</mrow>
+</math>
+ are formable and the latter is the inverse of the former.</div>
+</div>
+<div class='standard' id='magicparlabel-161'>Inversion and composition for functions are cases of similar operations for relations. Associated with every relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ is the <em>inverse </em>(or <em>converse</em>) relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>R</mi>
+ <mrow>
+  <mo stretchy='false'>-</mo>
+  <mn>1</mn>
+ </mrow>
+</msup>
+</math>
+ from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+. The composite of the relations <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ is defined in case <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is a relation from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ is a relation from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+. The composite relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>T</mi>
+</math>
+ from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Z</mi>
+</math>
+, is defined so that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="10px"/>
+ <mi>T</mi>
+ <mspace width="10px"/>
+ <mi>z</mi>
+</mrow>
+</math>
+ iff there exists an element <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>Y</mi>
+</math>
+ s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="10px"/>
+ <mi>R</mi>
+ <mspace width="10px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mspace width="10px"/>
+ <mi>S</mi>
+ <mspace width="10px"/>
+ <mi>z</mi>
+</mrow>
+</math>
+. The algebraic properties of inversion and composition are the same for relations as for functions.</div>
+
+<div class='standard' id='magicparlabel-162'>The three defining properties of an equivalence relation can be formulated in algebraic terms as: reflexitivity means <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>I</mi>
+ <mo>&#x2282;</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+, symmetry means <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>R</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mi>R</mi>
+  <mrow>
+   <mo stretchy='false'>-</mo>
+   <mn>1</mn>
+  </mrow>
+ </msup>
+</mrow>
+</math>
+, and transitivity means <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>R</mi>
+ <mi>R</mi>
+ <mo>&#x2282;</mo>
+ <mi>R</mi>
+</mrow>
+</math>
+.</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-163'><span class="section_label">7</span> numbers</h2>
+<div class='standard' id='magicparlabel-164'>To construct numbers, for every set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ we define the successor <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>x</mi>
+ <mo stretchy='false'>+</mo>
+</msup>
+</math>
+ of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ to be the set obtained by adjoining <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ to the elements of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <msup>
+  <mi>x</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mi>x</mi>
+ <mo>&#x222A;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>x</mi>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-165'>In defining <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+</math>
+ to be a set with zero elements, we have no choice
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>
+ <mn>0</mn>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x2205;</mi>
+</mrow>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-166'>then 
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mtable displaystyle='true' columnalign='right left '>
+ <mtr>
+  <mtd>
+   <mn>1</mn>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mn>0</mn>
+     <mo stretchy='false'>+</mo>
+    </msup>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mn>0</mn>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mn>2</mn>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mn>1</mn>
+     <mo stretchy='false'>+</mo>
+    </msup>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mn>0</mn>
+      <mo stretchy='false'>,</mo>
+      <mn>1</mn>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mn>3</mn>
+  </mtd>
+  <mtd>
+   <mrow>
+    <mo stretchy='false'>=</mo>
+    <msup>
+     <mn>2</mn>
+     <mo stretchy='false'>+</mo>
+    </msup>
+    <mo stretchy='false'>=</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mn>0</mn>
+      <mo stretchy='false'>,</mo>
+      <mn>1</mn>
+      <mo stretchy='false'>,</mo>
+      <mn>2</mn>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
+</div>
+
+<div class='standard' id='magicparlabel-167'>To allow the construction to be carried out ad infinitum, note we haven&#8217;t defined infinity yet.</div>
+<div class='proposition_' id='magicparlabel-168'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Axiom of infinity</div>
+<div class="proposition__item">There exists a set containing <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+</math>
+ and containing the successor of each of its elements (a successor set).</div>
+</div>
+<div class='standard' id='magicparlabel-170'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-171'>Sets such as the ones that the axiom of infinity describes deserve to be called <em>infinite</em>.</div>
+<div class='definition_' id='magicparlabel-172'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+A set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ is a <em>successor set</em> if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+ and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>x</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+ whenenver <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-173'>
+<br />
+</div>
+<div class='definition_' id='magicparlabel-174'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+A <em>natural number </em>is, by definition, an element of the minimal successor set.</div>
+</div>
+<div class='standard' id='magicparlabel-175'>
+<br />
+</div>
+<div class='definition_' id='magicparlabel-176'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+sequence</div>
+<div class="definition__item">A family <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>{</mo>
+ <msub>
+  <mi>x</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>}</mo>
+</mrow>
+</math>
+ whose index set is either a natural number (finite) or else the set of all natural numbers (infinite) by called a sequence</div>
+</div>
+<div class='standard' id='magicparlabel-178'>
+<br />
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-179'><span class="section_label">8</span> The Peano Axioms</h2>
+<div class='proposition_' id='magicparlabel-180'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-181'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-182'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+.</div>
+<div class="proposition__item">where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+ <mo>&#x222A;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>n</mi>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-184'>The minimality property of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ is saying that</div>
+<div class='proposition_' id='magicparlabel-185'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+principle of mathematical induction</div>
+<div class="proposition__item">if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo>&#x2282;</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ whenever <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-187'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-188'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2260;</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ for all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+</div>
+</div>
+<div class='proof' id='magicparlabel-189'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+Since <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>n</mi>
+ <mo stretchy='false'>+</mo>
+</msup>
+</math>
+ must contain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+, but <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+</math>
+ is empty.</div>
+</div>
+<div class='standard' id='magicparlabel-190'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-191'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>m</mi>
+</math>
+ are in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-192'>
+<br />
+</div>
+<div class='proof' id='magicparlabel-193'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+To prove this proposition, we need to prove</div>
+<div class="proof_item">i. no natural number is a subset of any of its elements</div>
+<div class="proof_item">By mathematical induction, let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ be the set of all those natural numbers <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ that are not included in any of their elements. Obviously, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+, and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+ <mo>&#x222A;</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>n</mi>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+, suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2282;</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2282;</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+, hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2209;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, otherwise <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2209;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>n</mi>
+ <mo stretchy='false'>+</mo>
+</msup>
+</math>
+ cannot be a subset of any element of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+, and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2282;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, but <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2209;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+. Hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+.</div>
+<div class="proof_item">ii. every element of a natural number is a subset of it. Or every natural number is transitive (includes everything that it contains, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mo>&#x2208;</mo>
+ <mi>E</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>E</mi>
+</mrow>
+</math>
+)</div>
+<div class="proof_item">Let <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ be the set of all transitive natural numbers. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+ is vacuously true. Suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, in either case <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2282;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+. Hence <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+</mrow>
+</math>
+.</div>
+<div class="proof_item">Let prove the original proposition now. Since <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>,</mo>
+</mrow>
+</math>
+ and then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+. Similarly <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2260;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, then we must have <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, from the second auxilliary proposition <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2282;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, which contradicts the first auxilliary proposition.</div>
+</div>
+<div class='standard' id='magicparlabel-199'>The above five propositions are known as the peano axioms. From them it is possible to define intergers, rational numbers, real numbers and complex numbers and to derive their usual arithmetic and analytic properties.</div>
+
+<div class='standard' id='magicparlabel-200'>Induction is often used not only to prove things but also define things. The principle of mathematical induction does indeed prove that there can be at most one function satisfyin g all the stated conditions, but it does not establish the existence of such a function. To prove the existence,</div>
+<div class='theorem_' id='magicparlabel-201'>
+<div class="theorem__item"><span class="theorem__label">Theorem.</span>
+Recursion theorem</div>
+<div class="theorem__item">if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ is an element of a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is a function from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ into <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, then there exists a function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>u</mi>
+</math>
+ from <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ into <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>u</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+ and s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>u</mi>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>u</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>n</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ for all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+.</div>
+</div>
+<div class='proof' id='magicparlabel-203'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+TODO</div>
+</div>
+<div class='standard' id='magicparlabel-204'>
+<br />
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-205'><span class="section_label">9</span> Arithmetic</h2>
+<div class='standard' id='magicparlabel-206'>The introduction of addtion for natural number is a typical example of definition by induction.</div>
+<div class='definition_' id='magicparlabel-207'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+Addition</div>
+<div class="definition__item">For each natural number <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>m</mi>
+</math>
+ there exists a function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msub>
+ <mi>s</mi>
+ <mi>m</mi>
+</msub>
+</math>
+ form <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ s.t <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ and s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mrow>
+   <mo>(</mo>
+   <mrow>
+    <msub>
+     <mi>s</mi>
+     <mi>m</mi>
+    </msub>
+    <mrow>
+     <mo>(</mo>
+     <mi>n</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>)</mo>
+  </mrow>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+ for every natural number <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+; the value <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>s</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the sum <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>+</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-209'>The general arithmetic properties of addition are proved by repeated applications of the principle of mathematical induction.</div>
+<div class='definition_' id='magicparlabel-210'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+Multiplication</div>
+<div class="definition__item"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>p</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+</div>
+<div class="definition__item"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>p</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>p</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>+</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ for every natural number <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+</div>
+<div class="definition__item">then the value <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>p</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is by definition the product <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x22C5;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-214'>
+<br />
+</div>
+<div class='definition_' id='magicparlabel-215'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+Exponential</div>
+<div class="definition__item"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>e</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mn>1</mn>
+</mrow>
+</math>
+</div>
+<div class="definition__item"><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>e</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msub>
+  <mi>e</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x22C5;</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ for every natural number <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+</div>
+<div class="definition__item">the value <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msub>
+  <mi>e</mi>
+  <mi>m</mi>
+ </msub>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is the power <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>m</mi>
+ <mi>n</mi>
+</msup>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-219'>
+<br />
+</div>
+<div class='definition_' id='magicparlabel-220'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+We say that two natural numbers <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>m</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ are comparable if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-221'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-222'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Two natural numbers are always comparable</div>
+</div>
+<div class='proof' id='magicparlabel-223'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+Define <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ for the set of all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>m</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ that are comparable with <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+.</div>
+<div class="proof_item">1. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+</div>
+<div class="proof_item">a. Since <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo stretchy='false'>=</mo>
+ <mn>0</mn>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<div class="proof_item">b. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, that is, either <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ (implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>)</mo>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo stretchy='false'>=</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ (implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+), thus <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mn>0</mn>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<div class="proof_item">2. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+</div>
+<div class="proof_item">a. Since <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ are comparable, that is, either <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ (implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+) or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ (implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+), thus <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mn>0</mn>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+.</div>
+<div class="proof_item">b. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <msup>
+   <mi>n</mi>
+   <mo stretchy='false'>+</mo>
+  </msup>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, when <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+. When <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+, either <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ (implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo stretchy='false'>)</mo>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+. In the latter case, since <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>S</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+, either <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+, or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+ (implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+) or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ (implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <msup>
+  <mi>m</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+ <mo>&#x2208;</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+). The first case implies that either <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>m</mi>
+</mrow>
+</math>
+, which contradicts the fact that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ since this leads to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+</div>
+</div>
+<div class='standard' id='magicparlabel-230'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-231'>In fact, always exactly one of the three possibilities holds. If any two of them hold, it would conclude that some natural number belong to itself, which is not true.</div>
+
+<div class='standard' id='magicparlabel-232'>The three relations are rewritten as <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>&lt;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo stretchy='false'>&gt;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+. From the transitivity of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+, if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2208;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>b</mi>
+ <mo>&#x2208;</mo>
+ <mi>a</mi>
+</mrow>
+</math>
+, i.e. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo stretchy='false'>&lt;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>b</mi>
+ <mo stretchy='false'>&lt;</mo>
+ <mi>a</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2282;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, which implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>b</mi>
+ <mo>&#x2208;</mo>
+ <mi>a</mi>
+</mrow>
+</math>
+ (<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>b</mi>
+ <mo stretchy='false'>&lt;</mo>
+ <mi>a</mi>
+</mrow>
+</math>
+).</div>
+<div class='definition_' id='magicparlabel-233'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+Two sets <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>F</mi>
+</math>
+ are called equivalent, in symbols <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>E</mi>
+ <mo>&#x223C;</mo>
+ <mi>F</mi>
+</mrow>
+</math>
+, if there exists a one-to-one correspondence (bijection) between them.</div>
+</div>
+<div class='proposition_' id='magicparlabel-234'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Every proper subset of a natural number <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ is equivalent to some smaller natural number.</div>
+</div>
+<div class='proof' id='magicparlabel-235'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+By induction. If it holds for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+, and if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is a proper subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>n</mi>
+ <mo stretchy='false'>+</mo>
+</msup>
+</math>
+, then either <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>E</mi>
+ <mo>&#x228A;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>E</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>E</mi>
+</mrow>
+</math>
+. In the latter case, find a number <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>k</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ but not in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ (there must be one, otherwise <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>E</mi>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+) and define a function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ on <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ by writing <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>i</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>i</mi>
+</mrow>
+</math>
+ when <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>i</mi>
+ <mo>&#x2260;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <mi>k</mi>
+</mrow>
+</math>
+. Clearly <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ is injective and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ maps <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ into <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mtext>range&#0160;</mtext>
+ <mi>f</mi>
+ <mo>&#x2282;</mo>
+ <mi>n</mi>
+</mrow>
+</math>
+, which is equivalent to some smaller natural number in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+. By composite, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is equivalent to some smaller natural number than <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ itself. In all the cases, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is equivalent to some element of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup>
+ <mi>n</mi>
+ <mo stretchy='false'>+</mo>
+</msup>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-236'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-237'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>n</mi>
+ <mo>&#x2208;</mo>
+ <mi>&#x3C9;</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+ is not equivalent to a proper subset of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>n</mi>
+</math>
+.</div>
+</div>
+<div class='proof' id='magicparlabel-238'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+TODO</div>
+</div>
+<div class='definition_' id='magicparlabel-239'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+A set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is called <em>finite</em> if it is equivalent to some natural number; otherwise it is <em>infinite</em>.</div>
+</div>
+<div class='standard' id='magicparlabel-240'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-241'>A set can be equivalent to at most one natural number. A finite set is never equivalent to a proper subset. As long as we stick to finite sets, the whole is always greater than any of its parts.</div>
+<div class='proposition_' id='magicparlabel-242'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ is infinite.</div>
+</div>
+<div class='proof' id='magicparlabel-243'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+1. Suppose <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ is finite, define a function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>n</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mi>n</mi>
+  <mo stretchy='false'>+</mo>
+ </msup>
+</mrow>
+</math>
+, it is easy to show that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+ is equivalent to a proper subset <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>&#x3C9;</mi>
+ <mi>&#x005C;</mi>
+ <mrow>
+  <mo>{</mo>
+  <mn>0</mn>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+, which is impossible for a finite set.</div>
+<div class="proof_item">2. Use definition of infinity. TODO</div>
+</div>
+<div class='standard' id='magicparlabel-245'>
+<br />
+</div>
+<div class='definition_' id='magicparlabel-246'>
+<div class="definition__item"><span class="definition__label">Definition.</span>
+The <em>number of elements</em> in a finite set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is the unique natural number equivalent to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+, denoted by <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>#
+ <mi>E</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-247'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-248'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>F</mi>
+</math>
+ are finite sets, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>E</mi>
+ <mo>&#x222A;</mo>
+ <mi>F</mi>
+</mrow>
+</math>
+ is finite and moreover if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>F</mi>
+</math>
+ are disjoint, then
+<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+<mrow>#
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>E</mi>
+   <mo>&#x222A;</mo>
+   <mi>F</mi>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>#
+ <mi>E</mi>
+ <mo stretchy='false'>+</mo>#
+ <mi>F</mi>
+ <mn>.</mn>
+</mrow>
+</math>
+</div>
+</div>
+<div class='proof' id='magicparlabel-249'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+TODO</div>
+</div>
+<div class='standard' id='magicparlabel-250'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-251'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+The union of a finite set of finite sets is finite. If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is finite, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>P</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>E</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</math>
+ is finite and moreover <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>#
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <mi>P</mi>
+   <mrow>
+    <mo>(</mo>
+    <mi>E</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>=</mo>
+ <msup>
+  <mn>2</mn>
+  <mrow>#
+   <mrow>
+    <mo>(</mo>
+    <mi>E</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </msup>
+ <mn>.</mn>
+</mrow>
+</math>
+</div>
+</div>
+<div class='proof' id='magicparlabel-252'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+TODO</div>
+</div>
+<div class='proposition_' id='magicparlabel-253'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ is a non-empty finite set of natural numbers, then there exists an element <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>k</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+ s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>m</mi>
+ <mo>&#x2264;</mo>
+ <mi>k</mi>
+</mrow>
+</math>
+ for all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>m</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>E</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-254'>
+<br />
+</div>
+<div class='proof' id='magicparlabel-255'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+TODO</div>
+</div>
+<div class='standard' id='magicparlabel-256'>
+<br />
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-257'><span class="section_label">10</span> order</h2>
+<div class='standard' id='magicparlabel-258'>The only thing to remember is that the primary motivation comes from the familiar properties of &#8220;less than or equal to&#8221; and not &#8220;less than&#8221;. There is no profound reason for this; it just happens that the generalizaation of &#8220;less than or equal to&#8221; occurs more frequently and is more amenable to algebraic treatment.</div>
+<div class='definition' id='magicparlabel-259'>
+<div class="definition_item"><span class="definition_label">Definition 2.</span>
+antisymmetric</div>
+<div class="definition_item">A relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ in a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is called <em>antisymmetric</em> if for every <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, the simultaneous validity of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="10px"/>
+ <mi>R</mi>
+ <mspace width="10px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mspace width="10px"/>
+ <mi>R</mi>
+ <mspace width="10px"/>
+ <mi>x</mi>
+</mrow>
+</math>
+ implies that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-261'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-262'>A partial order in a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is a reflexive, antisymmetric and transitive relation in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+.</div>
+<div class='definition' id='magicparlabel-263'>
+<div class="definition_item"><span class="definition_label">Definition 3.</span>
+A partial order in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ may be defined as a relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2266;</mo>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ s.t. for all <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>z</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, we have</div>
+<div class="definition_item">i. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2266;</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+</div>
+<div class="definition_item">ii. if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2266;</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mo>&#x2266;</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+</div>
+<div class="definition_item">iii. if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2266;</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mo>&#x2266;</mo>
+ <mi>z</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2266;</mo>
+ <mi>z</mi>
+</mrow>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-267'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-268'>The reason for the qualifying &#8220;partial&#8221; is that some questions abotu order may be left unanswered.</div>
+<div class='definition' id='magicparlabel-269'>
+<div class="definition_item"><span class="definition_label">Definition 4.</span>
+if for every <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ either <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2266;</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+ or <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>y</mi>
+ <mo>&#x2266;</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2266;</mo>
+</math>
+ is called a <em>total</em> order. A totally ordered set is frequently called a <em>chain.</em></div>
+</div>
+<div class='standard' id='magicparlabel-270'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-271'>e.g. inclusion in a power set is a partial order; &#8220;less than or equal to&#8221; in the set of natural number is a total order; the relation of extension for functions is a partial order.</div>
+<div class='definition' id='magicparlabel-272'>
+<div class="definition_item"><span class="definition_label">Definition 5.</span>
+a partially ordered set is an ordered pair <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mo>(</mo>
+ <mrow>
+  <mi>X</mi>
+  <mo stretchy='false'>,</mo>
+  <mo>&#x2266;</mo>
+ </mrow>
+ <mo>)</mo>
+</mrow>
+</math>
+ , where <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is a set and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2266;</mo>
+</math>
+ is a partial order in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-273'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-274'>This kind of definition is very common in mathematics; a mathematics structure is almost always a set together with soem specified other sets, functions, and relations. The accepted way of making such definitions precise is by reference to ordered pairs, triples or whatever is appropriate.</div>
+
+<div class='standard' id='magicparlabel-275'>If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2266;</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2260;</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+, <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ is a <em>predecessor</em> of <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>y</mi>
+</math>
+. Similarly we can define <em>successor</em>.</div>
+
+<div class='standard' id='magicparlabel-276'>The connection between <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo>&#x2266;</mo>
+</math>
+ and <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mo stretchy='false'>&lt;</mo>
+</math>
+ can be generalized to arbitrary relations. Given any relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ in a set <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+, we can define a relation <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ by writing <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="10px"/>
+ <mi>S</mi>
+ <mspace width="10px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+ in case <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mspace width="10px"/>
+ <mi>R</mi>
+ <mspace width="10px"/>
+ <mi>y</mi>
+</mrow>
+</math>
+ but <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2260;</mo>
+ <mi>y</mi>
+</mrow>
+</math>
+. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+ is a strict relation while <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>R</mi>
+</math>
+ is the weak relation corresponding to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>S</mi>
+</math>
+.</div>
+
+<div class='standard' id='magicparlabel-277'>If <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ is a partially ordered set, then it could happen that <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ has an element <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ s.t. <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>a</mi>
+ <mo>&#x2266;</mo>
+ <mi>x</mi>
+</mrow>
+</math>
+ for every <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>x</mi>
+</math>
+ in <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+. The antisymmetry of an order implies that if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+ has a least element, then it has only one. Similar for the greatest element.</div>
+
+<div class='standard' id='magicparlabel-278'><math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>a</mi>
+</math>
+ is minimal if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2266;</mo>
+ <mi>a</mi>
+</mrow>
+</math>
+ implies <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>x</mi>
+ <mo stretchy='false'>=</mo>
+ <mi>a</mi>
+</mrow>
+</math>
+, similar for maximal, which are different from least/greatest elements.</div>
+<div class='definition' id='magicparlabel-279'>
+<div class="definition_item"><span class="definition_label">Definition 6.</span>
+Upper bound, lower bound, infimum, supremum</div>
+</div>
+<div class='standard' id='magicparlabel-280'>
+<br />
+</div>
+</section>
+<section>
+<h2 class='section' id='magicparlabel-281'><span class="section_label">11</span> The Axiom of Choice</h2>
+<div class='axiom_' id='magicparlabel-282'>
+<div class="axiom__item"><span class="axiom__label">Axiom.</span>
+Axiom of Choice</div>
+<div class="axiom__item">The Cartesian product of a non-empty family of non-empty sets is non-empty</div>
+</div>
+<div class='standard' id='magicparlabel-284'>
+<br />
+</div>
+
+<div class='standard' id='magicparlabel-285'>If the collection of sets we are choosing from is finite, then the possibility of simultaneous choice is an easy consequence; the role of the axiom of choice is to guarantee that possibility in infinite cases.</div>
+
+<div class='standard' id='magicparlabel-286'>The axiom has a consequence</div>
+<div class='proposition_' id='magicparlabel-287'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+There exists a function <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>f</mi>
+</math>
+ with domain <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>P</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>X</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo stretchy='false'>-</mo>
+ <mrow>
+  <mo>{</mo>
+  <mi>&#x2205;</mi>
+  <mo>}</mo>
+ </mrow>
+</mrow>
+</math>
+ s.t. if <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>A</mi>
+</math>
+ is in that domain, then <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+ <mi>f</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>A</mi>
+  <mo>)</mo>
+ </mrow>
+ <mo>&#x2208;</mo>
+ <mi>A</mi>
+</mrow>
+</math>
+, called a <b>choice function<em> </em></b>for <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>X</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-288'>
+<br />
+</div>
+<div class='proposition_' id='magicparlabel-289'>
+<div class="proposition__item"><span class="proposition__label">Proposition.</span>
+Every infinite set has a subset equivalent to <math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>&#x3C9;</mi>
+</math>
+.</div>
+</div>
+<div class='standard' id='magicparlabel-290'>
+<br />
+</div>
+<div class='proof' id='magicparlabel-291'>
+<div class="proof_item"><span class="proof_label">Proof.</span>
+TODO</div>
+</div>
+</section>
+</body>
+</html>
